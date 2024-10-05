@@ -1,16 +1,3 @@
-# Combat in Dungeoneers
-
-As a Dungeoneer, you will encounter many foes that stand in your way to your inevitable goal. Some may be able to be avoided, but you will ultimately come to blows with many creatures. You should become familiar with combat mechanics in order to overcome these obstacles and complete your mission.
-
-In order to understand how combat works in Dungeoneers, we first need to understand the values that are used in combat. There are 6 important combat values:
-
--   Wounds
--   Stress
--   Hit Dice
--   Dodge Dice
--   Pierce Dice
--   Armor Value (AV)
-
 ## Wounds
 
 A `creature` is only able to sustain a certain amount of damage before succumbing to death. This is represented by `wounds`. A `creature` can sustain a number of `wounds` determined by their `size`:
@@ -52,39 +39,34 @@ Going past a `creatures` `stress` capacity isn't purely negative, however. While
 
 Once `stress` has been accumulated, there are a few ways to relieve it. Certain `spells`, `potions` and other `items` are capable of relieving `stress`, as well as certain `creature` `abilities`. A `creature` may relieve a number of `stress` equal to their `endurance` at the end of a `short rest` and they relieve all of their accumulated `stress` at the end of a `long rest` or `full rest`.
 
-## Hit Dice
+# Combat in Dungeoneers
 
-`Hit dice` are used to determine if an `attack` `hits` or not. An `attacker's` `hit dice` are determined by their `weapon`.
+As a Dungeoneer, you will encounter many foes that stand in your way to your inevitable goal. Some may be able to be avoided, but you will ultimately come to blows with many `creatures`. You should become familiar with combat mechanics in order to overcome these obstacles and complete your mission. When `creatures` come to blows, the passage of time becomes more strictly represented. All of time is represented in the following way, but it is typically only important to track this during time-sensitive moments like combat.
 
-## Dodge Dice
+A time span of 5 seconds is represented by a `round`. During a `round`, each `creature` has a `turn` where they are allowed to use certain resources in order to interact with the world. The order of each `creature's` `turn` is decided at the start of a `round` using the `creature's` `initiative`. If two or more `creatures` have the same `initiative`, roll a d10 to break the tie, re-rolling if necessary.
 
-`Dodge dice` are used to determine if an `attack` `hits` or not; but on the `defender's` side. A `defender's` `dodge dice` is a d4, unless that `creature` has an `ability`/`effect` to change this.
+> Re-rolling `initiative` every `round` can be cumbersome. Feel free to only roll `initiative` once if you have ties and stick to that number until it's no longer necessary to strictly track time in `rounds`.
 
-## Pierce Dice
+During a `turn`, the `creature` that owns the `turn` has 2 resources they are able to use:
 
-When an `attacker` `hits` with an `attack`, in order to see if that `attack` `pierces` the `defenders` `armor`, `pierce dice` are used. When rolling for a `pierce`, an `attacker` rolls a number of `pierce dice` equal to their `power` score. The total rolled is then compared to the `defenders` `armor value`; if this is at or above the `defenders` `armor value`, then the `attack` `pierces` and the `defender` sustains a number of `wounds` as marked on the `attackers` `weapon`. If there are any `wound` bonuses or penalties, the `attackers` modifiers are applied first, then the `defenders`.
+-   `Action Points`
+-   `Movement Points`
 
-> For example, lets say Freya is `attacking` a skeleton with a mace. Freya has 2 `power`, the mace has a `pierce die` of `1d6`, and the skeleton has an `armor value` of 4. Freya rolls `2d6`, and her total is a 4. Since this meets or exceeds the skeletons 4 `armor value`, Freya's `attack` `pierces`. The mace deals 1 `wound` on a `pierce`, so the skeleton sustains 1 `bludgeoning` `wound`. However, since the skeleton is `weak` to `bludgeoning`, the skeleton instead sustains 2 `wounds`!
->
-> Now imagine that same `skeleton` had exceeded its `stress` capacity. This causes the `skeleton` to sustain twice the number of `wounds`, but this effect occurs before any modifiers. The 1 `bludgeoning` `wound` becomes 2 `bludgeoning` `wounds` due to `stress`, and then the skeletons `weak` modifier increases that to 3 `bludgeoning` `wounds`!
+Any `creature` is able to use a third resource, `reaction points`, during any `turn` (not just the one the `creature` owns). `Action points` are used to take `actions`, which are the vast majority of all interactions with the world. A `creature` will use their `action points` to perform the bulk of their impact during their `turn`. A `creature` may also use `movement points` to perform basic position transformations, like standing up or moving in a direction. `Reaction points` are used to take `reactions`, which are special, quick motions done in response to some trigger.
 
-## Armor Value
+During a `round`, the `creature` with the highest `initiative` takes their `turn` first. Once they are finished with their `turn`, the `creature` with the next-highest `initiative` takes their `turn`, and so on until the `creature` with the lowest `initiative` completes their `turn`. The `round` then completes and the next `round` begins, starting with the `creature` with the highest `initiative` taking their `turn` again.
 
-When a `creature` is `hit` by an `attack`, they do not immediately sustain any `wounds`. Instead, a roll must be made to determine if the `attack` `pierces`. Based on various natural resistances, `abilities`, `spells`, items and `armor`, a `creature` will have an `armor value` equal to the sum of all of these factors. The `attacker` must roll a `pierce dice` total that meets or exceeds the `defenders` `armor value`.
+## Actions
 
-> For example, Ulfarmi has 0 `armor value` naturally. He has the `spell` mage armor cast on him, which gives him 3 `armor value`. If Ulfarmi equips leather armor, this gives him 1 `armor value`. In total, he would then have 4 `armor value`.
+There are many things that use up `action points`, and the specific cases are covered by the specific abilities that give the `action`. Some `actions` may take up multiple `action points`, many only use 1. However, there are some basic `actions` that are able to be taken by virtually any `creature`.
 
----
-
-Now that we are familiar with the basic numbers involved in basic `attacks`, let's look at the rules for making an `attack` and even what constitutes an `attack` in the first place.
-
-## What is an Attack?
+### Attacks
 
 An `attack` is an `action` that constitutes striking at a `creature` with some sort of traditional `weapon`. This `weapon` could be a club, a dagger, a magical staff, or even a bare fist! During an `attack`, the `attacker` is the `creature` making the `attack` and the `defender` is the `creature` subject to the `attack`.
 
 > In other systems, there is often a distinction between attacks with a weapon and attacks without a weapon, or with an object not typically used as a weapon. In Dungeoneers, all strikes with conventional objects are `attacks`; there is no difference. Strikes with magic are treated differently, and we'll talk about that when we get to `spellcasting`.
 
-## Making an Attack
+#### Making an Attack
 
 When a `creature` decides to use an `action point` to make an `attack`, there are 3 steps to the process:
 
@@ -92,9 +74,7 @@ When a `creature` decides to use an `action point` to make an `attack`, there ar
 -   Determine if the `attack` `pierces`
 -   Determine the number of `wounds` inflicted
 
-Lets look at each part individually.
-
-### Determining if an Attack Hits
+#### Determining if an Attack Hits
 
 To determine a `hit`, the `attacker` and `defender` make competing dice rolls. The `attacker` rolls a number of `hit dice` equal to their `prowess` score (plus any modifiers they may have) and the `defender` rolls a number of `dodge dice` equal to their `prowess` score (plus any modifiers they may have). The two rolls are compared: if the `attacker's` total is equal to or greater than the `defender's` total, the `attack` `hits` and any `effects` that take place on `hit` are immediately applied. If the `defender's` total exceeds the `attacker's`, the attack `misses` and any `effects` that take place on a `miss` are immediately applied. Finally, if the `attack` `hits`, the `attack` moves on to the next step to determine if the `attack` `pierces`.
 
@@ -102,19 +82,41 @@ To determine a `hit`, the `attacker` and `defender` make competing dice rolls. T
 >
 > Now imagine that Suori rolls a 1 and a 2, and the skeleton rolls a 4. Since the skeleton's roll exceeds Suori's roll, her `attack` `misses`.
 
-### Determining if an Attack Pierces
+#### Determining if an Attack Pierces
 
 Remember, you only check if an `attack` `pierces` if the `attack` has already `hit`!
 
 To determine a `pierce`, the `attacker` makes a dice roll and compares their total against the `armor value` of the `defender`. The `attacker` rolls a number of `pierce dice` equal to their `power` score. If this total is equal to or greater than the `defender's` `armor value`, the `attack` `pierces` and any `effects` that take place on a `pierce` are immediately applied. If the `defender's` `armor value` exceeds the `attacker's` total, the `attack` `deflects` and any `effects` that take place on a `deflection` are immediately applied. Finally, if the `attack` `pierces`, the `attack` moves on to the next step to determine the number of `wounds` the `defender` will sustain.
 
-### Determining the Number of Wounds Inflicted
+#### Determining the Number of Wounds Inflicted
 
 When an `attack` `pierces`, the last step in the `attack` is to determine the number of `wounds` the `defender` will sustain. The `attacker` can inflict a number of `wounds` as marked with their `weapon`, plus any modifiers they might have. The `defender` then sustains that number of `wounds`, and all calculations for determining `wounds` sustained then apply.
 
 Once this step has been completed, the `attack` `action` concludes.
 
-## Casting a Spell
+#### Hit Dice
+
+`Hit dice` are used to determine if an `attack` `hits` or not. An `attacker's` `hit dice` are determined by their `weapon`.
+
+#### Dodge Dice
+
+`Dodge dice` are used to determine if an `attack` `hits` or not; but on the `defender's` side. A `defender's` `dodge dice` is a d4, unless that `creature` has an `ability`/`effect` to change this.
+
+#### Pierce Dice
+
+When an `attacker` `hits` with an `attack`, in order to see if that `attack` `pierces` the `defenders` `armor`, `pierce dice` are used. When rolling for a `pierce`, an `attacker` rolls a number of `pierce dice` equal to their `power` score. The total rolled is then compared to the `defenders` `armor value`; if this is at or above the `defenders` `armor value`, then the `attack` `pierces` and the `defender` sustains a number of `wounds` as marked on the `attackers` `weapon`. If there are any `wound` bonuses or penalties, the `attackers` modifiers are applied first, then the `defenders`.
+
+> For example, lets say Freya is `attacking` a skeleton with a mace. Freya has 2 `power`, the mace has a `pierce die` of `1d6`, and the skeleton has an `armor value` of 4. Freya rolls `2d6`, and her total is a 4. Since this meets or exceeds the skeletons 4 `armor value`, Freya's `attack` `pierces`. The mace deals 1 `wound` on a `pierce`, so the skeleton sustains 1 `bludgeoning` `wound`. However, since the skeleton is `weak` to `bludgeoning`, the skeleton instead sustains 2 `wounds`!
+>
+> Now imagine that same `skeleton` had exceeded its `stress` capacity. This causes the `skeleton` to sustain twice the number of `wounds`, but this effect occurs before any modifiers. The 1 `bludgeoning` `wound` becomes 2 `bludgeoning` `wounds` due to `stress`, and then the skeletons `weak` modifier increases that to 3 `bludgeoning` `wounds`!
+
+#### Armor Value
+
+When a `creature` is `hit` by an `attack`, they do not immediately sustain any `wounds`. Instead, a roll must be made to determine if the `attack` `pierces`. Based on various natural resistances, `abilities`, `spells`, items and `armor`, a `creature` will have an `armor value` equal to the sum of all of these factors. The `attacker` must roll a `pierce dice` total that meets or exceeds the `defenders` `armor value`.
+
+> For example, Ulfarmi has 0 `armor value` naturally. He has the `spell` mage armor cast on him, which gives him 3 `armor value`. If Ulfarmi equips leather armor, this gives him 1 `armor value`. In total, he would then have 4 `armor value`.
+
+### Casting a Spell
 
 In the middle of combat, there simply isn't enough time to cast a `spell` in the traditional way. In order to cast a `spell` quickly, a `creature` must either cast out of a tome or use a `cantrip`. Regardless of which they choose, in order to cast the `spell` a `creature` must take the `spellcasting` `action`.
 
@@ -124,17 +126,17 @@ A `spell` consumes `magica` in order to be cast. A `creature` has an amount of `
 
 The general process for resolving a `spellcasting` `action` differs only in the first step amongst `spells`. A `spell` can either require a `spell attack` or a `spell save`.
 
-### Resolving a Spell Attack
+#### Resolving a Spell Attack
 
 In order to see if a `spell attack` hits, the `attacker` must roll `spell attack dice` equal to their `spell` score and the `defender` must roll `dodge dice` equal to their `prowess` score. If the `attacker's` total is equal to or greater than the `defender's` total, the `spell attack` `hits` and the process moves to the next step.
 
-### Resolving a Spell Save
+#### Resolving a Spell Save
 
 In order to see if a `spell save` is failed, the `attacker` must roll `spell save dice` equal to their `mind` score and the `defender` must roll `spell save dice` equal to the score specified by the `spell`. Unless otherwise specified by the `spell`, this score is `resistance`. If the `attacker's` total is equal to or greater than the `defender's` total, the `spell save` is failed and the process moves to the next step.
 
 A `defender` may elect to intentionally fail their `spell save` if they so choose.
 
-### Overcoming Spell Resistance
+#### Overcoming Spell Resistance
 
 Each `creature` has a `spell resistance` score that the `attacker` must overcome for the `spell` to take `effect`. The `attacker` rolls `spell pierce` dice equal to the _extra_ `magica` they choose to spend on the `spell` + 1. The size of the `spell pierce` dice begins at a d4, but can change based on the `spell` and other `abilities`. If the total rolled by the `attacker` is greater than or equal to the `defender's` `spell resistance`, the `spell` takes `effect`.
 
