@@ -13,7 +13,7 @@ An `ability` is a special capability that changes the basic kit of a `creature`.
 
 ## Traits
 
-A `trait` is an intrinsic property of a `creature`, and can be beneficial or handicapping. Typically, a `trait` is tied to the `creature` itself, and usually cannot be gained or lost at any point but there are some exceptions.
+A `trait` is an intrinsic property of a `creature`, and can be beneficial or handicapping. Typically, a `trait` is tied to the `creature` itself and cannot be permanently gained or lost otherwise.
 
 ### Vulnerability
 
@@ -26,6 +26,25 @@ A `trait` is an intrinsic property of a `creature`, and can be beneficial or han
 `Resistance` is a `trait` that causes a `creature` to sustain _less_ `wounds` than normal whenever a `wound` is sustained of a certain damage type. There are 3 levels of `resistance` (`resistance 1`, `resistance 2`, and `resistance 3`) and a variant of `resistance` for every damage type. Each level of `resistance` causes the `creature` to sustain that number fewer `wounds`.
 
 > For example, a skeleton has the `trait` `resistance 3: piercing`. This means that whenever a skeleton sustains 3 or fewer `piercing` `wounds`, they instead sustain 0.
+
+### Senses
+
+There are multiple types of senses that a `creature` may have, and corresponding sense `traits` to describe them.
+
+| Trait Name    | Trait Description                                             |
+| ------------- | ------------------------------------------------------------- |
+| Vision        | Typical vision good enough to see what is being fought        |
+| Darkvision    | Vision that can see in complete, non-magical darkness         |
+| Truevision    | Vision that can see in magical darkness and through illusions |
+| Hearing       | Basic hearing capabilities                                    |
+| Blindsense\*  | Ability to sense `creatures` without needing to use vision    |
+| Tremorsense\* | Ability to sense `creatures` that are touching the ground     |
+| Blind         | Does not have any visual sense                                |
+| Deaf          | Cannot hear                                                   |
+
+> \* These senses are not blocked by visual limiters like darkness or walls.
+
+Each sense `trait` comes with a range. If a range is not specified, the range is unlimited.
 
 ## Conditions
 
