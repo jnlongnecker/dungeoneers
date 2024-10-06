@@ -63,6 +63,10 @@ Taking a `wound` past a `creatures` maximum does not immediately kill that `crea
 
 Once a `wound` has been sustained, the only way to recover it is through magic or time. Certain `spells`and potions are capable of restoring `wounds`, and you recover all `wounds` at the end of a `full rest`.
 
+When a `wound` is sustained, it has a damage type associated with it. This becomes relevant for the `vulnerability` and `resistance` `traits`. You cannot sustain a negative amount of `wounds`, the minimum is 0.
+
+> For example, a mace is a weapon that inflicts 1 `bludgeoning wound`, so `creatures` with the `vulnerability: bludgeoning` `trait` sustain more `wounds` from this weapon.
+
 ## Stress
 
 A `creature` accumulates `stress` over the course of a battle, and this `stress` can make them a better combatant but at a cost. A `creature` can handle an amount of `stress` equal to their `endurance` score.
