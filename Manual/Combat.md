@@ -24,6 +24,7 @@ There are many things that use up `action points`, and the specific cases are co
 -   Sprint
 -   Grapple
 -   Push
+-   Ready
 -   Attack
 -   Spellcast
 
@@ -39,11 +40,11 @@ If a `creature` has the `grappled` `condition`, the `disengage` `action` instead
 
 ### Defend
 
-A `creature` may use 1 `action point` to use the `defend` `action` to give themselves the `defensive` `condition` until the start of their next `turn`. A `creature` with the `defending` `condition` can roll 1 extra `dodge die` when `defending`.
+A `creature` may use 1 `action point` to use the `defend` `action` to give themselves the `defensive` `condition` until the start of their next `turn`. A `creature` with the `defending` `condition` can roll 1 extra `dodge die` when they are `defenders`.
 
 ### Sprint
 
-A `creature` may use 1 `action point` to use the `sprint` `action` to give themselves the `sprinting` `condition` until the start of their next `turn`. A `creature` with the `sprinting` `condition` has 2 extra `movement points`.
+A `creature` may use 1 `action point` to use the `sprint` `action` to give themselves the `sprinting` `condition` until the start of their next `turn`. A `creature` with the `sprinting` `condition` has 2 extra base `movement points`.
 
 ### Grapple
 
@@ -51,17 +52,27 @@ A `creature` may use 1 `action point` to use the `grapple` `action`. A `grapple`
 
 The `grappled` `condition` sets a `creature's` `movement points` to 0, and they can no longer gain any `movement points`. The `grappling` condition halves the amount of `movement points` the `creature` has and halves the amount of `movement points` that `creature` gains. When a `grappling` `creature` uses a `movement action`, the `creature` they are `grappling` immediately performs the same `movement action`.
 
+If the `grappling` `creature` takes a `movement action` while on _another_ `creatures` `turn`, the `grapple` immediately ends and the `grappling` and `grappled` `conditions` are removed from their respective `creatures`.
+
 ### Push
 
 A `creature` may use 1 `action point` to use the `push` `action`. A `push` may only be used on a `creature` they `threaten`. In order to see if a `push` succeeds, the `attacker` must roll `hit dice` and the `defender` must roll `dodge dice`. The `defender` may use either their `prowess` score or their `power` score to determine the number of `dodge dice` they roll while the `attacker` must use their `power` score. The total of the `attacker` must be greater than or equal to the total of the `defender` in order for the `push` to succeed.
 
-If the `push` succeeds, the `defender` is moved 1 tile in the direction of the `facing` direction of the `attacker`.
+If the `push` succeeds, the `defender` `moves` 1 tile in the direction of the `facing` direction of the `attacker`.
+
+### Ready
+
+A `creature` may make the `ready` `action` on their turn to delay the start of an `action` they can use. The chosen `action` is called the `readied` `action`. A `creature` must spend an equal amount of `action points` to `ready` an `action` as they would to take that `action` normally, but they must also use a `reaction point` to begin taking that `action`. When the `ready` `action` is taken, the `creature` must specify which `turn` they trigger their `readied` `action` and if it occurs just before that `turn` begins or just after that `turn` ends.
+
+> For example, Suori is next to Ulfarmi and they are in combat with a skeleton. Suori goes first, the skeleton second and Ulfarmi last, and Suori knows that Ulfarmi will want to move outside of the skeleton's `threat range`. However, she cannot prevent the skeleton from closing that distance since her `turn` comes before the skeleton's. Suori takes the `ready` `action` and `readies` the `push` `action`, spending 1 `action point` and specifying that it will take place before the start of Ulfarmi's `turn`. Suori's `turn` ends and the skeleton `moves` towards Ulfarmi and deals a mighty blow! The skeleton's `turn` ends, and before Ulfarmi's `turn` begins, Suori spends a `reaction point` to trigger her `readied` `action` and `pushes` the skelton away. This now gives Ulfarmi the space he needs to run away!
 
 ### Attack
 
 An `attack` is an `action` that constitutes striking at a `creature` with some sort of traditional `weapon`. This `weapon` could be a club, a dagger, a magical staff, or even a bare fist! During an `attack`, the `attacker` is the `creature` making the `attack` and the `defender` is the `creature` subject to the `attack`. An `attack` `action` costs 1 `action point`. A `creature` may only use the `attack` `action` on a `creature` they `threaten`.
 
 > In other systems, there is often a distinction between attacks with a weapon and attacks without a weapon, or with an object not typically used as a weapon. In Dungeoneers, all strikes with conventional objects are `attacks`; there is no difference. Strikes with magic are treated differently, and we'll talk about that when we get to `spellcasting`.
+
+Every `attack` is either melee or ranged. If the distance to the target of the `attack` is greater than the `threat range` of the `attacker`, the `attack` is ranged.
 
 #### Making an Attack
 
@@ -97,7 +108,7 @@ Once this step has been completed, the `attack` `action` concludes.
 
 #### Dodge Dice
 
-`Dodge dice` are used to determine if an `attack` `hits` or not; but on the `defender's` side. A `defender's` `dodge dice` is a d4, unless that `creature` has an `ability`/`effect` to change this.
+`Dodge dice` are used to determine if an `attack` `hits` or not; but on the `defender's` side. A `defender's` `dodge dice` is a d4, unless that `creature` has an `effect` to change this.
 
 #### Pierce Dice
 
@@ -121,11 +132,11 @@ In the middle of combat, there simply isn't enough time to cast a `spell` in the
 
 A `spell` consumes `magica` in order to be cast. A `creature` has an amount of `magica` equal to their `mind` score and regains 1 `magica` at the start of their `turn`. Each `spell` has a baseline amount of `magica` that must be spent in order to cast the `spell`, and extra `magica` must be spent to overcome the `resistance` of the `defender`. Ambient `magica` is available to spend on the baseline cost of the `spell` and any leftover can be used to roll more `spell pierce` dice before tapping into the `creatures` `magica` reserves.
 
-The general process for resolving a `spellcast` `action` differs only in the first step amongst `spells`. A `spell` can either require a `spell attack` or a `spell save`.
+Every `spell` is either melee or ranged, which is determined by the target of the `spell`. If the distance to the target is greater than the `threat range` of the `creature`, the `spell` is ranged. The general process for resolving a `spellcast` `action` differs only in the first step amongst `spells`. A `spell` can either require a `spell attack` or a `spell save`.
 
 #### Resolving a Spell Attack
 
-In order to see if a `spell attack` hits, the `attacker` must roll `spell attack dice` equal to their `spell` score and the `defender` must roll `dodge dice` equal to their `prowess` score. If the `attacker's` total is equal to or greater than the `defender's` total, the `spell attack` `hits` and the process moves to the next step.
+In order to see if a `spell attack` hits, the `attacker` must roll `spell hit dice` equal to their `spell` score and the `defender` must roll `dodge dice` equal to their `prowess` score. If the `attacker's` total is equal to or greater than the `defender's` total, the `spell attack` `hits` and the process moves to the next step.
 
 #### Resolving a Spell Save
 
@@ -154,7 +165,7 @@ A `creature` can drop `prone` at any moment on their `turn`, no resources needed
 
 ### Facing Direction
 
-A `creature` is always `facing` a particular direction. Whenever `moving`, `attacking`, `grappling`, `pushing` or `spellcasting`, a `creature` may automatically changes their `facing` direction towards their target before the `action` begins. If a `creature` wants to change their `facing` direction in isolation of these other options, they must spend 1 `movement point`.
+A `creature` is always `facing` a particular direction. Whenever `moving`, `readying`, `attacking`, `grappling`, `pushing` or `spellcasting` on their `turn`, a `creature` may automatically changes their `facing` direction towards their target before the `action` begins. If a `creature` wants to change their `facing` direction in isolation of these other options, they must spend 1 `movement point`.
 
 While a `creature` is a `defender` and their `attacker` is positioned opposite of their `facing` direction, they have a penalty to their `dodge dice` equal to 1d8.
 

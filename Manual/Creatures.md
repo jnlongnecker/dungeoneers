@@ -30,15 +30,22 @@ The `spell` score represents the talent with magic a `creature` has. The `spell`
 
 The `mind` score represents the magical capacity of a `creature`. The `mind` score is used to determine things like `spell save` difficulty and `magica` capacity.
 
+## Threat Range
+
+Every `creature` has a baseline `threat range`. This is a distance in tiles that denotes other `creatures` that can be struck in melee. The `threat range` of a `creature` may be expanded by various `effects`, but the baseline `threat range` is determined by the `creatures` `size`. A `creature` that is within the `threat range` of a `hostile` `creature` gains the `threatened` `condition`. This is checked after every `move`.
+
+> For example, Suori the dwarf has a `threat range` of 1 since she is a `medium` `creature`. Let's say Suori is 2 tiles away from a skeleton, another `medium` `creature`. Neither Suori nor the skeleton are `threatened`, because both are outside of each other's `threat range`. Now let's say Suori `moves` 1 tile towards the skeleton. The skeleton is now within Suori's `threat range`, so it is `threatened` by Suori. However, we re-calculate _all_ `threat ranges` after a `move`, so Suori is _also_ `threatened` by the skeleton since she is within _its_ `threat range`!
+
 ## Size
 
 A `creature` has a `size` that represents the amount of physical space that they occupy. Something to note is that not all `creatures` in the same `size` category are the exact same physical size, only that they are able to control the specified number of tiles with the physical space they take up.
 
-The `size` categories and tiles that `creatures` of that `size` occupy can be identified in the following table:
+The `size` categories, tiles that `creatures` of that `size` occupy and `threat range` can be identified in the following table:
 
-| Tiny | Small | Medium | Large | Huge | Massive |
-| ---- | ----- | ------ | ----- | ---- | ------- |
-| 1/4  | 1/2   | 1      | 2     | 3    | 4       |
+|                    | Tiny | Small | Medium | Large | Huge | Massive |
+| ------------------ | ---- | ----- | ------ | ----- | ---- | ------- |
+| **Tiles Occupied** | 1/4  | 1/2   | 1      | 2     | 3    | 4       |
+| **Threat Range**   | 1    | 1     | 1      | 1     | 2    | 2       |
 
 Unless a `creature` occupies less than 1 tile, 2 `creatures` are not allowed to occupy the same tile. A tile that is fully occupied cannot be moved into or past, unless the occupying `creatures` allow it.
 

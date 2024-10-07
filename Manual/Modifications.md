@@ -50,8 +50,30 @@ Each sense `trait` comes with a range. If a range is not specified, the range is
 
 A `condition` is a temporary `modification` that is applied usually by some `ability`, `spell` or `action`.
 
+### Threatened
+
+`Creatures` who are `threatened` are subject to `opportune strikes` when they move out of the `threat range` of the `creature` they are `threatened` by or if they used a ranged `spellcast`/`attack`.
+
+### Grappled
+
+`Creatures` who are `grappled` have 0 `movement points` and cannot gain any `movement points`. When the `entity` that is `grappling` them uses a `movement action`, this `creature` immediately takes that same `movement action`.
+
+### Grappling
+
+`Creatures` who are `grappling` have half (rounded down) their normal `movement points` and gain half (rounded down) `movement points` from any `effect` that would grant them. If this `creature` takes a `movement action` while on _another_ `creatures` `turn`, the `grappling` and `grappled` `condition` are removed from their respective `creatures`.
+
+### Sprinting
+
+`Creatures` who are `sprinting` gain 2 base `movement points`.
+
+### Defensive
+
+`Creatures` who are `defensive` may roll 1 additional `dodge die` when they are `defenders`.
+
+### Prone
+
+`Creatures` who are `prone` can only roll a maximum of 1 `dodge die` when they are `defenders`. If a `prone` `creature` is a `defender` against a `spell save` that uses `prowess`, they may roll a maximum of 1 `spell save die`. `Creatures` who are ranged `attackers` against a `prone` `defender` may only roll a maximum of 1 `hit die` or `spell hit die`.
+
 ## Effects
 
-An `effect` is a `modification` that is applied when specific criteria is met. It's not really a _different_ concept from other `modifications` as when the above take place conditionally, the result is called an `effect`. It's meant as a catch-all to refer to these conditional `modifications`.
-
-> For example, the \_\_\_ `ability` applies the `prone` `condition` on a `hit`. This would be categorized as an on `hit` `effect`, because it conditionally takes place when a `hit` occurs.
+An `effect` is a `modification` that is applied when specific criteria is met. It's not really a _different_ concept from other `modifications`, it's merely the _application_ of the `modification`.

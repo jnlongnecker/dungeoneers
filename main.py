@@ -127,5 +127,5 @@ def calculate_chance_to_beat(my_roll, their_roll, must_beat):
     return chances_i_win
 
 # print_improvement('2d4', '4d4')
-print(calculate_chance_to_beat('5d8', '3d8', must_beat=False))
+print(calculate_chance_to_beat('4d6', '6d4', must_beat=False))
 # print_chance_of('1d8', '>=', 4)
