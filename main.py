@@ -1,5 +1,27 @@
 import math
 
+class Roll:
+    def __init__(self, roll_string):
+        self.tokens = self.tokenize(roll_string)
+
+    def tokenize(self, roll_string):
+        tokens = []
+        curr_token = ''
+        for char in roll_string:
+            if char == ' ':
+                if curr_token != '':
+                    tokens.push(curr_token)
+                curr_token = ''
+            elif char == '+' or char == '-':
+                if curr_token != '':
+                    tokens.push(curr_token)
+                    curr_token = ''
+                tokens.push(char)
+            else:
+                curr_token = curr_token + char
+        return tokens
+                
+
 class DiceRoll:
     def __init__(self, die_string):
         parts = die_string.split('d')
@@ -127,5 +149,5 @@ def calculate_chance_to_beat(my_roll, their_roll, must_beat):
     return chances_i_win
 
 # print_improvement('2d4', '4d4')
-print(calculate_chance_to_beat('4d6', '6d4', must_beat=False))
-# print_chance_of('1d8', '>=', 4)
+# print(calculate_chance_to_beat('4d6', '6d4', must_beat=False))
+print_chance_of('2d10', '>=', 15)

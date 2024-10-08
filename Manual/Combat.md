@@ -124,13 +124,15 @@ When a `creature` is `hit` by an `attack`, they do not immediately sustain any `
 
 > For example, Ulfarmi has 0 `armor value` naturally. He has the `spell` mage armor cast on him, which gives him 3 `armor value`. If Ulfarmi equips leather armor, this gives him 1 `armor value`. In total, he would then have 4 `armor value`.
 
+A high `armor value` for typical mortals to have is 15. The pinnacle of defensive mortals may reach an `armor value` of 30.
+
 ### Spellcast
 
 In the middle of combat, there simply isn't enough time to cast a `spell` in the traditional way. In order to cast a `spell` quickly, a `creature` must either cast out of a tome or use a `cantrip`. Regardless of which they choose, in order to cast the `spell` a `creature` must take the `spellcast` `action`.
 
 > Keep in mind that not all `cantrips` are treated the same! Some `cantrips` are extremely weak, and some are more powerful than many spell tomes. The determining factor of what is and is not a `cantrip` is the location of the spell inscription.
 
-A `spell` consumes `magica` in order to be cast. A `creature` has an amount of `magica` equal to their `mind` score and regains 1 `magica` at the start of their `turn`. Each `spell` has a baseline amount of `magica` that must be spent in order to cast the `spell`, and extra `magica` must be spent to overcome the `resistance` of the `defender`. Ambient `magica` is available to spend on the baseline cost of the `spell` and any leftover can be used to roll more `spell pierce` dice before tapping into the `creatures` `magica` reserves.
+A `spell` consumes `magica` in order to be cast. A `creature` has an amount of `magica` equal to twice their `mind` score and regains 1 `magica` at the start of their `turn`. Each `spell` has a baseline amount of `magica` that must be spent in order to cast the `spell`, and extra `magica` must be spent to overcome the `resistance` of the `defender`. Ambient `magica` is available to spend on the baseline cost of the `spell`.
 
 Every `spell` is either melee or ranged, which is determined by the target of the `spell`. If the distance to the target is greater than the `threat range` of the `creature`, the `spell` is ranged. The general process for resolving a `spellcast` `action` differs only in the first step amongst `spells`. A `spell` can either require a `spell attack` or a `spell save`.
 

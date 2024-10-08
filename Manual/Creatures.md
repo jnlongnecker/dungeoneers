@@ -6,6 +6,8 @@ In Dungeoneers, a `creature` is any living entity in the world. Often times, sys
 
 Every `creature` has 6 `attribute scores` that are used in a variety of scenarios. The specific scenarios are covered in their respective sections, but we'll talk a bit about each here.
 
+A typical human will have at least 1 in each `attribute score`. A trained `creature` will have 3 in that `score`, and a master will have 5. The pinnacle of mortal ability reaches its capacity at 7. Godly power reaches 10.
+
 ### Power
 
 The `power` score represents the physical strength and force output of a `creature`. The `power` score is used to determine things like `push` and `pierce` success.
