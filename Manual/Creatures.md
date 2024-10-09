@@ -90,10 +90,48 @@ While making an `attack`, a `creature` can elect to gain any number of `stress` 
 
 > Note that a `creature` does _not_ have to use `stress` to `hit` in order to use `stress` to `pierce`.
 
-Gaining `stress` in any way other than sustaining `wounds` will still accumulate that `stress` past the `creatures` capacity. If a `creature` accumulates `stress` past their maximum, there are some consequences for doing so. If you sustain a `wound` while you have more `stress` than you can handle, you take _twice as many `wounds`_. This takes place before any `wound` reduction effects a `creature` may have. Additionally, whenever you accumulate `stress`, you accumulate _twice as much `stress`_. Again, this takes place before any `stress` reduction effects a `creature` may have. If you accumulate `stress` past 3 times your maximum, you sustain 1 `wound` every time you sustain `stress` past this maximum.
+Gaining `stress` in any way other than sustaining `wounds` will still accumulate that `stress` past the `creatures` capacity. If a `creature` accumulates `stress` past their maximum, there are some consequences for doing so. If you sustain a `wound` while you have more `stress` than you can handle, you take _twice as many `wounds`_. This takes place before any `wound` reduction `effects` a `creature` may have. Additionally, whenever you accumulate `stress`, you accumulate _twice as much `stress`_. Again, this takes place before any `stress` reduction `effects` a `creature` may have. If you accumulate `stress` past 3 times your maximum, you sustain 1 `wound` every time you sustain `stress` past this maximum.
 
 > For example, Freya can handle up to 3 `stress`. Let us fast-forward to a point where Freya has accumulated 9 `stress`. Freya elects to gain 2 `stress` to roll and extra `2d4` to `hit`. Because Freya has exceeded her `stress` maximum, she accumulates twice as much `stress`, so she now has accumulated 13 `stress`. Again, because Freya has accumulated `stress` once she has reached 3 times her capacity, she sustains 1 `wound`. Since she is past her `stress` capacity, Freya sustains 2 `wounds`! If Freya doesn't have any `wound` reduction effects, the next `wound` she sustains will kill her!
 
 Going past a `creatures` `stress` capacity isn't purely negative, however. While a `creature` has accumulated `stress` past their capacity, they roll an extra `1d4` to their `pierce` rolls.
 
 Once `stress` has been accumulated, there are a few ways to relieve it. Certain `spells`, `potions` and other `items` are capable of relieving `stress`, as well as certain `creature` `abilities`. A `creature` may relieve a number of `stress` equal to their `endurance` at the end of a `short rest` and they relieve all of their accumulated `stress` at the end of a `long rest` or `full rest`.
+
+## Equipment Slots
+
+Each `creature` has a number of `equipment slots` based off of their anatomy. These are places on their body that they are able to `equip` `equipment`. The following are possible `equipment slots`:
+
+-   Head
+-   Body
+-   Feet
+-   Hands
+-   Back
+-   Wield
+-   Ring
+-   Hang
+-   Belt
+
+Every piece of `equipment` has an `equipment slot` that it occupies when it is `equipped`. While the anatomy of every `creature` will not be listed here, the most common player `creature` anatomy Humanoid will be listed:
+
+-   1 head
+-   1 body
+-   1 feet
+-   1 hands
+-   1 back
+-   2 wield
+-   1 neck
+-   2 ring
+-   1 belt
+
+As a rule of thumb, you can use the below guidelines to determine the `equipment slots` any `creature` may have, but note that `creatures` will either have their anatomy listed and use the `equipment slots` tied to that anatomy or will explicitly list their `equipment slots`.
+
+-   A `creature` only ever has 1 `body` slot
+-   A `creature` only ever has 1 `back` slot
+-   A `creature` has 1 `belt` slot per waist they have
+-   A `creature` has 1 `head` slot per head they have
+-   A `creature` has 1 `neck` slot per neck they have
+-   A `creature` has 1 `ring` slot per hand with fingers they have
+-   A `creature` has 1 `wield` slot per prehensile limb they have
+-   A `creature` has 1 `feet` slot every 2 feet they have
+-   A `creature` has 1 `hands` slot every 2 hands they have

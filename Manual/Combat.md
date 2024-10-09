@@ -15,6 +15,26 @@ Any `creature` is able to use a third resource, `reaction points`, during any `t
 
 During a `round`, the `creature` with the highest `initiative` takes their `turn` first. Once they are finished with their `turn`, the `creature` with the next-highest `initiative` takes their `turn`, and so on until the `creature` with the lowest `initiative` completes their `turn`. The `round` then completes and the next `round` begins, starting with the `creature` with the highest `initiative` taking their `turn` again.
 
+## Damage Types
+
+Whenever a `wound` is sustained, there is a `damage type` associated with it. This is important as some `damage types` are more or less effective on certain `creatures`.
+
+> For example, a skeleton won't be phased by a dagger because its `damage type` is piercing. However, a big maul smashes it to pieces with its bludgeoning `damage type`!
+
+Each `damage type` is part of a category, and all types exist under the "damage" category. The following is a list of all `damage types` and the categories they fall under:
+
+-   Damage
+    -   Physical
+        -   Bludgeoning (B)
+        -   Piercing (P)
+        -   Slashing (S)
+    -   Energy
+        -   Heat (H)
+        -   Cold (C)
+        -   Toxic (T)
+        -   Melt (M)
+        -   Erase (E)
+
 ## Actions
 
 There are many things that use up `action points`, and the specific cases are covered by the specific abilities that give the `action`. Some `actions` may take up multiple `action points`, many only use 1. However, there are some basic `actions` that are able to be taken by any `creature` unless otherwise specified:
