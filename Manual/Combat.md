@@ -86,7 +86,7 @@ When a `creature` decides to use an `action point` to make an `attack`, there ar
 
 To determine a `hit`, the `attacker` and `defender` make competing dice rolls. The `attacker` rolls a number of `hit dice` equal to their `prowess` score (plus any modifiers they may have) and the `defender` rolls a number of `dodge dice` equal to their `prowess` score (plus any modifiers they may have). The two rolls are compared: if the `attacker's` total is equal to or greater than the `defender's` total, the `attack` `hits` and any `effects` that take place on `hit` are immediately applied. If the `defender's` total exceeds the `attacker's`, the attack `misses` and any `effects` that take place on a `miss` are immediately applied. Finally, if the `attack` `hits`, the `attack` moves on to the next step to determine if the `attack` `pierces`.
 
-> For example, Suori makes an `attack` on a skeleton. The skeleton has no `abilities` improving its `dodge dice`, and has a `prowess` score of 1. Suori is making this attack with a warhammer, which gives her a `hit dice` of a d4. Suori has a `prowess` score of 2. This means that Suori rolls 2d4, and the skeleton rolls 1d4. Imagine that Suori rolls a 1 and a 3 and the skeleton rolls a 4; this would mean that Suori's total is 4 and the skeleton's total is also 4. Since Suori's total is not exceeded by the skeleton's, this means her `attack` `hits`!
+> For example, Suori makes an `attack` on a skeleton. The skeleton has no `modifications` improving its `dodge dice`, and has a `prowess` score of 1. Suori is making this attack with a warhammer, which gives her a `hit dice` of a d4. Suori has a `prowess` score of 2. This means that Suori rolls 2d4, and the skeleton rolls 1d4. Imagine that Suori rolls a 1 and a 3 and the skeleton rolls a 4; this would mean that Suori's total is 4 and the skeleton's total is also 4. Since Suori's total is not exceeded by the skeleton's, this means her `attack` `hits`!
 >
 > Now imagine that Suori rolls a 1 and a 2, and the skeleton rolls a 4. Since the skeleton's roll exceeds Suori's roll, her `attack` `misses`.
 
@@ -98,7 +98,7 @@ To determine a `pierce`, the `attacker` makes a dice roll and compares their tot
 
 #### Determining the Number of Wounds Inflicted
 
-When an `attack` `pierces`, the last step in the `attack` is to determine the number of `wounds` the `defender` will sustain. The `attacker` can inflict a number of `wounds` as marked with their `weapon`, plus any modifiers they might have. The `defender` then sustains that number of `wounds`, and all calculations for determining `wounds` sustained then apply.
+When an `attack` `pierces`, the last step in the `attack` is to determine the number of `wounds` the `defender` will sustain. The `attacker` can inflict a number of `wounds` as marked with their `weapon`, applying any `modifications` they might have. The `defender` then sustains that number of `wounds`, and all calculations for determining `wounds` sustained then apply.
 
 Once this step has been completed, the `attack` `action` concludes.
 
@@ -112,15 +112,15 @@ Once this step has been completed, the `attack` `action` concludes.
 
 #### Pierce Dice
 
-When an `attacker` `hits` with an `attack`, in order to see if that `attack` `pierces` the `defenders` `armor`, `pierce dice` are used. When rolling for a `pierce`, an `attacker` rolls a number of `pierce dice` equal to their `power` score. The total rolled is then compared to the `defenders` `armor value`; if this is at or above the `defenders` `armor value`, then the `attack` `pierces` and the `defender` sustains a number of `wounds` as marked on the `attackers` `weapon`. If there are any `wound` bonuses or penalties, the `attackers` modifiers are applied first, then the `defenders`.
+When an `attacker` `hits` with an `attack`, in order to see if that `attack` `pierces` the `defenders` `armor`, `pierce dice` are used. When rolling for a `pierce`, an `attacker` rolls a number of `pierce dice` equal to their `power` score. The total rolled is then compared to the `defenders` `armor value`; if this is at or above the `defenders` `armor value`, then the `attack` `pierces` and the `defender` sustains a number of `wounds` as marked on the `attackers` `weapon`. If there are any `wound` `effects`, the `attackers` `modifications` are applied first, then the `defenders`.
 
-> For example, lets say Freya is `attacking` a skeleton with a mace. Freya has 2 `power`, the mace has a `pierce die` of `1d6`, and the skeleton has an `armor value` of 4. Freya rolls `2d6`, and her total is a 4. Since this meets or exceeds the skeletons 4 `armor value`, Freya's `attack` `pierces`. The mace deals 1 `wound` on a `pierce`, so the skeleton sustains 1 `bludgeoning` `wound`. However, since the skeleton has the `vulnerable 1: bludgeoning` `trait`, the skeleton instead sustains 2 `wounds`!
+> For example, lets say Freya is `attacking` a skeleton with a mace. Freya has 2 `power`, the mace has a `pierce die` of a `d6`, and the skeleton has an `armor value` of 4. Freya rolls `2d6`, and her total is a 4. Since this meets or exceeds the skeletons 4 `armor value`, Freya's `attack` `pierces`. The mace deals 1 `wound` on a `pierce`, so the skeleton sustains 1 `bludgeoning` `wound`. However, since the skeleton has the `vulnerable 1: bludgeoning` `trait`, the skeleton instead sustains 2 `wounds`!
 >
-> Now imagine that same `skeleton` had exceeded its `stress` capacity. This causes the `skeleton` to sustain twice the number of `wounds`, but this effect occurs before any modifiers. The 1 `bludgeoning` `wound` becomes 2 `bludgeoning` `wounds` due to `stress`, and then the skeletons `vulnerable 1: bludgeoning` `trait` increases that to 3 `bludgeoning` `wounds`!
+> Now imagine that same `skeleton` had exceeded its `stress` capacity. This causes the `skeleton` to sustain twice the number of `wounds`, but this effect occurs before any `modifications`. The 1 `bludgeoning` `wound` becomes 2 `bludgeoning` `wounds` due to `stress`, and then the skeletons `vulnerable 1: bludgeoning` `trait` increases that to 3 `bludgeoning` `wounds`!
 
 #### Armor Value
 
-When a `creature` is `hit` by an `attack`, they do not immediately sustain any `wounds`. Instead, a roll must be made to determine if the `attack` `pierces`. Based on various natural resistances, `abilities`, `spells`, items and `armor`, a `creature` will have an `armor value` equal to the sum of all of these factors. The `attacker` must roll a `pierce dice` total that meets or exceeds the `defenders` `armor value`.
+When a `creature` is `hit` by an `attack`, they do not immediately sustain any `wounds`. Instead, a roll must be made to determine if the `attack` `pierces`. Based on various natural resistances, `abilities`, `spells`, and `items`, a `creature` will have an `armor value` equal to the sum of all of these factors. The `attacker` must roll a `pierce dice` total that meets or exceeds the `defenders` `armor value`.
 
 > For example, Ulfarmi has 0 `armor value` naturally. He has the `spell` mage armor cast on him, which gives him 3 `armor value`. If Ulfarmi equips leather armor, this gives him 1 `armor value`. In total, he would then have 4 `armor value`.
 

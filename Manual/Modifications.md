@@ -5,6 +5,7 @@ The baseline kit of all `creatures` is interesting enough, but doesn't quite cap
 -   `Abilities`
 -   `Traits`
 -   `Conditions`
+-   `Properties`
 -   `Effects`
 
 ## Abilities
@@ -68,11 +69,15 @@ A `condition` is a temporary `modification` that is applied usually by some `abi
 
 ### Defensive
 
-`Creatures` who are `defensive` may roll 1 additional `dodge die` when they are `defenders`.
+`Creatures` who are `defensive` can roll 1 extra `dodge die` when they are `defenders`.
 
 ### Prone
 
 `Creatures` who are `prone` can only roll a maximum of 1 `dodge die` when they are `defenders`. If a `prone` `creature` is a `defender` against a `spell save` that uses `prowess`, they may roll a maximum of 1 `spell save die`. `Creatures` who are ranged `attackers` against a `prone` `defender` may only roll a maximum of 1 `hit die` or `spell hit die`.
+
+## Properties
+
+`Properties` are `modifications` where the source is an `item`. Often times, the `modification` applies to the \*`item` and not the `creature` using the `item`, but can also enforce requirements for using the `item`. More information about `properties` is covered in the `equipment` section.
 
 ## Effects
 
