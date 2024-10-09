@@ -68,7 +68,7 @@ If a `creature` takes a `wound` past their maximum number of `wounds` they can s
 
 Taking a `wound` past a `creatures` maximum does not immediately kill that `creature`; a `creature` cannot sustain more `wounds` than their capacity. However, if a `creature` sustains a number of `wounds` above their maximum in a single `attack`, that `creature` is `dead`.
 
-> For example, if Alberich in our above scenario had already sustained 1 `wound`, taking 2 `wounds` would _not_ kill Alberich; he would still have to be `hit` by the second `attack`. However, if Alberich sustains 3 `wounds` at any time in a single `attack`, he will `die` instantly.
+> For example, if Alberich in our above scenario had already sustained 1 `wound`, taking 2 `wounds` would _not_ kill Alberich; he would still have to be `hit` by the second `attack`. However, if Alberich sustains 3 `wounds` at any time in a single `attack`, he will `die` instantly. Note that this only applies if the `creature` sustains that many actual `wounds`; if some are absorbed by `stress` they may not be outright killed. If Alberich can accumulate 1 `stress` when he sustains those 3 `wounds`, he only functionally sustains 2 `wounds` and wouldn't `die` instantly.
 
 Once a `wound` has been sustained, the only way to recover it is through magic or time. Certain `spells`and potions are capable of restoring `wounds`, and you recover all `wounds` at the end of a `full rest`.
 
@@ -86,7 +86,9 @@ A `creature` can gain `stress` in a number of ways. Firstly, if a `creature` wou
 
 > For example, if Freya can handle 3 `stress` but has already accumulated 2 `stress`, sustaining 2 `wounds` would accumulate 1 `wound` as `stress` and Freya would sustain the remaining 1 `wound` as a `wound`. This would leave Freya at 3 `stress` and 1 `wound`.
 
-While making an `attack`, a `creature` can elect to gain any number of `stress` in order to roll extra dice to `hit`. They must declare that they are doing this before any `hit dice` are rolled for the `attack`.
+While making an `attack`, a `creature` can elect to gain any number of `stress` in order to roll extra dice to `hit`. They must declare that they are doing this before any `hit dice` are rolled for the `attack`. A `creature` may also elect to do the same for any `pierce dice` they roll; they can elect to gain any amount of `stress` in order to roll extra `pierce dice` equal to the amount of `stress` they choose to accumulate. Again, they must do this before any `pierce dice` are rolled for the `attack`.
+
+> Note that a `creature` does _not_ have to use `stress` to `hit` in order to use `stress` to `pierce`.
 
 Gaining `stress` in any way other than sustaining `wounds` will still accumulate that `stress` past the `creatures` capacity. If a `creature` accumulates `stress` past their maximum, there are some consequences for doing so. If you sustain a `wound` while you have more `stress` than you can handle, you take _twice as many `wounds`_. This takes place before any `wound` reduction effects a `creature` may have. Additionally, whenever you accumulate `stress`, you accumulate _twice as much `stress`_. Again, this takes place before any `stress` reduction effects a `creature` may have. If you accumulate `stress` past 3 times your maximum, you sustain 1 `wound` every time you sustain `stress` past this maximum.
 
