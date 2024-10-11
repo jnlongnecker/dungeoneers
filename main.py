@@ -1,33 +1,5 @@
 import math
 
-class Roll:
-    def __init__(self, roll_string):
-        self.tokens = self.tokenize(roll_string)
-
-    def tokenize(self, roll_string):
-        tokens = []
-        curr_token = ''
-        for char in roll_string:
-            if char == ' ':
-                if curr_token != '':
-                    tokens.push(curr_token)
-                curr_token = ''
-            elif char == '+' or char == '-':
-                if curr_token != '':
-                    tokens.push(curr_token)
-                    curr_token = ''
-                tokens.push(char)
-            else:
-                curr_token = curr_token + char
-        return tokens
-                
-
-class DiceRoll:
-    def __init__(self, die_string):
-        parts = die_string.split('d')
-        self.die_num = int(parts[1])
-        self.die_count = max(1, int(parts[0]))
-
 def fac(num):
     if num == 1: return 1
     if num == 2: return 3
@@ -49,31 +21,151 @@ def exact_sum(r, n, s):
         sum = sum + pow(-1, k) * bin_coef(n, k) * bin_coef((r - s * k - 1), n - 1)
     return sum * a
 
-def unique_rolls(list):
-    num_unique = 0
-    found = {}
-    for i in list:
-        if i not in found:
-            found[i] = 0
-            num_unique = num_unique + 1
-    return num_unique
+def perc_format(percent):
+    return '%s' % round(100 * percent, 2) + '%'
 
-def get_chances(dice_roll):
-    end_idx = dice_roll.die_num * dice_roll.die_count
-    start_idx = dice_roll.die_count
-    probabilities = [0] * (end_idx + 1)
+def subtract_chances(chance1, chance2):
+    if len(chance1) == 0:
+        return chance2
+    if len(chance2) == 0:
+        return chance1
+    
+    new_max = len(chance1) - 2
+    result = [0] * (new_max + 1)
+    for i in range(0, len(chance1)):
+        if chance1[i] == 0:
+            continue
 
-    while end_idx >= start_idx:
-        r = start_idx
-        n = dice_roll.die_count
-        s = dice_roll.die_num
-        chance = exact_sum(r, n, s)
+        for j in range(0, len(chance2)):
+            if chance2[j] == 0:
+                continue
+            idx = max(i - j, 0)
+            result[idx] = result[idx] + (chance1[i] * chance2[j])
 
-        probabilities[end_idx] = chance
-        probabilities[start_idx] = chance
-        start_idx = start_idx + 1
-        end_idx = end_idx - 1
-    return probabilities
+    return result
+
+def add_chances(chance1, chance2):
+    if len(chance1) == 0:
+        return chance2
+    if len(chance2) == 0:
+        return chance1
+    
+    larger = []
+    smaller = []
+    if len(chance1) > len(chance2):
+        larger = chance1
+        smaller = chance2
+    else:
+        larger = chance2
+        smaller = chance1
+    
+    new_max = len(chance1) - 1 + len(chance2) - 1
+    result = [0] * (new_max + 1)
+    for i in range(0, len(larger)):
+        if larger[i] == 0:
+            continue
+
+        for j in range(0, len(smaller)):
+            if smaller[j] == 0:
+                continue
+            result[i + j] = result[i + j] + (larger[i] * smaller[j])
+
+    return result
+
+def shift_chances(chances, amount):
+    new_max = len(chances) - 1 + amount
+    result = [0] * (new_max + 1)
+    for i in range(0, len(chances)):
+        idx = max(i + amount, 0)
+        result[idx] = result[idx] + chances[i]
+    return result
+
+class DiceRoll:
+    def __init__(self, die_string):
+        parts = die_string.split('d')
+        self.die_num = int(parts[1])
+        self.die_count = max(1, int(parts[0]))
+        self.chances = self.calculate_chances()
+
+    def calculate_chances(self):
+        end_idx = self.die_num * self.die_count
+        start_idx = self.die_count
+        probabilities = [0] * (end_idx + 1)
+
+        while end_idx >= start_idx:
+            r = start_idx
+            n = self.die_count
+            s = self.die_num
+            chance = exact_sum(r, n, s)
+
+            probabilities[end_idx] = chance
+            probabilities[start_idx] = chance
+            start_idx = start_idx + 1
+            end_idx = end_idx - 1
+        return probabilities
+
+class Roll:
+    def __init__(self, roll_string):
+        self.tokenize(roll_string)
+        self.chances = self.calculate_chances()
+
+    def calculate_chances(self):
+        running_chance = []
+        operator = '+'
+        for token in self.tokens:
+            if type(token) is str:
+                operator = token
+                continue
+
+            if operator == '+':
+                if type(token) is DiceRoll:
+                    running_chance = add_chances(running_chance, token.chances)
+                if type(token) is int:
+                    running_chance = shift_chances(running_chance, token)
+            else:
+                if type(token) is DiceRoll:
+                    running_chance = subtract_chances(running_chance, token.chances)
+                if type(token) is int:
+                    running_chance = shift_chances(running_chance, -1 * token)
+
+        return running_chance
+
+    def tokenize(self, roll_string):
+        self.tokens = []
+        curr_token = ''
+        for char in roll_string:
+            if char == ' ':
+                if curr_token != '':
+                    self.add_token(curr_token)
+                curr_token = ''
+            elif char == '+' or char == '-':
+                if curr_token != '':
+                    self.add_token(curr_token)
+                    curr_token = ''
+                self.add_token(char)
+            else:
+                curr_token = curr_token + char
+        self.add_token(curr_token)
+    
+    def add_token(self, token):
+        is_dice = token.find('d') != -1
+        is_modifier = token.isnumeric()
+        if is_dice:
+            self.tokens.append(DiceRoll(token))
+        elif is_modifier:
+            self.tokens.append(int(token))
+        else:
+            self.tokens.append(token)
+
+
+class Creature:
+    def __init__(self, prowess, power, av, hit_die, pierce_die, dodge_die):
+        self.prowess = prowess
+        self.power = power
+        self.av = av
+        self.hit_die = hit_die
+        self.pierce_die = pierce_die
+        self.dodge_die = dodge_die
 
 def probability_at_least(probs, num):
     if num >= len(probs): return 0
@@ -95,15 +187,15 @@ def probability_at_most(probs, num):
 
 def print_probabilities(roll_string):
     roll = DiceRoll(roll_string)
-    probabilities = get_chances(roll)
+    probabilities = roll.chances
     for i in range(0, len(probabilities)):
         num = round(100 * probabilities[i], 1)
         print("Probability of %s: %s" % (i, num))
 
-def print_chance_of(dice_string, operator, desired_num, modifier=0):
-    dice_roll = DiceRoll(dice_string)
-    probs = get_chances(dice_roll)
-    real_num = desired_num - modifier
+def calculate_chance_of(dice_string, operator, desired_num):
+    dice_roll = Roll(dice_string)
+    probs = dice_roll.chances
+    real_num = desired_num
     chance = 0
     if operator == '<':
         chance = probability_at_most(probs, real_num - 1)
@@ -113,14 +205,17 @@ def print_chance_of(dice_string, operator, desired_num, modifier=0):
         chance = probability_at_least(probs, real_num + 1)
     elif operator == '>=':
         chance = probability_at_least(probs, real_num)
+    return chance
 
+def print_chance_of(dice_string, operator, desired_num):
+    chance = calculate_chance_of(dice_string, operator, desired_num)
 
     pretty_chance = round(100 * chance, 2)
-    print('Probability of rolling %s + %s %s %s: %s' % (dice_string, modifier, operator, desired_num, pretty_chance) + '%')
+    print('Probability of rolling %s %s %s: %s' % (dice_string, operator, desired_num, pretty_chance) + '%')
 
 def calculate_improvement(before_string, after_string):
-    before_probs = get_chances(DiceRoll(before_string))
-    after_probs = get_chances(DiceRoll(after_string))
+    before_probs = Roll(before_string)
+    after_probs = Roll(after_string)
     end = min(len(before_probs), len(after_probs))
     longest = max(len(before_probs), len(after_probs))
     changes = [0] * longest
@@ -137,8 +232,8 @@ def print_improvement(before_string, after_string):
         print('Chance to roll %s changed by %s' % (i, pretty_roll))
 
 def calculate_chance_to_beat(my_roll, their_roll, must_beat):
-    my_probs = get_chances(DiceRoll(my_roll))
-    their_probs = get_chances(DiceRoll(their_roll))
+    my_probs = Roll(my_roll).chances
+    their_probs = Roll(their_roll).chances
     meets = 1 if must_beat else 0
 
     chances_i_win = 0
@@ -148,6 +243,34 @@ def calculate_chance_to_beat(my_roll, their_roll, must_beat):
         chances_i_win = chances_i_win + (chance_i_rolled * chance_they_rolled)
     return chances_i_win
 
+def calculate_chance_to_wound(me, target):
+    my_hit = '%s%s' % (me.prowess, me.hit_die)
+    my_pierce = '%s%s' % (me.power, me.pierce_die)
+    target_dodge = '%s%s' % (target.prowess, target.dodge_die)
+    target_av = target.av
+
+    hit_chance = calculate_chance_to_beat(my_hit, target_dodge, False)
+    pierce_chance = calculate_chance_of(my_pierce, '>=', target_av)
+
+    print('Hit chance of %s vs %s: %s' % (my_hit, target_dodge, perc_format(hit_chance)))
+    print('Pierce chance of %s vs %s: %s' % (my_pierce, target_av, perc_format(pierce_chance)))
+
+    return hit_chance * pierce_chance
+
+
 # print_improvement('2d4', '4d4')
 # print(calculate_chance_to_beat('4d6', '6d4', must_beat=False))
-print_chance_of('2d10', '>=', 15)
+# print_chance_of('2d8', '>=', 10)
+
+me = Creature(power=2, prowess=2, av=7, hit_die='d4', pierce_die='d8', dodge_die='d4')
+target = Creature(power=2, prowess=1, av=5, hit_die='d4', pierce_die='d4', dodge_die='d4')
+
+print('== My Stats ==')
+chance = calculate_chance_to_wound(me, target)
+
+print('Chance to wound: %s' % perc_format(chance))
+
+print('\n== Enemy Stats ==')
+chance = calculate_chance_to_wound(target, me)
+
+print('Chance to wound: %s' % perc_format(chance))

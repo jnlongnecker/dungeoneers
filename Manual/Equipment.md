@@ -6,7 +6,7 @@ Listed here are `items` that may confer a number of benefits to the `creature` t
 
 ## Weapons
 
-A weapon is an `item` that is used to make `attacks`. When a `creature` makes an `attack` `action`, the weapon they wield determines a variety of statistics that are used during the `attack`. A `creature` has `weapon ranks` with certain weapon categories. If a `creature` does not have the proper `weapon rank` for the weapon they are `wielding`, the weapon is instead treated as an improvised weapon. This applies to magical weapons as well as mundane ones. Unless otherwise specified, a weapon must be `equipped` in a `wield` `equipment slot`.
+A weapon is an `item` that is used to make `attacks`. When a `creature` makes an `attack` `action`, the weapon they wield determines a variety of statistics that are used during the `attack`. A `creature` has `weapon ranks` with certain weapon categories. If a `creature` does not have the proper `weapon rank` for the weapon they have `equipped`, the weapon is instead treated as an improvised weapon. This applies to magical weapons as well as mundane ones. Unless otherwise specified, a weapon must be `equipped` in a `wield` `equipment slot`.
 
 | Weapon Name  | Hit Dice | Pierce Dice | Wounds   | Rank       | Properties                                 |
 | ------------ | -------- | ----------- | -------- | ---------- | ------------------------------------------ |
@@ -62,10 +62,10 @@ All medium armor has the `power 2` property innately, and all heavy armor has th
 | Armor Name     | Category     | Spell Resistance (SR) | Armor Value (AV) | Equipment Slot | Properties  |
 | -------------- | ------------ | --------------------- | ---------------- | -------------- | ----------- |
 | Common Clothes | Clothing     | --                    | --               | Body           |             |
-| Mage Robes     | Clothing     | 2                     | --               | Body           | Spellboon 1 |
-| Leather        | Light Armor  | 3                     | 1                | Body           | Spellbane 1 |
-| Gambeson       | Light Armor  | 4                     | 2                | Body           | Spellbane 1 |
-| Drakehide      | Light Armor  | 7                     | 2                | Body           | Spellbane 5 |
+| Mage Robes     | Clothing     | 4                     | --               | Body           | Spellboon 1 |
+| Leather        | Light Armor  | 6                     | 1                | Body           | Spellbane 1 |
+| Gambeson       | Light Armor  | 7                     | 2                | Body           | Spellbane 1 |
+| Drakehide      | Light Armor  | 10                    | 2                | Body           | Spellbane 5 |
 | Brigandine     | Medium Armor | --                    | 4                | Body           | Spellbane 2 |
 | Laminar        | Medium Armor | --                    | 5                | Body           | Spellbane 2 |
 | Hauberk        | Heavy Armor  | --                    | 7                | Body           | Spellbane 3 |
@@ -73,9 +73,9 @@ All medium armor has the `power 2` property innately, and all heavy armor has th
 | Buckler        | Shield       | --                    | 1                | Wield          |             |
 | Kite Shield    | Shield       | --                    | 2                | Wield          | Spellbane 1 |
 | Tower Shield   | Shield       | --                    | 3                | Wield          | Spellbane 2 |
-| Gloves         | Light Armor  | 1                     | 1                | Hand           | Spellbane 2 |
+| Gloves         | Light Armor  | 3                     | 1                | Hand           | Spellbane 2 |
 | Gauntlet       | Heavy Armor  | --                    | 2                | Hand           | Spellbane 4 |
-| Boots          | Light Armor  | --                    | 1                | Feet           |             |
+| Boots          | Light Armor  | 2                     | 1                | Feet           |             |
 | Greaves        | Heavy Armor  | --                    | 2                | Feet           | Spellbane 1 |
 | Spangenhelm    | Light Armor  | --                    | 1                | Head           | Spellbane 1 |
 | Zischagge      | Medium Armor | --                    | 2                | Head           | Spellbane 2 |
