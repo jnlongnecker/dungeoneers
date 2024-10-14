@@ -168,7 +168,7 @@ A `defender` may elect to intentionally fail their `spell save` if they so choos
 
 #### Overcoming Spell Resistance
 
-Each `creature` has a `spell resistance` score that the `attacker` must overcome for the `spell` to take `effect`. The `attacker` rolls `spell pierce` dice equal to the _extra_ `magica` they choose to spend on the `spell` plus any `effects` that might alter this. The size of the `spell pierce` dice begins at a d4, but can change based on the `spell` score and other `abilities`. If the total rolled by the `attacker` is greater than or equal to the `defender's` `spell resistance`, the `spell` takes `effect`.
+Each `creature` has a `spell resistance` score that the `attacker` must overcome for the `spell` to take `effect`. The `attacker` rolls `spell pierce` dice equal to the _extra_ `magica` they choose to spend on the `spell` plus any `effects` that might alter this. The size of the `spell pierce` dice begins at a d4, but can change based on the `spell` score and other `abilities`. If the total rolled by the `attacker` is greater than or equal to the `defender's` `spell resistance`, the `spell` `pierces` and takes `effect`.
 
 If the `spell` inflicts an `effect`, that `effect` takes place. If the `spell` inflicts `wounds`, that number of `wounds` are inflicted. A `creature` may elect to allow the `spell` through their `spell resistance` if they choose.
 
@@ -192,3 +192,39 @@ A `creature` is always `facing` a particular direction. Whenever `moving`, `read
 While a `creature` is a `defender` and their `attacker` is positioned opposite of their `facing` direction, they have a penalty to their `dodge dice` equal to 1d8.
 
 > Note the wording here! A `creature` can be a `defender` in multiple scenarios, like `attacks` and `spellcasts`!
+
+## Critical Hits
+
+There are two variations for `critical hits`: a general rule and a specific rule. The general rule for `critical hits` is a rule that is _always_ in play, while the specific rule only applies for specific contexts such as using a particular weapon in a certain way. Whenever a `critical hit` is determined to have occurred, the number of `wounds` listed on the `spell` or weapon being used to deliver the `critical hit` is doubled. For `spells` that do not deal `wounds`, there is no benefit.
+
+> Note the specific wording! Only the raw number listed is doubled, so this takes place before any `modifications` to the number of `wounds` sustained.
+
+If a `critical hit` is determined by any of the rules that apply to the circumstance, there is no need to determine if any of the other applicable rules would also give a `critical hit`. In other words, `critical hits` are binary: it either is or is not a `critical hit`. There is no "stacking" of `critical hits`.
+
+If an `attack` or a `spellcast` is a `critical hit`, it automatically `hits` and `pierces` (or if the `spell` requires a `spell save`, the `spell save` is automatically failed).
+
+### General Rule
+
+For `attacks`, if the `pierce dice` total rolled is equal to or greater than _twice_ the `defenders` `armor value`, a `critical hit` occurs. For `spellcasts`, if the `spell pierce dice` total rolled is equal to or greater than _twice_ the `defenders` `spell resistance`, a `critical hit` occurs.
+
+### Specific Rule - Blades & Bows
+
+An `attack` with a blade or bow type weapon becomes a `critical hit` if the `hit dice` total rolled is equal to or greater than the _maximum possible_ `dodge dice` total than can be rolled by the `defender`.
+
+> For example, a `creature` has a `dodge die` of d4 and a `prowess` of 1. Their maximum possible `dodge die` total is 4. If Suori rolls an 4 or above on her `hit dice` total with her shortsword, her `attack` is a `critical hit`.
+
+### Specific Rule - Cudgels & Axes
+
+An `attack` with a cudgel or axe type weapon becomes a `critical hit` if the `attackers` `power` score is greater than or equal to the `dodge die` total rolled by the `defender`.
+
+> For example let's imagine a skeleton is being `attacked` by Suori, who is wielding a warhammer. Suori has a `power` score of 3, and the skeleton's `dodge die` total is a 2. In this instance, Suori's `attack` is a `critical hit`!
+
+### Specific Rule - Lances
+
+An `attack` with a lance type weapon becomes a `critical hit` if at least 2 of the `hit dice` rolled their maximum number.
+
+> For example, if Freya `attacks` with a spear, the spear has a `hit die` of d6. If Freya rolls at least two 6's for her `hit dice` total, her `attack` is a `critical hit`. This means that lances with _lower_ `hit dice` are actually more likely to get a `critical hit`! Which do you go for, better chances to `hit` but you must `pierce` OR try for a `critical hit` and automatically `pierce`?
+
+### Specific Rule - Spells
+
+A `critical hit` with any kind of `spell` can be achieved if the `spell save dice` or `spell attack dice` rolled total of the `attacker` is greater than the maximum possible `spell save dice` or `dodge dice` total of the `defender`.

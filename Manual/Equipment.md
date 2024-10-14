@@ -28,13 +28,14 @@ A weapon is an `item` that is used to make `attacks`. When a `creature` makes an
 | Battleaxe    | d4       | d6          | 2 Slash. | Axe (D)    |                                            |
 | Bardiche     | d6       | d6          | 2 Slash. | Axe (C)    | Two-handed                                 |
 | Halberd      | d8       | d8          | 2 Slash. | Axe (B)    | Two-handed, Threat + 1                     |
-| Short Spear  | d6       | d4          | 1 Pierc. | Lance (E)  |                                            |
+| Spear        | d6       | d4          | 1 Pierc. | Lance (E)  |                                            |
 | Javelin      | d6       | d6          | 1 Pierc. | Lance (D)  | Toss                                       |
 | Kontos       | d8       | d6          | 2 Pierc. | Lance (C)  |                                            |
 | Partisan     | d10      | d6          | 2 Pierc. | Lance (B)  | Two-handed, Threat + 1                     |
 | Hunting Bow  | d4       | d4          | 1 Pierc. | Bow (E)    | Two-handed, Ammunition (Arrow), Range (5)  |
 | Short Bow    | d6       | d4          | 1 Pierc. | Bow (D)    | Two-handed, Ammunition (Arrow), Range (8)  |
 | Long Bow     | d8       | d4          | 1 Pierc. | Bow (C)    | Two-handed, Ammunition (Arrow), Range (10) |
+| Sling        | d4       | d8          | 1 Bludg. | Bow (C)    | Ammunition (Shot), Range (8)               |
 | Crossbow     | d6       | d6          | 1 Pierc. | Bow (C)    | Two-handed, Ammunition (Bolt), Range (10)  |
 | War Bow      | d8       | d6          | 1 Pierc. | Bow (B)    | Two-handed, Ammunition (Arrow), Range (12) |
 

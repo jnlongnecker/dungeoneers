@@ -47,3 +47,21 @@ Dice help greatly to this end. The mathematics behind dice statistics can get pr
 The third lesson is that while complex formulas are great for balance, they don't work in TTRPGs because the math is done by the player. Not only is it just not feasible for players to be capable of calculating some of the more complicated formulas you can find in video games in their heads (or even by hand with pen and paper), but it's also not much fun for the general public. As you increase complexity and math necessary to play, you start to restrict your audience and general appeal.
 
 The solution once again is to reach for dice. If all the math works by adding up dice faces and comparing results to other dice face additions (or better yet, static numbers) then this is easy enough for people to be expected to do on the fly and in their heads. Better yet, people _love_ rolling big numbers, and more dice give more opportunities for big numbers to occur. Lets imagine our 2d6 vs 3d4 example from before; each side has a 50% chance of success. However, for both rollers it doesn't _feel_ like they are flipping a coin. Both side feels in control of their result and there is triumph in rolling 12 vs 9 _and_ triumph in rolling 4 vs 3 but both successes feel wildly different. Best of all, each side only had to add up 2-3 numbers between 1-6!
+
+## Rules Philosophy
+
+In many TTRPGs, there are 3 core components or "scenes" to the game, most commonly referred to as pillars of gameplay. These 3 pillars are usually the following; in some variation and no particular order:
+
+-   Combat
+-   Exploration
+-   Social Interaction
+
+Additionally, many TTRPG systems can be categorized based on the amount of rules they have; systems can be rules-light or rules-heavy (also referred to as "crunchy"). Dungeoneers is a rules-heavy system that follows the typical 3 pillars of gameplay.
+
+Some may have an intrinsic "weight" attached to not only a certain amount of rules but also systems that favor (or _don't_ favor) a particular pillar of gameplay. Just because Dungeoneers has chosen to be a rules-heavy system does _not_ mean it's because we believe rules-heavy systems are superior; in fact these systems can absolutely benefit from taking inspiration from rules-light systems. We believe it's important to identify what kind of system that is attempting to be made as not to create a rules-heavy system that attempts to masquerade as a rules-light system and wear the label proudly. This lets players make better-informed decisions about whether or not they will like the game before committing to reading the words necessary to understand the game.
+
+Of the 3 pillars, Dungeoneers focuses on the combat pillar. As a rules-heavy system, however, we believe that it is important to still have rules for the other 2 pillars. The intention here is not to require DMs and players to have to learn more rules and "complicate" these parts of the game. Instead, it is there to give guidance, structure, and (most importantly) _power_ in the hands of the players to say that there are certain things they absolutely can do.
+
+If a game table feels that these rules get in the way of role play or "bogs down" the game, then these rules by all means should be ignored. These rules have a secondary purpose, however, and this secondary purpose is married to the reason Dungeoneers chooses to be a rules-heavy system that focuses on combat: Dungeoneers is also a video game.
+
+Unfortunately (or fortunately, depending on who you ask), computers can not yet perform tasks of imagination and improvise to the same degree as a human can. In the context of a video game, everything that the player _can_ do has to be well-defined or else the player simply cannot do it.
