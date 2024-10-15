@@ -22,7 +22,7 @@ There are more parts, but by now we have enough of the nomenclature down to figu
 
 And find our total of the roll to be 15.
 
-When a roll is made, there is some obstruction to the desired task being completed. After all, that's why we need the roll! This obstruction is represented by the `target` of the roll. In order for the roll to succeed, the total must either meet or exceed the `target`.
+When a roll is made, there is some obstruction to the desired task being completed. After all, that's why we need the roll! This obstruction is represented by the `target` of the roll. In order for the roll to succeed, the total must either meet or exceed the `target`. Any `creature` is allowed to intentionally fail a roll that they are called to be a part of for any reason.
 
 ## Types of Rolls
 

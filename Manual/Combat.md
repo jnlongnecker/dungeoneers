@@ -52,17 +52,21 @@ A `creature` may make the `ready` `action` on their turn to delay the start of a
 
 ### Grapple
 
-A `creature` may use 1 `action point` to use the `grapple` `action`. A `grapple` may only be used on a `creature` they `threaten`. In order to see if a `grapple` succeeds, the `attacker` must roll `hit dice` and the `defender` must roll `dodge dice`. The `defender` may use either their `prowess` score or their `power` score to determine the number of `dodge dice` they roll while the `attacker` must use their `power` score. The total of the `attacker` must be greater than or equal to the total of the `defender` in order for the `grapple` to succeed. If the `grapple` succeeds, the `attacker` gains the `grappling` `condition` and the `defender` gains the `grappled` `condition`.
+A `creature` may use 1 `action point` to use the `grapple` `action`. A `grapple` may only be used on a `creature` they `threaten`. In order to see if a `grapple` succeeds, roll a
 
-The `grappled` `condition` sets a `creature's` `movement points` to 0, and they can no longer gain any `movement points`. The `grappling` condition halves the amount of `movement points` the `creature` has and halves the amount of `movement points` that `creature` gains. When a `grappling` `creature` uses a `movement action`, the `creature` they are `grappling` immediately performs the same `movement action`.
+`test`: `power` [`grappling`] vs (`prowess`|`power`) [`dodging`].
 
-If the `grappling` `creature` takes a `movement action` while on _another_ `creatures` `turn`, the `grapple` immediately ends and the `grappling` and `grappled` `conditions` are removed from their respective `creatures`.
+If the `grapple` succeeds, the `attacker` gains the `grappling` `condition` and the `defender` gains the `grappled` `condition`. The `grappled` `condition` forces all of a `creatures` `travel` speeds to be no greater than 0. The `grappling` condition halves all of the `travel` speeds the `creature` has. When a `grappling` `creature` uses the `move` `action`, the `creature` they are `grappling` is `forced` the same distance using the same `travel` speed as the `grappler`.
+
+If the `grappling` `creature` is `forced`, the `grapple` immediately ends and the `grappling` and `grappled` `conditions` are removed from their respective `creatures`.
 
 ### Push
 
-A `creature` may use 1 `action point` to use the `push` `action`. A `push` may only be used on a `creature` they `threaten`. In order to see if a `push` succeeds, the `attacker` must roll `hit dice` and the `defender` must roll `dodge dice`. The `defender` may use either their `prowess` score or their `power` score to determine the number of `dodge dice` they roll while the `attacker` must use their `power` score. The total of the `attacker` must be greater than or equal to the total of the `defender` in order for the `push` to succeed.
+A `creature` may use 1 `action point` to use the `push` `action`. A `push` may only be used on a `creature` they `threaten`. In order to see if a `push` succeeds, roll a
 
-If the `push` succeeds, the `defender` `moves` 1 tile in the direction of the `facing` direction of the `attacker`.
+`test`: `power` [`grappling`] vs (`prowess`|`power`) [`dodging`].
+
+If the `push` succeeds, the `defender` is `forced` Ground(1) in a direction of the `attackers` choosing.
 
 ### Strike
 
