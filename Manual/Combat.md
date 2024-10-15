@@ -2,16 +2,11 @@
 
 As a Dungeoneer, you will encounter many foes that stand in your way to your inevitable goal. Some may be able to be avoided, but you will ultimately come to blows with many `creatures`. You should become familiar with combat mechanics in order to overcome these obstacles and complete your mission. When `creatures` come to blows, the passage of time becomes more strictly represented. All of time is represented in the following way, but it is typically only important to track this during time-sensitive moments like combat.
 
-A time span of 5 seconds is represented by a `round`. During a `round`, each `creature` has a `turn` where they are allowed to use certain resources in order to interact with the world. The order of each `creature's` `turn` is decided at the start of a `round` using the `creature's` `initiative`. If two or more `creatures` have the same `initiative`, roll a d10 to break the tie, re-rolling if necessary.
+A time span of 6 seconds is represented by a `round`. During a `round`, each `creature` has a `turn` where they are allowed to use certain resources in order to interact with the world. The order of each `creature's` `turn` is decided at the start of a `round` using the `creature's` `initiative`. If two or more `creatures` have the same `initiative`, roll a d10 to break the tie, re-rolling if necessary.
 
 > Re-rolling `initiative` every `round` can be cumbersome. Feel free to only roll `initiative` once if you have ties and stick to that number until it's no longer necessary to strictly track time in `rounds`.
 
-During a `turn`, the `creature` that owns the `turn` has 2 resources they are able to use:
-
--   `Action Points`
--   `Movement Points`
-
-Any `creature` is able to use a third resource, `reaction points`, during any `turn` (not just the one the `creature` owns). `Action points` are used to take `actions`, which are the vast majority of all interactions with the world. A `creature` will use their `action points` to perform the bulk of their impact during their `turn`. A `creature` may also use `movement points` to perform basic position transformations, like standing up or moving in a direction. `Reaction points` are used to take `reactions`, which are special, quick motions done in response to some trigger.
+During a `turn`, the `creature` that owns the `turn` has 3 `action points` that they can use to perform tasks called `actions`, which are the vast majority of all interactions with the world. `Creatures` also have 1 `reaction point` that they can use to perform tasks called `reactions`, which are special, quick motions done in response to some trigger. A `creature` can use `reaction points`, during any `turn` (not just the one the `creature` owns), and regains their `reaction points` at the start of each `round`.
 
 During a `round`, the `creature` with the highest `initiative` takes their `turn` first. Once they are finished with their `turn`, the `creature` with the next-highest `initiative` takes their `turn`, and so on until the `creature` with the lowest `initiative` completes their `turn`. The `round` then completes and the next `round` begins, starting with the `creature` with the highest `initiative` taking their `turn` again.
 
@@ -37,34 +32,23 @@ Each `damage type` is part of a category, and all types exist under the "damage"
 
 ## Actions
 
-There are many things that use up `action points`, and the specific cases are covered by the specific abilities that give the `action`. Some `actions` may take up multiple `action points`, many only use 1. However, there are some basic `actions` that are able to be taken by any `creature` unless otherwise specified:
+There are many things that use up `action points`, and the specific cases are covered by the specific abilities that give the `action`. Some `actions` may take up multiple `action points`, many only use 1. However, there are some basic `actions` that are able to be taken by any `creature` unless otherwise specified.
 
--   Disengage
--   Defend
--   Sprint
--   Grapple
--   Push
--   Ready
--   Attack
--   Spellcast
+### Move
 
-### Disengage
+A `creature` may use 1 `action point` to use the `move` `action` to choose a `travel` speed and move up to a number of tiles equal to that `travel` speed.
 
-A `creature` that `moves` outside of the `threat range` of another `creature` can be subject to an `opportune strike`. If a `creature` wishes to avoid this, that `creature` must use 1 `action point` to use the `disengage` `action`. The `disengage` `action` removes the `threatened` `condition` from themselves.
-
-> Keep in mind that the `threatened` `condition` is recalculated after every `move`. It's possible to `disengage` then `move` and be `threatened` again! If that `creature` has multiple `movement points` and they use another `movement point` to move outside of the `threat range` of the second `creature`, they can still be subject to an `opportune strike`.
-
-If a `creature` has the `grappled` `condition`, the `disengage` `action` instead attempts to break the `grapple`. The `defender` rolls `dodge dice` equal to their choice of their `power` or `prowess` score and the `attacker` rolls `hit dice` equal to their `power` score. If the `defender's` total is greater than or equal to the `attacker's` total, the `grappled` `condition` is removed from the `defender` and the `grappling` `condition` is removed from the `attacker`.
-
-> Note this is one of the rare instances where the `defender's` total must be equal to or greater than the `attacker's` total; this gives the edge to the `defender` to break the `grapple`!
+> For example, a `creature` may have 2 `travel` speeds: Ground (3) and Fly (4). That `creature` may take the `move` `action` and choose one of their `travel` speeds, either Ground (3) or Fly (4). If they choose Fly(4), they may fly up to 4 tiles. If they choose Ground (3), they may move along the ground 3 tiles.
 
 ### Defend
 
-A `creature` may use 1 `action point` to use the `defend` `action` to give themselves the `defensive` `condition` until the start of their next `turn`. A `creature` with the `defending` `condition` can roll 1 extra `dodge die` when they are `defenders`.
+A `creature` may use 1 `action point` to use the `defend` `action` to give themselves the `defensive` `condition` until the start of their next `turn`. A `creature` with the `defensive` `condition` can roll 1 extra `dodge die` when they are `defenders`.
 
-### Sprint
+### Ready
 
-A `creature` may use 1 `action point` to use the `sprint` `action` to give themselves the `sprinting` `condition` until the start of their next `turn`. A `creature` with the `sprinting` `condition` has 2 extra base `movement points`.
+A `creature` may make the `ready` `action` on their turn to delay the start of an `action` they can use. The chosen `action` is called the `readied` `action`. A `creature` must spend an equal amount of `action points` to `ready` an `action` as they would to take that `action` normally, but they must also use a `reaction point` to begin taking that `action`. When the `ready` `action` is taken, the `creature` must specify which `turn` they trigger their `readied` `action` and if it occurs just before that `turn` begins or just after that `turn` ends.
+
+> For example, Suori is next to Ulfarmi and they are in combat with a skeleton. Suori goes first, the skeleton second and Ulfarmi last, and Suori knows that Ulfarmi will want to move outside of the skeleton's `threat range`. However, she cannot prevent the skeleton from closing that distance since her `turn` comes before the skeleton's. Suori takes the `ready` `action` and `readies` the `push` `action`, spending 1 `action point` and specifying that it will take place before the start of Ulfarmi's `turn`. Suori's `turn` ends and the skeleton `moves` towards Ulfarmi and deals a mighty blow! The skeleton's `turn` ends, and before Ulfarmi's `turn` begins, Suori spends a `reaction point` to trigger her `readied` `action` and `pushes` the skelton away. This now gives Ulfarmi the space he needs to run away!
 
 ### Grapple
 
@@ -80,13 +64,7 @@ A `creature` may use 1 `action point` to use the `push` `action`. A `push` may o
 
 If the `push` succeeds, the `defender` `moves` 1 tile in the direction of the `facing` direction of the `attacker`.
 
-### Ready
-
-A `creature` may make the `ready` `action` on their turn to delay the start of an `action` they can use. The chosen `action` is called the `readied` `action`. A `creature` must spend an equal amount of `action points` to `ready` an `action` as they would to take that `action` normally, but they must also use a `reaction point` to begin taking that `action`. When the `ready` `action` is taken, the `creature` must specify which `turn` they trigger their `readied` `action` and if it occurs just before that `turn` begins or just after that `turn` ends.
-
-> For example, Suori is next to Ulfarmi and they are in combat with a skeleton. Suori goes first, the skeleton second and Ulfarmi last, and Suori knows that Ulfarmi will want to move outside of the skeleton's `threat range`. However, she cannot prevent the skeleton from closing that distance since her `turn` comes before the skeleton's. Suori takes the `ready` `action` and `readies` the `push` `action`, spending 1 `action point` and specifying that it will take place before the start of Ulfarmi's `turn`. Suori's `turn` ends and the skeleton `moves` towards Ulfarmi and deals a mighty blow! The skeleton's `turn` ends, and before Ulfarmi's `turn` begins, Suori spends a `reaction point` to trigger her `readied` `action` and `pushes` the skelton away. This now gives Ulfarmi the space he needs to run away!
-
-### Attack
+### Strike
 
 An `attack` is an `action` that constitutes striking at a `creature` with some sort of traditional `weapon`. This `weapon` could be a club, a dagger, a magical staff, or even a bare fist! During an `attack`, the `attacker` is the `creature` making the `attack` and the `defender` is the `creature` subject to the `attack`. An `attack` `action` costs 1 `action point`. A `creature` may only use the `attack` `action` on a `creature` they `threaten`.
 

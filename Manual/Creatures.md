@@ -30,7 +30,7 @@ The `spell` score represents the talent with magic a `creature` has. The `spell`
 
 ### Mind
 
-The `mind` score represents the magical capacity of a `creature`. The `mind` score is used to determine things like `spell save` difficulty and `magica` capacity.
+The `mind` score represents the mental capacity of a `creature`. The `mind` score is used to determine things like `spell save` difficulty and `magica` capacity.
 
 ## Threat Range
 
