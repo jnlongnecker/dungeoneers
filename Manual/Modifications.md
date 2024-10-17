@@ -65,7 +65,7 @@ A `creature` within the `threat range` of another `creature` that is hostile to 
 
 ### Defensive
 
-`Creatures` who are `defensive` can roll an extra 2d4 as `defenders` to `tests` made to `hit`.
+`Creatures` who are `defensive` can roll an extra `dodging` die as a `defender`.
 
 ### Prone
 
