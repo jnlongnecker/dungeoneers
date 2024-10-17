@@ -53,3 +53,27 @@ _In order to see if a `grapple` succeeds, roll a_
 _`test`: `power` [`grappling`] vs (`prowess`|`power`) [`dodging`]_
 
 The `attacker` rolls a number of dice equal to their `power` score, the size of which is determined by their `grappling` `proficiency` level (more on that in another section). This is compared against the `defenders` roll; they roll a number of dice equal to their choice of their `prowess` or `power` score, the size of which is determined by their `dodging` `proficiency`.
+
+## Additional Dice
+
+Certain `modifications` will cause a `creature` to gain or lose dice to certain rolls. When speaking about the modifications to the dice to roll, the which dice roll is specified by the `modification`. For example, let's take a look at the `stress`:
+
+_While making a `strike`, a `creature` can elect to gain any number of `stress` in order to roll extra `striking` dice to `hit`._
+
+In order to fully understand, we'll take a look at the `test` this refers to:
+
+_`test`: `agility`[`striking`] + 1[`hit die`] vs `agility`[`dodging`]_
+
+Since the excerpt about `stress` specifies you roll extra `striking` dice, this means that your `agility` score sets the base amount of `striking` dice you roll and you gain `stress` to increase that amount by the `stress` you gain. Since the `1[hit die]` component is _not_ referenced, we still only roll 1[`hit die`]. If our `agility` is 2 and we use 1 `stress` for the `strike`, we would roll a total of 3 `striking` dice.
+
+There can also be dice rolls that don't modify the amount or size of dice rolled at base, but instead _add on_ to the dice already being rolled. Again, taking `stress` as an example:
+
+_While a `creature` has accumulated `stress` past their capacity, they roll an extra 1d4 to their `check` to `pierce`._
+
+And again, the `check` in reference:
+
+_`check`: `strength`[`pierce die`] vs `armor value`_
+
+If we are past our `stress` capacity, this means we roll 1d4 _in addition to_ the standard `strength`[`pierce die`], making our end `check` being the following:
+
+_`check`: `strength`[`pierce die`] + 1d4 vs `armor value`_

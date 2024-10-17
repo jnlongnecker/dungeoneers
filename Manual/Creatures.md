@@ -86,7 +86,7 @@ A `creature` can gain `stress` in a number of ways. Firstly, if a `creature` wou
 
 > For example, if Freya can handle 3 `stress` but has already accumulated 2 `stress`, sustaining 2 `wounds` would accumulate 1 `wound` as `stress` and Freya would sustain the remaining 1 `wound` as a `wound`. This would leave Freya at 3 `stress` and 1 `wound`.
 
-While making a `strike`, a `creature` can elect to gain any number of `stress` in order to roll extra `hitting` dice to `hit`. They must declare that they are doing this before the roll is made. A `creature` may also elect to do the same for any `pierce` roll they make; they can elect to gain any amount of `stress` in order to roll extra `pierce dice` equal to the amount of `stress` they choose to accumulate. Again, they must do this before the roll.
+While making a `strike`, a `creature` can elect to gain any number of `stress` in order to roll extra `striking` dice to `hit`. They must declare that they are doing this before the roll is made. A `creature` may also elect to do the same for any `pierce` roll they make; they can elect to gain any amount of `stress` in order to roll extra `pierce dice` equal to the amount of `stress` they choose to accumulate. Again, they must do this before the roll.
 
 > Note that a `creature` does _not_ have to use `stress` to `hit` in order to use `stress` to `pierce`.
 

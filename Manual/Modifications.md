@@ -73,6 +73,10 @@ A `creature` within the `threat range` of another `creature` that is hostile to 
 
 > For example, if a goblin is `prone` and Suori makes a `strike` at it with a warhammer, the goblin can only roll 1d6 despite having 2 `agility`. If Suori was instead making a ranged `strike` with a short bow at that goblin,
 
+### Bane & Boon
+
+`Bane` and `boon` are two sides to the same coin; `bane` is the negative side and `boon` is the positive side. Both are always prefixed with _what_ they affect and suffixed by _how much_ they affect. For example, `agilitybane(4)` refers to a `bane` on `agility` which means that the `creatures` `agility` score is reduced. The `(4)` specifies that `agility` is reduced by `4`. The `condition` of `bane` and `boon` only refer to `attribute scores`.
+
 ## Properties
 
 `Properties` are `modifications` where the source is an `item`. Often times, the `modification` applies to the _`item`_ and not the `creature` using the `item`, but can also enforce requirements for using the `item`. More information about `properties` is covered in the `equipment` section.
