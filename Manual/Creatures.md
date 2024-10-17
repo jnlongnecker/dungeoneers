@@ -8,29 +8,29 @@ Every `creature` has 6 `attribute scores` that are used in a variety of scenario
 
 A typical human will have at least 1 in each `attribute score`. A trained `creature` will have 3 in that `score`, and a master will have 5. The pinnacle of mortal ability reaches its capacity at 7. Godly power reaches 10.
 
-### Power
+### Strength
 
-The `power` score represents the physical strength and force output of a `creature`. The `power` score is used to determine things like `push` and `pierce` success.
+The `strength` score represents the physical power a `creature` has. The `strength` score is used to determine things like `strike` `piercing` and whether a `push` succeeds.
 
-### Prowess
+### Agility
 
-The `prowess` score represents combat skill/capability. The `prowess` score is used to determine things like `hitting` and `dodging`.
+The `agility` score represents the precision and control of a `creature`. The `agility` score is used to determine things like `dodging` and `hitting`.
 
 ### Endurance
 
 The `endurance` score represents the physical and mental resilience of a `creature`. The `endurance` score is used to determine things like `stress` capacity.
 
-### Resistance
+### Logic
 
-The `resistance` score represents the magical defense of a `creature`. The `resistance` score is used to determine things like `magical armor` and `spell saves`.
+The `logic` score represents the practice a `creature` has in logical deduction and recall. The `logic` score is used to determine things like `spell` control.
 
-### Spell
+### Wisdom
 
-The `spell` score represents the talent with magic a `creature` has. The `spell` score is used to determine things like accuracy with `spell attacks` and `spell pierce`.
+The `wisdom` score represents the awareness and connection a `creature` has to its surroundings. The `wisdom` score is used to determine things like `magica` capacity.
 
-### Mind
+### Presence
 
-The `mind` score represents the mental capacity of a `creature`. The `mind` score is used to determine things like `spell save` difficulty and `magica` capacity.
+The `presence` score represents how noticeably and forcefully the `creature` presents itself (when it chooses to do so, of course). The `presence` score is used to determine things like overcoming `spell resistance` and improving `spell resistance`.
 
 ## Threat Range
 
@@ -64,11 +64,11 @@ A `creature` is only able to sustain a certain amount of damage before succumbin
 
 If a `creature` takes a `wound` past their maximum number of `wounds` they can sustain, that `creature` is now `dead`.
 
-> For example, Alberich the dwarf is a `medium` `creature`, so he can sustain a maximum of 2 `wounds`. If Alberich is `hit` by an `attack` and is dealt 2 `wounds`, he won't die just yet. If Alberich is `hit` by another `attack` and that deals at least 1 `wound`, Alberich is `dead`.
+> For example, Alberich the dwarf is a `medium` `creature`, so he can sustain a maximum of 2 `wounds`. If Alberich is `hit` by a `strike` and is dealt 2 `wounds`, he won't die just yet. If Alberich is `hit` by another `strike` and that deals at least 1 `wound`, Alberich is `dead`.
 
-Taking a `wound` past a `creatures` maximum does not immediately kill that `creature`; a `creature` cannot sustain more `wounds` than their capacity. However, if a `creature` sustains a number of `wounds` above their maximum in a single `attack`, that `creature` is `dead`.
+Taking a `wound` past a `creatures` maximum does not immediately kill that `creature`; a `creature` cannot sustain more `wounds` than their capacity. However, if a `creature` sustains a number of `wounds` above their maximum in at once, that `creature` is `dead`.
 
-> For example, if Alberich in our above scenario had already sustained 1 `wound`, taking 2 `wounds` would _not_ kill Alberich; he would still have to be `hit` by the second `attack`. However, if Alberich sustains 3 `wounds` at any time in a single `attack`, he will `die` instantly. Note that this only applies if the `creature` sustains that many actual `wounds`; if some are absorbed by `stress` they may not be outright killed. If Alberich can accumulate 1 `stress` when he sustains those 3 `wounds`, he only functionally sustains 2 `wounds` and wouldn't `die` instantly.
+> For example, if Alberich in our above scenario had already sustained 1 `wound`, taking 2 `wounds` would _not_ kill Alberich; he would still have to be `hit` by the second `strike`. However, if Alberich sustains 3 `wounds` at any time in a single `strike`, he will `die` instantly. Note that this only applies if the `creature` sustains that many actual `wounds`; if some are absorbed by `stress` they may not be outright killed. If Alberich can accumulate 1 `stress` when he sustains those 3 `wounds`, he only functionally sustains 2 `wounds` and wouldn't `die` instantly.
 
 Once a `wound` has been sustained, the only way to recover it is through magic or time. Certain `spells`and potions are capable of restoring `wounds`, and you recover all `wounds` at the end of a `full rest`.
 
@@ -86,7 +86,7 @@ A `creature` can gain `stress` in a number of ways. Firstly, if a `creature` wou
 
 > For example, if Freya can handle 3 `stress` but has already accumulated 2 `stress`, sustaining 2 `wounds` would accumulate 1 `wound` as `stress` and Freya would sustain the remaining 1 `wound` as a `wound`. This would leave Freya at 3 `stress` and 1 `wound`.
 
-While making an `attack`, a `creature` can elect to gain any number of `stress` in order to roll extra dice to `hit`. They must declare that they are doing this before any `hit dice` are rolled for the `attack`. A `creature` may also elect to do the same for any `pierce dice` they roll; they can elect to gain any amount of `stress` in order to roll extra `pierce dice` equal to the amount of `stress` they choose to accumulate. Again, they must do this before any `pierce dice` are rolled for the `attack`.
+While making a `strike`, a `creature` can elect to gain any number of `stress` in order to roll extra `hitting` dice to `hit`. They must declare that they are doing this before the roll is made. A `creature` may also elect to do the same for any `pierce` roll they make; they can elect to gain any amount of `stress` in order to roll extra `pierce dice` equal to the amount of `stress` they choose to accumulate. Again, they must do this before the roll.
 
 > Note that a `creature` does _not_ have to use `stress` to `hit` in order to use `stress` to `pierce`.
 
@@ -94,9 +94,9 @@ Gaining `stress` in any way other than sustaining `wounds` will still accumulate
 
 > For example, Freya can handle up to 3 `stress`. Let us fast-forward to a point where Freya has accumulated 9 `stress`. Freya elects to gain 2 `stress` to roll and extra `2d4` to `hit`. Because Freya has exceeded her `stress` maximum, she accumulates twice as much `stress`, so she now has accumulated 13 `stress`. Again, because Freya has accumulated `stress` once she has reached 3 times her capacity, she sustains 1 `wound`. Since she is past her `stress` capacity, Freya sustains 2 `wounds`! If Freya doesn't have any `wound` reduction effects, the next `wound` she sustains will kill her!
 
-Going past a `creatures` `stress` capacity isn't purely negative, however. While a `creature` has accumulated `stress` past their capacity, they roll an extra `1d4` to their `pierce` rolls.
+Going past a `creatures` `stress` capacity isn't purely negative, however. While a `creature` has accumulated `stress` past their capacity, they roll an extra 1d4 to their `check` to `pierce`.
 
-Once `stress` has been accumulated, there are a few ways to relieve it. Certain `spells`, `potions` and other `items` are capable of relieving `stress`, as well as certain `creature` `abilities`. A `creature` may relieve a number of `stress` equal to their `endurance` at the end of a `short rest` and they relieve all of their accumulated `stress` at the end of a `long rest` or `full rest`.
+Once `stress` has been accumulated, there are a few ways to relieve it. Certain `spells` and `items` are capable of relieving `stress`, as well as certain `creature` `abilities`. A `creature` may relieve a number of `stress` equal to their `endurance` at the end of a `short rest` and they relieve all of their accumulated `stress` at the end of a `long rest` or `full rest`.
 
 ## Equipment Slots
 

@@ -10,7 +10,7 @@ The baseline kit of all `creatures` is interesting enough, but doesn't quite cap
 
 ## Abilities
 
-An `ability` is a special capability that changes the basic kit of a `creature`. An `ability` can give new `actions`, apply `conditions`, and provide passive benefits amongst other things. For the most part, any `creature` can gain any `ability`, but some `abilities` have prerequisites. There are two categories of `ability`: `class abilities` and `generic abilities`. As you might imagine, `class abilities` are `abilities` granted by a `creature's` `class`, while `generic abilities` can be attained by any `creature` as long as they meet any other prerequisites the `ability` might have. `Class abilities` won't be covered here, but `generic abilities` will be covered.
+An `ability` is a special capability that changes the basic kit of a `creature`. An `ability` can give new `actions`, apply `conditions`, and provide passive benefits amongst other things. For the most part, any `creature` can gain any `ability`, but some `abilities` have prerequisites. There are two categories of `ability`: `class abilities` and `generic abilities`. As you might imagine, `class abilities` are `abilities` granted by a `creature's` `class`. `Generic abilities` can be granted to any `creature`, as long as they meet any `prerequisites` that `ability` might have. `Generic abilities` are further categorized into 2 categories: `skill abilities` and `combat abilities`. `Abilities` will have its own dedicated section later on.
 
 ## Traits
 
@@ -53,31 +53,29 @@ A `condition` is a temporary `modification` that is applied usually by some `abi
 
 ### Threatened
 
-`Creatures` who are `threatened` are subject to `opportune strikes` when they move out of the `threat range` of the `creature` they are `threatened` by or if they used a ranged `spellcast`/`attack`.
+A `creature` within the `threat range` of another `creature` that is hostile to them is `threatened`. By itself, `threatened` does not do anything but there are `abilities` that can only take effect on a `creature` who is `threatened`.
 
 ### Grappled
 
-`Creatures` who are `grappled` have 0 `movement points` and cannot gain any `movement points`. When the `entity` that is `grappling` them uses a `movement action`, this `creature` immediately takes that same `movement action`.
+`Creatures` who are `grappled` have their `travel` speeds forced to be no greater than 0. When a `grappling` `creature` uses the `move` `action`, the `creature` they are `grappling` is `forced` the same distance using the same `travel` speed as the `grappler`.
 
 ### Grappling
 
-`Creatures` who are `grappling` have half (rounded down) their normal `movement points` and gain half (rounded down) `movement points` from any `effect` that would grant them. If this `creature` takes a `movement action` while on _another_ `creatures` `turn`, the `grappling` and `grappled` `condition` are removed from their respective `creatures`.
-
-### Sprinting
-
-`Creatures` who are `sprinting` gain 2 base `movement points`.
+`Creatures` who are `grappling` have their `travel` speed halved. If this `creature` is `forced`, the `grappling` and `grappled` `condition` are removed from their respective `creatures`.
 
 ### Defensive
 
-`Creatures` who are `defensive` can roll 1 extra `dodge die` when they are `defenders`.
+`Creatures` who are `defensive` can roll an extra 2d4 as `defenders` to `tests` made to `hit`.
 
 ### Prone
 
-`Creatures` who are `prone` can only roll a maximum of 1 `dodge die` when they are `defenders`. If a `prone` `creature` is a `defender` against a `spell save` that uses `prowess`, they may roll a maximum of 1 `spell save die`. `Creatures` who are ranged `attackers` against a `prone` `defender` may only roll a maximum of 1 `hit die` or `spell hit die`.
+`Creatures` who are `prone` gain the `agilitybane(4)` `condition`, but only to `tests` made to `hit`. `Creatures` who make a `test` to `hit` a `creature` who is `prone` and outside of their `threat range` also gain the `agilitybane(4)` `condition` for that `test`.
+
+> For example, if a goblin is `prone` and Suori makes a `strike` at it with a warhammer, the goblin can only roll 1d6 despite having 2 `agility`. If Suori was instead making a ranged `strike` with a short bow at that goblin,
 
 ## Properties
 
-`Properties` are `modifications` where the source is an `item`. Often times, the `modification` applies to the \*`item` and not the `creature` using the `item`, but can also enforce requirements for using the `item`. More information about `properties` is covered in the `equipment` section.
+`Properties` are `modifications` where the source is an `item`. Often times, the `modification` applies to the _`item`_ and not the `creature` using the `item`, but can also enforce requirements for using the `item`. More information about `properties` is covered in the `equipment` section.
 
 ## Effects
 

@@ -15,11 +15,11 @@ A weapon is an `item` that is used to make `attacks`. When a `creature` makes an
 | Shortsword   | d6       | d4          | 1 Pierc. | Blade (E)  |                                            |
 | Glaive       | d6       | d4          | 2 Slash. | Blade (D)  | Two-handed, Threat + 1                     |
 | Stiletto     | d4       | d8          | 2 Pierc. | Blade (D)  |                                            |
-| Broadsword   | d6       | d4          | 3 Slash. | Blade (C)  |                                            |
+| Broadsword   | d8       | d4          | 3 Slash. | Blade (C)  |                                            |
 | Rapier       | d8       | d4          | 2 Pierc. | Blade (C)  |                                            |
-| Claymore     | d8       | d6          | 3 Slash. | Blade (B)  | Two-handed                                 |
+| Claymore     | d10      | d6          | 3 Slash. | Blade (B)  | Two-handed                                 |
 | Light Hammer | d4       | d4          | 1 Bludg. | Cudgel (E) | Toss                                       |
-| Quarterstaff | d6       | d4          | 1 Bludg. | Cudgel (E) |                                            |
+| Quarterstaff | d4       | d4          | 1 Bludg. | Cudgel (E) |                                            |
 | Mace         | d4       | d6          | 1 Bludg. | Cudgel (E) |                                            |
 | Warhammer    | d4       | d8          | 1 Bludg. | Cudgel (D) |                                            |
 | Flail        | d4       | d8          | 2 Bludg. | Cudgel (C) |                                            |
@@ -27,14 +27,14 @@ A weapon is an `item` that is used to make `attacks`. When a `creature` makes an
 | Hand Axe     | d4       | d4          | 2 Slash. | Axe (E)    | Toss                                       |
 | Battleaxe    | d4       | d6          | 2 Slash. | Axe (D)    |                                            |
 | Bardiche     | d6       | d6          | 2 Slash. | Axe (C)    | Two-handed                                 |
-| Halberd      | d8       | d8          | 2 Slash. | Axe (B)    | Two-handed, Threat + 1                     |
+| Halberd      | d6       | d8          | 2 Slash. | Axe (B)    | Two-handed, Threat + 1                     |
 | Spear        | d6       | d4          | 1 Pierc. | Lance (E)  |                                            |
 | Javelin      | d6       | d6          | 1 Pierc. | Lance (D)  | Toss                                       |
-| Kontos       | d8       | d6          | 2 Pierc. | Lance (C)  |                                            |
-| Partisan     | d10      | d6          | 2 Pierc. | Lance (B)  | Two-handed, Threat + 1                     |
+| Kontos       | d6       | d6          | 2 Pierc. | Lance (C)  |                                            |
+| Partisan     | d8       | d6          | 2 Pierc. | Lance (B)  | Two-handed, Threat + 1                     |
 | Hunting Bow  | d4       | d4          | 1 Pierc. | Bow (E)    | Two-handed, Ammunition (Arrow), Range (5)  |
-| Short Bow    | d6       | d4          | 1 Pierc. | Bow (D)    | Two-handed, Ammunition (Arrow), Range (8)  |
-| Long Bow     | d8       | d4          | 1 Pierc. | Bow (C)    | Two-handed, Ammunition (Arrow), Range (10) |
+| Short Bow    | d4       | d4          | 1 Pierc. | Bow (D)    | Two-handed, Ammunition (Arrow), Range (8)  |
+| Long Bow     | d6       | d4          | 1 Pierc. | Bow (C)    | Two-handed, Ammunition (Arrow), Range (10) |
 | Sling        | d4       | d8          | 1 Bludg. | Bow (C)    | Ammunition (Shot), Range (8)               |
 | Crossbow     | d6       | d6          | 1 Pierc. | Bow (C)    | Two-handed, Ammunition (Bolt), Range (10)  |
 | War Bow      | d8       | d6          | 1 Pierc. | Bow (B)    | Two-handed, Ammunition (Arrow), Range (12) |
@@ -58,7 +58,7 @@ A `focus` is an `item` that must be `equipped` to improve `spell` power. Magical
 
 Armor is `equipped` by a `creature` in order to increase their `armor value` and `spell resistance`. There are 4 categories of armor: clothing, light, medium and heavy. Each piece of armor has an `equipment slot`, a benefit, a category and properties to describe additional restrictions or bonuses.
 
-All medium armor has the `power 2` property innately, and all heavy armor has the `power 3` property innately.
+All medium armor has the `strength 2` property innately, and all heavy armor has the `strength 3` property innately.
 
 | Armor Name     | Category     | Spell Resistance (SR) | Armor Value (AV) | Equipment Slot | Properties  |
 | -------------- | ------------ | --------------------- | ---------------- | -------------- | ----------- |
@@ -88,7 +88,7 @@ All medium armor has the `power 2` property innately, and all heavy armor has th
 
 ### Toss
 
-A weapon with the `toss` `property` can used to make an `attack` against `creatures` a number of tiles equal to the `creatures` `power` score + `threat range` away. When doing so, the weapon is no longer `equipped` when the `attack` is resolved and `moves` to the target location.
+A weapon with the `toss` `property` can used to make a `strike` against `creatures` a number of tiles equal to the `creatures` `strength` score away. When doing so, the weapon is no longer `equipped` when the `strike` is resolved and `travels` to the target location.
 
 ### Two-handed
 
@@ -100,25 +100,25 @@ A weapon with the `threat + x` `property` increases the `threat range` of the `c
 
 ### Ammunition
 
-A weapon with the `ammunition` `property` must be loaded with some sort of weapon ammunition specified in the parenthesis () of the `property`. For example, a weapon with the `ammunition (arrows)` `property` must be loaded with arrows.
+A weapon with the `ammunition` `property` must be loaded with some sort of weapon ammunition specified in the parenthesis `()` of the `property`. For example, a weapon with the `ammunition (arrows)` `property` must be loaded with arrows.
 
 ### Range
 
-A weapon with the `range` `property` cannot be used to make melee `attacks`. `Attacks` with this weapon must be outside the `creatures` `threat range`, but inside the number of tiles denoted in the `property`.
+A weapon with the `range` `property` cannot be used to make melee `strikes`. `Strikes` with this weapon must be outside the `creatures` `threat range`, but inside the number of tiles denoted in the `property`.
 
-> For example, the hunting bow has the `range (5)` `property`. This means that for a `creature` with a `threat range` of 1, the hunting bow can be used to make `attacks` to any `creature` 2-5 tiles away.
+> For example, the hunting bow has the `range (5)` `property`. This means that for a `creature` with a `threat range` of 1, the hunting bow can be used to make `strikes` to any `creature` 2-5 tiles away.
 
-## Power
+## Strength
 
-An `item` with the `power x` `property` requires the `creature` that wishes to `equip` it to have a `power` score of x or above. If a `creature` does not meet this requirement and still `equips` the `item`, that `creature` suffers a penalty to **all rolls** equal to the difference between x and the `creature's` `power` score. If multiple `equipped` `items` have this `property`, the one with the highest x is used.
+An `item` with the `strength x` `property` requires the `creature` that wishes to `equip` it to have a `strength` score of x or above. If a `creature` does not meet this requirement and still `equips` the `item`, that `creature` suffers a penalty to **all rolls** equal to the difference between x and the `creature's` `strength` score. If multiple `equipped` `items` have this `property`, the one with the highest x is used.
 
-> For example, Ulfarmi has a `power` score of 1. If he `equips` an `item` with the `power 3` `property`, he rolls 2 _fewer_ dice on every single roll he does; his `hit dice` rolls, `dodge dice` rolls, `spell pierce` rolls... everything! Be careful what you wear!
+> For example, Ulfarmi has a `strength` score of 1. If he `equips` an `item` with the `strength 3` `property`, he rolls 2 _fewer_ dice on every single roll he does; rolls to `hit`, `skill` rolls... everything! Be careful what you wear!
 
 ### Spellbane
 
 The `spellbane x` `property` afflicts the `creature` with the denoted amount of `spellbane`. For x points of `spellbane`, that `creature` rolls x fewer dice on _all_ rolls as an `attacker` during a `spellcast` `action`. `Spellbane` from multiple sources will stack with itself.
 
-> For example, a `creature` with `spellbane 2` and `spellbane 1` functionally has `spellbane 3`. If that `creature` makes a `spellcast` `action`, their `spell hit` rolls, `spell pierce` rolls and `spell save` rolls are all reduced by **3** dice!
+> For example, a `creature` with `spellbane 2` and `spellbane 1` functionally has `spellbane 3`. If that `creature` makes a `spellcast` `action`, their `spell attack` rolls, `spell pierce` rolls and `spell force` rolls are all reduced by **3** dice!
 
 ### Spellboon
 

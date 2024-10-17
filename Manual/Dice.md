@@ -48,6 +48,8 @@ Inside square brackets `[]` is the `die source` for the size of the dice. Again,
 
 If this was confusing still, the best way to explain this is through an example:
 
-_In order to see if a `grapple` succeeds, roll a `test`: `power` [`grappling`] vs (`prowess`|`power`) [`dodging`]._
+_In order to see if a `grapple` succeeds, roll a_
+
+_`test`: `power` [`grappling`] vs (`prowess`|`power`) [`dodging`]_
 
 The `attacker` rolls a number of dice equal to their `power` score, the size of which is determined by their `grappling` `proficiency` level (more on that in another section). This is compared against the `defenders` roll; they roll a number of dice equal to their choice of their `prowess` or `power` score, the size of which is determined by their `dodging` `proficiency`.
