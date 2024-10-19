@@ -69,7 +69,7 @@ A `creature` within the `threat range` of another `creature` that is hostile to 
 
 ### Prone
 
-`Creatures` who are `prone` gain the `agilitybane(4)` `condition`, but only to `tests` made to `hit`. `Creatures` who make a `test` to `hit` a `creature` who is `prone` and outside of their `threat range` also gain the `agilitybane(4)` `condition` for that `test`.
+`Creatures` who are `prone` gain the `agilitybane(4)` `condition` while they are `prone`. `Creatures` who make a `test` to `hit` a `creature` who is `prone` and outside of their `threat range` also gain the `agilitybane(4)` `condition` for that `test`.
 
 > For example, if a goblin is `prone` and Suori makes a `strike` at it with a warhammer, the goblin can only roll 1d6 despite having 2 `agility`. If Suori was instead making a ranged `strike` with a short bow at that goblin,
 

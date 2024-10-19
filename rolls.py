@@ -234,9 +234,9 @@ def calculate_chance_to_beat(my_roll, their_roll, must_beat):
     return chances_i_win
 
 def calculate_chance_to_wound(me, target):
-    my_hit = '%s%s' % (me.prowess, me.hit_die)
-    my_pierce = '%s%s' % (me.power, me.pierce_die)
-    target_dodge = '%s%s' % (target.prowess, target.dodge_die)
+    my_hit = '%s%s' % (me.agility, me.striking)
+    my_pierce = '%s%s' % (me.strength, me.pierce_die)
+    target_dodge = '%s%s' % (target.agility, target.dodging)
     target_av = target.av
 
     hit_chance = calculate_chance_to_beat(my_hit, target_dodge, False)

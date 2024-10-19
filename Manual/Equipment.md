@@ -6,7 +6,10 @@ Listed here are `items` that may confer a number of benefits to the `creature` t
 
 ## Weapons
 
-A weapon is an `item` that is used to make `attacks`. When a `creature` makes an `attack` `action`, the weapon they wield determines a variety of statistics that are used during the `attack`. A `creature` has `weapon ranks` with certain weapon categories. If a `creature` does not have the proper `weapon rank` for the weapon they have `equipped`, the weapon is instead treated as an improvised weapon. This applies to magical weapons as well as mundane ones. Unless otherwise specified, a weapon must be `equipped` in a `wield` `equipment slot`.
+A weapon is an `item` that is used to make `attacks`. When a `creature` makes an `attack` `action`, the weapon they wield determines a variety of statistics that are used during the `attack`. A `creature` has `weapon ranks` with certain weapon categories. If a `creature` does not have the proper `weapon rank` for the weapon they have `equipped`, the weapon is instead treated as an improvised weapon. This applies to magical weapons as
+well as mundane ones. Unless otherwise specified, a weapon must be `equipped` in a `wield` `equipment slot`.
+
+**Mundane Weapons**
 
 | Weapon Name  | Hit Dice | Pierce Dice | Wounds   | Rank       | Properties                                 |
 | ------------ | -------- | ----------- | -------- | ---------- | ------------------------------------------ |
@@ -59,6 +62,8 @@ A `focus` is an `item` that must be `equipped` to improve `spell` power. Magical
 Armor is `equipped` by a `creature` in order to increase their `armor value` and `spell resistance`. There are 4 categories of armor: clothing, light, medium and heavy. Each piece of armor has an `equipment slot`, a benefit, a category and properties to describe additional restrictions or bonuses.
 
 All medium armor has the `strength 2` property innately, and all heavy armor has the `strength 3` property innately.
+
+**Mundane Armor**
 
 | Armor Name     | Category     | Spell Resistance (SR) | Armor Value (AV) | Equipment Slot | Properties  |
 | -------------- | ------------ | --------------------- | ---------------- | -------------- | ----------- |

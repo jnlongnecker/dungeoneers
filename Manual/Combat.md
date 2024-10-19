@@ -36,6 +36,24 @@ There are many things that use up `action points`, and the specific cases are co
 
 Every `action` has one or more `tags` that is used to categorize that `action`. For simplicity, `tags` are used to refer to groups of `actions` instead of having to list off each and every `action` that the rule affects.
 
+### Deep Breath
+
+Tags: Restoration
+Cost: 1 action point
+
+---
+
+A `creature` may use the `deep breath` `action` to relieve 2 points of `stress`.
+
+### Focus
+
+Tags: Restoration
+Cost: 1 action point
+
+---
+
+A `creature` may use the `focus` `action` to regain 2 points of `magica`.
+
 ### Move
 
 Tags: Movement
@@ -118,7 +136,7 @@ There are 3 steps to the process of making a `strike`:
 
 To determine a `hit`, roll a
 
-`test`: `agility`[`striking`] + 1[`hit die`] vs `agility`[`dodging`]
+`test`: `agility`[`striking`] vs `agility`[`dodging`]
 
 On a success, the `strike` `hits` and moves on to the next step. On a failure, the `strike` `misses` and the `strike` ends.
 
@@ -130,13 +148,13 @@ To determine a `pierce`, roll a
 
 If the `test` succeeds, the `defender` then sustains the number of `wounds` marked on the `attackers` `weapon`.
 
-#### Hit Dice & Pierce Dice
+#### Pierce Dice
 
-An `attacker's` `hit dice` and `pierce dice` are determined by their `weapon`.
+An `attacker's` `pierce dice` are determined by their `weapon`.
 
 #### A Sample Scenario
 
-> For example, Suori makes a `strike` on a skeleton. The skeleton is `trained` in `dodging`, and has an `agility` score of 1. Suori is making this attack with a warhammer, which gives her a `hit die` of a d4 and a `pierce die` of a d6. Suori is `trained` in `striking` and has an `agility` score of 2. This means that Suori rolls 2d6 + 1d4, and the skeleton rolls 1d6. If the `test` succeeds, Suori `hits`!
+> For example, Suori makes a `strike` on a skeleton. The skeleton is `trained` in `dodging`, and has an `agility` score of 1. Suori is making this attack with a warhammer, which gives her a `pierce die` of a d6. Suori is `trained` in `striking` and has an `agility` score of 2. This means that Suori rolls 2d6, and the skeleton rolls 1d6. If the `test` succeeds, Suori `hits`!
 >
 > If Suori `hits`, we then roll the `check` to `pierce`. The skeleton has an `armor value` of 5 and Suori has 2 `strength`, so Suori rolls 2d6 and compares her total against 5. If Suori `pierces`, she then causes the skeleton to sustain 1 `bludgeoning wound` as marked on the warhammer. We definitely recommend writing down these numbers for your character so you don't have to look them up in the moment!
 
