@@ -43,7 +43,9 @@ Cost: 1 action point
 
 ---
 
-A `creature` may use the `deep breath` `action` to relieve 2 points of `stress`.
+A `creature` may use the `deep breath` `action` to relieve 2 points of `stress`. This `action` may only be used if the `creature` has _more_ `stress` than their capacity.
+
+> For example, Freya has 4 `endurance`, meaning her `stress` capacity is 4. If she has fewer than 4 `stress` accumulated, she cannot use the `deep breath` `action`. However, if she has 5 or more `stress` accumulated, the `deep breath` `action` relieves 2 points of `stress`. This _does_ mean if she has exactly 5 `stress`, it will reduce her `stress` to 3; below her capacity!
 
 ### Focus
 
@@ -53,6 +55,15 @@ Cost: 1 action point
 ---
 
 A `creature` may use the `focus` `action` to regain 2 points of `magica`.
+
+### Interact
+
+Tags: Interaction
+Cost: 1 action point
+
+---
+
+A `creature` may use the `interact` `action` to manipulate its environment. Opening doors, pulling levers, drawing or stowing a weapon, equipping a shield, drinking a potion, picking up an object, and similar such tasks can all be accomplished using the `interact` `action`.
 
 ### Move
 
@@ -92,7 +103,7 @@ Cost: 1 action point
 
 ---
 
-A `creature` may use 1 `action point` to use the `grapple` `action`. A `grapple` may only be used on a `creature` they `threaten`. In order to see if a `grapple` succeeds, roll a
+A `creature` may use 1 `action point` to use the `grapple` `action`. A `grapple` may only be used on a `creature` they `threaten`, and a `creature` must have a hand free in order to take this `action`. In order to see if a `grapple` succeeds, roll a
 
 `test`: `strength` [`grappling`] vs (`agility`|`strength`) [`dodging`].
 
@@ -158,6 +169,15 @@ An `attacker's` `pierce dice` are determined by their `weapon`.
 >
 > If Suori `hits`, we then roll the `check` to `pierce`. The skeleton has an `armor value` of 5 and Suori has 2 `strength`, so Suori rolls 2d6 and compares her total against 5. If Suori `pierces`, she then causes the skeleton to sustain 1 `bludgeoning wound` as marked on the warhammer. We definitely recommend writing down these numbers for your character so you don't have to look them up in the moment!
 
+### Multiattack
+
+Tags: Untagged
+Cost: 2 action points
+
+---
+
+A `creature` that takes the `multiattack` `action` may immediately take 2 `actions` with the `attack` tag. While taking these 2 `attack` `actions`, the `creature` has the `strengthbane(1)` `condition`.
+
 ### Spellcast
 
 Tags: Magic
@@ -208,6 +228,20 @@ In order to see if the `spell` `pierces`, roll a
 `check`: `presence`[`spell pierce die`] vs `spell resistance`
 
 If the `check` succeeds, the `spell` `pierces`. If the `spell` inflicts an `effect`, that `effect` takes place. If the `spell` inflicts `wounds`, that number of `wounds` are inflicted. A `creature` may elect to allow the `spell` through their `spell resistance` if they choose.
+
+## Reactions
+
+Some tasks happen practically automatically in response to certain stimuli. A `reaction` represents an instantaneous twitch of muscle memory; practically involuntarily. Most `creatures` only have 1 `reaction point` to spend on `reactions`. Like `actions`, not every `reaction` will be listed here as some may be given by other features and `abilities`, but there are some general `reactions` that any `creature` can take.
+
+A `reaction` can be taken at any point during any `turn` as long as a `creature` has a `reaction point` to spend on it.
+
+### Grab a Ledge
+
+A `creature` may instinctively reach out for a ledge if they find themselves being knocked off. If a `creature` is `forced` to a point where they pass over a ledge within their `threat range`, they may use the `grab a ledge` `reaction` to stop themselves at the ledge. In order to do so, roll a
+
+`check`: `dexterity`[d4] vs 5 + the number of tiles `forced`.
+
+On a success, the `creature` stops at a point where they are hanging on the ledge.
 
 ## Defenses
 

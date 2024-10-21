@@ -84,3 +84,11 @@ A `creature` within the `threat range` of another `creature` that is hostile to 
 ## Effects
 
 An `effect` is a `modification` that is applied when specific criteria is met. It's not really a _different_ concept from other `modifications`, it's merely the _application_ of the `modification`.
+
+The only exception is the `forced` `effect`, which can't really be categorized in one of the above categories.
+
+### Forced
+
+When an entity is `forced`, it is moved via a `travel` speed against its will, ending up the number of tiles specified by the `travel` speed. This happens instantaneously.
+
+> For example, the `push` `action` on a success causes the target to be `forced` Ground(1). This means that the target must move across the ground 1 tile against its will.
