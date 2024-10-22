@@ -6,7 +6,21 @@ In Dungeoneers, a `creature` is any living entity in the world. Often times, sys
 
 Every `creature` has 6 `attribute scores` that are used in a variety of scenarios. The specific scenarios are covered in their respective sections, but we'll talk a bit about each here.
 
-A typical human will have at least 1 in each `attribute score`. A trained `creature` will have 3 in that `score`, and a master will have 5. The pinnacle of mortal ability reaches its capacity at 7. Godly power reaches 10.
+A typical human will have at least 2 in each `attribute score`. A general feel of the power tied to an `attribute score` can be determined by the following table:
+
+| Score Value | Name         | Description                                                                                                        |
+| ----------- | ------------ | ------------------------------------------------------------------------------------------------------------------ |
+| 0           | Crippled     | This attribute has been significantly crippled compared to an average person                                       |
+| 1           | Weak         | This attribute is deficient compared to even an average person                                                     |
+| 2           | Average      | This attribute is typical of the average person                                                                    |
+| 3           | Trained      | This attribute score is found only amongst people that actively train it                                           |
+| 4           | Experienced  | This attribute score is found only amongst genetic anomalies dedicated to training it                              |
+| 5           | Master       | This attribute score is found only amongst genetic anomalies with magical enhancement                              |
+| 6           | Legendary    | This attribute score is found only amongst genetic anomalies with supreme magical enhancement                      |
+| 7           | Mythical     | This attribute score is found only amongst genetic anomalies with magical enhancement from other genetic anomalies |
+| 8           | Unbelievable | This attribute score is found only amongst supreme magical beings gifted in the attribute                          |
+| 9           | Demigodly    | This attribute score can only be found amongst demigods gifted in the attribute                                    |
+| 10          | Godly        | This attribute score can only be found amongst gods                                                                |
 
 ### Strength
 

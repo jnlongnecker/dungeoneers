@@ -34,10 +34,8 @@ There are multiple types of senses that a `creature` may have, and corresponding
 
 | Trait Name    | Trait Description                                             |
 | ------------- | ------------------------------------------------------------- |
-| Vision        | Typical vision good enough to see what is being fought        |
 | Darkvision    | Vision that can see in complete, non-magical darkness         |
 | Truevision    | Vision that can see in magical darkness and through illusions |
-| Hearing       | Basic hearing capabilities                                    |
 | Blindsense\*  | Ability to sense `creatures` without needing to use vision    |
 | Tremorsense\* | Ability to sense `creatures` that are touching the ground     |
 | Blind         | Does not have any visual sense                                |
@@ -45,7 +43,32 @@ There are multiple types of senses that a `creature` may have, and corresponding
 
 > \* These senses are not blocked by visual limiters like darkness or walls.
 
-Each sense `trait` comes with a range. If a range is not specified, the range is unlimited.
+Each sense `trait` comes with a range. If a range is not specified, the range is unlimited. Unless a `creature` has the `blind` or `deaf` `traits`, they can see or hear at a level equal to a typical, healthy real-world human being.
+
+### Travel Speed
+
+There are several different kinds of `travel` speeds. Each one has a name and number. The name denotes what kind of `travel` the `creature` may take, while the number denotes how many tiles that `creature` may traverse when they take the `move` `action`.
+
+| Travel Speed | Description                                                                                                                            |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Ground       | The `creature` may traverse along the surface of a solid, horizontal plane.                                                            |
+| Burrow       | The `creature` may traverse through solid dirt or stone.                                                                               |
+| Fly          | The `creature` may traverse through the air. The `creature` is `falling` if they spend 1 `turn` not `moving` with this `travel` speed. |
+| Swim         | The `creature` may traverse through water.                                                                                             |
+| Climb        | The `creature` may traverse along the surface of a solid, vertical/vertically angled plane.                                            |
+| Cling        | The `creature` may traverse along the surface of a solid, horizontal plane against gravity.                                            |
+
+### Language
+
+A `creature` can utilize a number of languages in accordance to the below table. A `creature` with the `literate` `trait` can read and write with the `languages` they know. A `creature` with the `speech` `trait` may speak the `languages` they know. Unless a `creature` has the `deaf` `trait`, they can understand spoken words in any of the `languages` they know provided they can hear them.
+
+| Language | Common Users                         |
+| -------- | ------------------------------------ |
+| Adish    | Most `creatures` capable of language |
+| Mensish  | Mensa                                |
+| Elvish   | Elves                                |
+| Dwarvish | Dwarves                              |
+| Gnomish  | Gnomes                               |
 
 ## Conditions
 
@@ -76,6 +99,16 @@ A `creature` within the `threat range` of another `creature` that is hostile to 
 ### Bane & Boon
 
 `Bane` and `boon` are two sides to the same coin; `bane` is the negative side and `boon` is the positive side. Both are always prefixed with _what_ they affect and suffixed by _how much_ they affect. For example, `agilitybane(4)` refers to a `bane` on `agility` which means that the `creatures` `agility` score is reduced. The `(4)` specifies that `agility` is reduced by `4`. The `condition` of `bane` and `boon` only refer to `attribute scores`.
+
+## Falling
+
+A `creature` with the `falling` `condition` is `forced` towards the ground 15 tiles. This movement is applied the moment the `falling` `condition` is applied and at the start of every `round` thereafter. When the `creature` impacts a surface solid enough to stop them, the `falling` `condition` is removed and sustains 1 `bludgeoning` `wound` plus an additional `bludgeoning` `wound` per 5 tiles they fall. A `creature` may reduce the effective number of tiles they fall by making a
+
+`check`: `dexterity`[d4] vs number of tiles fallen.
+
+If the `check` succeeds, the `creature` sustains no `wounds`. If they fail, the difference between the roll and the number of tiles fallen is the effective number of tiles they have fallen.
+
+The `wounds` sustained by `falling` are unique. They are subject to `resistance` and `vulnerability`, but otherwise cannot be affected. These `wounds` cannot be absorbed by `stress`.
 
 ## Properties
 

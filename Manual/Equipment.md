@@ -11,36 +11,36 @@ well as mundane ones. Unless otherwise specified, a weapon must be `equipped` in
 
 **Mundane Weapons**
 
-| Weapon Name  | Hit Dice | Pierce Dice | Wounds   | Rank       | Properties                                 |
-| ------------ | -------- | ----------- | -------- | ---------- | ------------------------------------------ |
-| Improvised   | d4       | d4          | 1 Bludg. | --         |                                            |
-| Dagger       | d4       | d6          | 1 Pierc. | Blade (E)  | Toss                                       |
-| Shortsword   | d6       | d4          | 1 Pierc. | Blade (E)  |                                            |
-| Glaive       | d6       | d4          | 2 Slash. | Blade (D)  | Two-handed, Threat + 1                     |
-| Stiletto     | d4       | d8          | 2 Pierc. | Blade (D)  |                                            |
-| Broadsword   | d8       | d4          | 3 Slash. | Blade (C)  |                                            |
-| Rapier       | d8       | d4          | 2 Pierc. | Blade (C)  |                                            |
-| Claymore     | d10      | d6          | 3 Slash. | Blade (B)  | Two-handed                                 |
-| Light Hammer | d4       | d4          | 1 Bludg. | Cudgel (E) | Toss                                       |
-| Quarterstaff | d4       | d4          | 1 Bludg. | Cudgel (E) |                                            |
-| Mace         | d4       | d6          | 1 Bludg. | Cudgel (E) |                                            |
-| Warhammer    | d4       | d8          | 1 Bludg. | Cudgel (D) |                                            |
-| Flail        | d4       | d8          | 2 Bludg. | Cudgel (C) |                                            |
-| Maul         | d6       | d10         | 2 Bludg. | Cudgel (B) | Two-handed                                 |
-| Hand Axe     | d4       | d4          | 2 Slash. | Axe (E)    | Toss                                       |
-| Battleaxe    | d4       | d6          | 2 Slash. | Axe (D)    |                                            |
-| Bardiche     | d6       | d6          | 2 Slash. | Axe (C)    | Two-handed                                 |
-| Halberd      | d6       | d8          | 2 Slash. | Axe (B)    | Two-handed, Threat + 1                     |
-| Spear        | d6       | d4          | 1 Pierc. | Lance (E)  |                                            |
-| Javelin      | d6       | d6          | 1 Pierc. | Lance (D)  | Toss                                       |
-| Kontos       | d6       | d6          | 2 Pierc. | Lance (C)  |                                            |
-| Partisan     | d8       | d6          | 2 Pierc. | Lance (B)  | Two-handed, Threat + 1                     |
-| Hunting Bow  | d4       | d4          | 1 Pierc. | Bow (E)    | Two-handed, Ammunition (Arrow), Range (5)  |
-| Short Bow    | d4       | d4          | 1 Pierc. | Bow (D)    | Two-handed, Ammunition (Arrow), Range (8)  |
-| Long Bow     | d6       | d4          | 1 Pierc. | Bow (C)    | Two-handed, Ammunition (Arrow), Range (10) |
-| Sling        | d4       | d8          | 1 Bludg. | Bow (C)    | Ammunition (Shot), Range (8)               |
-| Crossbow     | d6       | d6          | 1 Pierc. | Bow (C)    | Two-handed, Ammunition (Bolt), Range (10)  |
-| War Bow      | d8       | d6          | 1 Pierc. | Bow (B)    | Two-handed, Ammunition (Arrow), Range (12) |
+| Weapon Name  | Pierce Dice | Wounds   | Rank       | Properties                                 |
+| ------------ | ----------- | -------- | ---------- | ------------------------------------------ |
+| Improvised   | d4          | 1 Bludg. | --         |                                            |
+| Dagger       | d6          | 1 Pierc. | Blade (E)  | Toss                                       |
+| Shortsword   | d4          | 1 Pierc. | Blade (E)  |                                            |
+| Glaive       | d4          | 2 Slash. | Blade (D)  | Two-handed, Threat + 1                     |
+| Stiletto     | d8          | 2 Pierc. | Blade (D)  |                                            |
+| Broadsword   | d4          | 3 Slash. | Blade (C)  |                                            |
+| Rapier       | d4          | 2 Pierc. | Blade (C)  |                                            |
+| Claymore     | d6          | 3 Slash. | Blade (B)  | Two-handed                                 |
+| Light Hammer | d4          | 1 Bludg. | Cudgel (E) | Toss                                       |
+| Quarterstaff | d4          | 1 Bludg. | Cudgel (E) |                                            |
+| Mace         | d6          | 1 Bludg. | Cudgel (E) |                                            |
+| Warhammer    | d8          | 1 Bludg. | Cudgel (D) |                                            |
+| Flail        | d8          | 2 Bludg. | Cudgel (C) |                                            |
+| Maul         | d10         | 2 Bludg. | Cudgel (B) | Two-handed                                 |
+| Hand Axe     | d4          | 2 Slash. | Axe (E)    | Toss                                       |
+| Battleaxe    | d6          | 2 Slash. | Axe (D)    |                                            |
+| Bardiche     | d6          | 2 Slash. | Axe (C)    | Two-handed                                 |
+| Halberd      | d8          | 2 Slash. | Axe (B)    | Two-handed, Threat + 1                     |
+| Spear        | d4          | 1 Pierc. | Lance (E)  |                                            |
+| Javelin      | d6          | 1 Pierc. | Lance (D)  | Toss                                       |
+| Kontos       | d6          | 2 Pierc. | Lance (C)  |                                            |
+| Partisan     | d6          | 2 Pierc. | Lance (B)  | Two-handed, Threat + 1                     |
+| Hunting Bow  | d4          | 1 Pierc. | Bow (E)    | Two-handed, Ammunition (Arrow), Range (5)  |
+| Short Bow    | d4          | 1 Pierc. | Bow (D)    | Two-handed, Ammunition (Arrow), Range (8)  |
+| Long Bow     | d4          | 1 Pierc. | Bow (C)    | Two-handed, Ammunition (Arrow), Range (10) |
+| Sling        | d8          | 1 Bludg. | Bow (C)    | Ammunition (Shot), Range (8)               |
+| Crossbow     | d6          | 1 Pierc. | Bow (C)    | Two-handed, Ammunition (Bolt), Range (10)  |
+| War Bow      | d6          | 1 Pierc. | Bow (B)    | Two-handed, Ammunition (Arrow), Range (12) |
 
 ## Tomes
 
