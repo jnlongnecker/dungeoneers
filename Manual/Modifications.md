@@ -88,23 +88,21 @@ A `creature` within the `threat range` of another `creature` that is hostile to 
 
 ### Defensive
 
-`Creatures` who are `defensive` can roll an extra `dodging` die as a `defender`.
+`Creatures` who are `defensive` gain a +2 to their `dodging` rolls.
 
 ### Prone
 
 `Creatures` who are `prone` gain the `agilitybane(4)` `condition` while they are `prone`. `Creatures` who make a `test` to `hit` a `creature` who is `prone` and outside of their `threat range` also gain the `agilitybane(4)` `condition` for that `test`.
 
-> For example, if a goblin is `prone` and Suori makes a `strike` at it with a warhammer, the goblin can only roll 1d6 despite having 2 `agility`. If Suori was instead making a ranged `strike` with a short bow at that goblin,
-
 ### Bane & Boon
 
-`Bane` and `boon` are two sides to the same coin; `bane` is the negative side and `boon` is the positive side. Both are always prefixed with _what_ they affect and suffixed by _how much_ they affect. For example, `agilitybane(4)` refers to a `bane` on `agility` which means that the `creatures` `agility` score is reduced. The `(4)` specifies that `agility` is reduced by `4`. The `condition` of `bane` and `boon` only refer to `attribute scores`.
+`Bane` and `boon` are two sides to the same coin; `bane` is the negative side and `boon` is the positive side. Both are always prefixed with _what_ they affect and suffixed by _how much_ they affect. For example, `agilitybane(4)` refers to a `bane` on `agility` which means that the `creatures` `agility` score is reduced. The `(4)` specifies that `agility` is reduced by `4`. The general `condition` of `bane` and `boon` described here only refer to `attribute scores`, but there are `bane` and `boon` `effects` that make different alterations.
 
 ## Falling
 
 A `creature` with the `falling` `condition` is `forced` towards the ground 15 tiles. This movement is applied the moment the `falling` `condition` is applied and at the start of every `round` thereafter. When the `creature` impacts a surface solid enough to stop them, the `falling` `condition` is removed and sustains 1 `bludgeoning` `wound` plus an additional `bludgeoning` `wound` per 5 tiles they fall. A `creature` may reduce the effective number of tiles they fall by making a
 
-`check`: `dexterity`[d4] vs number of tiles fallen.
+`check`: [1d4] + `dexterity` vs number of tiles fallen.
 
 If the `check` succeeds, the `creature` sustains no `wounds`. If they fail, the difference between the roll and the number of tiles fallen is the effective number of tiles they have fallen.
 

@@ -83,7 +83,7 @@ Cost: 1 action point
 
 ---
 
-A `creature` may use 1 `action point` to use the `defend` `action` to give themselves the `defensive` `condition` until the start of their next `turn`. A `creature` with the `defensive` `condition` can roll 1 extra `dodge die` when they are `defenders`.
+A `creature` may use 1 `action point` to use the `defend` `action` to give themselves the `defensive` `condition` until the start of their next `turn`. A `creature` with the `defensive` `condition` gains a +2 to their `dodging` rolls.
 
 ### Ready
 
@@ -105,7 +105,7 @@ Cost: 1 action point
 
 A `creature` may use 1 `action point` to use the `grapple` `action`. A `grapple` may only be used on a `creature` they `threaten`, and a `creature` must have a hand free in order to take this `action`. In order to see if a `grapple` succeeds, roll a
 
-`test`: `strength` [`grappling`] vs (`agility`|`strength`) [`dodging`].
+`test`: [`grappling`] + `strength` vs [`dodging`] + (`agility`|`strength`).
 
 If the `grapple` succeeds, the `attacker` gains the `grappling` `condition` and the `defender` gains the `grappled` `condition`. The `grappled` `condition` forces all of a `creatures` `travel` speeds to be no greater than 0. The `grappling` condition halves all of the `travel` speeds the `creature` has. When a `grappling` `creature` uses the `move` `action`, the `creature` they are `grappling` is `forced` the same distance using the same `travel` speed as the `grappler`.
 
@@ -120,7 +120,7 @@ Cost: 1 action point
 
 A `creature` may use 1 `action point` to use the `push` `action`. A `push` may only be used on a `creature` they `threaten`. In order to see if a `push` succeeds, roll a
 
-`test`: `strength` [`grappling`] vs (`agility`|`strength`) [`dodging`].
+`test`: [`grappling`] + `strength` vs [`dodging`] + (`agility`|`strength`).
 
 If the `push` succeeds, the `defender` is `forced` Ground(1) in a direction of the `attackers` choosing.
 
@@ -147,7 +147,7 @@ There are 3 steps to the process of making a `strike`:
 
 To determine a `hit`, roll a
 
-`test`: `agility`[`striking`] vs `agility`[`dodging`]
+`test`: [`striking`] + `agility` vs [`dodging`] + `agility`.
 
 On a success, the `strike` `hits` and moves on to the next step. On a failure, the `strike` `misses` and the `strike` ends.
 
@@ -155,7 +155,7 @@ On a success, the `strike` `hits` and moves on to the next step. On a failure, t
 
 To determine a `pierce`, roll a
 
-`check`: `strength`[`pierce die`] vs `armor value`
+`check`: [`pierce die`] + `strength` vs `armor value`.
 
 If the `test` succeeds, the `defender` then sustains the number of `wounds` marked on the `attackers` `weapon`.
 
@@ -207,7 +207,7 @@ A `spell` can either require a `spell attack` or a `spell force` to determine wh
 
 If a `spell` calls for a `spell attack`, roll a
 
-`test` : `logic`[`spellcraft`] vs `agility`[`dodging`]
+`test` : [`spellcraft`] + `logic` vs [`dodging`] + `agility`.
 
 If the `test` succeeds, the `spellcast` `hits`.
 
@@ -215,19 +215,32 @@ If the `test` succeeds, the `spellcast` `hits`.
 
 If a `spell` calls for a `spell force`, roll a
 
-`test`: `logic`[`spellcraft`] vs `target attribute`[`spellcraft`]
+`test`: [`spellcraft`] + `logic` vs [`spellcraft`] + `target attribute`.
 
 If the `test` succeeds, the `spellcast` `hits`.
 
-> Note that each `spell` that requires a `spell force` will target a specific `attribute score` in its description. This is `die source` for the number of dice the `defender` rolls.
+> Note that each `spell` that requires a `spell force` will target a specific `attribute score` in its description. This is what is added on to the [`spellcraft`] roll the `defender` rolls.
 
 #### Overcoming Spell Resistance
 
 In order to see if the `spell` `pierces`, roll a
 
-`check`: `presence`[`spell pierce die`] vs `spell resistance`
+`check`: [`magica spent`] + `presence` vs `spell resistance`
 
 If the `check` succeeds, the `spell` `pierces`. If the `spell` inflicts an `effect`, that `effect` takes place. If the `spell` inflicts `wounds`, that number of `wounds` are inflicted. A `creature` may elect to allow the `spell` through their `spell resistance` if they choose.
+
+#### Magica Spent Die Source
+
+The following table can be used to determine the `die source` for how much `magica` a `creature` spends. Note that "magica spent" refers to the _additional_ `magica` used to enhance the `spell`, and `magica` spent to baseline cast the `spell` does not count towards this number:
+
+| Magica Spent | Dice Rolled |
+| ------------ | ----------- |
+| 0            | 1d4         |
+| 1            | 2d4         |
+| 2            | 3d4         |
+| 3            | 4d4         |
+| 4            | 5d4         |
+| 5            | 6d4         |
 
 ## Reactions
 
@@ -239,7 +252,7 @@ A `reaction` can be taken at any point during any `turn` as long as a `creature`
 
 A `creature` may instinctively reach out for a ledge if they find themselves being knocked off. If a `creature` is `forced` to a point where they pass over a ledge within their `threat range`, they may use the `grab a ledge` `reaction` to stop themselves at the ledge. In order to do so, roll a
 
-`check`: `dexterity`[d4] vs 5 + the number of tiles `forced`.
+`check`: [1d4] + `dexterity` vs 5 + the number of tiles `forced`.
 
 On a success, the `creature` stops at a point where they are hanging on the ledge.
 

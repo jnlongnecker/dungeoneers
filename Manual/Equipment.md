@@ -13,34 +13,34 @@ well as mundane ones. Unless otherwise specified, a weapon must be `equipped` in
 
 | Weapon Name  | Pierce Dice | Wounds   | Rank       | Properties                                 |
 | ------------ | ----------- | -------- | ---------- | ------------------------------------------ |
-| Improvised   | d4          | 1 Bludg. | --         |                                            |
-| Dagger       | d6          | 1 Pierc. | Blade (E)  | Toss                                       |
-| Shortsword   | d4          | 1 Pierc. | Blade (E)  |                                            |
-| Glaive       | d4          | 2 Slash. | Blade (D)  | Two-handed, Threat + 1                     |
-| Stiletto     | d8          | 2 Pierc. | Blade (D)  |                                            |
-| Broadsword   | d4          | 3 Slash. | Blade (C)  |                                            |
-| Rapier       | d4          | 2 Pierc. | Blade (C)  |                                            |
-| Claymore     | d6          | 3 Slash. | Blade (B)  | Two-handed                                 |
-| Light Hammer | d4          | 1 Bludg. | Cudgel (E) | Toss                                       |
-| Quarterstaff | d4          | 1 Bludg. | Cudgel (E) |                                            |
-| Mace         | d6          | 1 Bludg. | Cudgel (E) |                                            |
-| Warhammer    | d8          | 1 Bludg. | Cudgel (D) |                                            |
-| Flail        | d8          | 2 Bludg. | Cudgel (C) |                                            |
-| Maul         | d10         | 2 Bludg. | Cudgel (B) | Two-handed                                 |
-| Hand Axe     | d4          | 2 Slash. | Axe (E)    | Toss                                       |
-| Battleaxe    | d6          | 2 Slash. | Axe (D)    |                                            |
-| Bardiche     | d6          | 2 Slash. | Axe (C)    | Two-handed                                 |
-| Halberd      | d8          | 2 Slash. | Axe (B)    | Two-handed, Threat + 1                     |
-| Spear        | d4          | 1 Pierc. | Lance (E)  |                                            |
-| Javelin      | d6          | 1 Pierc. | Lance (D)  | Toss                                       |
-| Kontos       | d6          | 2 Pierc. | Lance (C)  |                                            |
-| Partisan     | d6          | 2 Pierc. | Lance (B)  | Two-handed, Threat + 1                     |
-| Hunting Bow  | d4          | 1 Pierc. | Bow (E)    | Two-handed, Ammunition (Arrow), Range (5)  |
-| Short Bow    | d4          | 1 Pierc. | Bow (D)    | Two-handed, Ammunition (Arrow), Range (8)  |
-| Long Bow     | d4          | 1 Pierc. | Bow (C)    | Two-handed, Ammunition (Arrow), Range (10) |
-| Sling        | d8          | 1 Bludg. | Bow (C)    | Ammunition (Shot), Range (8)               |
-| Crossbow     | d6          | 1 Pierc. | Bow (C)    | Two-handed, Ammunition (Bolt), Range (10)  |
-| War Bow      | d6          | 1 Pierc. | Bow (B)    | Two-handed, Ammunition (Arrow), Range (12) |
+| Improvised   | 1d4         | 1 Bludg. | --         |                                            |
+| Dagger       | 1d6         | 1 Pierc. | Blade (E)  | Toss                                       |
+| Shortsword   | 1d4         | 1 Pierc. | Blade (E)  |                                            |
+| Glaive       | 1d4         | 2 Slash. | Blade (D)  | Two-handed, Threat + 1                     |
+| Stiletto     | 2d4         | 2 Pierc. | Blade (D)  |                                            |
+| Broadsword   | 1d6         | 3 Slash. | Blade (C)  |                                            |
+| Rapier       | 1d4         | 2 Pierc. | Blade (C)  |                                            |
+| Claymore     | 2d4         | 3 Slash. | Blade (B)  | Two-handed                                 |
+| Light Hammer | 1d4         | 1 Bludg. | Cudgel (E) | Toss                                       |
+| Quarterstaff | 1d4         | 1 Bludg. | Cudgel (E) |                                            |
+| Mace         | 1d6         | 1 Bludg. | Cudgel (E) |                                            |
+| Warhammer    | 2d4         | 1 Bludg. | Cudgel (D) |                                            |
+| Flail        | 2d4         | 2 Bludg. | Cudgel (C) |                                            |
+| Maul         | 2d6         | 2 Bludg. | Cudgel (B) | Two-handed                                 |
+| Hand Axe     | 1d4         | 2 Slash. | Axe (E)    | Toss                                       |
+| Battleaxe    | 1d6         | 2 Slash. | Axe (D)    |                                            |
+| Bardiche     | 1d6         | 2 Slash. | Axe (C)    | Two-handed                                 |
+| Halberd      | 2d4         | 2 Slash. | Axe (B)    | Two-handed, Threat + 1                     |
+| Spear        | 1d4         | 1 Pierc. | Lance (E)  |                                            |
+| Javelin      | 1d6         | 1 Pierc. | Lance (D)  | Toss                                       |
+| Kontos       | 1d6         | 2 Pierc. | Lance (C)  |                                            |
+| Partisan     | 2d4         | 2 Pierc. | Lance (B)  | Two-handed, Threat + 1                     |
+| Hunting Bow  | 1d4         | 1 Pierc. | Bow (E)    | Two-handed, Ammunition (Arrow), Range (5)  |
+| Short Bow    | 1d4         | 1 Pierc. | Bow (D)    | Two-handed, Ammunition (Arrow), Range (8)  |
+| Long Bow     | 1d4         | 1 Pierc. | Bow (C)    | Two-handed, Ammunition (Arrow), Range (10) |
+| Sling        | 2d4         | 1 Bludg. | Bow (C)    | Ammunition (Shot), Range (8)               |
+| Crossbow     | 1d6         | 1 Pierc. | Bow (C)    | Two-handed, Ammunition (Bolt), Range (10)  |
+| War Bow      | 1d6         | 1 Pierc. | Bow (B)    | Two-handed, Ammunition (Arrow), Range (12) |
 
 ## Tomes
 
@@ -50,12 +50,12 @@ A tome is an `item` that must be `equipped` in order to cast `spells` quickly. T
 
 A `focus` is an `item` that must be `equipped` to improve `spell` power. Magical `foci` do different things than mundane ones, and mundane `foci` are all the same in effect, but different `spells` react better to different `foci`. Unless otherwise specified, a `focus` must be `equipped` in a `wield` `equipment slot`.
 
-| Focus Name | Property  |
-| ---------- | --------- |
-| Orb        | Demonic 2 |
-| Wand       | Arcane 2  |
-| Symbol     | Holy 2    |
-| Staff      | Magica 1  |
+| Focus Name | Property   |
+| ---------- | ---------- |
+| Orb        | Demonic(2) |
+| Wand       | Arcane(2)  |
+| Symbol     | Holy(2)    |
+| Staff      | Magica(1)  |
 
 ## Armor
 
@@ -65,27 +65,27 @@ All medium armor has the `strength 2` property innately, and all heavy armor has
 
 **Mundane Armor**
 
-| Armor Name     | Category     | Spell Resistance (SR) | Armor Value (AV) | Equipment Slot | Properties  |
-| -------------- | ------------ | --------------------- | ---------------- | -------------- | ----------- |
-| Common Clothes | Clothing     | --                    | --               | Body           |             |
-| Mage Robes     | Clothing     | 4                     | --               | Body           | Spellboon 1 |
-| Leather        | Light Armor  | 6                     | 1                | Body           | Spellbane 1 |
-| Gambeson       | Light Armor  | 7                     | 2                | Body           | Spellbane 1 |
-| Drakehide      | Light Armor  | 10                    | 2                | Body           | Spellbane 5 |
-| Brigandine     | Medium Armor | --                    | 4                | Body           | Spellbane 2 |
-| Laminar        | Medium Armor | --                    | 5                | Body           | Spellbane 2 |
-| Hauberk        | Heavy Armor  | --                    | 7                | Body           | Spellbane 3 |
-| Plate          | Heavy Armor  | --                    | 8                | Body           | Spellbane 4 |
-| Buckler        | Shield       | --                    | 1                | Wield          |             |
-| Kite Shield    | Shield       | --                    | 2                | Wield          | Spellbane 1 |
-| Tower Shield   | Shield       | --                    | 3                | Wield          | Spellbane 2 |
-| Gloves         | Light Armor  | 3                     | 1                | Hand           | Spellbane 2 |
-| Gauntlet       | Heavy Armor  | --                    | 2                | Hand           | Spellbane 4 |
-| Boots          | Light Armor  | 2                     | 1                | Feet           |             |
-| Greaves        | Heavy Armor  | --                    | 2                | Feet           | Spellbane 1 |
-| Spangenhelm    | Light Armor  | --                    | 1                | Head           | Spellbane 1 |
-| Zischagge      | Medium Armor | --                    | 2                | Head           | Spellbane 2 |
-| Great Helm     | Heavy Armor  | --                    | 3                | Head           | Spellbane 3 |
+| Armor Name     | Category     | Spell Resistance (SR) | Armor Value (AV) | Equipment Slot | Properties   |
+| -------------- | ------------ | --------------------- | ---------------- | -------------- | ------------ |
+| Common Clothes | Clothing     | --                    | --               | Body           |              |
+| Mage Robes     | Clothing     | 4                     | --               | Body           |              |
+| Leather        | Light Armor  | 6                     | 1                | Body           | Spellbane(1) |
+| Gambeson       | Light Armor  | 7                     | 2                | Body           | Spellbane(1) |
+| Drakehide      | Light Armor  | 10                    | 2                | Body           | Spellbane(5) |
+| Brigandine     | Medium Armor | --                    | 4                | Body           | Spellbane(2) |
+| Laminar        | Medium Armor | --                    | 5                | Body           | Spellbane(2) |
+| Hauberk        | Heavy Armor  | --                    | 7                | Body           | Spellbane(3) |
+| Plate          | Heavy Armor  | --                    | 8                | Body           | Spellbane(4) |
+| Buckler        | Shield       | --                    | 1                | Wield          |              |
+| Kite Shield    | Shield       | --                    | 2                | Wield          | Spellbane(1) |
+| Tower Shield   | Shield       | --                    | 3                | Wield          | Spellbane(2) |
+| Gloves         | Light Armor  | 3                     | 1                | Hand           | Spellbane(2) |
+| Gauntlet       | Heavy Armor  | --                    | 2                | Hand           | Spellbane(4) |
+| Boots          | Light Armor  | 2                     | 1                | Feet           |              |
+| Greaves        | Heavy Armor  | --                    | 2                | Feet           | Spellbane(1) |
+| Spangenhelm    | Light Armor  | --                    | 1                | Head           | Spellbane(1) |
+| Zischagge      | Medium Armor | --                    | 2                | Head           | Spellbane(2) |
+| Great Helm     | Heavy Armor  | --                    | 3                | Head           | Spellbane(3) |
 
 ## Properties
 
@@ -105,7 +105,7 @@ A weapon with the `threat + x` `property` increases the `threat range` of the `c
 
 ### Ammunition
 
-A weapon with the `ammunition` `property` must be loaded with some sort of weapon ammunition specified in the parenthesis `()` of the `property`. For example, a weapon with the `ammunition (arrows)` `property` must be loaded with arrows.
+A weapon with the `ammunition` `property` must be loaded with some sort of weapon ammunition specified in the parenthesis `()` of the `property`. For example, a weapon with the `ammunition (arrows)` `property` must be loaded with arrows. A `creature` can do this as part of a `strike` `action`.
 
 ### Range
 
@@ -117,30 +117,26 @@ A weapon with the `range` `property` cannot be used to make melee `strikes`. `St
 
 An `item` with the `strength x` `property` requires the `creature` that wishes to `equip` it to have a `strength` score of x or above. If a `creature` does not meet this requirement and still `equips` the `item`, that `creature` suffers a penalty to **all rolls** equal to the difference between x and the `creature's` `strength` score. If multiple `equipped` `items` have this `property`, the one with the highest x is used.
 
-> For example, Ulfarmi has a `strength` score of 1. If he `equips` an `item` with the `strength 3` `property`, he rolls 2 _fewer_ dice on every single roll he does; rolls to `hit`, `skill` rolls... everything! Be careful what you wear!
+> For example, Ulfarmi has a `strength` score of 1. If he `equips` an `item` with the `strength 3` `property`, he suffers a -2 on every single roll he does; rolls to `hit`, `skill` rolls... everything! Be careful what you wear!
 
 ### Spellbane
 
-The `spellbane x` `property` afflicts the `creature` with the denoted amount of `spellbane`. For x points of `spellbane`, that `creature` rolls x fewer dice on _all_ rolls as an `attacker` during a `spellcast` `action`. `Spellbane` from multiple sources will stack with itself.
+The `spellbane(x)` `property` afflicts the `creature` with the denoted amount of `spellbane`. For x points of `spellbane`, that `creature` suffers a penalty to all rolls as an `attacker` during a `spellcast` `action` equal to the amount of `spellbane`. `Spellbane` from multiple sources will stack with itself.
 
-> For example, a `creature` with `spellbane 2` and `spellbane 1` functionally has `spellbane 3`. If that `creature` makes a `spellcast` `action`, their `spell attack` rolls, `spell pierce` rolls and `spell force` rolls are all reduced by **3** dice!
-
-### Spellboon
-
-The `spellboon x` `property` afflicts the `creature` with the denoted amount of `spellboon`. For x points of `spellboon`, that `creature` rolls x additional dice on _all_ rolls as an `attacker` during a `spellcast` `action`. `Spellboon` from multiple sources will stack with itself.
+> For example, a `creature` with `spellbane 2` and `spellbane 1` functionally has `spellbane 3`. If that `creature` makes a `spellcast` `action`, their `spell attack` rolls, `spell pierce` rolls and `spell force` rolls are at a -3 penalty!
 
 ### Demonic
 
-The `demonic x` `property` allows the `creature` to treat all `demonic` `spells` as having x _additional_ `magica` used on it. Note that this additional `magica` cannot cover the base `spell` `magica` cost.
+The `demonic(x)` `property` allows the `creature` to treat all `demonic` `spells` as having x _additional_ `magica` used on it. Note that this additional `magica` cannot cover the base `spell` `magica` cost.
 
 ### Arcane
 
-The `arcane x` `property` allows the `creature` to treat all `arcane` `spells` as having x _additional_ `magica` used on it. Note that this additional `magica` cannot cover the base `spell` `magica` cost.
+The `arcane(x)` `property` allows the `creature` to treat all `arcane` `spells` as having x _additional_ `magica` used on it. Note that this additional `magica` cannot cover the base `spell` `magica` cost.
 
 ### Holy
 
-The `holy x` `property` allows the `creature` to treat all `holy` `spells` as having x _additional_ `magica` used on it. Note that this additional `magica` cannot cover the base `spell` `magica` cost.
+The `holy(x)` `property` allows the `creature` to treat all `holy` `spells` as having x _additional_ `magica` used on it. Note that this additional `magica` cannot cover the base `spell` `magica` cost.
 
 ### Magica
 
-The `magica x` `property` allows the `creature` to treat **all** `spells` as having x _additional_ `magica` used on it. Note that this additional `magica` cannot cover the base `spell` `magica` cost.
+The `magica(x)` `property` allows the `creature` to treat **all** `spells` as having x _additional_ `magica` used on it. Note that this additional `magica` cannot cover the base `spell` `magica` cost.

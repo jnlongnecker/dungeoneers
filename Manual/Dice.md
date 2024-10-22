@@ -34,46 +34,46 @@ In a `check`, the `target` is set by the static number. In a `test`, the `target
 
 ## Die Sources
 
-Since the number of dice and the sides of those dice change often from roll to roll, we need a way to determine how many dice of what sides we need to roll. This is where `die sources` come into play. Whenever a roll is called for, the `die sources` will be specified. Most often, the number of dice rolled is determined by an `attribute score` `die source` and the number of sides of the dice are determined by the `proficiency` `die source`. Don't worry about these for right now; the important part to understand is that when a roll is called, you'll always know what dice to roll and how many. If there's ever a moment where you feel a roll is necessary but for whatever reason is not supported in the rules, look to your DM to decide what should be done.
+Since the number of dice and the sides of those dice change often from roll to roll, we need a way to determine how many dice of what sides we need to roll. This is where `die sources` come into play. Whenever a roll is called for, the `die source` will be specified. Most often, the `proficiency` `die source` will be used. Don't worry about `proficiency` for right now; the important part to understand is that when a roll is called, you'll always know what dice to roll and how many. If there's ever a moment where you feel a roll is necessary but for whatever reason is not supported in the rules, look to your DM to decide what should be done.
 
 The anatomy of a roll is the following:
 
-roll type : (side `die source` option | ... | side `die source` option) [(die size `die source` | ... | die size `die source`)] + add-ons vs `target`
+roll type : [(`die source` | ... | `die source`)] + add-ons vs `target`
 
-The "roll type" specifies what type of roll it is; either a `check` or a `test`. This lets you tell at a glance whether the roll is against a static number or another roll. Next, we have the options for die sides. If there are multiple options, they'll be contained within parenthesis `()` and separated with a pipe `|`. This means that the roller gets to choose which `die source` they want to use.
+The "roll type" specifies what type of roll it is; either a `check` or a `test`. This lets you tell at a glance whether the roll is against a static number or another roll. Whenever you see square brackets `[]`, this indicates a roll of dice and inside we will have the options for the `die source`. If there are multiple options, they'll be contained within parenthesis `()` and separated with a pipe `|`. This means that the roller gets to choose which `die source` they want to use. The pattern here of containing options in parenthesis `()` separated by a pipe `|` is a general pattern used anywhere there are choices.
 
 > Note the term "roller" was used, this does _not_ mean the `creature` that caused the roll! If the options are on the `defenders` side (after the vs), then the `defender` chooses for themselves. Similarly, if they're on the `attackers` side (before the vs), the `attacker` chooses for themselves.
 
-Inside square brackets `[]` is the `die source` for the size of the dice. Again, if multiple `die sources` can be chosen from, they'll be contained within parenthesis `()` and separated with a pipe `|`. Any add-ons to the roll (remember, these can include other rolls!) are noted after before a "vs" which denotes where the `target` begins. Depending on if the roll is a `check` or a `test`, this will either be another roll or a static number.
+Any add-ons to the roll (remember, these can include other rolls!) are noted after before a "vs" which denotes where the `target` begins. Depending on if the roll is a `check` or a `test`, this will either be another roll or a static number.
 
 If this was confusing still, the best way to explain this is through an example:
 
 _In order to see if a `grapple` succeeds, roll a_
 
-_`test`: `power` [`grappling`] vs (`prowess`|`power`) [`dodging`]_
+_`test`: [`grappling`] + `strength` vs [`dodging`] + (`agility`|`strength`)_
 
-The `attacker` rolls a number of dice equal to their `power` score, the size of which is determined by their `grappling` `proficiency` level (more on that in another section). This is compared against the `defenders` roll; they roll a number of dice equal to their choice of their `prowess` or `power` score, the size of which is determined by their `dodging` `proficiency`.
+The `attacker` rolls dice determined by their `grappling` `proficiency` level (more on that in another section) and add their `strength` score. This is compared against the `defenders` roll; they roll dice determined by their `dodging` `proficiency` and add their choice of their `agility` or `strength` score.
 
 ## Additional Dice
 
-Certain `modifications` will cause a `creature` to gain or lose dice to certain rolls. When speaking about the modifications to the dice to roll, the which dice roll is specified by the `modification`. For example, let's take a look at the `stress`:
+Certain `modifications` will cause a `creature` to gain or lose dice or flat modifiers to rolls. When speaking about the modifications to the roll, which roll is specified by the `modification`. For example, let's take a look at the `stress`:
 
-_While making a `strike`, a `creature` can elect to gain any number of `stress` in order to roll extra `striking` dice to `hit`._
+_While making a `strike`, a `creature` can elect to gain any number of `stress` in order to gain a bonus on their `striking` roll equal to +4 for each point of `stress` gained._
 
 In order to fully understand, we'll take a look at the `test` this refers to:
 
-_`test`: `agility`[`striking`] + 1[`hit die`] vs `agility`[`dodging`]_
+_`test`: [`striking`] + `agility` vs [`dodging`] + `agility`_
 
-Since the excerpt about `stress` specifies you roll extra `striking` dice, this means that your `agility` score sets the base amount of `striking` dice you roll and you gain `stress` to increase that amount by the `stress` you gain. Since the `1[hit die]` component is _not_ referenced, we still only roll 1[`hit die`]. If our `agility` is 2 and we use 1 `stress` for the `strike`, we would roll a total of 3 `striking` dice.
+Since the excerpt about `stress` specifies you gain a bonus to the `striking` roll, this means you add a flat number to the roll equal to how many `stress` you choose to gain. So if you gain 2 `stress`, you gain an extra +8 on your roll. Since order doesn't matter, this can really be done anywhere in your math but technically the bonus is to the total of the dice rolled using the `striking` `die source`.
 
-There can also be dice rolls that don't modify the amount or size of dice rolled at base, but instead _add on_ to the dice already being rolled. Again, taking `stress` as an example:
+There can also be `modifications` that don't modify the total of the roll with a flat number, but instead add on _additional dice_ to the dice already being rolled. Again, taking `stress` as an example:
 
 _While a `creature` has accumulated `stress` past their capacity, they roll an extra 1d4 to their `check` to `pierce`._
 
 And again, the `check` in reference:
 
-_`check`: `strength`[`pierce die`] vs `armor value`_
+_`check`: [`pierce dice`] + `strength` vs `armor value`_
 
-If we are past our `stress` capacity, this means we roll 1d4 _in addition to_ the standard `strength`[`pierce die`], making our end `check` being the following:
+If we are past our `stress` capacity, this means we roll 1d4 _in addition to_ the standard [`pierce die`] + `strength`, making our end `check` being the following:
 
-_`check`: `strength`[`pierce die`] + 1d4 vs `armor value`_
+_`check`: [`pierce dice`] + `strength` + [1d4] vs `armor value`_
