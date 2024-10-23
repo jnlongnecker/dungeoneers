@@ -1,6 +1,6 @@
 # Dice
 
-In Dungeoneers, the number of dice rolled and the faces of said dice are subject to great change at any given time. Many systems choose to revolve around a twenty-sided die, but Dungeoneers prefers the math that is yielded from rolling multiple dice at once and adding them up (for you stats nerds, this is the normal distribution). If you're familiar with dice rolling systems, you'll find the nomenclature of Dungeoneers to be very similar and may not need this section. If you're not, then no worries! This section will explain the terminology and what you'll need to know.
+In Dungeoneers, the number of dice rolled and the faces of said dice are subject to great change at any given time. Many systems choose to revolve around a twenty-sided die, but Dungeoneers prefers the math that is yielded from rolling multiple dice at once and adding them up (for you stats nerds, this is the normal distribution). If you're familiar with dice rolling systems, you'll find the nomenclature of Dungeoneers to be very similar and may not need most of this section (however, you'll probably still want to read up on `die sources`). If you're not, then no worries! This section will explain the terminology and what you'll need to know.
 
 ## Rolls
 
@@ -8,7 +8,7 @@ In Dungeoneers, the anatomy of a roll is the following:
 
 `n`d`x` + `m`
 
-This looks scary, but it's a lot simpler than it looks! In our roll, `n` represents the number of dice to roll. The "d" just stands for "die". `x` stands for the number of sides the die has, and `m` are any add-ons to the roll (which can either be other rolls or straight numbers). For example, we may have the following roll:
+This may seem scary, but it's a lot simpler than it looks! In our roll, `n` represents the number of dice to roll. The "d" just stands for "die". `x` stands for the number of sides the die has, and `m` are any add-ons to the roll (which can either be other rolls or straight numbers). For example, we may have the following roll:
 
 2d6
 
