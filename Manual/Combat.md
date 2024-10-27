@@ -83,7 +83,7 @@ Cost: 1 action point
 
 ---
 
-A `creature` may use 1 `action point` to use the `defend` `action` to give themselves the `defensive` `condition` until the start of their next `turn`. A `creature` with the `defensive` `condition` gains a +2 to their `dodging` rolls.
+A `creature` may use 1 `action point` to use the `defend` `action` to give themselves the `defensive` `condition` until the start of their next `turn`.
 
 ### Ready
 
@@ -105,11 +105,9 @@ Cost: 1 action point
 
 A `creature` may use 1 `action point` to use the `grapple` `action`. A `grapple` may only be used on a `creature` they `threaten`, and a `creature` must have a hand free in order to take this `action`. In order to see if a `grapple` succeeds, roll a
 
-`test`: [`grappling`] + `strength` vs [`dodging`] + (`agility`|`strength`).
+`test`: [`grappling`] + `body` vs [`dodging`] + (`finesse`|`body`).
 
-If the `grapple` succeeds, the `attacker` gains the `grappling` `condition` and the `defender` gains the `grappled` `condition`. The `grappled` `condition` forces all of a `creatures` `travel` speeds to be no greater than 0. The `grappling` condition halves all of the `travel` speeds the `creature` has. When a `grappling` `creature` uses the `move` `action`, the `creature` they are `grappling` is `forced` the same distance using the same `travel` speed as the `grappler`.
-
-If the `grappling` `creature` is `forced`, the `grapple` immediately ends and the `grappling` and `grappled` `conditions` are removed from their respective `creatures`.
+If the `grapple` succeeds, the `attacker` gains the `grappling` `condition` and the `defender` gains the `grappled` `condition`. If the `grappling` `creature` is `forced`, the `grapple` immediately ends and the `grappling` and `grappled` `conditions` are removed from their respective `creatures`.
 
 ### Push
 
@@ -120,7 +118,7 @@ Cost: 1 action point
 
 A `creature` may use 1 `action point` to use the `push` `action`. A `push` may only be used on a `creature` they `threaten`. In order to see if a `push` succeeds, roll a
 
-`test`: [`grappling`] + `strength` vs [`dodging`] + (`agility`|`strength`).
+`test`: [`grappling`] + `body` vs [`dodging`] + (`finesse`|`body`).
 
 If the `push` succeeds, the `defender` is `forced` Ground(1) in a direction of the `attackers` choosing.
 
@@ -140,43 +138,28 @@ Every `strike` is either melee or ranged. If the distance to the `defender` is g
 There are 3 steps to the process of making a `strike`:
 
 -   Determine if the `strike` `hits`
--   Determine if the `strike` `pierces`
 -   Determine the number of `wounds` inflicted
-
-#### Determining if a Strike Hits
 
 To determine a `hit`, roll a
 
-`test`: [`striking`] + `agility` vs [`dodging`] + `agility`.
+`test`: [`striking`] + `finesse` vs [`dodging`] + `finesse`.
 
-On a success, the `strike` `hits` and moves on to the next step. On a failure, the `strike` `misses` and the `strike` ends.
-
-#### Determining if a Strike Pierces
-
-To determine a `pierce`, roll a
-
-`check`: [`pierce die`] + `strength` vs `armor value`.
-
-If the `test` succeeds, the `defender` then sustains the number of `wounds` marked on the `attackers` `weapon`.
-
-#### Pierce Dice
-
-An `attacker's` `pierce dice` are determined by their `weapon`.
+On a failure, the `strike` `misses`. On a success, the `strike` `hits` and the `defender` then sustains the number of `wounds` marked on the `attackers` `weapon`.
 
 #### A Sample Scenario
 
-> For example, Suori makes a `strike` on a skeleton. The skeleton is `trained` in `dodging`, and has an `agility` score of 1. Suori is making this attack with a warhammer, which gives her a `pierce die` of a d6. Suori is `trained` in `striking` and has an `agility` score of 2. This means that Suori rolls 2d6, and the skeleton rolls 1d6. If the `test` succeeds, Suori `hits`!
+> For example, Suori makes a `strike` on a skeleton. The skeleton is `trained` in `dodging`, and has an `finesse` score of 1. Suori is making this attack with a warhammer, which gives her a `pierce die` of a d6. Suori is `trained` in `striking` and has an `finesse` score of 2. This means that Suori rolls 2d6, and the skeleton rolls 1d6. If the `test` succeeds, Suori `hits`!
 >
-> If Suori `hits`, we then roll the `check` to `pierce`. The skeleton has an `armor value` of 5 and Suori has 2 `strength`, so Suori rolls 2d6 and compares her total against 5. If Suori `pierces`, she then causes the skeleton to sustain 1 `bludgeoning wound` as marked on the warhammer. We definitely recommend writing down these numbers for your character so you don't have to look them up in the moment!
+> If Suori `hits`, we then roll the `check` to `pierce`. The skeleton has an `armor value` of 5 and Suori has 2 `body`, so Suori rolls 2d6 and compares her total against 5. If Suori `pierces`, she then causes the skeleton to sustain 1 `bludgeoning wound` as marked on the warhammer. We definitely recommend writing down these numbers for your character so you don't have to look them up in the moment!
 
-### Multiattack
+### Power Strike
 
-Tags: Untagged
-Cost: 2 action points
+Tags: Attack
+Cost: 3 action points
 
 ---
 
-A `creature` that takes the `multiattack` `action` may immediately take 2 `actions` with the `attack` tag. While taking these 2 `attack` `actions`, the `creature` has the `strengthbane(1)` `condition`.
+A `creature` that takes the `power strike` `action` can make 1 `strike`. This `strike` deals 1 extra `wound` and has 1 point of `boon` on the `striking` roll.
 
 ### Spellcast
 
@@ -198,49 +181,23 @@ Every `spell` is either melee or ranged, which is determined by the distance to 
 There are 3 steps to the process of making a `spellcast`:
 
 -   Determine if the `spellcast` `hits`
--   Determine if the `spellcast` `pierces`
 -   Determine the the `spells` effect
 
-A `spell` can either require a `spell attack` or a `spell force` to determine whether the `spellcast` `hits`.
+The `attacker` must decide how much extra `magica` is used before seeing if the `spell` `hits`, and that `magica` is expended whether the `spell` `hits` or not.
 
 #### Resolving a Spell Attack
 
 If a `spell` calls for a `spell attack`, roll a
 
-`test` : [`spellcraft`] + `logic` vs [`dodging`] + `agility`.
+`test`: [`spellcraft`] + `mind` vs [`target skill`] + `spirit`.
 
 If the `test` succeeds, the `spellcast` `hits`.
 
-#### Resolving a Spell Force
+> Note that each `spell` that requires a `spell attack` will target a specific `skill` in its description. This is what `proficiency` is used for the `defender's` roll. Sometimes, a `spell attack` may be requested at a later point than during the `spellcast` `action`, make sure you read the `spell`!
 
-If a `spell` calls for a `spell force`, roll a
+#### On Hit
 
-`test`: [`spellcraft`] + `logic` vs [`spellcraft`] + `target attribute`.
-
-If the `test` succeeds, the `spellcast` `hits`.
-
-> Note that each `spell` that requires a `spell force` will target a specific `attribute score` in its description. This is what is added on to the [`spellcraft`] roll the `defender` rolls.
-
-#### Overcoming Spell Resistance
-
-In order to see if the `spell` `pierces`, roll a
-
-`check`: [`magica spent`] + `presence` vs `spell resistance`
-
-If the `check` succeeds, the `spell` `pierces`. If the `spell` inflicts an `effect`, that `effect` takes place. If the `spell` inflicts `wounds`, that number of `wounds` are inflicted. A `creature` may elect to allow the `spell` through their `spell resistance` if they choose.
-
-#### Magica Spent Die Source
-
-The following table can be used to determine the `die source` for how much `magica` a `creature` spends. Note that "magica spent" refers to the _additional_ `magica` used to enhance the `spell`, and `magica` spent to baseline cast the `spell` does not count towards this number:
-
-| Magica Spent | Dice Rolled |
-| ------------ | ----------- |
-| 0            | 1d4         |
-| 1            | 2d4         |
-| 2            | 3d4         |
-| 3            | 4d4         |
-| 4            | 5d4         |
-| 5            | 6d4         |
+If the `spell` `hits`, the next step is to apply the `spell` `effect`. Read the `spell` to determine the impact of the extra `magica` spent and what occurs when the `spell` `hits`.
 
 ## Reactions
 
@@ -255,22 +212,6 @@ A `creature` may instinctively reach out for a ledge if they find themselves bei
 `check`: [1d4] + `dexterity` vs 5 + the number of tiles `forced`.
 
 On a success, the `creature` stops at a point where they are hanging on the ledge.
-
-## Defenses
-
-Throughout our discussion of `actions`, there were two values that came up that we haven't discussed yet: `armor value` and `spell resistance`. Both are unusual in Dungeoneers in that they are statically calculated values instead of rolls. Let's discuss what they are and how they are calculated.
-
-### Armor Value
-
-When a `creature` is `hit` by a `strike`, they do not immediately sustain any `wounds`. Instead, a roll must be made to determine if the `strike` `pierces`. Based on various natural resistances, `abilities`, `spells`, and `items`, a `creature` will have an `armor value` equal to the sum of all of these factors. The `attacker` must make a `test` against the `defender's` `armor value` in order to `pierce`.
-
-> For example, Ulfarmi has 0 `armor value` naturally. He has the `spell` mage armor cast on him, which gives him 3 `armor value`. If Ulfarmi equips leather armor, this gives him 1 `armor value`. In total, he would then have 4 `armor value`.
-
-A high `armor value` for typical mortals to have is 15. The pinnacle of defensive mortals may reach an `armor value` of 30.
-
-### Spell Resistance
-
-When a `creature` is `hit` by a `spellcast`, the `spell` doesn't immediately work. Instead, a roll must be made to determine if the `spell` `pierces`. The `spell resistance` score is calculated by the sum of natural resistances, `abilities`, `spells`, `items`, _and_ the `creatures` `presence` score. Generally speaking, it is more rare to be granted a bonus to `spell resistance` compared to `armor value`.
 
 ## Critical Hits
 
@@ -294,9 +235,9 @@ An `attack` with a blade or bow type weapon becomes a `critical hit` if the `hit
 
 ### Specific Rule - Cudgels & Axes
 
-An `attack` with a cudgel or axe type weapon becomes a `critical hit` if the `attackers` `strength` score is greater than or equal to the `dodge die` total rolled by the `defender`.
+An `attack` with a cudgel or axe type weapon becomes a `critical hit` if the `attackers` `body` score is greater than or equal to the `dodge die` total rolled by the `defender`.
 
-> For example let's imagine a skeleton is being `attacked` by Suori, who is wielding a warhammer. Suori has a `strength` score of 3, and the skeleton's `dodge die` total is a 2. In this instance, Suori's `attack` is a `critical hit`!
+> For example let's imagine a skeleton is being `attacked` by Suori, who is wielding a warhammer. Suori has a `body` score of 3, and the skeleton's `dodge die` total is a 2. In this instance, Suori's `attack` is a `critical hit`!
 
 ### Specific Rule - Lances
 

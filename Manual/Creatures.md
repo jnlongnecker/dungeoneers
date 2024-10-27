@@ -22,29 +22,21 @@ A typical human will have at least 2 in each `attribute score`. A general feel o
 | 9           | Demigodly    | This attribute score can only be found amongst demigods gifted in the attribute                                    |
 | 10          | Godly        | This attribute score can only be found amongst gods                                                                |
 
-### Strength
+### Body
 
-The `strength` score represents the physical power a `creature` has. The `strength` score is used to determine things like `strike` `piercing` and whether a `push` succeeds.
+The `body` score represents the physicality of the `creature`. It is used to determine things like `wounds` inflicted and `stress` capacity.
 
-### Agility
+### Spirit
 
-The `agility` score represents the precision and control of a `creature`. The `agility` score is used to determine things like `dodging` and `hitting`.
+The `spirit` score represents the force of personality and otherworldly presence of the `creature`. It is used to determine things like `magica` capacity and magical resistance.
 
-### Endurance
+### Mind
 
-The `endurance` score represents the physical and mental resilience of a `creature`. The `endurance` score is used to determine things like `stress` capacity.
+The `mind` score represents the mental practice and recall of a `creature`. It is used to determine things like `spell` control and skill.
 
-### Logic
+### Finesse
 
-The `logic` score represents the practice a `creature` has in logical deduction and recall. The `logic` score is used to determine things like `spell` control.
-
-### Wisdom
-
-The `wisdom` score represents the awareness and connection a `creature` has to its surroundings. The `wisdom` score is used to determine things like `magica` capacity.
-
-### Presence
-
-The `presence` score represents how noticeably and forcefully the `creature` presents itself (when it chooses to do so, of course). The `presence` score is used to determine things like overcoming `spell resistance` and improving `spell resistance`.
+The `finesse` score represents the precision and flexibility of a `creature`. It is used to determine things like `strike` accuracy and `dodging` efficacy.
 
 ## Threat Range
 
@@ -86,29 +78,27 @@ Taking a `wound` past a `creatures` maximum does not immediately kill that `crea
 
 Once a `wound` has been sustained, the only way to recover it is through magic or time. Certain `spells`and potions are capable of restoring `wounds`, and you recover all `wounds` at the end of a `full rest`.
 
-When a `wound` is sustained, it has a damage type associated with it. This becomes relevant for the `vulnerability` and `resistance` `traits`. You cannot sustain a negative amount of `wounds`, the minimum is 0.
+When a `wound` is sustained, it often has a `damage type` associated with it. This becomes relevant `wound` `modifications` as most only apply to certain `damage types`. You cannot sustain a negative amount of `wounds`, the minimum is 0. If a `wound` is sustained without a `damage type`, this means it is unaffected by any `wound` `modifications` that apply to certain `damage types`.
 
-> For example, a mace is a weapon that inflicts 1 `bludgeoning wound`, so `creatures` with the `vulnerability: bludgeoning` `trait` sustain more `wounds` from this weapon.
+> For example, a mace is a weapon that inflicts 1 `bludgeoning wound`, so `creatures` with the `vulnerability(B)` `trait` sustain more `wounds` from this weapon.
 
 ## Stress
 
-A `creature` accumulates `stress` over the course of a battle, and this `stress` can make them a better combatant but at a cost. A `creature` can handle an amount of `stress` equal to their `endurance` score.
+A `creature` accumulates `stress` over the course of a battle, and this `stress` can make them a better combatant but at a cost. A `creature` can handle an amount of `stress` equal to their `body` score.
 
-> For example, if Freya has 3 `endurance`, she can handle up to 3 `stress`.
+> For example, if Freya has 3 `body`, she can handle up to 3 `stress`.
 
 A `creature` can gain `stress` in a number of ways. Firstly, if a `creature` would sustain a `wound` while they can handle more `stress`, instead of sustaining the `wound(s)` they instead accumulate the number of `wounds` as `stress`. If this would exceed the maximum `stress` a `creature` can handle, any excess `wounds` are sustained as normal.
 
 > For example, if Freya can handle 3 `stress` but has already accumulated 2 `stress`, sustaining 2 `wounds` would accumulate 1 `wound` as `stress` and Freya would sustain the remaining 1 `wound` as a `wound`. This would leave Freya at 3 `stress` and 1 `wound`.
 
-While making a `strike`, a `creature` can elect to gain any number of `stress` in order to gain a bonus to their `striking` roll. They must declare that they are doing this before the roll is made. A `creature` may also elect to do the same for any `pierce` roll they make; they can elect to gain any amount of `stress` in order to gain a bonus to their `pierce dice` roll. Again, they must do this before the roll. The bonus is +4 for _each point of `stress`_ gained.
-
-> Note that a `creature` does _not_ have to use `stress` to `hit` in order to use `stress` to `pierce`.
+While making a `strike`, a `creature` can elect to gain any number of `stress` in order to gain a point of `boon` for each `stress` gained in this way. The `creature` must make this choice _before_ any roll is made.
 
 Gaining `stress` in any way other than sustaining `wounds` will still accumulate that `stress` past the `creatures` capacity. If a `creature` accumulates `stress` past their maximum, there are some consequences for doing so. If you sustain a `wound` while you have more `stress` than you can handle, you take _twice as many `wounds`_. This takes place before any `wound` reduction `effects` a `creature` may have. Additionally, whenever you accumulate `stress`, you accumulate _twice as much `stress`_. Again, this takes place before any `stress` reduction `effects` a `creature` may have. If you accumulate `stress` past 3 times your maximum, you sustain 1 `wound` every time you sustain `stress` past this maximum.
 
-> For example, Freya can handle up to 3 `stress`. Let us fast-forward to a point where Freya has accumulated 9 `stress`. Freya elects to gain 2 `stress` to gain an extra +8 to `hit`. Because Freya has exceeded her `stress` maximum, she accumulates twice as much `stress`, so she now has accumulated 13 `stress`. Again, because Freya has accumulated `stress` once she has reached 3 times her capacity, she sustains 1 `wound`. Since she is past her `stress` capacity, Freya sustains 2 `wounds`! If Freya doesn't have any `wound` reduction effects, the next `wound` she sustains will kill her!
+> For example, Freya can handle up to 3 `stress`. Let us fast-forward to a point where Freya has accumulated 9 `stress`. Freya elects to gain 2 `stress` to gain an extra 2 points of `boon` to `hit`. Because Freya has exceeded her `stress` maximum, she accumulates twice as much `stress`, so she now has accumulated 13 `stress`. Again, because Freya has accumulated `stress` once she has reached 3 times her capacity, she sustains 1 `wound`. Since she is past her `stress` capacity, Freya sustains 2 `wounds`!
 
-Going past a `creatures` `stress` capacity isn't purely negative, however. While a `creature` has accumulated `stress` past their capacity, they roll an extra 1d4 to any `check` to `pierce`.
+Going past a `creatures` `stress` capacity isn't purely negative, however. While a `creature` has accumulated `stress` past their capacity, they gain a point of `boon` all `striking` and `dodging` rolls.
 
 Once `stress` has been accumulated, there are a few ways to relieve it. Certain `spells` and `items` are capable of relieving `stress`, as well as certain `creature` `abilities`. A `creature` may relieve a number of `stress` equal to their `endurance` at the end of a `short rest` and they relieve all of their accumulated `stress` at the end of a `long rest` or `full rest`.
 

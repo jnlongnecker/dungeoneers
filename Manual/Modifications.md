@@ -18,15 +18,15 @@ A `trait` is an intrinsic property of a `creature`, and can be beneficial or han
 
 ### Vulnerability
 
-`Vulnerability` is a `trait` that causes a `creature` to sustain more `wounds` than normal whenever a `wound` is sustained of a certain damage type. There are 3 levels of `vulnerability` (`vulnerability 1`, `vulnerability 2`, and `vulnerability 3`) and a variant of `vulnerability` for every damage type. Each level of `vulnerability` causes the `creature` to sustain that number of extra `wounds`.
+`Vulnerability` is a `trait` that causes a `creature` to sustain more `wounds` than normal whenever a `wound` is sustained of a certain damage type. There are 3 levels of `vulnerability` (`vulnerability(1)`, `vulnerability(2)`, and `vulnerability(3)`) and a variant of `vulnerability` for every damage type. Each level of `vulnerability` causes the `creature` to sustain that number of extra `wounds`.
 
-> For example, a skeleton has the `trait` `vulnerability 1: bludgeoning`. This means that whenever a skeleton sustains 1 `bludgeoning` `wound`, they instead sustain 2.
+> For example, a skeleton has the `trait` `vulnerability(B1)`. This means that whenever a skeleton sustains 1 `bludgeoning` `wound`, they instead sustain 2.
 
 ### Resistance
 
-`Resistance` is a `trait` that causes a `creature` to sustain _less_ `wounds` than normal whenever a `wound` is sustained of a certain damage type. There are 3 levels of `resistance` (`resistance 1`, `resistance 2`, and `resistance 3`) and a variant of `resistance` for every damage type. Each level of `resistance` causes the `creature` to sustain that number fewer `wounds`.
+`Resistance` is a `trait` that causes a `creature` to sustain _less_ `wounds` than normal whenever a `wound` is sustained of a certain damage type. There are 3 levels of `resistance` (`resistance(1)`, `resistance(2)`, and `resistance(3)`) and a variant of `resistance` for every damage type. Each level of `resistance` causes the `creature` to sustain that number fewer `wounds`.
 
-> For example, a skeleton has the `trait` `resistance 3: piercing`. This means that whenever a skeleton sustains 3 or fewer `piercing` `wounds`, they instead sustain 0.
+> For example, a skeleton has the `trait` `resistance(P3)`. This means that whenever a skeleton sustains 3 or fewer `piercing` `wounds`, they instead sustain 0.
 
 ### Senses
 
@@ -80,7 +80,7 @@ A `creature` within the `threat range` of another `creature` that is hostile to 
 
 ### Grappled
 
-`Creatures` who are `grappled` have their `travel` speeds forced to be no greater than 0. When a `grappling` `creature` uses the `move` `action`, the `creature` they are `grappling` is `forced` the same distance using the same `travel` speed as the `grappler`.
+`Creatures` who are `grappled` have their `travel` speeds forced to be no greater than 0 and gain a point of `bane` to all `dodging` rolls. When a `grappling` `creature` uses the `move` `action`, the `creature` they are `grappling` is `forced` the same distance using the same `travel` speed as the `grappler`.
 
 ### Grappling
 
@@ -88,15 +88,11 @@ A `creature` within the `threat range` of another `creature` that is hostile to 
 
 ### Defensive
 
-`Creatures` who are `defensive` gain a +2 to their `dodging` rolls.
+`Creatures` who are `defensive` gain a point of `boon` to their `dodging` rolls.
 
 ### Prone
 
-`Creatures` who are `prone` gain the `agilitybane(4)` `condition` while they are `prone`. `Creatures` who make a `test` to `hit` a `creature` who is `prone` and outside of their `threat range` also gain the `agilitybane(4)` `condition` for that `test`.
-
-### Bane & Boon
-
-`Bane` and `boon` are two sides to the same coin; `bane` is the negative side and `boon` is the positive side. Both are always prefixed with _what_ they affect and suffixed by _how much_ they affect. For example, `agilitybane(4)` refers to a `bane` on `agility` which means that the `creatures` `agility` score is reduced. The `(4)` specifies that `agility` is reduced by `4`. The general `condition` of `bane` and `boon` described here only refer to `attribute scores`, but there are `bane` and `boon` `effects` that make different alterations.
+`Creatures` who are `prone` gain 3 points of `bane` to their `dodging` rolls while they are `prone`. `Creatures` who make a ranged `strike` against a `prone` `creature` also gain the 3 points of `bane` to their `striking` roll.
 
 ## Falling
 
@@ -106,7 +102,7 @@ A `creature` with the `falling` `condition` is `forced` towards the ground 15 ti
 
 If the `check` succeeds, the `creature` sustains no `wounds`. If they fail, the difference between the roll and the number of tiles fallen is the effective number of tiles they have fallen.
 
-The `wounds` sustained by `falling` are unique. They are subject to `resistance` and `vulnerability`, but otherwise cannot be affected. These `wounds` cannot be absorbed by `stress`.
+The `wounds` sustained by `falling` are unique. They are subject to `resistance` and `vulnerability`, but otherwise cannot be affected (including from `physical defense`). These `wounds` cannot be absorbed by `stress`.
 
 ## Properties
 
@@ -114,9 +110,9 @@ The `wounds` sustained by `falling` are unique. They are subject to `resistance`
 
 ## Effects
 
-An `effect` is a `modification` that is applied when specific criteria is met. It's not really a _different_ concept from other `modifications`, it's merely the _application_ of the `modification`.
+An `effect` is a `modification` that is applied when specific criteria is met. These `modifications` are usually the application of other `modifications` and are described elsewhere.
 
-The only exception is the `forced` `effect`, which can't really be categorized in one of the above categories.
+The only exception is the `forced` `effect` which will be explained here.
 
 ### Forced
 

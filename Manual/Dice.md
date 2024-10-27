@@ -50,30 +50,28 @@ If this was confusing still, the best way to explain this is through an example:
 
 _In order to see if a `grapple` succeeds, roll a_
 
-_`test`: [`grappling`] + `strength` vs [`dodging`] + (`agility`|`strength`)_
+_`test`: [`grappling`] + `body` vs [`dodging`] + (`finesse`|`body`)_
 
-The `attacker` rolls dice determined by their `grappling` `proficiency` level (more on that in another section) and add their `strength` score. This is compared against the `defenders` roll; they roll dice determined by their `dodging` `proficiency` and add their choice of their `agility` or `strength` score.
+The `attacker` rolls dice determined by their `grappling` `proficiency` level (more on that in another section) and add their `body` score. This is compared against the `defenders` roll; they roll dice determined by their `dodging` `proficiency` and add their choice of their `finesse` or `body` score.
 
 ## Additional Dice
 
-Certain `modifications` will cause a `creature` to gain or lose dice or flat modifiers to rolls. When speaking about the modifications to the roll, which roll is specified by the `modification`. For example, let's take a look at the `stress`:
+Most `modifications` that involve adjusting the dice that are rolled usually do so through points of `bane` or `boon`. Let's take `stress` as an example:
 
-_While making a `strike`, a `creature` can elect to gain any number of `stress` in order to gain a bonus on their `striking` roll equal to +4 for each point of `stress` gained._
+_While a `creature` has accumulated `stress` past their capacity, they gain a point of `boon` all `striking` and `dodging` rolls._
 
-In order to fully understand, we'll take a look at the `test` this refers to:
+Looking at an example of one such roll (making a `strike`):
 
-_`test`: [`striking`] + `agility` vs [`dodging`] + `agility`_
+`test`: [`striking`] + `finesse` vs [`dodging`] + `finesse`.
 
-Since the excerpt about `stress` specifies you gain a bonus to the `striking` roll, this means you add a flat number to the roll equal to how many `stress` you choose to gain. So if you gain 2 `stress`, you gain an extra +8 on your roll. Since order doesn't matter, this can really be done anywhere in your math but technically the bonus is to the total of the dice rolled using the `striking` `die source`.
+If we are past our `stress` capacity, this means we roll 1d4 _in addition to_ the standard [`striking`] + `finesse`, making our end `test` being the following:
 
-There can also be `modifications` that don't modify the total of the roll with a flat number, but instead add on _additional dice_ to the dice already being rolled. Again, taking `stress` as an example:
+`test`: [`striking`] + 1d4 + `finesse` vs [`dodging`] + `finesse`.
 
-_While a `creature` has accumulated `stress` past their capacity, they roll an extra 1d4 to their `check` to `pierce`._
+But what was that about `bane` and `boon`? We will discuss below!
 
-And again, the `check` in reference:
+## Bane and Boon
 
-_`check`: [`pierce dice`] + `strength` vs `armor value`_
+Sometimes a `creature` may have a greater or lesser chance than usual to succeed due to the circumstance around the roll. In these scenarios, this circumstantial modifier is represented by `bane` and `boon`. For each point of `bane`, a `creature` rolls 1d4 and _subtracts_ the result from their roll. For each point of `boon`, a `creature` rolls 1d4 and _adds_ the result to their roll. `Bane` and `boon` cancel each other out; meaning if you have 1 point of `bane` and 1 point of `boon`, no extra roll is necessary.
 
-If we are past our `stress` capacity, this means we roll 1d4 _in addition to_ the standard [`pierce die`] + `strength`, making our end `check` being the following:
-
-_`check`: [`pierce dice`] + `strength` + [1d4] vs `armor value`_
+Points of `bane` and `boon` only apply to a single roll, so once the roll is resolved any points disappear. A `modification` _can_ give points of `bane` and `boon` to multiple rolls, but remember each roll has a baseline of 0 `bane` and 0 `boon`.
