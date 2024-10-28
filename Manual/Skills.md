@@ -39,7 +39,11 @@ Outside of combat, you're likely to roll `checks` more often than `tests`. The d
 
 For the rest of this section, we'll go over the `skills` available in Dungeoneers, what they're used for and use our difficulty level table to give examples of some tasks that can be achieved using the `skill` and how difficult they are to accomplish.
 
-## Striking
+## Combat Skills
+
+The primary use of these `skills` is within the context of combat. While certainly not exclusive to combat contexts, they are grouped as such since that is where they are most often used.
+
+### Striking
 
 The `striking` `skill` is used to make contact with weaponry. If a `creature` is trying to make contact with something that is not easy to make contact with, the `striking` `skill` is used to determine how accurate they are with their weapon.
 
@@ -54,7 +58,7 @@ The `striking` `skill` is used to make contact with weaponry. If a `creature` is
 | Fantastical      | 25-29  | Hitting an object the size of a quarter erratically moving by tracking it through a mirror                            |
 | Unfathomable     | 30+    | Shooting an arrow through a hole the size of a quarter moving erratically using the arrow's arc to hit it over a wall |
 
-## Dodging
+### Dodging
 
 The `dodging` `skill` is used to avoid something from making contact; the counterpoint to `striking`. To determine if a `creature` is able to avoid damaging contact from some object, the `dodging` `skill` is used.
 
@@ -68,3 +72,49 @@ The `dodging` `skill` is used to avoid something from making contact; the counte
 | Absurd           | 18-24  | Avoiding multiple hidden dart traps firing at slightly offset times |
 | Fantastical      | 25-29  | Avoiding multiple simultaneous traps without being able to see them |
 | Unfathomable     | 30+    | Avoiding a fast-moving object capable of homing onto you            |
+
+### Spellcraft
+
+The `spellcraft` `skill` is used to manipulate and invoke `spells`. To determine how effective a `creature` is at casting `spells`, the `spellcraft` `skill` is used.
+
+## Traversal Skills
+
+### Swimming
+
+### Climbing
+
+### Balance
+
+## Specialist Skills
+
+A `skill` in the specialist category are used to determine a `creature's` ability with specialty tools, most typically used to craft `items`.
+
+### Smithing
+
+### Sculpting
+
+### Fletching
+
+### Locksmithing
+
+### Alchemy
+
+### Crafting
+
+## General Skills
+
+The remainder of possible `skills` can be found here. These are general purpose `skills` that can come up in any context.
+
+### Arcana
+
+### Examination
+
+### Influence
+
+### Knowledge
+
+### Notice
+
+### Stealth
+
+### Nature
