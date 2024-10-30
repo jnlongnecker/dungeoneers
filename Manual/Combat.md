@@ -2,13 +2,17 @@
 
 As a Dungeoneer, you will encounter many foes that stand in your way to your inevitable goal. Some may be able to be avoided, but you will ultimately come to blows with many `creatures`. You should become familiar with combat mechanics in order to overcome these obstacles and complete your mission. When `creatures` come to blows, the passage of time becomes more strictly represented. All of time is represented in the following way, but it is typically only important to track this during time-sensitive moments like combat.
 
-A time span of 6 seconds is represented by a `round`. During a `round`, each `creature` has a `turn` where they are allowed to use certain resources in order to interact with the world. The order of each `creature's` `turn` is decided at the start of a `round` using the `creature's` `initiative`. If two or more `creatures` have the same `initiative`, roll a d10 to break the tie, re-rolling if necessary.
+A time span of 6 seconds is represented by a `round`. During a `round`, each `creature` has a `turn` where they are allowed to use certain resources in order to interact with the world. The order of each `creature's` `turn` is decided at the start of a `round` using the `creature's` `initiative`. For each group of `creatures`, find the one with the highest `initiative`: this is the `initiative` of the group. Each `creature` in that group then takes their `turn` one after the other in whichever order they please. The group with the highest `initiative` acts first, then the next highest and so on. In the event of a tie, roll 1d10 for each tied group. The highest roll wins the tie (repeat this process as many times as necessary).
 
 > Re-rolling `initiative` every `round` can be cumbersome. Feel free to only roll `initiative` once if you have ties and stick to that number until it's no longer necessary to strictly track time in `rounds`.
 
 During a `turn`, the `creature` that owns the `turn` has 3 `action points` that they can use to perform tasks called `actions`, which are the vast majority of all interactions with the world. `Creatures` also have 1 `reaction point` that they can use to perform tasks called `reactions`, which are special, quick motions done in response to some trigger. A `creature` can use `reaction points`, during any `turn` (not just the one the `creature` owns), and regains their `reaction points` at the start of each `round`.
 
-During a `round`, the `creature` with the highest `initiative` takes their `turn` first. Once they are finished with their `turn`, the `creature` with the next-highest `initiative` takes their `turn`, and so on until the `creature` with the lowest `initiative` completes their `turn`. The `round` then completes and the next `round` begins, starting with the `creature` with the highest `initiative` taking their `turn` again.
+Once a `creature` has completed its `turn`, the next `creature` in the group takes their `turn`. Once all `creatures` in the group have acted, the next group goes in the same manner. Once all `creatures` in each group have acted, the `round` ends and starts again with the group with the highest `initiative`.
+
+## Creature Groups
+
+`Creatures` who are allied with one another should be part of the same group, unless it makes sense for them not to (for example, reinforcements arriving in the middle of combat). The `players` are always part of the same group, unless for whatever reason they are not allied with one another. Any `NPC` allies of the `players` should be part of their own group.
 
 ## Damage Types
 
