@@ -36,7 +36,7 @@ Each `damage type` is part of a category, and all types exist under the "damage"
 
 ## Actions
 
-There are many things that use up `action points`, and the specific cases are covered by the specific abilities that give the `action`. Some `actions` may take up multiple `action points`, many only use 1. However, there are some basic `actions` that are able to be taken by any `creature` unless otherwise specified.
+There are many things that use up `action points`, and the specific cases are covered by the specific abilities that give the `action`. Some `actions` may take up multiple `action points`, many only use 1. Many `actions` are given to `creatures` through various `abilities`. However, there are some basic `actions` that are able to be taken by any `creature` unless otherwise specified which we will cover here.
 
 Every `action` has one or more `tags` that is used to categorize that `action`. For simplicity, `tags` are used to refer to groups of `actions` instead of having to list off each and every `action` that the rule affects.
 
