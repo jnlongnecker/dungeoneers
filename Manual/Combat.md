@@ -2,13 +2,29 @@
 
 As a Dungeoneer, you will encounter many foes that stand in your way to your inevitable goal. Some may be able to be avoided, but you will ultimately come to blows with many `creatures`. You should become familiar with combat mechanics in order to overcome these obstacles and complete your mission. When `creatures` come to blows, the passage of time becomes more strictly represented. All of time is represented in the following way, but it is typically only important to track this during time-sensitive moments like combat.
 
-A time span of 6 seconds is represented by a `round`. During a `round`, each `creature` has a `turn` where they are allowed to use certain resources in order to interact with the world. The order of each `creature's` `turn` is decided at the start of a `round` using the `creature's` `initiative`. For each group of `creatures`, find the one with the highest `initiative`: this is the `initiative` of the group. Each `creature` in that group then takes their `turn` one after the other in whichever order they please. The group with the highest `initiative` acts first, then the next highest and so on. In the event of a tie, roll 1d10 for each tied group. The highest roll wins the tie (repeat this process as many times as necessary).
+A time span of 6 seconds is represented by a `round`. During a `round`, each `creature` has 6 `action points` representing their ability to affect their world each second. During the course of a single `round`, a `creature` will have one or more `turns` in order to spend their allotted `action points`, but the way this works may be different than what you're used to if you've played a turn-based game before. Instead of a `creature` using up all of their `action points` at once, they instead use 1 `action` that costs 1-6 `action points`. If this `action` would lower their `action point` total below the amount of another `creature`, their `turn` is over and the `creature` with the next highest `action point` total takes their `turn`. In the event of a tie, the two `creatures` act simultaneously if they are in the same `creature group` (described below). If two `creatures` from different `creature groups` have the same number of `action points`, the `creature` from the `group` with the higher `body` total goes first.
 
-> Re-rolling `initiative` every `round` can be cumbersome. Feel free to only roll `initiative` once if you have ties and stick to that number until it's no longer necessary to strictly track time in `rounds`.
+> It is useful to precalculate the `body` total of each group ahead of time to keep the flow of combat going! Make sure it's clear and easy to find out how to break ties, as it's pretty common.
 
-During a `turn`, the `creature` that owns the `turn` has 3 `action points` that they can use to perform tasks called `actions`, which are the vast majority of all interactions with the world. `Creatures` also have 1 `reaction point` that they can use to perform tasks called `reactions`, which are special, quick motions done in response to some trigger. A `creature` can use `reaction points`, during any `turn` (not just the one the `creature` owns), and regains their `reaction points` at the start of each `round`.
+Certain `actions` can be taken in response to something occurring in the world. These `actions` are called `reactions`. They still use `action points`, so a `creature` _must have_ `action points` still in order to use them. A `reaction` interrupts anything that is currently happening until the completion of the `reaction`, then the interrupted `action` continues if possible. Once all `creatures` are at 0 `action points`, this marks the end of the `round` and a new `round` begins with every `creature` at 6 `action points` again.
 
-Once a `creature` has completed its `turn`, the next `creature` in the group takes their `turn`. Once all `creatures` in the group have acted, the next group goes in the same manner. Once all `creatures` in each group have acted, the `round` ends and starts again with the group with the highest `initiative`.
+Let's walk through an example to see how this works in action with 3 `creatures`; 2 player characters (Freya and Alberich) and 1 skeleton:
+
+-   At the start of the `round`, each `creature` has 6 `action points`
+-   The player group has a higher body total than the skeleton, so the player characters go first
+-   Alberich spends 3 `action points`, so now his `turn` is over and Freya goes
+-   Freya spends 2 `action points`, so now her `turn` is over and the skeleton goes
+-   The skeleton spends 4 `action points`, so now it is Freya's turn since she has the most `action points`
+-   Freya spends 1 `action points`, which brings her total to the same as Alberich
+-   Freya spends 1 `action point` again
+    -   Note that Alberich is going at the same time here, we've just chosen to put Freya first
+-   Alberich spends 2 `action points`
+-   Now Freya and the skeleton have the same `action point` total, so Freya goes first due to her being in the higher `body` total group
+-   Freya spends her remaining 2 `action points`
+-   The skeleton also spends 2 `action points`
+    -   This causes Alberich to use a `reaction` that costs 1 `action points`.
+    -   Freya _could not_ react because she had 0 `action points` remaining
+-   Now all `creatures` have 0 `action points`, and a new `round` begins with all `creatures` at 6 `action points`
 
 ## Creature Groups
 
@@ -43,7 +59,7 @@ Every `action` has one or more `tags` that is used to categorize that `action`. 
 ### Deep Breath
 
 Tags: Restoration
-Cost: 1 action point
+Cost: 2 action points
 
 ---
 
@@ -54,7 +70,7 @@ A `creature` may use the `deep breath` `action` to relieve 2 points of `stress`.
 ### Focus
 
 Tags: Restoration
-Cost: 1 action point
+Cost: 2 action points
 
 ---
 
@@ -78,12 +94,21 @@ Cost: 1 action point
 
 A `creature` may use 1 `action point` to use the `move` `action` to choose a `travel` speed and move up to a number of tiles equal to that `travel` speed.
 
-> For example, a `creature` may have 2 `travel` speeds: Ground (3) and Fly (4). That `creature` may take the `move` `action` and choose one of their `travel` speeds, either Ground (3) or Fly (4). If they choose Fly(4), they may fly up to 4 tiles. If they choose Ground (3), they may move along the ground 3 tiles.
+> For example, a `creature` may have 2 `travel` speeds: Ground (1) and Fly (2). That `creature` may take the `move` `action` and choose one of their `travel` speeds, either Ground (1) or Fly (2). If they choose Fly(2), they may fly up to 2 tiles. If they choose Ground (1), they may move along the ground 1 tile.
+
+### Sprint
+
+Tags: Movement
+Cost: 1 action point
+
+---
+
+A `creature` may use the `sprint` `action` to choose a `travel` speed and move _twice_ the number of tiles equal to that `travel` speed. In doing so, the `creature` gains 1 points of `stress`.
 
 ### Defend
 
 Tags: Defensive
-Cost: 1 action point
+Cost: 2 action point
 
 ---
 
@@ -96,18 +121,20 @@ Cost: 1 action point
 
 ---
 
-A `creature` may make the `ready` `action` on their turn to delay the start of an `action` they can use. The chosen `action` is called the `readied` `action`. A `creature` must spend an equal amount of `action points` to `ready` an `action` as they would to take that `action` normally, but they must also use a `reaction point` to begin taking that `action`. When the `ready` `action` is taken, the `creature` must specify which `turn` they trigger their `readied` `action` and if it occurs just before that `turn` begins or just after that `turn` ends.
+A `creature` may make the `ready` `action` on their turn to delay the start of an `action` they can use. The chosen `action` is called the `readied` `action`. The `creature` may then take the `readied action` as a `reaction` at any time during the current `round`.
 
-> For example, Suori is next to Ulfarmi and they are in combat with a skeleton. Suori goes first, the skeleton second and Ulfarmi last, and Suori knows that Ulfarmi will want to move outside of the skeleton's `threat range`. However, she cannot prevent the skeleton from closing that distance since her `turn` comes before the skeleton's. Suori takes the `ready` `action` and `readies` the `push` `action`, spending 1 `action point` and specifying that it will take place before the start of Ulfarmi's `turn`. Suori's `turn` ends and the skeleton `moves` towards Ulfarmi and deals a mighty blow! The skeleton's `turn` ends, and before Ulfarmi's `turn` begins, Suori spends a `reaction point` to trigger her `readied` `action` and `pushes` the skelton away. This now gives Ulfarmi the space he needs to run away!
+> Note that the `ready` `action` itself costs 1 `action point`. This is **in addition** to the cost of the `readied action`, but the `action points` for the `readied action` are only spent when it is used as a `reaction`. If this never occurs, only the `action point` for the `ready` `action` is spent.
+>
+> Also keep in mind that you do not _have_ to use your `readied action`. This `action` merely gives you the ability to do so as a `reaction` for the current `round`.
 
 ### Grapple
 
 Tags: Attack
-Cost: 1 action point
+Cost: 2 action points
 
 ---
 
-A `creature` may use 1 `action point` to use the `grapple` `action`. A `grapple` may only be used on a `creature` they `threaten`, and a `creature` must have a hand free in order to take this `action`. In order to see if a `grapple` succeeds, roll a
+A `creature` may use 2 `action points` to use the `grapple` `action`. A `grapple` may only be used on a `creature` they `threaten`, and a `creature` must have a hand free in order to take this `action`. In order to see if a `grapple` succeeds, roll a
 
 `test`: [`grappling`] + `body` vs [`dodging`] + (`finesse`|`body`).
 
@@ -116,11 +143,11 @@ If the `grapple` succeeds, the `attacker` gains the `grappling` `condition` and 
 ### Push
 
 Tags: Attack
-Cost: 1 action point
+Cost: 2 action points
 
 ---
 
-A `creature` may use 1 `action point` to use the `push` `action`. A `push` may only be used on a `creature` they `threaten`. In order to see if a `push` succeeds, roll a
+A `creature` may use 2 `action points` to use the `push` `action`. A `push` may only be used on a `creature` they `threaten`. In order to see if a `push` succeeds, roll a
 
 `test`: [`grappling`] + `body` vs [`dodging`] + (`finesse`|`body`).
 
@@ -129,7 +156,7 @@ If the `push` succeeds, the `defender` is `forced` Ground(1) in a direction of t
 ### Strike
 
 Tags: Attack
-Cost: 2 action points
+Cost: 3 action points
 
 ---
 
@@ -159,7 +186,7 @@ On a failure, the `strike` `misses`. On a success, the `strike` `hits` and the `
 ### Power Strike
 
 Tags: Attack
-Cost: 3 action points
+Cost: 4 action points
 
 ---
 
@@ -205,11 +232,14 @@ If the `spell` `hits`, the next step is to apply the `spell` `effect`. Read the 
 
 ## Reactions
 
-Some tasks happen practically automatically in response to certain stimuli. A `reaction` represents an instantaneous twitch of muscle memory; practically involuntarily. Most `creatures` only have 1 `reaction point` to spend on `reactions`. Like `actions`, not every `reaction` will be listed here as some may be given by other features and `abilities`, but there are some general `reactions` that any `creature` can take.
-
-A `reaction` can be taken at any point during any `turn` as long as a `creature` has a `reaction point` to spend on it.
+Some tasks happen practically automatically in response to certain stimuli. A `reaction` represents an instantaneous twitch of muscle memory; practically involuntarily. All `reactions` cost `action points`, and a `reaction` can only be used if that `creature` still has `action points` to spare.
 
 ### Grab a Ledge
+
+Tags: Reaction
+Cost: 1 action point
+
+---
 
 A `creature` may instinctively reach out for a ledge if they find themselves being knocked off. If a `creature` is `forced` to a point where they pass over a ledge within their `threat range`, they may use the `grab a ledge` `reaction` to stop themselves at the ledge. In order to do so, roll a
 
@@ -219,36 +249,4 @@ On a success, the `creature` stops at a point where they are hanging on the ledg
 
 ## Critical Hits
 
-There are two variations for `critical hits`: a general rule and a specific rule. The general rule for `critical hits` is a rule that is _always_ in play, while the specific rule only applies for specific contexts such as using a particular weapon in a certain way. Whenever a `critical hit` is determined to have occurred, the number of `wounds` listed on the `spell` or weapon being used to deliver the `critical hit` is doubled. For `spells` that do not deal `wounds`, there is no benefit.
-
-> Note the specific wording! Only the raw number listed is doubled, so this takes place before any `modifications` to the number of `wounds` sustained.
-
-If a `critical hit` is determined by any of the rules that apply to the circumstance, there is no need to determine if any of the other applicable rules would also give a `critical hit`. In other words, `critical hits` are binary: it either is or is not a `critical hit`. There is no "stacking" of `critical hits`.
-
-If an `attack` or a `spellcast` is a `critical hit`, it automatically `hits` and `pierces` (or if the `spell` requires a `spell save`, the `spell save` is automatically failed).
-
-### General Rule
-
-For `attacks`, if the `pierce dice` total rolled is equal to or greater than _twice_ the `defenders` `armor value`, a `critical hit` occurs. For `spellcasts`, if the `spell pierce dice` total rolled is equal to or greater than _twice_ the `defenders` `spell resistance`, a `critical hit` occurs.
-
-### Specific Rule - Blades & Bows
-
-An `attack` with a blade or bow type weapon becomes a `critical hit` if the `hit dice` total rolled is equal to or greater than the _maximum possible_ `dodge dice` total than can be rolled by the `defender`.
-
-> For example, a `creature` has a `dodge die` of d4 and a `prowess` of 1. Their maximum possible `dodge die` total is 4. If Suori rolls an 4 or above on her `hit dice` total with her shortsword, her `attack` is a `critical hit`.
-
-### Specific Rule - Cudgels & Axes
-
-An `attack` with a cudgel or axe type weapon becomes a `critical hit` if the `attackers` `body` score is greater than or equal to the `dodge die` total rolled by the `defender`.
-
-> For example let's imagine a skeleton is being `attacked` by Suori, who is wielding a warhammer. Suori has a `body` score of 3, and the skeleton's `dodge die` total is a 2. In this instance, Suori's `attack` is a `critical hit`!
-
-### Specific Rule - Lances
-
-An `attack` with a lance type weapon becomes a `critical hit` if at least 2 of the `hit dice` rolled their maximum number.
-
-> For example, if Freya `attacks` with a spear, the spear has a `hit die` of d6. If Freya rolls at least two 6's for her `hit dice` total, her `attack` is a `critical hit`. This means that lances with _lower_ `hit dice` are actually more likely to get a `critical hit`! Which do you go for, better chances to `hit` but you must `pierce` OR try for a `critical hit` and automatically `pierce`?
-
-### Specific Rule - Spells
-
-A `critical hit` with any kind of `spell` can be achieved if the `spell save dice` or `spell attack dice` rolled total of the `attacker` is greater than the maximum possible `spell save dice` or `dodge dice` total of the `defender`.
+For a `strike` or a `spellcast`, if the `attacker's` roll total doubles the `defender's` roll total, there is a `critical hit`.

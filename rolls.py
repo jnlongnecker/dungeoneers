@@ -195,6 +195,8 @@ def calculate_chance_of(dice_string, operator, desired_num):
         chance = probability_at_least(probs, real_num + 1)
     elif operator == '>=':
         chance = probability_at_least(probs, real_num)
+    elif operator == '=':
+        chance = probs[desired_num]
     return chance
 
 def print_chance_of(dice_string, operator, desired_num):

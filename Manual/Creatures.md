@@ -4,7 +4,7 @@ In Dungeoneers, a `creature` is any living entity in the world. Often times, sys
 
 ## Attribute Scores
 
-Every `creature` has 6 `attribute scores` that are used in a variety of scenarios. The specific scenarios are covered in their respective sections, but we'll talk a bit about each here.
+Every `creature` has 6 `attribute scores` that are used in a variety of scenarios. The specific scenarios are covered in their respective sections, but we'll talk a bit about each here. Every `creature` is also made up of a body, mind and spirit (represented by their respective scores). The body of a `creature` is their physical body, their mind is the processing and mental facilities, and their spirit the `magica` that makes up their otherwordly presence.
 
 A typical human will have at least 2 in each `attribute score`. A general feel of the power tied to an `attribute score` can be determined by the following table:
 

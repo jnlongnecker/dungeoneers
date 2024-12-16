@@ -1,9 +1,11 @@
 import rolls
 import creatures
 
-result = rolls.calculate_chance_to_beat('4d6 + 7', '30', False)
+rolls.print_chance_of('2d8', '=', 2)
 
-print(result)
+# result = rolls.calculate_chance_to_beat('2d8', '2', False)
+
+# print(result)
 
 # me = creatures.Creature(strength=2, agility=4, av=5, dodging='d6', striking='d8', hit_die='d0', pierce_die='d8')
 # targets = []
