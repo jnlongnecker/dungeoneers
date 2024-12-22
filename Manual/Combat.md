@@ -47,8 +47,7 @@ Each `damage type` is part of a category, and all types exist under the "damage"
         -   Heat (H)
         -   Cold (C)
         -   Toxic (T)
-        -   Melt (M)
-        -   Erase (E)
+        -   Disintegrate (D)
 
 ## Actions
 

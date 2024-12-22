@@ -119,7 +119,7 @@ A weapon with the `range` `property` cannot be used to make melee `strikes`. `St
 
 > For example, the hunting bow has the `range (5)` `property`. This means that for a `creature` with a `threat range` of 1, the hunting bow can be used to make `strikes` to any `creature` 2-5 tiles away.
 
-## Body
+### Body
 
 An `item` with the `body x` `property` requires the `creature` that wishes to `equip` it to have a `body` score of x or above. If a `creature` does not meet this requirement and still `equips` the `item`, calculate the difference between x and the `creature's` `body` score. That `creature` gains that many points of `bane` to _all rolls_. If multiple `equipped` `items` have this `property`, the one with the highest x is used.
 

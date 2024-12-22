@@ -50,10 +50,10 @@ A `creature` has a `size` that represents the amount of physical space that they
 
 The `size` categories, tiles that `creatures` of that `size` occupy and `threat range` can be identified in the following table:
 
-|                    | Tiny | Small | Medium | Large | Huge | Massive |
-| ------------------ | ---- | ----- | ------ | ----- | ---- | ------- |
-| **Tiles Occupied** | 1/4  | 1/2   | 1      | 2     | 3    | 4       |
-| **Threat Range**   | 1    | 1     | 1      | 1     | 2    | 2       |
+|                    | Tiny | Small | Medium | Large | Huge | Massive | Gargantuan |
+| ------------------ | ---- | ----- | ------ | ----- | ---- | ------- | ---------- |
+| **Tiles Occupied** | 1/4  | 1/2   | 1      | 2     | 3    | 4       | 5+         |
+| **Threat Range**   | 1    | 1     | 1      | 1     | 2    | 2       | 3          |
 
 Unless a `creature` occupies less than 1 tile, 2 `creatures` are not allowed to occupy the same tile. A tile that is fully occupied cannot be moved into or past, unless the occupying `creatures` allow it.
 
@@ -67,6 +67,7 @@ A `creature` is only able to sustain a certain amount of damage before succumbin
 -   `Large`: 3
 -   `Huge`: 4
 -   `Massive`: 5
+-   `Gargantuan`: 6+
 
 If a `creature` takes a `wound` past their maximum number of `wounds` they can sustain, that `creature` is now `dead`.
 
@@ -124,7 +125,7 @@ Every piece of `equipment` has an `equipment slot` that it occupies when it is `
 -   1 hands
 -   1 back
 -   2 wield
--   1 neck
+-   1 hang
 -   2 ring
 -   1 belt
 
@@ -134,7 +135,7 @@ As a rule of thumb, you can use the below guidelines to determine the `equipment
 -   A `creature` only ever has 1 `back` slot
 -   A `creature` has 1 `belt` slot per waist they have
 -   A `creature` has 1 `head` slot per head they have
--   A `creature` has 1 `neck` slot per neck they have
+-   A `creature` has 1 `hang` slot per neck they have
 -   A `creature` has 1 `ring` slot per hand with fingers they have
 -   A `creature` has 1 `wield` slot per prehensile limb they have
 -   A `creature` has 1 `feet` slot every 2 feet they have

@@ -28,6 +28,12 @@ A `trait` is an intrinsic property of a `creature`, and can be beneficial or han
 
 > For example, a skeleton has the `trait` `resistance(P3)`. This means that whenever a skeleton sustains 3 or fewer `piercing` `wounds`, they instead sustain 0.
 
+### Hyperarcanum
+
+`Hyperarcanum` is a `trait` that describes a `creature` with sensitivity towards magica. A `creature` with `hyperarcanum` has 1 extra point of `magica` than normal and regains 1 more point of `magica` from any source that would do so. However, any source that would drain `magica` will drain 1 _extra_ `magica`.
+
+> Note that _spending_ `magica` is different than _draining_ `magica`. Normal use of `magica` is not increased by `creatures` with `hyperarcanum`.
+
 ### Senses
 
 There are multiple types of senses that a `creature` may have, and corresponding sense `traits` to describe them.
