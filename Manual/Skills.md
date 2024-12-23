@@ -207,17 +207,82 @@ The `crafting` `skill` is used to create and process primarily fabrics/leather, 
 
 ### Cooking
 
+The `cooking` `skill` is used to prepare edible ingredients into meals using cook's tools. Simple ingredients often do not confer any benefits, but meals with exotic ingredients can accept enchantment which is extended to those that eat the meal.
+
+| Difficulty Level | Target | Example                                                        |
+| ---------------- | ------ | -------------------------------------------------------------- |
+| Trivial          | 2-4    | Roast common meat over a fire                                  |
+| Easy             | 5-7    | Prepare a simple meal from multiple common ingredients         |
+| Moderate         | 8-9    | Prepare a meal from exotic ingredients                         |
+| Hard             | 10-12  | Prepare an extravagent meal from exotic ingredients            |
+| Insane           | 13-17  | Prepare a king's feast from exotic ingredients                 |
+| Absurd           | 18-24  | Stretch 1 meal worth of ingredients into 5 meals               |
+| Fantastical      | 25-29  | Stretch exotic ingredients for 1 meal into 7 meals             |
+| Unfathomable     | 30+    | Stretch 1 meal worth of exotic ingredients into a king's feast |
+
 ## Procurement Skills
 
-A `skill` in the procurement category is used to gather something from the world.
+A `skill` in the procurement category is used to gather something from the world. When using these `skills`, they all take some time to complete and largely depend on what you are attempting to do and the environment you are attempting to do it in. For example, `hunting` for food in an envionment with abundant game will be easier and take less time than trying to do the same in an environment with virtually no game. The DM decides how long it takes, but all the examples shown in the table are expected to take less than 1 hour.
 
 ### Hunting
 
+The `hunting` `skill` is used to track and capture `creatures`; often for consumption or for ingredients sourced from them.
+
+| Difficulty Level | Target | Example                                                                               |
+| ---------------- | ------ | ------------------------------------------------------------------------------------- |
+| Trivial          | 2-4    | Follow unbroken, obvious, fresh footprints to a creature                              |
+| Easy             | 5-7    | Track a common creature via a fresh trail                                             |
+| Moderate         | 8-9    | Procure food for 4-8 medium creatures in an environment with moderate amounts of game |
+| Hard             | 10-12  | Track a creature via an old, broken trail                                             |
+| Insane           | 13-17  | Procure food for 4-8 medium creatures in an environment with minimal amounts of game  |
+| Absurd           | 18-24  | Identify an exotic creature via trail remnants                                        |
+| Fantastical      | 25-29  | Track a creature from an eliminated trail                                             |
+| Unfathomable     | 30+    | Track a creature that leaves no trail                                                 |
+
 ### Fishing
+
+The `fishing` `skill` is used to capture acquatic `creatures`; often for consumption or for ingredients sourced from them.
+
+| Difficulty Level | Target | Example                                                                         |
+| ---------------- | ------ | ------------------------------------------------------------------------------- |
+| Trivial          | 2-4    | Catch mundane fish by spreading a net across a river                            |
+| Easy             | 5-7    | Catch mundane river fish using a rod and tackle                                 |
+| Moderate         | 8-9    | Catch a specific, uncommon fish with proper methods at the proper location      |
+| Hard             | 10-12  | Catch a specific large and rare fish with proper methods at the proper location |
+| Insane           | 13-17  | Catch intelligent or enchanted fish that intentionally avoid capture            |
+| Absurd           | 18-24  | Catch fish in exotic environments like lava pools or toxic swamps               |
+| Fantastical      | 25-29  | Catch a legendarily rare acquatic creature at the proper location               |
+| Unfathomable     | 30+    | Catch a mythical acquatic creature at the proper location                       |
 
 ### Foraging
 
+The `foraging` `skill` is used to gather non-animal resources and ingredients from the environment.
+
+| Difficulty Level | Target | Example                                                                                               |
+| ---------------- | ------ | ----------------------------------------------------------------------------------------------------- |
+| Trivial          | 2-4    | Gather common, identifiable fruits like apples and bananas where they are available                   |
+| Easy             | 5-7    | Gather common herbs and edible mushrooms                                                              |
+| Moderate         | 8-9    | Gather meal ingredients for 4-8 people where ingredients are moderately available                     |
+| Hard             | 10-12  | Find and identify a rare plant or fungus from copycats                                                |
+| Insane           | 13-17  | Gather meal ingredients for 4-8 people where ingredients are scarce                                   |
+| Absurd           | 18-24  | Gather edible ingredients for 4-8 people where the majority of flora is toxic                         |
+| Fantastical      | 25-29  | Gather edible ingredients for 4-8 people where all the flora is toxic or inedible                     |
+| Unfathomable     | 30+    | Find and identify a mythically rare plant or fungus from other mythically rare but worthless copycats |
+
 ### Harvesting
+
+The `harvesting` `skill` is used to extract useful ingredients from creatures; typically once they are dead.
+
+| Difficulty Level | Target | Example                                                                                       |
+| ---------------- | ------ | --------------------------------------------------------------------------------------------- |
+| Trivial          | 2-4    | Harvest venom from a dead venomous creature that readily secretes it                          |
+| Easy             | 5-7    | Harvest easily removable ingredients from a dead creature with an obvious body plan           |
+| Moderate         | 8-9    | Harvest venom from a captured living venemous creature that readily secretes it               |
+| Hard             | 10-12  | Harvest useful ingredients from a previously unknown creature with a common body plan         |
+| Insane           | 13-17  | Harvest a fragile ingredient from a dead creature with a complex body plan                    |
+| Absurd           | 18-24  | Harvest non-toxic ingredients from a highly poisonous creature with a complex body plan       |
+| Fantastical      | 25-29  | Harvest useful ingredients from a previously unknown creature with a unique body plan         |
+| Unfathomable     | 30+    | Harvest useful, fragile ingredients from a previously unkown creature with a unique body plan |
 
 ## General Skills
 
@@ -241,12 +306,12 @@ The remainder of possible `skills` can be found here. These are general purpose 
 
 Not every dungeoneer is equally skilled at all different kinds of weaponry. Weapon rank represents a dungeoneers level of proficiency with a specific type of weapon. The following are categories that a weapon can belong to and a dungeoneer be proficient in:
 
--   Axe
--   Blade
--   Cudgel
--   Lance
--   Bow
--   Tome
+- Axe
+- Blade
+- Cudgel
+- Lance
+- Bow
+- Tome
 
 Weapon ranks follow a letter progression from E -> D -> C -> B -> A -> S, with E representing basic training and S representing complete mastery. Each weapon has a required rank in order to properly wield it. If a `creature` uses a weapon they do not have the weapon rank to properly wield, all `striking` rolls will have a point of `bane` and can deal a maximum of 1 wound. Access to weapon ranks is primarily tied to `class` and level.
 
