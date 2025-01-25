@@ -2,7 +2,7 @@
 
 As a Dungeoneer, you will encounter many foes that stand in your way to your inevitable goal. Some may be able to be avoided, but you will ultimately come to blows with many `creatures`. You should become familiar with combat mechanics in order to overcome these obstacles and complete your mission. When `creatures` come to blows, the passage of time becomes more strictly represented. All of time is represented in the following way, but it is typically only important to track this during time-sensitive moments like combat.
 
-A time span of 6 seconds is represented by a `round`. During a `round`, each `creature` has 6 `action points` representing their ability to affect their world each second. During the course of a single `round`, a `creature` will have one or more `turns` in order to spend their allotted `action points`, but the way this works may be different than what you're used to if you've played a turn-based game before. Instead of a `creature` using up all of their `action points` at once, they instead use 1 `action` that costs 1-6 `action points`. If this `action` would lower their `action point` total below the amount of another `creature`, their `turn` is over and the `creature` with the next highest `action point` total takes their `turn`. In the event of a tie, the two `creatures` act simultaneously if they are in the same `creature group` (described below). If two `creatures` from different `creature groups` have the same number of `action points`, the `creature` from the `group` with the higher `body` total goes first.
+A time span of 6 seconds is represented by a `round`. During a `round`, each `creature` has 6 `action points` representing their ability to affect their world each second. During the course of a single `round`, a `creature` will have one or more `turns` in order to spend their allotted `action points`, but the way this works may be different than what you're used to if you've played a turn-based game before. Instead of a `creature` using up all of their `action points` at once, they instead use 1 `action` that costs 1-6 `action points`. Once they do so, their `turn` is over and the `creature` with the next highest `action point` total takes their `turn`. In the event of a tie, the two `creatures` act simultaneously if they are in the same `creature group` (described below). If two `creatures` from different `creature groups` have the same number of `action points`, the `creature` from the `group` with the higher `body` total goes first.
 
 > It is useful to precalculate the `body` total of each group ahead of time to keep the flow of combat going! Make sure it's clear and easy to find out how to break ties, as it's pretty common.
 
@@ -73,7 +73,7 @@ Cost: 2 action points
 
 ---
 
-A `creature` may use the `focus` `action` to regain 2 points of `magica`.
+A `creature` may use the `focus` `action` to regain 2 points of `arca`.
 
 ### Interact
 
@@ -154,14 +154,14 @@ If the `push` succeeds, the `defender` is `forced` Ground(1) in a direction of t
 
 ### Strike
 
-Tags: Attack
+Tags: Attack, Critical
 Cost: 3 action points
 
 ---
 
-A `strike` is an `action` that constitutes attacking a `creature` with some sort of `weapon`. This `weapon` could be a club, a dagger, a magical staff, or even a bare fist! During a `strike`, the `attacker` is the `creature` making the `strike` and the `defender` is the `creature` subject to the `strike`.
+A `strike` is an `action` that constitutes attacking a `creature` with some sort of `weapon`. This `weapon` could be a club, a dagger, an enchanted staff, or even a bare fist! During a `strike`, the `attacker` is the `creature` making the `strike` and the `defender` is the `creature` subject to the `strike`.
 
-> In other systems, there is often a distinction between attacks with a weapon and attacks without a weapon, or with an object not typically used as a weapon. In Dungeoneers, all strikes with physical objects are `strikes`; there is no difference. Attacks with magic are treated differently, and we'll talk about that when we get to `spellcasts`.
+> In other systems, there is often a distinction between attacks with a weapon and attacks without a weapon, or with an object not typically used as a weapon. In Dungeoneers, all strikes with physical objects are `strikes`; there is no difference. Attacks with arcana are treated differently, and we'll talk about that when we get to `spellcasts`.
 
 Every `strike` is either melee or ranged. If the distance to the `defender` is greater than the `threat range` of the `attacker`, the `strike` is ranged. Unless a `weapon` has the `range` or `toss` `properties`, you cannot make a `strike` against a `creature` outside your `threat range`.
 
@@ -174,17 +174,17 @@ To determine a `hit`, roll a
 
 `test`: [`striking`] + `finesse` vs [`dodging`] + `finesse`.
 
-On a failure, the `strike` `misses`. On a success, the `strike` `hits` and the `defender` then sustains the number of `wounds` marked on the `attackers` `weapon`.
+On a failure, the `strike` `misses`. On a success, the `strike` `hits` and the `defender` then sustains the number of `wounds` marked on the `attackers` `weapon`, plus their `body` score.
 
 #### A Sample Scenario
 
 > For example, Suori makes a `strike` on a skeleton. The skeleton is `trained` in `dodging`, and has an `finesse` score of 1. Suori is making this attack with a warhammer, which gives her a `pierce die` of a d6. Suori is `trained` in `striking` and has an `finesse` score of 2. This means that Suori rolls 2d6, and the skeleton rolls 1d6. If the `test` succeeds, Suori `hits`!
 >
-> If Suori `hits`, we then roll the `check` to `pierce`. The skeleton has an `armor value` of 5 and Suori has 2 `body`, so Suori rolls 2d6 and compares her total against 5. If Suori `pierces`, she then causes the skeleton to sustain 1 `bludgeoning wound` as marked on the warhammer. We definitely recommend writing down these numbers for your character so you don't have to look them up in the moment!
+> If Suori `hits`, we then roll the `check` to `pierce`. The skeleton has an `armor value` of 5 and Suori has 2 `body`, so Suori rolls 2d6 and compares her total against 5. If Suori `pierces`, she then causes the skeleton to sustain 1 `bludgeoning wound` as marked on the warhammer, + 2 for her `body` score. We definitely recommend writing down these numbers for your character so you don't have to look them up in the moment!
 
 ### Power Strike
 
-Tags: Attack
+Tags: Attack, Critical
 Cost: 4 action points
 
 ---
@@ -193,7 +193,7 @@ A `creature` that takes the `power strike` `action` can make 1 `strike`. This `s
 
 ### Spellcast
 
-Tags: Magic
+Tags: Arcana, Critical
 Cost: Varies
 
 ---
@@ -202,18 +202,18 @@ In the middle of combat, there simply isn't enough time to cast a `spell` in the
 
 > Keep in mind that not all `cantrips` are treated the same! Some `cantrips` are extremely weak, and some are more powerful than many spell tomes. The determining factor of what is and is not a `cantrip` is the location of the spell inscription.
 
-A `spell` consumes `magica` in order to be cast. A `creature` has an amount of `magica` equal to twice their `wisdom` score. Each `spell` has a baseline amount of `magica` that must be spent in order to cast the `spell`, and extra `magica` must be spent to overcome the `defender`. Ambient `magica` is available to spend on the baseline cost of the `spell`.
+A `spell` consumes `arca` in order to be cast. A `creature` has an amount of `arca` equal to twice their `wisdom` score. Each `spell` has a baseline amount of `arca` that must be spent in order to cast the `spell`, and extra `arca` must be spent to overcome the `defender`. Ambient `arca` is available to spend on the baseline cost of the `spell`.
 
-Every `spell` is either melee or ranged, which is determined by the distance to the `defender`. If the distance to the `defender` is greater than the `threat range` of the `creature`, the `spell` is ranged.
+Every `spell` has a range on it. The range can be self meaning the `spell` can only be applied to the caster, reach meaning the spell can be cast within the `reach` of the caster, or denoted in a distance of tiles.
 
-> Note that each `spell` has a range that it can extend. You cannot target a `creature` outside the range of the particular `spell`!
+> Note that you cannot target a `creature` outside the range of the particular `spell`!
 
 There are 3 steps to the process of making a `spellcast`:
 
 -   Determine if the `spellcast` `hits`
 -   Determine the the `spells` effect
 
-The `attacker` must decide how much extra `magica` is used before seeing if the `spell` `hits`, and that `magica` is expended whether the `spell` `hits` or not.
+The `attacker` must decide how much extra `arca` is used before seeing if the `spell` `hits`, and that `arca` is expended whether the `spell` `hits` or not.
 
 #### Resolving a Spell Attack
 
@@ -227,7 +227,7 @@ If the `test` succeeds, the `spellcast` `hits`.
 
 #### On Hit
 
-If the `spell` `hits`, the next step is to apply the `spell` `effect`. Read the `spell` to determine the impact of the extra `magica` spent and what occurs when the `spell` `hits`.
+If the `spell` `hits`, the next step is to apply the `spell` `effect`. Read the `spell` to determine the impact of the extra `arca` spent and what occurs when the `spell` `hits`.
 
 ## Reactions
 
@@ -248,4 +248,10 @@ On a success, the `creature` stops at a point where they are hanging on the ledg
 
 ## Critical Hits
 
-For a `strike` or a `spellcast`, if the `attacker's` roll total doubles the `defender's` roll total, there is a `critical hit`.
+Critical hits occur when an `attacker` roll greatly exceeds a `defender` roll on an `action` with the `critical` tag. Each `creature` has a number called a `critical threshold`. For each multiple of the `critical threshold` that the `attacker` roll exceeds the `defender` roll by, a critical hit occurs. The `wounds` dealt again for each critical hit that occurs, plus the original `wounds`. The default `critical threshold` of all `creatures` is 5. A critical hit reapplies _all_ `wounds` that would be dealt by the `action`.
+
+> For example, let us consider the following `test` for a `strike`: 1d6 + 3 vs 1d6 + 3. For a critical hit to occur, the `striking` roll must exceed the `dodging` roll by 5. Therefore, 6 + 3 vs 1 + 3 = 9 vs 4 results in a 1x critical hit, and the `wounds` are dealt a total of 2 times (once for the normal `wounds` done, and another for the 1x critical hit).
+>
+> Let us consider a second example with a point of boon: 1d6 + 4 + 1d4 vs 1d6 + 3. Imagine that the result is 6 + 4 + 4 vs 1 + 3 = 14 vs 4. Since the `striking` roll exceeds the `dodging` roll by 2 multiples of the `critical threshold`, this results in a 2x critical hit and the `wounds` are dealt a total of 3 times.
+>
+> Imagine in our first case, the weapon deals 1 `wound` and the `attacker` has a `body` score of 3. The normal `wounds` dealt from the `strike` would be 4, but since it's a 1x critical hit it will deal a total of 8 `wounds`. For the 2x critical hit, it would do 12 `wounds`. If the `defender` had vulnerability(1) to the `damage type`, the normal hit would deal 5 `wounds`, the 1x critical hit would do 10 `wounds` and the 2x critical hit would do 15 `wounds`.

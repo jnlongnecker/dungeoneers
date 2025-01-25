@@ -4,23 +4,23 @@ In Dungeoneers, a `creature` is any living entity in the world. Often times, sys
 
 ## Attribute Scores
 
-Every `creature` has 6 `attribute scores` that are used in a variety of scenarios. The specific scenarios are covered in their respective sections, but we'll talk a bit about each here. Every `creature` is also made up of a body, mind and spirit (represented by their respective scores). The body of a `creature` is their physical body, their mind is the processing and mental facilities, and their spirit the `magica` that makes up their otherwordly presence.
+Every `creature` has 6 `attribute scores` that are used in a variety of scenarios. The specific scenarios are covered in their respective sections, but we'll talk a bit about each here. Every `creature` is also made up of a body, mind and spirit (represented by their respective scores). The body of a `creature` is their physical body, their mind is the processing and mental facilities, and their spirit the `arca` that makes up their otherwordly presence.
 
 A typical human will have at least 2 in each `attribute score`. A general feel of the power tied to an `attribute score` can be determined by the following table:
 
-| Score Value | Name         | Description                                                                                                        |
-| ----------- | ------------ | ------------------------------------------------------------------------------------------------------------------ |
-| 0           | Crippled     | This attribute has been significantly crippled compared to an average person                                       |
-| 1           | Weak         | This attribute is deficient compared to even an average person                                                     |
-| 2           | Average      | This attribute is typical of the average person                                                                    |
-| 3           | Trained      | This attribute score is found only amongst people that actively train it                                           |
-| 4           | Experienced  | This attribute score is found only amongst genetic anomalies dedicated to training it                              |
-| 5           | Master       | This attribute score is found only amongst genetic anomalies with magical enhancement                              |
-| 6           | Legendary    | This attribute score is found only amongst genetic anomalies with supreme magical enhancement                      |
-| 7           | Mythical     | This attribute score is found only amongst genetic anomalies with magical enhancement from other genetic anomalies |
-| 8           | Unbelievable | This attribute score is found only amongst supreme magical beings gifted in the attribute                          |
-| 9           | Demigodly    | This attribute score can only be found amongst demigods gifted in the attribute                                    |
-| 10          | Godly        | This attribute score can only be found amongst gods                                                                |
+| Score Value | Name         | Description                                                                                                       |
+| ----------- | ------------ | ----------------------------------------------------------------------------------------------------------------- |
+| 0           | Crippled     | This attribute has been significantly crippled compared to an average person                                      |
+| 1           | Weak         | This attribute is deficient compared to even an average person                                                    |
+| 2           | Average      | This attribute is typical of the average person                                                                   |
+| 3           | Trained      | This attribute score is found only amongst people that actively train it                                          |
+| 4           | Experienced  | This attribute score is found only amongst genetic anomalies dedicated to training it                             |
+| 5           | Master       | This attribute score is found only amongst genetic anomalies with arcane enhancement                              |
+| 6           | Legendary    | This attribute score is found only amongst genetic anomalies with supreme arcane enhancement                      |
+| 7           | Mythical     | This attribute score is found only amongst genetic anomalies with arcane enhancement from other genetic anomalies |
+| 8           | Unbelievable | This attribute score is found only amongst supreme arcane beings gifted in the attribute                          |
+| 9           | Demigodly    | This attribute score can only be found amongst demigods gifted in the attribute                                   |
+| 10          | Godly        | This attribute score can only be found amongst gods                                                               |
 
 ### Body
 
@@ -28,7 +28,7 @@ The `body` score represents the physicality of the `creature`. It is used to det
 
 ### Spirit
 
-The `spirit` score represents the force of personality and otherworldly presence of the `creature`. It is used to determine things like `magica` capacity and magical resistance.
+The `spirit` score represents the force of personality and otherworldly presence of the `creature`. It is used to determine things like `arca` capacity and arcane resistance.
 
 ### Mind
 
@@ -38,11 +38,11 @@ The `mind` score represents the mental practice and recall of a `creature`. It i
 
 The `finesse` score represents the precision and flexibility of a `creature`. It is used to determine things like `strike` accuracy and `dodging` efficacy.
 
-## Threat Range
+## Threat Range & Reach
 
-Every `creature` has a baseline `threat range`. This is a distance in tiles that denotes other `creatures` that can be struck in melee. The `threat range` of a `creature` may be expanded by various `effects`, but the baseline `threat range` is determined by the `creatures` `size`. A `creature` that is within the `threat range` of a `hostile` `creature` gains the `threatened` `condition`. This is checked after every `move`.
+Every `creature` has a baseline `threat range` called their `reach`. This is a distance in tiles that denotes how far the `creature` can interact with using a prehensile limb. The `threat range` of a `creature` may be expanded by various `effects`, but their `reach` is determined by the `creatures` `size`. A `creature` that is within the `threat range` of a `hostile` `creature` gains the `threatened` `condition`. This is checked after every `move`.
 
-> For example, Suori the dwarf has a `threat range` of 1 since she is a `medium` `creature`. Let's say Suori is 2 tiles away from a skeleton, another `medium` `creature`. Neither Suori nor the skeleton are `threatened`, because both are outside of each other's `threat range`. Now let's say Suori `moves` 1 tile towards the skeleton. The skeleton is now within Suori's `threat range`, so it is `threatened` by Suori. However, we re-calculate _all_ `threat ranges` after a `move`, so Suori is _also_ `threatened` by the skeleton since she is within _its_ `threat range`!
+> For example, Suori the dwarf has a `reach` of 1 since she is a `medium` `creature`. Let's say Suori is 2 tiles away from a skeleton, another `medium` `creature`. Neither Suori nor the skeleton are `threatened`, because both are outside of each other's `threat range`. Now let's say Suori `moves` 1 tile towards the skeleton. The skeleton is now within Suori's `threat range`, so it is `threatened` by Suori. However, we re-calculate _all_ `threat ranges` after a `move`, so Suori is _also_ `threatened` by the skeleton since she is within _its_ `threat range`!
 
 ## Size
 
@@ -54,6 +54,7 @@ The `size` categories, tiles that `creatures` of that `size` occupy and `threat 
 | ------------------ | ---- | ----- | ------ | ----- | ---- | ------- | ---------- |
 | **Tiles Occupied** | 1/4  | 1/2   | 1      | 2     | 3    | 4       | 5+         |
 | **Threat Range**   | 1    | 1     | 1      | 1     | 2    | 2       | 3          |
+| **Size Value**     | 0    | 1     | 2      | 3     | 4    | 5       | 6          |
 
 Unless a `creature` occupies less than 1 tile, 2 `creatures` are not allowed to occupy the same tile. A tile that is fully occupied cannot be moved into or past, unless the occupying `creatures` allow it.
 
@@ -69,7 +70,7 @@ A `creature` is only able to sustain a certain amount of damage before succumbin
 -   `Massive`: 5
 -   `Gargantuan`: 6+
 
-If a `creature` takes a `wound` past their maximum number of `wounds` they can sustain, that `creature` is now `dead`.
+If a `creature` takes a `wound` while they are at their maximum number of `wounds` they can sustain, that `creature` is now `dead`.
 
 > For example, Alberich the dwarf is a `medium` `creature`, so he can sustain a maximum of 2 `wounds`. If Alberich is `hit` by a `strike` and is dealt 2 `wounds`, he won't die just yet. If Alberich is `hit` by another `strike` and that deals at least 1 `wound`, Alberich is `dead`.
 
@@ -77,7 +78,7 @@ Taking a `wound` past a `creatures` maximum does not immediately kill that `crea
 
 > For example, if Alberich in our above scenario had already sustained 1 `wound`, taking 2 `wounds` would _not_ kill Alberich; he would still have to be `hit` by the second `strike`. However, if Alberich sustains 3 `wounds` at any time in a single `strike`, he will `die` instantly. Note that this only applies if the `creature` sustains that many actual `wounds`; if some are absorbed by `stress` they may not be outright killed. If Alberich can accumulate 1 `stress` when he sustains those 3 `wounds`, he only functionally sustains 2 `wounds` and wouldn't `die` instantly.
 
-Once a `wound` has been sustained, the only way to recover it is through magic or time. Certain `spells`and potions are capable of restoring `wounds`, and you recover all `wounds` at the end of a `full rest`.
+Once a `wound` has been sustained, the only way to recover it is through arcana or time. Certain `spells`and potions are capable of restoring `wounds`, and you recover all `wounds` at the end of a `full rest`.
 
 When a `wound` is sustained, it often has a `damage type` associated with it. This becomes relevant `wound` `modifications` as most only apply to certain `damage types`. You cannot sustain a negative amount of `wounds`, the minimum is 0. If a `wound` is sustained without a `damage type`, this means it is unaffected by any `wound` `modifications` that apply to certain `damage types`.
 

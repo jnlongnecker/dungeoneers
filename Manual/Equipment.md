@@ -6,7 +6,7 @@ Listed here are `items` that may confer a number of benefits to the `creature` t
 
 ## Weapons
 
-A weapon is an `item` that is used to make `attacks`. When a `creature` makes an `attack` `action`, the weapon they wield determines a variety of statistics that are used during the `attack`. A `creature` has `weapon ranks` with certain weapon categories. If a `creature` does not have the proper `weapon rank` for the weapon they have `equipped`, the weapon is instead treated as an improvised weapon. This applies to magical weapons as
+A weapon is an `item` that is used to make `attacks`. When a `creature` makes an `attack` `action`, the weapon they wield determines a variety of statistics that are used during the `attack`. A `creature` has `weapon ranks` with certain weapon categories. If a `creature` does not have the proper `weapon rank` for the weapon they have `equipped`, the weapon is instead treated as an improvised weapon. This applies to enchanted weapons as
 well as mundane ones. Unless otherwise specified, a weapon must be `equipped` in a `wield` `equipment slot`.
 
 **Mundane Weapons**
@@ -44,18 +44,11 @@ well as mundane ones. Unless otherwise specified, a weapon must be `equipped` in
 
 ## Tomes
 
-A tome is an `item` that must be `equipped` in order to cast `spells` quickly. The tome itself contains a single `spell` written in it, while the rest of the pages are focusing circles to charge `magica` for the `spell`. There isn't any functional difference between mundane tomes, but a mage will likely posses multiple tomes on their person to be able to cast different `spells`. Unless otherwise specified, a tome must be `equipped` in a `wield` `equipment slot`.
+A tome is an `item` that must be `equipped` in order to cast `spells` quickly. The tome itself contains a single `spell` written in it, while the rest of the pages are focusing circles to charge `arca` for the `spell`. There isn't any functional difference between mundane tomes, but a mage will likely posses multiple tomes on their person to be able to cast different `spells`. Unless otherwise specified, a tome must be `equipped` in a `wield` `equipment slot`.
 
 ## Foci
 
-A `focus` is an `item` that must be `equipped` to improve `spell` power. Magical `foci` do different things than mundane ones, and mundane `foci` are all the same in effect, but different `spells` react better to different `foci`. Unless otherwise specified, a `focus` must be `equipped` in a `wield` `equipment slot`.
-
-| Focus Name | Property   |
-| ---------- | ---------- |
-| Orb        | Demonic(2) |
-| Wand       | Arcane(2)  |
-| Symbol     | Holy(2)    |
-| Staff      | Magica(1)  |
+A `focus` is an `item` that must be `equipped` to improve `spell` power. Enchanted `foci` do different things than mundane ones, and mundane `foci` are all the same in effect, but different `spells` react better to different `foci`. Unless otherwise specified, a `focus` must be `equipped` in a `wield` `equipment slot`.
 
 ## Armor
 
@@ -127,22 +120,6 @@ An `item` with the `body x` `property` requires the `creature` that wishes to `e
 
 ### Spellbane
 
-The `spellbane(x)` `property` increases the `magica` cost of all `spells` by the denoted amount. `Spellbane` from multiple sources will stack with itself.
+The `spellbane(x)` `property` increases the `arca` cost of all `spells` by the denoted amount. `Spellbane` from multiple sources will stack with itself.
 
-> For example, a `creature` with `spellbane(2)` and `spellbane(1)` functionally has `spellbane(3)`. If that `creature` casts a `spell` that would normally cost 1 `magica`, it now costs 4 `magica`!
-
-### Demonic
-
-The `demonic(x)` `property` allows the `creature` to treat all `demonic` `spells` as having x _additional_ `magica` used on it.
-
-### Arcane
-
-The `arcane(x)` `property` allows the `creature` to treat all `arcane` `spells` as having x _additional_ `magica` used on it.
-
-### Holy
-
-The `holy(x)` `property` allows the `creature` to treat all `holy` `spells` as having x _additional_ `magica` used on it.
-
-### Magica
-
-The `magica(x)` `property` allows the `creature` to treat **all** `spells` as having x _additional_ `magica` used on it.
+> For example, a `creature` with `spellbane(2)` and `spellbane(1)` functionally has `spellbane(3)`. If that `creature` casts a `spell` that would normally cost 1 `arca`, it now costs 4 `arca`!

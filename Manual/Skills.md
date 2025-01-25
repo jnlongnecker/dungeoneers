@@ -162,7 +162,7 @@ The `woodwork` `skill` is used to create things from wood utilizing carvers tool
 
 ### Locksmithing
 
-The `locksmithing` `skill` is used to craft and pick locks utilizing locksmith tools. It can be used to craft and pick mechanical and magical locks alike. Generally speaking, crafting a lock is the same level of difficulty as picking a lock. Cracking a lock under pressure is more difficult than what is listed here, generally by one or two levels of difficulty depending on the level of pressure and how fast the crack must be.
+The `locksmithing` `skill` is used to craft and pick locks utilizing locksmith tools. It can be used to craft and pick mechanical and enchanted locks alike. Generally speaking, crafting a lock is the same level of difficulty as picking a lock. Cracking a lock under pressure is more difficult than what is listed here, generally by one or two levels of difficulty depending on the level of pressure and how fast the crack must be.
 
 | Difficulty Level | Target | Example                                                 |
 | ---------------- | ------ | ------------------------------------------------------- |
@@ -214,15 +214,30 @@ The `cooking` `skill` is used to prepare edible ingredients into meals using coo
 | Trivial          | 2-4    | Roast common meat over a fire                                  |
 | Easy             | 5-7    | Prepare a simple meal from multiple common ingredients         |
 | Moderate         | 8-9    | Prepare a meal from exotic ingredients                         |
-| Hard             | 10-12  | Prepare an extravagent meal from exotic ingredients            |
+| Hard             | 10-12  | Prepare an extravagant meal from exotic ingredients            |
 | Insane           | 13-17  | Prepare a king's feast from exotic ingredients                 |
 | Absurd           | 18-24  | Stretch 1 meal worth of ingredients into 5 meals               |
 | Fantastical      | 25-29  | Stretch exotic ingredients for 1 meal into 7 meals             |
 | Unfathomable     | 30+    | Stretch 1 meal worth of exotic ingredients into a king's feast |
 
+### Music
+
+The `music` `skill` is used to play music with instruments. Music can elicit emotions and rally the hearts and minds of `creatures`, and when laden with `arca` can significantly enhance these effects. `Proficiency` with certain instruments is not included in `music` `proficiency`, but all `creatures` are able to utilize the `music` `skill` with just their voice.
+
+| Difficulty Level | Target | Example                                                                       |
+| ---------------- | ------ | ----------------------------------------------------------------------------- |
+| Trivial          | 2-4    | Play a slow song using 1-2 chords                                             |
+| Easy             | 5-7    | Play a slow song using 1-4 chords                                             |
+| Moderate         | 8-9    | Play a medium speed song                                                      |
+| Hard             | 10-12  | Play a song with complex chord changes                                        |
+| Insane           | 13-17  | Play a fast song with complex chord changes and key changes                   |
+| Absurd           | 18-24  | Play virtuosic difficulty pieces                                              |
+| Fantastical      | 25-29  | Improvise virtuosic, complex time signature and key changes with no errors    |
+| Unfathomable     | 30+    | Improvise non-replicable music; universally moving and loved by all listeners |
+
 ## Procurement Skills
 
-A `skill` in the procurement category is used to gather something from the world. When using these `skills`, they all take some time to complete and largely depend on what you are attempting to do and the environment you are attempting to do it in. For example, `hunting` for food in an envionment with abundant game will be easier and take less time than trying to do the same in an environment with virtually no game. The DM decides how long it takes, but all the examples shown in the table are expected to take less than 1 hour.
+A `skill` in the procurement category is used to gather something from the world. When using these `skills`, they all take some time to complete and largely depend on what you are attempting to do and the environment you are attempting to do it in. For example, `hunting` for food in an environment with abundant game will be easier and take less time than trying to do the same in an environment with virtually no game. The DM decides how long it takes, but all the examples shown in the table are expected to take less than 1 hour.
 
 ### Hunting
 
@@ -241,7 +256,7 @@ The `hunting` `skill` is used to track and capture `creatures`; often for consum
 
 ### Fishing
 
-The `fishing` `skill` is used to capture acquatic `creatures`; often for consumption or for ingredients sourced from them.
+The `fishing` `skill` is used to capture aquatic `creatures`; often for consumption or for ingredients sourced from them.
 
 | Difficulty Level | Target | Example                                                                         |
 | ---------------- | ------ | ------------------------------------------------------------------------------- |
@@ -251,8 +266,8 @@ The `fishing` `skill` is used to capture acquatic `creatures`; often for consump
 | Hard             | 10-12  | Catch a specific large and rare fish with proper methods at the proper location |
 | Insane           | 13-17  | Catch intelligent or enchanted fish that intentionally avoid capture            |
 | Absurd           | 18-24  | Catch fish in exotic environments like lava pools or toxic swamps               |
-| Fantastical      | 25-29  | Catch a legendarily rare acquatic creature at the proper location               |
-| Unfathomable     | 30+    | Catch a mythical acquatic creature at the proper location                       |
+| Fantastical      | 25-29  | Catch a legendarily rare aquatic creature at the proper location                |
+| Unfathomable     | 30+    | Catch a mythical aquatic creature at the proper location                        |
 
 ### Foraging
 
@@ -273,16 +288,16 @@ The `foraging` `skill` is used to gather non-animal resources and ingredients fr
 
 The `harvesting` `skill` is used to extract useful ingredients from creatures; typically once they are dead.
 
-| Difficulty Level | Target | Example                                                                                       |
-| ---------------- | ------ | --------------------------------------------------------------------------------------------- |
-| Trivial          | 2-4    | Harvest venom from a dead venomous creature that readily secretes it                          |
-| Easy             | 5-7    | Harvest easily removable ingredients from a dead creature with an obvious body plan           |
-| Moderate         | 8-9    | Harvest venom from a captured living venemous creature that readily secretes it               |
-| Hard             | 10-12  | Harvest useful ingredients from a previously unknown creature with a common body plan         |
-| Insane           | 13-17  | Harvest a fragile ingredient from a dead creature with a complex body plan                    |
-| Absurd           | 18-24  | Harvest non-toxic ingredients from a highly poisonous creature with a complex body plan       |
-| Fantastical      | 25-29  | Harvest useful ingredients from a previously unknown creature with a unique body plan         |
-| Unfathomable     | 30+    | Harvest useful, fragile ingredients from a previously unkown creature with a unique body plan |
+| Difficulty Level | Target | Example                                                                                        |
+| ---------------- | ------ | ---------------------------------------------------------------------------------------------- |
+| Trivial          | 2-4    | Harvest venom from a dead venomous creature that readily secretes it                           |
+| Easy             | 5-7    | Harvest easily removable ingredients from a dead creature with an obvious body plan            |
+| Moderate         | 8-9    | Harvest venom from a captured living venomous creature that readily secretes it                |
+| Hard             | 10-12  | Harvest useful ingredients from a previously unknown creature with a common body plan          |
+| Insane           | 13-17  | Harvest a fragile ingredient from a dead creature with a complex body plan                     |
+| Absurd           | 18-24  | Harvest non-toxic ingredients from a highly poisonous creature with a complex body plan        |
+| Fantastical      | 25-29  | Harvest useful ingredients from a previously unknown creature with a unique body plan          |
+| Unfathomable     | 30+    | Harvest useful, fragile ingredients from a previously unknown creature with a unique body plan |
 
 ## General Skills
 
@@ -306,12 +321,12 @@ The remainder of possible `skills` can be found here. These are general purpose 
 
 Not every dungeoneer is equally skilled at all different kinds of weaponry. Weapon rank represents a dungeoneers level of proficiency with a specific type of weapon. The following are categories that a weapon can belong to and a dungeoneer be proficient in:
 
-- Axe
-- Blade
-- Cudgel
-- Lance
-- Bow
-- Tome
+-   Axe
+-   Blade
+-   Cudgel
+-   Lance
+-   Bow
+-   Tome
 
 Weapon ranks follow a letter progression from E -> D -> C -> B -> A -> S, with E representing basic training and S representing complete mastery. Each weapon has a required rank in order to properly wield it. If a `creature` uses a weapon they do not have the weapon rank to properly wield, all `striking` rolls will have a point of `bane` and can deal a maximum of 1 wound. Access to weapon ranks is primarily tied to `class` and level.
 

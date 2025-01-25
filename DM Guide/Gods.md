@@ -6,7 +6,7 @@ The dieties and greater mythological figures can mostly be grouped together in l
 
 ## Elementals
 
-The natural elements of magica (fire, water, loam, wind and aether) have embodiments in the form of the Elementals. It's fairly common for members of the Elementals to be worshipped in any society, and again common for these beings to be at the head of most pantheons. The Elementals are responsible for the creation of the multiverse Lel; most planes are of their creation (but not all) and they are the driving force for the rules that govern Lel.
+The natural elements of arca (fire, water, loam, wind and aether) have embodiments in the form of the Elementals. It's fairly common for members of the Elementals to be worshipped in any society, and again common for these beings to be at the head of most pantheons. The Elementals are responsible for the creation of the multiverse Lel; most planes are of their creation (but not all) and they are the driving force for the rules that govern Lel.
 
 ### Al, the Timefather
 
@@ -28,19 +28,11 @@ Anat represents the element of wind.
 
 Shapash represents the element of fire.
 
-## Pandora
-
-Many planes in Lel had living flora and fauna appear from the condensation of magica. The single plane that stands as an exception is the plane of Adamah, where the magica condensed instead into the diety Pandora. Pandora was the lone being to inhabit Adamah, which she quickly decided was a waste of the plane. She became the first diety to perform intentional creation of mortal beings, starting with flora and eventually branching into fauna. The work of Adamah became extremely diverse as she imbued her creations to create life of their own and propagate themselves in their own worlds, and over time she allowed this process to run its course. Occasionally she would intervene if catastrophe was inevitable, but eventually the system became stable.
-
-Late into the lifespan of Adamah, the Elohim arrived and became interested in the creations of Pandora. At this point, Pandora had grown tired of her experiment and wished to move on. In a joint agreement with the Elohim, her divinity was shattered and imbued into her creation with mixed results. Those that took to it well were classified as humanity, while those that did not were classified as plants and beasts. Some plants and beasts simply took time to accommodate their shard of divinity to eventually join humanity. This shard of divinity allows humans to grow and acclimate to magica; something that was not possible. Beasts and plants became sensitive to magica for the first time with their shard, but they could not control it in the way the humans could.
-
-Since Pandora never existed at the same time as humanity could worship her and since she no longer existed to be worshipped, she does not have any kind of clergy devoted to her. However, she is highly revered amongst humans; her most devoted followers taking it upon themselves to become the new stewards of beasts and plants.
-
-## The Elohim
+## The Alohim
 
 The patron dieties to humanity convene as the Elohim. While they are grouped together, they do not all get along with one another. Their categorization is purely the fact that they are the creators and patrons to the human species. While not _all_ humans worship (or even worship one of the Elohim), they are well and widely known amongst humanity. In the vast majority of human societies, worship outside of the Elohim is met with apprehension or even violence.
 
-The Elohim inhabit the plane of Elysia which lies above Adamah. The magica that leaks from Elysia is stained with the holy essence of the Alohim, transforming those with extended contact with it. This magica serves as the lifeblood to the Alohim and they are unable to exist for extended periods of time outside of Elysia.
+The Elohim inhabit the plane of Elysia which lies above Adamah. The arca that leaks from Elysia is stained with the holy essence of the Elohim, transforming those with extended contact with it. This arca serves as the lifeblood to the Elohim and they are unable to exist for extended periods of time outside of Elysia.
 
 ### Baal
 
@@ -56,9 +48,7 @@ The Elohim inhabit the plane of Elysia which lies above Adamah. The magica that 
 
 ## Devils
 
-As Al shaped the planes, each plane was imbued with magica. The magica of the Abyss became home to the group of dieties known as Devils. Over time, the clashing of magica from the Abyss with that from Alysia formed the central plane of Adamah; the plane most devoid of magica. The Alohim created humanity and with them conquered Adamah which invoked the ire of Devils who sought to do the same. Thus launched the ageless conflict between Alohim and Devils and (by proxy) demons and humans.
-
-Devils shaped themselves out of the abundance of magica found in the Abyss, a pattern that continues in their demon subordinates. Early on, a hierarchy was established out of the disparity of power between them which has only shifted a handful of times due to Devils not being able to gain or lose power in themselves and must turn to artifacts to improve their power.
+As Al shaped the planes, each plane was imbued with arca. Adamah gave birth to a group of dieties known as the Devils. Out of all dieties that came from the arca of the planes, the Devils had a unique hunger for experimentation and expansion. They wished to do more, see more, and be more than each previous day and quickly found difficulty in doing so due to being limited by the arca of their native plane. Early on, a hierarchy was established out of the disparity of power between them which has only shifted a handful of times due to Devils not being able to gain or lose power in themselves and must turn to artifacts to improve their power.
 
 ### Belial
 
@@ -93,8 +83,6 @@ Xerix serves as the foil to the constant malleability of Orion and the stubborn 
 ## Mot
 
 Mot stands alone; not as part of a group but as a singular destructive force. Mot has the potential to destroy all things in Lel, including Lel itself. However, Mot is intelligent enough to realize that should it do this, there will be nothing left to destroy. As such, Mot has no interest in truly destroying everything that is and instead will patiently wait until the proper time to destroy.
-
-Few beings have the capability to subdue Mot; many dieties were destroyed before the creation of mortal beings like humans. Initially created as a way to satiate Mot, these mortals became useful for other purposes such as the proxy war between Elohim and Devils.
 
 Mot holds dominion over death itself; death of any kind in fact. As such, Mot is the singular being that simply cannot be killed as a fundamental rule of the multiverse. It can be subdued, beaten back, and sealed for a time but can never be fully restrained.
 

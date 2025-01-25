@@ -235,16 +235,29 @@ def calculate_chance_to_beat(my_roll, their_roll, must_beat):
         chances_i_win = chances_i_win + (chance_i_rolled * chance_they_rolled)
     return chances_i_win
 
-def calculate_chance_to_wound(me, target):
-    my_hit = '%s%s' % (me.agility, me.striking)
-    my_pierce = '%s%s' % (me.strength, me.pierce_die)
-    target_dodge = '%s%s' % (target.agility, target.dodging)
-    target_av = target.av
+def calculate_chance_to_crit(my_roll, their_roll, crit_threshold):
+    my_probs = Roll(my_roll).chances
+    their_probs = Roll(their_roll).chances
+
+    chances_i_crit = 0
+    for i in range(0, len(my_probs)):
+        chance_i_rolled = my_probs[i]
+        chance_they_rolled = probability_at_most(their_probs, i - crit_threshold)
+        chances_i_crit = chances_i_crit + (chance_i_rolled * chance_they_rolled)
+    return chances_i_crit
+
+def calculate_chance_to_wound(me, target, crit_threshold = 5):
+    my_hit = me.get_roll('striking', 'finesse')
+    target_dodge = target.get_roll('dodging', 'finesse')
 
     hit_chance = calculate_chance_to_beat(my_hit, target_dodge, False)
-    pierce_chance = calculate_chance_of(my_pierce, '>=', target_av)
-
     print('Hit chance of %s vs %s: %s' % (my_hit, target_dodge, perc_format(hit_chance)))
-    print('Pierce chance of %s vs %s: %s' % (my_pierce, target_av, perc_format(pierce_chance)))
 
-    return hit_chance * pierce_chance
+    crit_chance = 1
+    crit_num = 1
+    while crit_chance > 0:
+        crit_chance = calculate_chance_to_crit(my_hit, target_dodge, crit_num * crit_threshold)
+        print('Chance for %s crit: %s' % (crit_num, perc_format(crit_chance)))
+        crit_num = crit_num + 1
+
+    return hit_chance

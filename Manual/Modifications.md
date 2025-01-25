@@ -30,22 +30,22 @@ A `trait` is an intrinsic property of a `creature`, and can be beneficial or han
 
 ### Hyperarcanum
 
-`Hyperarcanum` is a `trait` that describes a `creature` with sensitivity towards magica. A `creature` with `hyperarcanum` has 1 extra point of `magica` than normal and regains 1 more point of `magica` from any source that would do so. However, any source that would drain `magica` will drain 1 _extra_ `magica`.
+`Hyperarcanum` is a `trait` that describes a `creature` with sensitivity towards arca. A `creature` with `hyperarcanum` has 1 extra point of `arca` than normal and regains 1 more point of `arca` from any source that would do so. However, any source that would drain `arca` will drain 1 _extra_ `arca`.
 
-> Note that _spending_ `magica` is different than _draining_ `magica`. Normal use of `magica` is not increased by `creatures` with `hyperarcanum`.
+> Note that _spending_ `arca` is different than _draining_ `arca`. Normal use of `arca` is not increased by `creatures` with `hyperarcanum`.
 
 ### Senses
 
 There are multiple types of senses that a `creature` may have, and corresponding sense `traits` to describe them.
 
-| Trait Name    | Trait Description                                             |
-| ------------- | ------------------------------------------------------------- |
-| Darkvision    | Vision that can see in complete, non-magical darkness         |
-| Truevision    | Vision that can see in magical darkness and through illusions |
-| Blindsense\*  | Ability to sense `creatures` without needing to use vision    |
-| Tremorsense\* | Ability to sense `creatures` that are touching the ground     |
-| Blind         | Does not have any visual sense                                |
-| Deaf          | Cannot hear                                                   |
+| Trait Name    | Trait Description                                            |
+| ------------- | ------------------------------------------------------------ |
+| Darkvision    | Vision that can see in complete, non-arcane darkness         |
+| Truevision    | Vision that can see in arcane darkness and through illusions |
+| Blindsense\*  | Ability to sense `creatures` without needing to use vision   |
+| Tremorsense\* | Ability to sense `creatures` that are touching the ground    |
+| Blind         | Does not have any visual sense                               |
+| Deaf          | Cannot hear                                                  |
 
 > \* These senses are not blocked by visual limiters like darkness or walls.
 
