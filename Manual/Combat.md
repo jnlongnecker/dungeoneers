@@ -10,25 +10,25 @@ Certain `actions` can be taken in response to something occurring in the world. 
 
 Let's walk through an example to see how this works in action with 3 `creatures`; 2 player characters (Freya and Alberich) and 1 skeleton:
 
--   At the start of the `round`, each `creature` has 6 `action points`
--   The player group has a higher body total than the skeleton, so the player characters go first
--   Alberich spends 3 `action points`, so now his `turn` is over and Freya goes
--   Freya spends 2 `action points`, so now her `turn` is over and the skeleton goes
--   The skeleton spends 4 `action points`, so now it is Freya's turn since she has the most `action points`
--   Freya spends 1 `action points`, which brings her total to the same as Alberich
--   Freya spends 1 `action point` again
-    -   Note that Alberich is going at the same time here, we've just chosen to put Freya first
--   Alberich spends 2 `action points`
--   Now Freya and the skeleton have the same `action point` total, so Freya goes first due to her being in the higher `body` total group
--   Freya spends her remaining 2 `action points`
--   The skeleton also spends 2 `action points`
-    -   This causes Alberich to use a `reaction` that costs 1 `action points`.
-    -   Freya _could not_ react because she had 0 `action points` remaining
--   Now all `creatures` have 0 `action points`, and a new `round` begins with all `creatures` at 6 `action points`
+- At the start of the `round`, each `creature` has 6 `action points`
+- The player group has a higher body total than the skeleton, so the player characters go first
+- Alberich spends 3 `action points`, so now his `turn` is over and Freya goes
+- Freya spends 2 `action points`, so now her `turn` is over and the skeleton goes
+- The skeleton spends 4 `action points`, so now it is Freya's turn since she has the most `action points`
+- Freya spends 1 `action points`, which brings her total to the same as Alberich
+- Freya spends 1 `action point` again
+  - Note that Alberich is going at the same time here, we've just chosen to put Freya first
+- Alberich spends 2 `action points`
+- Now Freya and the skeleton have the same `action point` total, so Freya goes first due to her being in the higher `body` total group
+- Freya spends her remaining 2 `action points`
+- The skeleton also spends 2 `action points`
+  - This causes Alberich to use a `reaction` that costs 1 `action points`.
+  - Freya _could not_ react because she had 0 `action points` remaining
+- Now all `creatures` have 0 `action points`, and a new `round` begins with all `creatures` at 6 `action points`
 
 ## Creature Groups
 
-`Creatures` who are allied with one another should be part of the same group, unless it makes sense for them not to (for example, reinforcements arriving in the middle of combat). The `players` are always part of the same group, unless for whatever reason they are not allied with one another. Any `NPC` allies of the `players` should be part of their own group.
+`Creatures` who are allied with one another are part of the same `creature group`, unless it makes sense for them not to be (for example, reinforcements arriving in the middle of combat). The `players` are always part of the same `creature group`, unless for whatever reason they are not allied with one another. Any `NPC` allies of the `players` are part of their own `creature group`.
 
 ## Damage Types
 
@@ -38,16 +38,16 @@ Whenever a `wound` is sustained, there is a `damage type` associated with it. Th
 
 Each `damage type` is part of a category, and all types exist under the "damage" category. The following is a list of all `damage types` and the categories they fall under:
 
--   Damage
-    -   Physical
-        -   Bludgeoning (B)
-        -   Piercing (P)
-        -   Slashing (S)
-    -   Energy
-        -   Heat (H)
-        -   Cold (C)
-        -   Toxic (T)
-        -   Disintegrate (D)
+- Damage
+  - Physical
+    - Bludgeoning (B)
+    - Piercing (P)
+    - Slashing (S)
+  - Energy
+    - Heat (H)
+    - Cold (C)
+    - Toxic (T)
+    - Disintegrate (D)
 
 ## Actions
 
@@ -167,8 +167,8 @@ Every `strike` is either melee or ranged. If the distance to the `defender` is g
 
 There are 3 steps to the process of making a `strike`:
 
--   Determine if the `strike` `hits`
--   Determine the number of `wounds` inflicted
+- Determine if the `strike` `hits`
+- Determine the number of `wounds` inflicted
 
 To determine a `hit`, roll a
 
@@ -210,8 +210,8 @@ Every `spell` has a range on it. The range can be self meaning the `spell` can o
 
 There are 3 steps to the process of making a `spellcast`:
 
--   Determine if the `spellcast` `hits`
--   Determine the the `spells` effect
+- Determine if the `spellcast` `hits`
+- Determine the the `spells` effect
 
 The `attacker` must decide how much extra `arca` is used before seeing if the `spell` `hits`, and that `arca` is expended whether the `spell` `hits` or not.
 
