@@ -1,6 +1,6 @@
 # Dice
 
-In Dungeoneers, the number of dice rolled and the faces of said dice are subject to great change at any given time. Many systems choose to revolve around a twenty-sided die, but Dungeoneers prefers the math that is yielded from rolling multiple dice at once and adding them up (for you stats nerds, this is the normal distribution). If you're familiar with dice rolling systems, you'll find the nomenclature of Dungeoneers to be very similar and may not need most of this section (however, you'll probably still want to read up on `die sources`). If you're not, then no worries! This section will explain the terminology and what you'll need to know.
+In Dungeoneers, the number of dice rolled and the faces of said dice are subject to great change at any given time. If you're familiar with dice rolling systems, you'll find the nomenclature of Dungeoneers to be very similar and may not need most of this section (however, you'll probably still want to read up on `die sources`). If you're not, then no worries! This section will explain the terminology and what you'll need to know.
 
 ## Rolls
 
@@ -54,24 +54,14 @@ _`test`: [`grappling`] + `body` vs [`dodging`] + (`finesse`|`body`)_
 
 The `attacker` rolls dice determined by their `grappling` `proficiency` level (more on that in another section) and add their `body` score. This is compared against the `defenders` roll; they roll dice determined by their `dodging` `proficiency` and add their choice of their `finesse` or `body` score.
 
-## Additional Dice
+## Degrees of Success, Criticals and Compromises
 
-Most `modifications` that involve adjusting the dice that are rolled usually do so through points of `bane` or `boon`. Let's take `stress` as an example:
+If the die roll is meant to represent variability of the quality of the action, the outcome should have the quality of the total be represented as well. This is the purpose of degrees of success.
 
-_While a `creature` has accumulated `stress` past their capacity, they gain a point of `boon` all `striking` and `dodging` rolls._
+When a roll is made, compare the total to the `target`. If the the total is 5 or more below the `target`, the roll truly fails; whatever outcome was being tried simply does not work. If the total is above 5 less than the `target` but does not meet the `target`, the roll partially succeeds; whatever outcome was being tried has some undesired complication to the outcome or is of dubious quality. If the total meets or is less than 5 above the `target`, the roll succeeds; whatever outcome was being tried completes without complication and as intended.
 
-Looking at an example of one such roll (making a `strike`):
+For each multiple of 5 above the `target`, the roll `critically` succeeds. On a `critical`, the outcome is a success (or better) _and_ the player gains a point of `boon` for each `critical`.
 
-`test`: [`striking`] + `finesse` vs [`dodging`] + `finesse`.
+> Example: on a roll with a `target` of 10, a total of 1-4 would be a failure, a total of 5-9 would be a partial success, and a total of 10-14 would be a success. A total of 15-19 would `critical` 1 time, a total of 20-24 would `critical` 2 times, and so on. The roll succeeds and for each `critical`, another point of `boon` is gained.
 
-If we are past our `stress` capacity, this means we roll 1d4 _in addition to_ the standard [`striking`] + `finesse`, making our end `test` being the following:
-
-`test`: [`striking`] + 1d4 + `finesse` vs [`dodging`] + `finesse`.
-
-But what was that about `bane` and `boon`? We will discuss below!
-
-## Bane and Boon
-
-Sometimes a `creature` may have a greater or lesser chance than usual to succeed due to the circumstance around the roll. In these scenarios, this circumstantial modifier is represented by `bane` and `boon`. For each point of `bane`, a `creature` rolls 1d4 and _subtracts_ the result from their roll. For each point of `boon`, a `creature` rolls 1d4 and _adds_ the result to their roll. `Bane` and `boon` cancel each other out; meaning if you have 1 point of `bane` and 1 point of `boon`, no extra roll is necessary.
-
-Points of `bane` and `boon` only apply to a single roll, so once the roll is resolved any points disappear. A `modification` _can_ give points of `bane` and `boon` to multiple rolls, but remember each roll has a baseline of 0 `bane` and 0 `boon`.
+When a roll does not succeed, a player may ask for a `compromise`. When a `compromise` occurs, the degree of success of the roll becomes 1 greater (i.e., a total failure becomes a partial success and a partial success becomes a success). In return, the GM gains a point of `villainy`. It is up to the GM whether to accept the `compromise` or not.

@@ -3,14 +3,16 @@ import creatures
 
 # rolls.print_chance_of('2d8', '=', 2)
 
-# result = rolls.calculate_chance_to_beat('2d8', '2', False)
+die_roll = '4d6+7'
+target = '24'
+result = rolls.calculate_chance_to_beat(die_roll, target, False)
 
-# print(result)
+print('Chance of %s succeeding on %s: %s' % (die_roll, target, rolls.perc_format(result)))
 
-me = creatures.Creature(body=2, finesse=3, av=5, dodging=1, striking=1)
-target = creatures.Creature.prefab('skeleton')
+# me = creatures.Creature(body=2, finesse=3, av=5, dodging=1, striking=1)
+# target = creatures.Creature.prefab('skeleton')
 
-rolls.calculate_chance_to_wound(me, target, crit_threshold=5)
+# rolls.calculate_chance_to_wound(me, target, crit_threshold=5)
 
 # dodging = creatures.Creature.prefab('skeleton')
 # dodging.agility = dodging.agility + 1
