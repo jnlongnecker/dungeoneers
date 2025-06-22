@@ -54,7 +54,7 @@ In many TTRPGs, there are 3 core components or "scenes" to the game, most common
 
 -   Combat
 -   Exploration
--   Social Interaction
+-   Socialization
 
 Additionally, many TTRPG systems can be categorized based on the amount of rules they have; systems can be rules-light or rules-heavy (also referred to as "crunchy"). Dungeoneers is a rules-heavy system that follows the typical 3 pillars of gameplay.
 

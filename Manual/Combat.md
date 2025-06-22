@@ -22,65 +22,65 @@ Each `damage type` is part of a category, and all types exist under the "damage"
         -   Cold (C)
         -   Toxic (T)
         -   Disintegrate (D)
+    -   Precision
 
 ## Combat Moves
 
 The `moves` found here are ones that are most applicable during combat. As a reminder, any `move` can be taken at any time, as long as it applies.
 
-### Interact
-
-Tags: Interaction
-
----
-
-A `creature` may use the `interact` `move` to manipulate its environment. Opening doors, pulling levers, drawing or stowing a weapon, equipping a shield, drinking a potion, picking up an object, and similar such tasks can all be accomplished using the `interact` `move`.
-
 ### Sprint
 
 Tags: Movement
+Range: Self
 
 ---
 
-A `creature` may use the `sprint` `move` to `travel` _twice_.
+You may use the `sprint` `move` to travel additional tiles. Roll a
+
+`total`: [`finesse`]d4.
+
+The total is the number of additional tiles you may travel.
+
+> Example: Alberich takes the `sprint` `move` and gets a total of 3, Alberich may travel 3 tiles using his travel `speeds`, plus the distance he could normally cover while traveling. If Alberich only has a `speed` of `Ground(6)` for example, he could travel `Ground(9)` with this roll.
 
 ### Grapple
 
 Tags: Attack
+Range: Reach
 
 ---
 
-A `grapple` `move` may only be used on a `creature` they `threaten`, and a `creature` must have a hand free in order to take this `move`. In order to see if a `grapple` succeeds, roll a
+You must have a hand free in order to take this `move`. In order to see if a `grapple` succeeds, roll a
 
-`test`: [`grappling`] + `body` vs [`dodging`] + (`finesse`|`body`).
+`test`: [`striking`] + `body` vs [`dodging`] + (`finesse`|`body`).
 
-If the `grapple` succeeds, the `attacker` is `grappling` and the `defender` is `grappled`.
+If the `grapple` succeeds, you are `grappling` and the `defender` is `grappled`.
 
 ### Push
 
 Tags: Attack
+Range: Reach
 
 ---
 
-A `push` `move` may only be used on a `creature` they `threaten`. In order to see if a `push` succeeds, roll a
+In order to see if a `push` succeeds, roll a
 
-`test`: [`grappling`] + `body` vs [`dodging`] + (`finesse`|`body`).
+`test`: [`striking`] + `body` vs [`dodging`] + (`finesse`|`body`).
 
-If the `push` succeeds, the `defender` is `forced` in a direction of the `attackers` choosing or knocked `prone`.
+If the `push` succeeds, the `defender` is `forced` in a direction of your choosing or knocked `prone`.
 
 ### Strike
 
 Tags: Attack, Critical
-Cost: 3 action points
+Range: Weapon Range
 
 ---
 
-A `strike` is an `action` that constitutes attacking a `creature` with some sort of `weapon`. This `weapon` could be a club, a dagger, an enchanted staff, or even a bare fist! During a `strike`, the `attacker` is the `creature` making the `strike` and the `defender` is the `creature` subject to the `strike`.
+A `strike` is a `move` that constitutes attacking a `creature` with some sort of weapon. This weapon could be a club, a dagger, an enchanted staff, or even a bare fist! During a `strike`, the `attacker` is the `creature` making the `strike` and the `defender` is the `creature` subject to the `strike`.
 
-> In other systems, there is often a distinction between attacks with a weapon and attacks without a weapon, or with an object not typically used as a weapon. In Dungeoneers, all strikes with physical objects are `strikes`; there is no difference. Attacks with arcana are treated differently, and we'll talk about that when we get to `spellcasts`.
+> In other systems, there is often a distinction between attacks with a weapon and attacks without a weapon, or with an object not typically used as a weapon. In Dungeoneers, all strikes with physical objects are `strikes`; there is no difference. Attacks with arcana are treated differently, and we'll talk about that when we get to `performing arcana`.
 
-Every `strike` is either melee or ranged. If the distance to the `defender` is greater than the `threat range` of the `attacker`, the `strike` is ranged. Unless a `weapon` has the `range` or `toss` `properties`, you cannot make a `strike` against a `creature` outside your `threat range`.
-
-There are 3 steps to the process of making a `strike`:
+There are 2 steps to the process of making a `strike`:
 
 -   Determine if the `strike` `hits`
 -   Determine the number of `wounds` inflicted
@@ -89,80 +89,100 @@ To determine a `hit`, roll a
 
 `test`: [`striking`] + `finesse` vs [`dodging`] + `finesse`.
 
-On a failure, the `strike` `misses`. On a success, the `strike` `hits` and the `defender` then sustains the number of `wounds` marked on the `attackers` `weapon`, plus their `body` score.
+On a failure, the `strike` `misses`. On a partial success, the `defender` accumulates an amount of `stress` equal to the number of `wounds` marked on the `attackers` weapon, plus the `attackers` `body` score. On a success, the `strike` `hits` and the `defender` then sustains the number of `wounds` marked on the `attackers` weapon, plus the `attackers` `body` score.
 
-#### A Sample Scenario
-
-> For example, Suori makes a `strike` on a skeleton. The skeleton is `trained` in `dodging`, and has an `finesse` score of 1. Suori is making this attack with a warhammer, which gives her a `pierce die` of a d6. Suori is `trained` in `striking` and has an `finesse` score of 2. This means that Suori rolls 2d6, and the skeleton rolls 1d6. If the `test` succeeds, Suori `hits`!
->
-> If Suori `hits`, we then roll the `check` to `pierce`. The skeleton has an `armor value` of 5 and Suori has 2 `body`, so Suori rolls 2d6 and compares her total against 5. If Suori `pierces`, she then causes the skeleton to sustain 1 `bludgeoning wound` as marked on the warhammer, + 2 for her `body` score. We definitely recommend writing down these numbers for your character so you don't have to look them up in the moment!
-
-### Power Strike
-
-Tags: Attack, Critical
-Cost: 4 action points
-
----
-
-A `creature` that takes the `power strike` `action` can make 1 `strike`. This `strike` deals 1 extra `wound` and has 1 point of `boon` on the `striking` roll.
-
-### Spellcast
+### Perform Arcana
 
 Tags: Arcana, Critical
-Cost: Varies
+Range: Varies
 
 ---
 
-In the middle of combat, there simply isn't enough time to cast a `spell` in the traditional way. In order to cast a `spell` quickly, a `creature` must either cast out of a tome or use a `cantrip`. Regardless of which they choose, in order to cast the `spell` a `creature` must take the `spellcast` `action`.
+In the middle of combat, there simply isn't enough time to cast `arcana` in the traditional way. In order to cast `arcana` quickly, a `creature` must either use a tome, invoke a miracle/curse or use a `cantrip`. Regardless of which they choose, in order to cast the `arcana` a `creature` must take the `perform arcana` `move`.
 
 > Keep in mind that not all `cantrips` are treated the same! Some `cantrips` are extremely weak, and some are more powerful than many spell tomes. The determining factor of what is and is not a `cantrip` is the location of the spell inscription.
 
-A `spell` consumes `arca` in order to be cast. A `creature` has an amount of `arca` equal to twice their `wisdom` score. Each `spell` has a baseline amount of `arca` that must be spent in order to cast the `spell`, and extra `arca` must be spent to overcome the `defender`. Ambient `arca` is available to spend on the baseline cost of the `spell`.
+All `arcana` consumes `arca` in order to be cast. A `creature` has an amount of `arca` equal to their `level`. Each `arcana` has a baseline amount of `arca` that must be spent in order to cast and/or maintain the `arcana`.
 
-Every `spell` has a range on it. The range can be self meaning the `spell` can only be applied to the caster, reach meaning the spell can be cast within the `reach` of the caster, or denoted in a distance of tiles.
+Every `arcana` has a range on it. The range can be self meaning the `arcana` can only be applied to the caster, reach meaning the `arcana` can be cast within the `reach` of the caster, or denoted in a distance of tiles.
 
-> Note that you cannot target a `creature` outside the range of the particular `spell`!
+> Note: you cannot target a `creature` outside the range of the particular `arcana`!
 
-There are 3 steps to the process of making a `spellcast`:
+The details of what happens when you cast `arcana` depends on the `arcana`, and is found in the `arcana` detail section.
 
--   Determine if the `spellcast` `hits`
--   Determine the the `spells` effect
+### Leap
 
-The `attacker` must decide how much extra `arca` is used before seeing if the `spell` `hits`, and that `arca` is expended whether the `spell` `hits` or not.
-
-#### Resolving a Spell Attack
-
-If a `spell` calls for a `spell attack`, roll a
-
-`test`: [`spellcraft`] + `mind` vs [`target skill`] + `spirit`.
-
-If the `test` succeeds, the `spellcast` `hits`.
-
-> Note that each `spell` that requires a `spell attack` will target a specific `skill` in its description. This is what `proficiency` is used for the `defender's` roll. Sometimes, a `spell attack` may be requested at a later point than during the `spellcast` `action`, make sure you read the `spell`!
-
-#### On Hit
-
-If the `spell` `hits`, the next step is to apply the `spell` `effect`. Read the `spell` to determine the impact of the extra `arca` spent and what occurs when the `spell` `hits`.
-
-## Reactions
-
-Some tasks happen practically automatically in response to certain stimuli. A `reaction` represents an instantaneous twitch of muscle memory; practically involuntarily. All `reactions` cost `action points`, and a `reaction` can only be used if that `creature` still has `action points` to spare.
-
-### Grab a Ledge
-
-Tags: Reaction
-Cost: 1 action point
+Tags: Movement
+Range: Self
 
 ---
 
-A `creature` may instinctively reach out for a ledge if they find themselves being knocked off. If a `creature` is `forced` to a point where they pass over a ledge within their `threat range`, they may use the `grab a ledge` `reaction` to stop themselves at the ledge. In order to do so, roll a
+You may jump a number of tiles equal to your `body` score. Alternatively, you may gain 1 `stress` and elect to jump a greater distance by succeeding on a:
 
-`check`: [1d4] + `dexterity` vs 5 + the number of tiles `forced`.
+`check`: 1d4 + `body` vs (number of tiles you want to jump)
 
-On a success, the `creature` stops at a point where they are hanging on the ledge.
+On a success, you make the jump. On a failure, you overstrain yourself and only jump half the distance.
+
+## Combat Free Moves
+
+The `free moves` found here are ones that are most applicable during combat.
+
+### Reposition
+
+Tags: Movement
+Range: Self
+
+---
+
+A `creature` may travel using their `speeds`.
+
+### Interact
+
+Tags: Interaction
+Range: Reach
+
+---
+
+You may `interact` to manipulate your environment. Opening doors, pulling levers, drawing or stowing a weapon, equipping a shield, drinking a potion, picking up an object, and similar such tasks can all be accomplished.
+
+### Drop Prone
+
+Tags: Movement
+Range: Self
+
+---
+
+You immediately fall `prone`.
+
+### Hop
+
+Tags: Movement
+Range: Self
+
+---
+
+You may jump a number of tiles equal to your `Ground` `speed`.
+
+### Mount
+
+Tags: Movement
+Range: Reach
+
+---
+
+You may climb onto a willing `creature` at least one `size` larger than you.
+
+### Channel
+
+Tags: Arcana
+Range: Self
+
+---
+
+You recover `arca` equal to your `spirit` score.
 
 ## Critical Hits
 
-When a roll is made that would cause a `wound` from a success, the normal rules around `criticals` apply. Additionally, for each `critical`, the `wounds` from the roll are applied.
+When a roll is made that would cause a `wound` from a success, the normal rules around `criticals` apply. Additionally, for each `critical`, the `wounds` from the roll are applied again. These additional `wounds` are calculated before any other `modifications`, like adding or subtracting a `creature's` `body` score.
 
-> Example: if a roll `criticals` twice and would deal 2 `wounds`, it instead deals 6 `wounds`.
+> Example: if a roll `criticals` twice and would deal 2 `wounds`, it instead deals 6 `wounds`. If the roll was done by a `creature` and their `body` score was 3, that same roll would instead deal 9 `wounds`.

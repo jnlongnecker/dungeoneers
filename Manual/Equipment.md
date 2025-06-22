@@ -6,41 +6,77 @@ Listed here are `items` that may confer a number of benefits to the `creature` t
 
 ## Weapons
 
-A weapon is an `item` that is used to make `attacks`. When a `creature` makes an `attack` `action`, the weapon they wield determines a variety of statistics that are used during the `attack`. A `creature` has `weapon ranks` with certain weapon categories. If a `creature` does not have the proper `weapon rank` for the weapon they have `equipped`, the weapon is instead treated as an improvised weapon. This applies to enchanted weapons as
-well as mundane ones. Unless otherwise specified, a weapon must be `equipped` in a `wield` `equipment slot`.
+A weapon is an `item` that is used to make `strikes`. Each weapon has a certain range by which it can make a `strike` against something, as well as a class that is used for `masteries`. It would be impossible to list out all of the weapons that exist in the world; instead weapons are divided into 6 `weapon types`: Improvised, Light, Standard, Control, Heavy, and Missile. Some examples of each `weapon type` are provided, but they are by no means an exhaustive list. Work with your GM to flavor your weapon in the way you wish.
 
-**Mundane Weapons**
+### Weapon Types
 
-| Weapon Name  | Wounds   | Rank       | Properties                                 |
-| ------------ | -------- | ---------- | ------------------------------------------ |
-| Improvised   | 1 Bludg. | --         |                                            |
-| Dagger       | 1 Pierc. | Blade (E)  | Toss                                       |
-| Shortsword   | 1 Pierc. | Blade (E)  |                                            |
-| Glaive       | 2 Slash. | Blade (D)  | Two-handed, Reach                          |
-| Stiletto     | 2 Pierc. | Blade (D)  |                                            |
-| Broadsword   | 3 Slash. | Blade (C)  |                                            |
-| Rapier       | 2 Pierc. | Blade (C)  |                                            |
-| Claymore     | 3 Slash. | Blade (B)  | Two-handed                                 |
-| Light Hammer | 1 Bludg. | Cudgel (E) | Toss                                       |
-| Quarterstaff | 1 Bludg. | Cudgel (E) |                                            |
-| Mace         | 1 Bludg. | Cudgel (E) |                                            |
-| Warhammer    | 1 Bludg. | Cudgel (D) |                                            |
-| Flail        | 2 Bludg. | Cudgel (C) |                                            |
-| Maul         | 2 Bludg. | Cudgel (B) | Two-handed                                 |
-| Hand Axe     | 2 Slash. | Axe (E)    | Toss                                       |
-| Battleaxe    | 2 Slash. | Axe (D)    |                                            |
-| Bardiche     | 2 Slash. | Axe (C)    | Two-handed                                 |
-| Halberd      | 2 Slash. | Axe (B)    | Two-handed, Reach                          |
-| Spear        | 1 Pierc. | Lance (E)  |                                            |
-| Javelin      | 1 Pierc. | Lance (D)  | Toss                                       |
-| Kontos       | 2 Pierc. | Lance (C)  |                                            |
-| Partisan     | 2 Pierc. | Lance (B)  | Two-handed, Reach                          |
-| Hunting Bow  | 1 Pierc. | Bow (E)    | Two-handed, Ammunition (Arrow), Range (5)  |
-| Short Bow    | 1 Pierc. | Bow (D)    | Two-handed, Ammunition (Arrow), Range (8)  |
-| Long Bow     | 1 Pierc. | Bow (C)    | Two-handed, Ammunition (Arrow), Range (10) |
-| Sling        | 1 Bludg. | Bow (C)    | Ammunition (Shot), Range (8)               |
-| Crossbow     | 1 Pierc. | Bow (C)    | Two-handed, Ammunition (Bolt), Range (10)  |
-| War Bow      | 1 Pierc. | Bow (B)    | Two-handed, Ammunition (Arrow), Range (12) |
+**Improvised**
+
+-   _Range:_ Reach
+-   _Class:_ None
+-   _Wounds:_ 1 Physical
+-   _Properties:_ Toss
+-   _Wield Slots:_ 1
+-   _Striking Bonus:_ 1d4
+
+> Examples: a fist, a kick, a broken wine bottle, an improperly equipped weapon, a rock, a headbutt, a shovel.
+
+Any object capable of causing harm when wielded using a single hand is applicable as an Improvised weapon. If it requires two hands, it is too unwieldy to be used as an Improvised weapon.
+
+**Light**
+
+-   _Range:_ Reach
+-   _Class:_ Blade, Cudgel, Axe, Lance
+-   _Wounds:_ 1 Physical
+-   _Properties:_ Toss
+-   _Wield Slots:_ 1
+-   _Striking Bonus:_ 1d4
+
+> Examples: a dagger, a handaxe, a light hammer, a javelin
+
+**Standard**
+
+-   _Range:_ Reach
+-   _Class:_ Blade, Cudgel, Axe, Lance
+-   _Wounds:_ 2 Physical
+-   _Properties:_ None
+-   _Wield Slots:_ 1
+-   _Striking Bonus:_ 1d4
+
+> Examples: a broadsword, a battleaxe, a maul, a spear
+
+**Control**
+
+-   _Range:_ Reach + 1
+-   _Class:_ Blade, Cudgel, Axe, Lance
+-   _Wounds:_ 2 Physical
+-   _Properties:_ None
+-   _Wield Slots:_ 2
+-   _Striking Bonus:_ 1d4
+
+> Examples: a zweihander, a bardiche, a polehammer, a partisan
+
+**Heavy**
+
+-   _Range:_ Reach
+-   _Class:_ Blade, Cudgel, Axe, Lance
+-   _Wounds:_ 2 Physical
+-   _Properties:_ None
+-   _Wield Slots:_ 2
+-   _Striking Bonus:_ 1d8
+
+> Examples: a longsword, a broadaxe, a lever mace, a glaive
+
+**Missile**
+
+-   _Range:_ 10
+-   _Class:_ Missile
+-   _Wounds:_ 1 Physical
+-   _Properties:_ None
+-   _Wield Slots:_ 2
+-   _Striking Bonus:_ 1d6
+
+> Examples: a sling, a crossbow, a longbow
 
 ## Tomes
 
@@ -54,37 +90,33 @@ A `focus` is an `item` that must be `equipped` to improve `spell` power. Enchant
 
 Armor is `equipped` by a `creature` in order to increase their `energy defense` and `physical defense`. There are 4 categories of armor: clothing, light, medium and heavy. Each piece of armor has an `equipment slot`, a benefit, a category and properties to describe additional restrictions or bonuses.
 
-All medium armor has the `body 2` property innately, and all heavy armor has the `body 3` property innately.
+All medium armor has the `body(2)` property innately, and all heavy armor has the `body(3)` property innately.
 
 **Mundane Armor**
 
-| Armor Name     | Category     | Energy Defense (ED) | Physical Defense (PD) | Equipment Slot | Properties   |
-| -------------- | ------------ | ------------------- | --------------------- | -------------- | ------------ |
-| Common Clothes | Clothing     | --                  | --                    | Body           |              |
-| Mage Robes     | Clothing     | 4                   | --                    | Body           |              |
-| Leather        | Light Armor  | 6                   | 1                     | Body           | Spellbane(1) |
-| Gambeson       | Light Armor  | 7                   | 2                     | Body           | Spellbane(1) |
-| Drakehide      | Light Armor  | 10                  | 2                     | Body           | Spellbane(5) |
-| Brigandine     | Medium Armor | --                  | 4                     | Body           | Spellbane(2) |
-| Laminar        | Medium Armor | --                  | 5                     | Body           | Spellbane(2) |
-| Hauberk        | Heavy Armor  | --                  | 7                     | Body           | Spellbane(3) |
-| Plate          | Heavy Armor  | --                  | 8                     | Body           | Spellbane(4) |
-| Buckler        | Shield       | --                  | 1                     | Wield          |              |
-| Kite Shield    | Shield       | --                  | 2                     | Wield          | Spellbane(1) |
-| Tower Shield   | Shield       | --                  | 3                     | Wield          | Spellbane(2) |
-| Gloves         | Light Armor  | 3                   | 1                     | Hand           | Spellbane(2) |
-| Gauntlet       | Heavy Armor  | --                  | 2                     | Hand           | Spellbane(4) |
-| Boots          | Light Armor  | 2                   | 1                     | Feet           |              |
-| Greaves        | Heavy Armor  | --                  | 2                     | Feet           | Spellbane(1) |
-| Spangenhelm    | Light Armor  | --                  | 1                     | Head           | Spellbane(1) |
-| Zischagge      | Medium Armor | --                  | 2                     | Head           | Spellbane(2) |
-| Great Helm     | Heavy Armor  | --                  | 3                     | Head           | Spellbane(3) |
+| Armor Name     | Category     | Armor Points | Equipment Slot | Properties |
+| -------------- | ------------ | ------------ | -------------- | ---------- |
+| Common Clothes | Clothing     | --           | Body           |            |
+| Mage Robes     | Clothing     | --           | Body           |            |
+| Leather        | Light Armor  | 1            | Body           |            |
+| Brigandine     | Medium Armor | 3            | Body           |            |
+| Hauberk        | Heavy Armor  | 5            | Body           |            |
+| Buckler        | Shield       | 1            | Wield          |            |
+| Kite Shield    | Shield       | 2            | Wield          |            |
+| Tower Shield   | Shield       | 3            | Wield          |            |
+| Gloves         | Light Armor  | --           | Hand           |            |
+| Gauntlet       | Heavy Armor  | 1            | Hand           |            |
+| Boots          | Light Armor  | --           | Feet           |            |
+| Greaves        | Heavy Armor  | 1            | Feet           |            |
+| Spangenhelm    | Light Armor  | 1            | Head           |            |
+| Zischagge      | Medium Armor | 2            | Head           |            |
+| Great Helm     | Heavy Armor  | 3            | Head           |            |
 
-### Physical Defense and Energy Defense
+### Armor Points
 
-A `creature` has a total `physical defense` and `energy defense` equal to the sum from all various sources. `Physical defense` reduces the `wounds` sustained from physical `damage types` and `energy defense` reduces the `wounds` sustained from energy `damage types`, both to a minimum of 1 `wound`. `Wound` reduction from `physical defense` and `energy defense` occurs before any other `modifications`.
+The purpose of armor is protection from `wounds`; the amount of protection is represented by `armor points`. Equipped armor grants `armor points` as indicated on the armor table. `Armor points` allow you to take more `wounds` than indicated by your `size`. Whenever you would sustain a `wound` while you have `armor points` remaining, you instead subtract the number of `wounds` you would sustain from your remaining `armor points`. If you would sustain more `wounds` than you have `armor points`, you sustain the leftover `wounds` as normal.
 
-> For example, Suori equips leather armor and boots. This gives her 6 ED and 1 PD from the leather armor and 2 ED and 1 PD from the boots; resulting in a total of 8 ED and 2 PD. If Suori sustains a `wound` with an energy `damage type` (like heat), it is reduced by 8 (to a minimum of 1).
+Once `armor points` are depleted, they must be repaired to come back.
 
 ## Properties
 
@@ -92,34 +124,18 @@ A `creature` has a total `physical defense` and `energy defense` equal to the su
 
 ### Toss
 
-A weapon with the `toss` `property` can used to make a `strike` against `creatures` a number of tiles equal to the `creatures` `body` score away. When doing so, the weapon is no longer `equipped` when the `strike` is resolved and `travels` to the target location.
+A weapon with the `toss` `property` additionally can be thrown, gaining a range equal to twice the `creatures` `body` score. When doing so, the weapon is no longer `equipped` when the `strike` is resolved. If the `striking` roll does not succeed, the weapon ends up within 2 tiles of the target location.
 
 ### Two-handed
 
 A weapon with the `two-handed` `property` must use 2 `wield` slots instead of 1 in order to be properly `equipped`.
 
-### Range
-
-A weapon with the `range` `property` increases the `threat range` of the `creature` by 1 tile while `equipped`.
-
 ### Ammunition
 
 A weapon with the `ammunition` `property` must be loaded with some sort of weapon ammunition specified in the parenthesis `()` of the `property`. For example, a weapon with the `ammunition (arrows)` `property` must be loaded with arrows. A `creature` can do this as part of a `strike` `action`.
 
-### Range
-
-A weapon with the `range` `property` cannot be used to make melee `strikes`. `Strikes` with this weapon must be outside the `creatures` `threat range`, but inside the number of tiles denoted in the `property`.
-
-> For example, the hunting bow has the `range (5)` `property`. This means that for a `creature` with a `threat range` of 1, the hunting bow can be used to make `strikes` to any `creature` 2-5 tiles away.
-
 ### Body
 
-An `item` with the `body x` `property` requires the `creature` that wishes to `equip` it to have a `body` score of x or above. If a `creature` does not meet this requirement and still `equips` the `item`, calculate the difference between x and the `creature's` `body` score. That `creature` gains that many points of `bane` to _all rolls_. If multiple `equipped` `items` have this `property`, the one with the highest x is used.
+An `item` with the `body(x)` `property` requires the `creature` that wishes to `equip` it to have a `body` score of x or above. If a `creature` does not meet this requirement and still `equips` the `item`, calculate the difference between x and the `creature's` `body` score. That `creature` gains that many points of `bane` to _all rolls_. If multiple `equipped` `items` have this `property`, the one with the highest x is used.
 
-> For example, Ulfarmi has a `body` score of 1. If he `equips` an `item` with the `body 3` `property`, he suffers 2 points of `bane` on every single roll he does; rolls to `hit`, `skill` rolls... everything! Be careful what you wear!
-
-### Spellbane
-
-The `spellbane(x)` `property` increases the `arca` cost of all `spells` by the denoted amount. `Spellbane` from multiple sources will stack with itself.
-
-> For example, a `creature` with `spellbane(2)` and `spellbane(1)` functionally has `spellbane(3)`. If that `creature` casts a `spell` that would normally cost 1 `arca`, it now costs 4 `arca`!
+> For example, Ulfarmi has a `body` score of 1. If he `equips` an `item` with the `body(3)` `property`, he suffers 2 points of `bane` on every single roll he does; rolls to `hit`, `skill` rolls... everything! Be careful what you wear!

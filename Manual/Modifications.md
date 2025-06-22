@@ -51,18 +51,24 @@ There are multiple types of senses that a `creature` may have, and corresponding
 
 Each sense `trait` comes with a range. If a range is not specified, the range is unlimited. Unless a `creature` has the `blind` or `deaf` `traits`, they can see or hear at a level equal to a typical, healthy real-world human being.
 
-### Travel Speed
+### Speed
 
-There are several different kinds of `travel` speeds. Each one has a name and number. The name denotes what kind of `travel` the `creature` may take, while the number denotes how many tiles that `creature` may traverse when they take the `move` `action`.
+There are several different kinds of `speeds` a `creature` can use to travel. Each one has a name and number. The name denotes what kind of travel the `creature` may take, while the number denotes how many tiles that `creature` may traverse when they travel.
 
-| Travel Speed | Description                                                                                                                            |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| Ground       | The `creature` may traverse along the surface of a solid, horizontal plane.                                                            |
-| Burrow       | The `creature` may traverse through solid dirt or stone.                                                                               |
-| Fly          | The `creature` may traverse through the air. The `creature` is `falling` if they spend 1 `turn` not `moving` with this `travel` speed. |
-| Swim         | The `creature` may traverse through water.                                                                                             |
-| Climb        | The `creature` may traverse along the surface of a solid, vertical/vertically angled plane.                                            |
-| Cling        | The `creature` may traverse along the surface of a solid, horizontal plane against gravity.                                            |
+| Travel Speed | Description                                                                                 |
+| ------------ | ------------------------------------------------------------------------------------------- |
+| Ground       | The `creature` may traverse along the surface of a solid, horizontal plane.                 |
+| Burrow       | The `creature` may traverse through solid dirt or stone.                                    |
+| Fly          | The `creature` may traverse through the air.                                                |
+| Swim         | The `creature` may traverse through water.                                                  |
+| Climb        | The `creature` may traverse along the surface of a solid, vertical/vertically angled plane. |
+| Cling        | The `creature` may traverse along the surface of a solid, horizontal plane against gravity. |
+
+#### Movement
+
+In order to distinguish between a `move` and physical movement through the world, the term "travel" is used instead of "move" to describe movement. Whenever a creature travels, they may use any of their `speeds` to do so. If you use multiple `speeds` to travel, subtract the number of tiles you have already covered from the new `speed` you wish to use to determine how many remaining tiles you can travel with the new `speed`.
+
+> Example: Alberich has two `speeds`; `Ground(2)` and `Fly(3)`. If Alberich travels 1 tile using his `Fly` `speed`, he may only travel 1 tile with his `Ground` `speed` in the current travel. If he travels 2 tiles using his `Ground` `speed`, he may travel 1 tile using his `Fly` `speed` after.
 
 ### Language
 
@@ -78,7 +84,7 @@ A `creature` can utilize a number of languages in accordance to the below table.
 
 ## Conditions
 
-A `condition` is a temporary `modification` that is applied usually by some `ability`, `spell` or `action`.
+A `condition` is a temporary `modification` that is applied usually by some `move`.
 
 ### Threatened
 
@@ -86,11 +92,11 @@ A `creature` within the `threat range` of another `creature` that is hostile to 
 
 ### Grappled
 
-`Creatures` who are `grappled` have their `travel` speeds forced to be no greater than 0 and gain a point of `bane` to all `dodging` rolls. When a `grappling` `creature` uses the `move` `action`, the `creature` they are `grappling` is `forced` the same distance using the same `travel` speed as the `grappler`.
+`Creatures` who are `grappled` have their `travel` speeds forced to be 0 and gains 2 points of `bane` to all `dodging` rolls. When a `grappling` `creature` `travels`, the `creature` they are `grappling` is `forced` the same distance using the same `travel` speed as the `grappler`.
 
 ### Grappling
 
-`Creatures` who are `grappling` have their `travel` speed halved. If this `creature` is `forced`, the `grappling` and `grappled` `condition` are removed from their respective `creatures`.
+`Creatures` who are `grappling` have their `travel` speeds halved and gain 1 point of `bane` to all `dodging` rolls. If this `creature` is `forced`, the `grappling` and `grappled` `condition` are removed from their respective `creatures`.
 
 ### Defensive
 
@@ -98,17 +104,15 @@ A `creature` within the `threat range` of another `creature` that is hostile to 
 
 ### Prone
 
-`Creatures` who are `prone` gain 3 points of `bane` to their `dodging` rolls while they are `prone`. `Creatures` who make a ranged `strike` against a `prone` `creature` also gain the 3 points of `bane` to their `striking` roll.
+`Creatures` who are `prone` gain 3 points of `bane` to their `dodging` rolls while they are `prone`. `Creatures` who make a ranged `strike` against a `prone` `creature` also gain 3 points of `bane` to their `striking` roll.
 
 ## Falling
 
-A `creature` with the `falling` `condition` is `forced` towards the ground 15 tiles. This movement is applied the moment the `falling` `condition` is applied and at the start of every `round` thereafter. When the `creature` impacts a surface solid enough to stop them, the `falling` `condition` is removed and sustains 1 `bludgeoning` `wound` plus an additional `bludgeoning` `wound` per 5 tiles they fall. A `creature` may reduce the effective number of tiles they fall by making a
+A `creature` with the `falling` `condition` is `forced` towards the ground 15 tiles. This movement is applied the moment the `falling` `condition` is applied and at the start of every `round` thereafter. When the `creature` impacts a surface solid enough to stop them, the `falling` `condition` is removed and sustains 1 `bludgeoning` `direct wound` plus an additional `bludgeoning` `direct wound` per 5 tiles they fall. A `creature` may reduce the effective number of tiles they fall by making a
 
-`check`: [1d4] + `dexterity` vs number of tiles fallen.
+`check`: [1d4] + `body` vs number of tiles fallen.
 
 If the `check` succeeds, the `creature` sustains no `wounds`. If they fail, the difference between the roll and the number of tiles fallen is the effective number of tiles they have fallen.
-
-The `wounds` sustained by `falling` are unique. They are subject to `resistance` and `vulnerability`, but otherwise cannot be affected (including from `physical defense`). These `wounds` cannot be absorbed by `stress`.
 
 ## Properties
 
@@ -124,4 +128,4 @@ The only exception is the `forced` `effect` which will be explained here.
 
 When an entity is `forced`, it is moved via a `travel` speed against its will, ending up the number of tiles specified by the `travel` speed. This happens instantaneously.
 
-> For example, the `push` `action` on a success causes the target to be `forced` Ground(1). This means that the target must move across the ground 1 tile against its will.
+> Example: the `push` `move` on a success causes the target to be `forced` Ground(1). This means that the target must move across the ground 1 tile against its will.

@@ -32,6 +32,14 @@ In a `check`, the `target` is set by the static number. In a `test`, the `target
 
 > For example, when making a `strike`, a `test` is called between the `creature` who is `striking` and the `creature` being `struck`. The `creature` being `struck` is the opposition in this case, and their roll total determines the `target` that the `striking` `creature` must reach.
 
+Additionally, there are circumstances where a roll is made against no `target`. These instances are referred to as `totals`.
+
+### Group Rolls
+
+Sometimes, circumstance calls for multiple `creatures` in a group to participate in a roll; these instances are group rolls and are referred to as `group checks` and `group tests` depending on the kind of roll involved. Regardless of the specific type of roll, the way the group total is handled is the following.
+
+First, a leader is designated to lead the roll. Every `creature` involved in the group roll makes their own individual roll against the `target`. The `creature` that rolled highest on their total is the total that is actually used to compare against the `target`. If all `creatures` succeed, they all gain 1 point of `power`. However, one `creature` fails the GM gains one point of `dread` and for each `creature` that did _not_ meet the `target`, the leader accumulates 1 `stress`.
+
 ## Die Sources
 
 Since the number of dice and the sides of those dice change often from roll to roll, we need a way to determine how many dice of what sides we need to roll. This is where `die sources` come into play. Whenever a roll is called for, the `die source` will be specified. Most often, the `proficiency` `die source` will be used. Don't worry about `proficiency` for right now; the important part to understand is that when a roll is called, you'll always know what dice to roll and how many. If there's ever a moment where you feel a roll is necessary but for whatever reason is not supported in the rules, look to your DM to decide what should be done.
@@ -40,7 +48,7 @@ The anatomy of a roll is the following:
 
 roll type : [(`die source` | ... | `die source`)] + add-ons vs `target`
 
-The "roll type" specifies what type of roll it is; either a `check` or a `test`. This lets you tell at a glance whether the roll is against a static number or another roll. Whenever you see square brackets `[]`, this indicates a roll of dice and inside we will have the options for the `die source`. If there are multiple options, they'll be contained within parenthesis `()` and separated with a pipe `|`. This means that the roller gets to choose which `die source` they want to use. The pattern here of containing options in parenthesis `()` separated by a pipe `|` is a general pattern used anywhere there are choices.
+The "roll type" specifies what type of roll it is; either a `total`, a `check` or a `test`. This lets you tell at a glance whether the roll is against a static number or another roll. Whenever you see square brackets `[]`, this indicates a roll of dice and inside we will have the options for the `die source`. If there are multiple options, they'll be contained within parenthesis `()` and separated with a pipe `|`. This means that the roller gets to choose which `die source` they want to use. The pattern here of containing options in parenthesis `()` separated by a pipe `|` is a general pattern used anywhere there are choices.
 
 > Note the term "roller" was used, this does _not_ mean the `creature` that caused the roll! If the options are on the `defenders` side (after the vs), then the `defender` chooses for themselves. Similarly, if they're on the `attackers` side (before the vs), the `attacker` chooses for themselves.
 
@@ -50,9 +58,9 @@ If this was confusing still, the best way to explain this is through an example:
 
 _In order to see if a `grapple` succeeds, roll a_
 
-_`test`: [`grappling`] + `body` vs [`dodging`] + (`finesse`|`body`)_
+_`test`: [`striking`] + `body` vs [`dodging`] + (`finesse`|`body`)_
 
-The `attacker` rolls dice determined by their `grappling` `proficiency` level (more on that in another section) and add their `body` score. This is compared against the `defenders` roll; they roll dice determined by their `dodging` `proficiency` and add their choice of their `finesse` or `body` score.
+The `attacker` rolls dice determined by their `striking` `proficiency` level (more on that in another section) and add their `body` score. This is compared against the `defenders` roll; they roll dice determined by their `dodging` `proficiency` and add their choice of their `finesse` or `body` score.
 
 ## Degrees of Success, Criticals and Compromises
 
@@ -60,8 +68,18 @@ If the die roll is meant to represent variability of the quality of the action, 
 
 When a roll is made, compare the total to the `target`. If the the total is 5 or more below the `target`, the roll truly fails; whatever outcome was being tried simply does not work. If the total is above 5 less than the `target` but does not meet the `target`, the roll partially succeeds; whatever outcome was being tried has some undesired complication to the outcome or is of dubious quality. If the total meets or is less than 5 above the `target`, the roll succeeds; whatever outcome was being tried completes without complication and as intended.
 
-For each multiple of 5 above the `target`, the roll `critically` succeeds. On a `critical`, the outcome is a success (or better) _and_ the player gains a point of `boon` for each `critical`.
+For each multiple of 5 above the `target`, the roll `critically` succeeds. On a `critical`, the outcome is a success (or better) _and_ the player gains a point of `power` for each `critical`.
 
-> Example: on a roll with a `target` of 10, a total of 1-4 would be a failure, a total of 5-9 would be a partial success, and a total of 10-14 would be a success. A total of 15-19 would `critical` 1 time, a total of 20-24 would `critical` 2 times, and so on. The roll succeeds and for each `critical`, another point of `boon` is gained.
+> Example: on a roll with a `target` of 10, a total of 1-4 would be a failure, a total of 5-9 would be a partial success, and a total of 10-14 would be a success. A total of 15-19 would `critical` 1 time, a total of 20-24 would `critical` 2 times, and so on. The roll succeeds and for each `critical`, another point of `power` is gained.
 
-When a roll does not succeed, a player may ask for a `compromise`. When a `compromise` occurs, the degree of success of the roll becomes 1 greater (i.e., a total failure becomes a partial success and a partial success becomes a success). In return, the GM gains a point of `villainy`. It is up to the GM whether to accept the `compromise` or not.
+When a roll does not succeed, a player may ask for a `compromise`. When a `compromise` occurs, the degree of success of the roll becomes 1 greater (i.e., a total failure becomes a partial success and a partial success becomes a success). In return, the GM gains a point of `dread`. It is up to the GM whether to accept the `compromise` or not.
+
+## Bane & Boon
+
+In certain circumstances, a `creature` may be unusually hindered or aided in completing the task at hand. In these situations, they are awarded points of `bane` and `boon` to help or hinder their roll.
+
+These points are two sides of the same coin and cancel each other out. For every point of `boon` a `creature` has, they roll 1d4 and add the result to their total. For every point of `bane` a `creature` has on a roll, they must roll 1d4 and _subtract_ the result from their total.
+
+> Example: Alberich has (from various sources) 3 points of `boon` and 1 point of `bane` on his `striking` `test`. This means that Alberich makes his typical `striking` roll, then applies `bane` & `boon`: 1 point of `bane` cancels out with 1 point of `boon`, leaving Alberich to roll 2d4. The resulting roll looks like this:
+>
+> _`test`: [`striking`] + `finesse` + 2 `boon` vs [`dodging`] + `finesse`_

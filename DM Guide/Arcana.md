@@ -8,9 +8,7 @@ There are several different unique types of arcana, each with their own unique r
 
 Arca is a potent and omnipresent energy source on Adamah. As an individual moves up or down in elevation, arca becomes gradually more and more abundant than at sea level elevation. In dungeons, the presence of arca is greatly increased. They are the locations with the most abundant arca bar none, making experimentation with arcana easier within their depths.
 
-Arca is primarily found ambient in the world; the mechanism that produces it currently is unknown. It can also be produced by creatures who have practiced channeling arca through their bodies to create arcana. The degree of arca that a creature can create is determined by the strength of their spirit; a characteristic that is still not very well understood.
-
-What is known that spirit will strengthen through the practice of arcana, through religious meditation, and through time spent in mentally distressing situations up to a certain point. In this way, the spirit is similar to the body and follows many of the same principles, like proper rest and recovery.
+Arca is primarily found ambient in the world; the mechanism that produces it currently is unknown. It can also be produced by creatures who have practiced channeling arca through their bodies to create arcana. The degree of arca that a creature can create and control may increase through training in places with high concentrations of arca; a mechanism still not fully understood.
 
 Types of arca can be distinguished with enough training or sensitivity, but all arca seems to be equally effective at performing arcana. Demonic arca is found underground and in dungeons, while holy arca is found at mountain peaks. Fae arca is found leaking through Faerealm rifts and around fae forests. The miniscule ambient arca at the surface of Adamah and the arca produced by creatures is simply referred to as "arca". The type of arca seems to be important to creatures made primarily of the arca of their native plane, like fae creatures, as they seem to be unable to survive extended periods of time outside of concentrations of their corresponding arca. In fact, much of what is understood about types of arca is an extrapolation of what is known about how fae arca interacts with fae creatures.
 
@@ -51,6 +49,14 @@ An arcanist of the school of inscription, often referred to as a scribe, typical
 
 If any of the above is incorrect by even the slightest of margins, the spell risks complete failure to do anything at all. The only exception is that there may be more channeling circles than what is necessary, but not less. Most of a scribes time is not spent creating new spells; it is instead in creating tomes for incanters to use. While many incanters are capable of producing correct inscription circles, most do not bother to learn the inscription circles for every spell they would like to use as this would take a considerable amount of time and practice. They instead learn the inscription circles for rare and powerful spells that are too complex to fit into tomes.
 
+### Channeling
+
+Channeling is the practice of molding arca into a raw output of energy. An arcanist that specializes in the school of channeling, often referred to as a channeler or (especially in the case of channeling warriors) an arcaknight, does not use their arca for spells. Most channeling is performed by arcaknights, who channel arca in order to improve their durability and prowess. These warriors also will channel arca in order to enhance their physical strikes with raw elemental power with the assistance of a focus, creating devastating effects such as a flaming blade or a wind strike that extends out dozens of feet.
+
+Channeling is closely tied with the "mind-muscle connection" phenomenon; but requires not only for the mind to connect with the body but also the very spirit of the being. Once connection to the muscle is established through training, the essence of channeling is to extend the very sense of self into that part of the body. Through practice, this results in the energy of arca to be used to enhance physical capabilities. The natural progression is to add the "color" of an element onto the arca and to release that built up arca into the world to affect it.
+
+Channeling as a form of arcana is less precise in outcome than spellcraft due to its unstructured nature, but the benefit is that it doesn't require the cumbersome management of tomes in order to utilize. Due to spellcraft and channeling being near polar opposites as well as the physical training necessary to perfect it, channelers and incanters are rarely the same person.
+
 ### Cantrips
 
 A cantrip is the name of spell which have the following two properties for an arcanist:
@@ -60,7 +66,7 @@ A cantrip is the name of spell which have the following two properties for an ar
 
 Therefore, any spell can technically become a cantrip for an individual arcanist, but it is rare for anything but simple spells to become cantrips for an arcanist. The most common spell to become a cantrip is the Requipment spell, which is a requirement for anyone who wishes to become a dungeoneer. An arcanist is often measured by the number of cantrips they have acquired so it is common for their cantrips to be on exposed parts of their skin.
 
-If an arcanist has not practiced the spell to the necessary point and still get the inscription circle permanently inscribed on themselves anyways, the circle will constantly siphon off their arca in an attempt to activate and leave the individual crippled and unable to use arca ever again. It is common practice to get a temporary tattoo first in order to ensure the arcanist can truly handle the spells inscription circle.
+If an arcanist has not practiced the spell to the necessary point and still get the inscription circle permanently inscribed on themselves anyways, the circle will constantly siphon off their arca in an attempt to activate and potentially leave the individual crippled and unable to use arca ever again. It is common practice to get a temporary tattoo first in order to ensure the arcanist can truly handle the spells inscription circle.
 
 ## Sorcery
 
@@ -76,7 +82,7 @@ Miracles and curses can only be performed when an individual has a strong connec
 
 What is understood about miracles and curses is that the caster must invoke the request of the miracle or curse, typically called a prayer or a chant. Through communion and devotion with the greater being, a caster learns which miracles and curses they are given permission to perform and how often, as acting as the channel takes a toll on the caster unlike that of typical arcana.
 
-Humans who have invoked miracles and curses report that the feeling is that of their very spirit risking collapse as they invoke more and more without rest. Taking time to recuperate seems necessary in order to repair the strain of being a channel for this type of arcana. While this strain has never been lethal, some greater sense of self-preservation prevents casters from using miracles or curses that would cause irreparable damage or death to the caster. Additionally, invoking a miracle or curse does not draw any arca from its invoker.
+Humans who have invoked miracles and curses report that the feeling is that of their very spirit risking collapse as they invoke more and more without rest. Taking time to recuperate seems necessary in order to repair the strain of being a channel for this type of arcana. While this strain has never been lethal, some greater sense of self-preservation prevents casters from using miracles or curses that would cause irreparable damage or death to the caster.
 
 ## Enchantment
 
@@ -84,7 +90,7 @@ Enchantment is a recent development in arcanism, a field reverse-engineered from
 
 First, the desired arcana must be formalized as a spell via spellcraft. This immediately rules out miracles and curses from human derived enchantment as it is unknown how to formalize miracles and curses as spells. This is not to say it is impossible to enchant something with the effect of a miracle or curse because items enchanted with both have been found within dungeons; it is just currently unknown.
 
-Next, the proper crystal must be sourced in order to properly channel arca to the enchantment. The crystal rarely remains intact through the process, it is more common for it to be crushed and spread throughout the material used to create the object. The obvious next step is to of course create the object desired to be enchanted. This is done in a similar way as normal, with the crystal somehow worked into the material or the design.
+Next, the proper crystal must be sourced in order to properly channel arca to the enchantment. The crystal rarely remains intact through the process, it is more common for it to be crushed and spread throughout the material used to create the object. However, more powerful enchantments require the crystal to be embedded in the item in some way. The obvious next step is to of course create the object desired to be enchanted. This is done in a similar way as normal, with the crystal somehow worked into the material or the design.
 
 Once the object has been created, arcanists called enchanters must inscribe the inscription circle on the object. In some cases, this is the final step. In these instances, the enchanted object will require an incantation in order to activate. This can be circumvented by duplicating the inscription circle in a way where they are parallel to one another and then performing the incantation. The inscription circle will perpetually be active with no intervention necessary by the user. Enchantments of the former are invoked enchantments, the latter perpetual enchantments.
 

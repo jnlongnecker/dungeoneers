@@ -9,6 +9,7 @@ def fac(num):
         fact = fact * i
     return fact
 
+# Combinatorics (n items, pick k without repetition or order)
 def bin_coef(n, k):
     if n == k or k == 0: return 1
     return bin_coef(n - 1, k - 1) + bin_coef(n - 1, k)
@@ -261,3 +262,81 @@ def calculate_chance_to_wound(me, target, crit_threshold = 5):
         crit_num = crit_num + 1
 
     return hit_chance
+
+### Dice Pool Statistics ###
+class DicePool:
+
+    def __init__(self, die, quantity, bonus, target):
+        self.die = die
+        self.quantity = quantity
+        self.bonus = bonus
+        self.target = target
+        self.chances = self.calculate_chances()
+
+    def calculate_chances(self):
+        rolls = self.quantity
+        bonus = self.bonus
+        failure_chance = calculate_chance_to_beat(self.die, str(self.target), True)
+        success_chance = 1 - failure_chance
+        chance_for_x_success = []
+        for successful_rolls in range(0, rolls + 1):
+            base_chance = (success_chance ** successful_rolls) * (failure_chance ** (rolls - successful_rolls))
+            combinations = float(bin_coef(rolls, successful_rolls))
+            final_success_chance = base_chance * combinations
+            chance_for_x_success.append(final_success_chance)
+        ret = []
+        index = 0
+        for i in range(0, bonus):
+            tup = (i, 0)
+            ret.append(tup)
+        for i in range(bonus, rolls + bonus + 1):
+            tup = (i, chance_for_x_success[index])
+            ret.append(tup)
+            index = index + 1
+        return ret
+
+    def chance_to_crit(self):
+        parts = self.die.split('d')
+        max_die = int(parts[1])
+        max_chance = 1 / max_die
+        normal_chance = 1 - max_chance
+        if (self.quantity < 2):
+            return 0
+        base_chance = float((max_chance ** 2.0) * (normal_chance ** (self.quantity - 2.0)))
+        combinations = float(bin_coef(self.quantity, 2))
+        return base_chance * combinations
+
+    def print_chances(self):
+        for i in range(0, len(self.chances)):
+            chance = self.chances[i]
+            print('Chance of exactly %s successes: %s' % (chance[0], perc_format(chance[1])))
+    
+    def print_crit_chance(self):
+        chance = self.chance_to_crit()
+        print('Crit chance: %s' % (perc_format(chance)))
+
+def calculate_successes(rolls, bonus, proficiency):
+    prof_string = str(proficiency)
+    success_chance = 1 - calculate_chance_to_beat('1d6', prof_string, True)
+    successes = bonus
+    chance_for_x_success = []
+    for successful_rolls in range(0, rolls + 1):
+        failure_chance = 1 - success_chance ** successful_rolls
+        combinations = float(bin_coef(rolls, successful_rolls))
+        final_success_chance = 1.0 - (failure_chance ** combinations)
+        chance_for_x_success.append(final_success_chance)
+    return chance_for_x_success
+
+def calculate_exact_successes(rolls, bonus, proficiency):
+    successes = calculate_successes(rolls, bonus, proficiency)
+    for i in range(0, len(successes) - 1):
+        next = successes[i + 1]
+        curr = successes[i]
+        successes[i] = curr - next
+    return successes
+    ret = []
+    for i in range(0, bonus + 1):
+        ret.append(1)
+    for chance in chance_for_x_success:
+        ret.append(chance)
+    return ret

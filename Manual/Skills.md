@@ -11,16 +11,18 @@ A `skill` some task that a `creature's` training and experience can help them pe
 | Legendary   | 4d4       |
 | Mythical    | 4d6       |
 
+Every roll that involves a `skill` will also add a relevant `attribute` score. The circumstance of the roll will determine _which_ `attribute` score to add, so it will vary.
+
 It may be a little confusing how the amount of dice rolled helps you practically, so to help you a bit you can find a chart of an average roll with a certain `proficiency` and `attribute score` combination.
 
-| Proficiency | 1   | 2   | 3   | 4   | 5   | 6   | 7    | Die |
-| ----------- | --- | --- | --- | --- | --- | --- | ---- | --- |
-| Untrained   | 3.5 | 4.5 | 5.5 | 6.5 | 7.5 | 8.5 | 9.5  | 1d4 |
-| Trained     | 4.5 | 5.5 | 6.5 | 7.5 | 8.5 | 9.5 | 10.5 | 1d6 |
-| Experienced | 6   | 7   | 8   | 9   | 10  | 11  | 12   | 2d4 |
-| Master      | 8   | 9   | 10  | 11  | 12  | 13  | 14   | 2d6 |
-| Legendary   | 10  | 11  | 12  | 13  | 14  | 15  | 16   | 4d4 |
-| Mythical    | 12  | 13  | 14  | 15  | 16  | 17  | 18   | 4d6 |
+| Proficiency | 1   | 2   | 3   | 4   | 5   | 6   | 7    | 8    | Die |
+| ----------- | --- | --- | --- | --- | --- | --- | ---- | ---- | --- |
+| Untrained   | 3.5 | 4.5 | 5.5 | 6.5 | 7.5 | 8.5 | 9.5  | 10.5 | 1d4 |
+| Trained     | 4.5 | 5.5 | 6.5 | 7.5 | 8.5 | 9.5 | 10.5 | 11.5 | 1d6 |
+| Experienced | 6   | 7   | 8   | 9   | 10  | 11  | 12   | 13   | 2d4 |
+| Master      | 8   | 9   | 10  | 11  | 12  | 13  | 14   | 15   | 2d6 |
+| Legendary   | 10  | 11  | 12  | 13  | 14  | 15  | 16   | 17   | 4d4 |
+| Mythical    | 12  | 13  | 14  | 15  | 16  | 17  | 18   | 19   | 4d6 |
 
 > Note that these are _averages_. Your mileage my vary!
 
@@ -205,6 +207,21 @@ The `crafting` `skill` is used to create and process primarily fabrics/leather, 
 | Fantastical      | 25-29  | Create armor out of dragonhide                                     |
 | Unfathomable     | 30+    | Create enchanted armor out of dragonhide                           |
 
+### Bushcraft
+
+The `bushcraft` `skill` is used to perform a large variety of survival related tasks: tying knots, building makeshift shelter and tools, filtering water, and similar such tasks.
+
+| Difficulty Level | Target | Example                                                                                                 |
+| ---------------- | ------ | ------------------------------------------------------------------------------------------------------- |
+| Trivial          | 2-4    | Tie a simple knot (shoelace knot, overhand knot)                                                        |
+| Easy             | 5-7    | Build an evaporation water filter                                                                       |
+| Moderate         | 8-9    | Tie a sophisticated, load bearing knot                                                                  |
+| Hard             | 10-12  | Build a properly insulating igloo                                                                       |
+| Insane           | 13-17  | Build a camouflaged and functional shelter with only found tools                                        |
+| Absurd           | 18-24  | Build a camouflaged and functional shelter where virtually no materials are available                   |
+| Fantastical      | 25-29  | Build a water recycling mechanism that provides water for 5 people a day where little water exists      |
+| Unfathomable     | 30+    | Build a water recycling mechanism that provides water for 5 people a day where no water normally exists |
+
 ### Cooking
 
 The `cooking` `skill` is used to prepare edible ingredients into meals using cook's tools. Simple ingredients often do not confer any benefits, but meals with exotic ingredients can accept enchantment which is extended to those that eat the meal.
@@ -237,7 +254,7 @@ The `music` `skill` is used to play music with instruments. Music can elicit emo
 
 ## Procurement Skills
 
-A `skill` in the procurement category is used to gather something from the world. When using these `skills`, they all take some time to complete and largely depend on what you are attempting to do and the environment you are attempting to do it in. For example, `hunting` for food in an environment with abundant game will be easier and take less time than trying to do the same in an environment with virtually no game. The DM decides how long it takes, but all the examples shown in the table are expected to take less than 1 hour.
+A `skill` in the procurement category is used to gather something from the world. When using these `skills`, they all take some time to complete and largely depend on what you are attempting to do and the environment you are attempting to do it in. For example, `hunting` for food in an environment with abundant game will be easier and take less time than trying to do the same in an environment with virtually no game. The GM decides how long it takes, but all the examples shown in the table are expected to take less than 1 hour.
 
 ### Hunting
 
@@ -317,17 +334,62 @@ The remainder of possible `skills` can be found here. These are general purpose 
 
 ### Nature
 
-## Weapon Ranks
+Runescape skills
 
-Not every dungeoneer is equally skilled at all different kinds of weaponry. Weapon rank represents a dungeoneers level of proficiency with a specific type of weapon. The following are categories that a weapon can belong to and a dungeoneer be proficient in:
+-   Attack
+-   Strength
+-   Defense
+-   Ranged
+-   Magic
+-   Hitpoints
+-   Runecrafting
+-   Herblore
+-   Crafting
+-   Smithing
+-   Mining
+-   Fletching
+-   Agility
+-   Woodcutting
+-   Slayer
+-   Farming
+-   Cooking
+-   Fishing
+-   Hunting
+-   Prayer
+-   Firemaking
+-   Thieving
+-   Construction
 
--   Axe
--   Blade
--   Cudgel
--   Lance
--   Bow
--   Tome
+COMBAT
 
-Weapon ranks follow a letter progression from E -> D -> C -> B -> A -> S, with E representing basic training and S representing complete mastery. Each weapon has a required rank in order to properly wield it. If a `creature` uses a weapon they do not have the weapon rank to properly wield, all `striking` rolls will have a point of `bane` and can deal a maximum of 1 wound. Access to weapon ranks is primarily tied to `class` and level.
+-   Hitpoints (Take damage)
+-   Attack (Get past defense)
+-   Strength (Raise max hit)
+-   Defense (Lower chance of taking damage)
+-   Magic (Give spells power & learn new spells)
+-   Ranged (Increase ranged accuracy and damage)
+-   Prayer (Buffs)
+-   Slayer (Deal damage to certain monsters)
 
-In addition to unlocking more and more powerful weaponry by gaining weapon ranks, having a weapon rank also grants access to special `abilities` tied to that category of weaponry.
+ARMS & ARMOR
+
+-   Smithing (Craft metal weapons and armor)
+-   Crafting (Craft non-metal things, like jewelry and leather armor)
+-   Runecrafting (Craft runes for spells)
+-   Fletching (Craft wood products, like arrows and bows)
+
+PREP
+
+-   Herblore
+-   Fishing
+-   Cooking
+-   Mining
+-   Hunting
+-   Farming
+
+OTHER
+
+-   Thieving
+-   Agility
+-   Construction
+-   Woodcutting
