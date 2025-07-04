@@ -86,10 +86,6 @@ A `creature` can utilize a number of languages in accordance to the below table.
 
 A `condition` is a temporary `modification` that is applied usually by some `move`.
 
-### Threatened
-
-A `creature` within the `threat range` of another `creature` that is hostile to them is `threatened`. By itself, `threatened` does not do anything but there are `abilities` that can only take effect on a `creature` who is `threatened`.
-
 ### Grappled
 
 `Creatures` who are `grappled` have their `travel` speeds forced to be 0 and gains 2 points of `bane` to all `dodging` rolls. When a `grappling` `creature` `travels`, the `creature` they are `grappling` is `forced` the same distance using the same `travel` speed as the `grappler`.
@@ -102,9 +98,53 @@ A `creature` within the `threat range` of another `creature` that is hostile to 
 
 `Creatures` who are `defensive` gain a point of `boon` to their `dodging` rolls.
 
+### Blocking
+
+`Creatures` who are `blocking` gain a point of `boon` to their `dodging` rolls and a point of `bane` to their `striking` rolls.
+
+### Berserk
+
+`Creatures` who are `berserk` gain a point of `boon` to their `striking` rolls, a point of `bane` on their `dodging` rolls, and deal 1 additional `wound` with `strikes`.
+
+### Taunted
+
+`Creatures` who are `taunted` only focus on the `creature` who applied this `condition` on them.
+
 ### Prone
 
-`Creatures` who are `prone` gain 3 points of `bane` to their `dodging` rolls while they are `prone`. `Creatures` who make a ranged `strike` against a `prone` `creature` also gain 3 points of `bane` to their `striking` roll.
+`Creatures` who are `prone` gain 3 points of `bane` to their `dodging` rolls while they are `prone`. `Creatures` who make a `strike` against a `prone` `creature` who is outside of their `reach` also gains 3 points of `bane` to their `striking` roll.
+
+### Frightened
+
+`Creatures` who are `frightened` gain 1 point of `boon` to their `dodging` rolls, but all `speeds` become 0.
+
+### Weakened
+
+`Creatures` who are `weakened` deal 1 fewer `wounds` whenever they would deal a `wound`.
+
+### Dazed
+
+`Creatures` who are `dazed` gain two points of `bane` to their `dodging` rolls.
+
+### Blinded
+
+`Creatures` who are `blinded` cannot add their `proficiency` to `striking` or `dodging` rolls.
+
+### Freezing
+
+`Creatures` who are `freezing` gain a point of `bane` to their `dodging` and `striking` rolls.
+
+### Burning
+
+`Creatures` who are `burning` cannot recover `stress` or use `moves` that cause `stress`.
+
+### Shocked
+
+`Creatures` who are `shocked` cannot recover `arca`.
+
+### Plagued
+
+`Creatures` who are `plagued` have their `speeds` reduced by 1.
 
 ## Falling
 

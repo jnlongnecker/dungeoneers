@@ -15,7 +15,7 @@ A weapon is an `item` that is used to make `strikes`. Each weapon has a certain 
 -   _Range:_ Reach
 -   _Class:_ None
 -   _Wounds:_ 1 Physical
--   _Properties:_ Toss
+-   _Properties:_ `Toss`
 -   _Wield Slots:_ 1
 -   _Striking Bonus:_ 1d4
 
@@ -28,9 +28,8 @@ Any object capable of causing harm when wielded using a single hand is applicabl
 -   _Range:_ Reach
 -   _Class:_ Blade, Cudgel, Axe, Lance
 -   _Wounds:_ 1 Physical
--   _Properties:_ Toss
+-   _Properties:_ `Toss`
 -   _Wield Slots:_ 1
--   _Striking Bonus:_ 1d4
 
 > Examples: a dagger, a handaxe, a light hammer, a javelin
 
@@ -41,7 +40,6 @@ Any object capable of causing harm when wielded using a single hand is applicabl
 -   _Wounds:_ 2 Physical
 -   _Properties:_ None
 -   _Wield Slots:_ 1
--   _Striking Bonus:_ 1d4
 
 > Examples: a broadsword, a battleaxe, a maul, a spear
 
@@ -52,7 +50,6 @@ Any object capable of causing harm when wielded using a single hand is applicabl
 -   _Wounds:_ 2 Physical
 -   _Properties:_ None
 -   _Wield Slots:_ 2
--   _Striking Bonus:_ 1d4
 
 > Examples: a zweihander, a bardiche, a polehammer, a partisan
 
@@ -60,10 +57,9 @@ Any object capable of causing harm when wielded using a single hand is applicabl
 
 -   _Range:_ Reach
 -   _Class:_ Blade, Cudgel, Axe, Lance
--   _Wounds:_ 2 Physical
+-   _Wounds:_ 3 Physical
 -   _Properties:_ None
 -   _Wield Slots:_ 2
--   _Striking Bonus:_ 1d8
 
 > Examples: a longsword, a broadaxe, a lever mace, a glaive
 
@@ -74,7 +70,6 @@ Any object capable of causing harm when wielded using a single hand is applicabl
 -   _Wounds:_ 1 Physical
 -   _Properties:_ None
 -   _Wield Slots:_ 2
--   _Striking Bonus:_ 1d6
 
 > Examples: a sling, a crossbow, a longbow
 
@@ -88,33 +83,71 @@ A `focus` is an `item` that must be `equipped` to improve `spell` power. Enchant
 
 ## Armor
 
-Armor is `equipped` by a `creature` in order to increase their `energy defense` and `physical defense`. There are 4 categories of armor: clothing, light, medium and heavy. Each piece of armor has an `equipment slot`, a benefit, a category and properties to describe additional restrictions or bonuses.
+Armor is `equipped` by a `creature` in order to increase their `armor points`. There are 4 categories of armor: clothing, light, medium, and heavy. Each piece of armor has an `equipment slot`, a benefit, a category and properties to describe additional restrictions or bonuses. Like weapons, there are too many pieces of armor to list out. Instead, they are organized into their categories.
 
-All medium armor has the `body(2)` property innately, and all heavy armor has the `body(3)` property innately.
+**Clothing**
 
-**Mundane Armor**
+-   _Slots:_ Body, Hand, Feet, Head, Belt, Back, Hang
+-   _Armor Points:_ --
+-   _Properties:_ None
 
-| Armor Name     | Category     | Armor Points | Equipment Slot | Properties |
-| -------------- | ------------ | ------------ | -------------- | ---------- |
-| Common Clothes | Clothing     | --           | Body           |            |
-| Mage Robes     | Clothing     | --           | Body           |            |
-| Leather        | Light Armor  | 1            | Body           |            |
-| Brigandine     | Medium Armor | 3            | Body           |            |
-| Hauberk        | Heavy Armor  | 5            | Body           |            |
-| Buckler        | Shield       | 1            | Wield          |            |
-| Kite Shield    | Shield       | 2            | Wield          |            |
-| Tower Shield   | Shield       | 3            | Wield          |            |
-| Gloves         | Light Armor  | --           | Hand           |            |
-| Gauntlet       | Heavy Armor  | 1            | Hand           |            |
-| Boots          | Light Armor  | --           | Feet           |            |
-| Greaves        | Heavy Armor  | 1            | Feet           |            |
-| Spangenhelm    | Light Armor  | 1            | Head           |            |
-| Zischagge      | Medium Armor | 2            | Head           |            |
-| Great Helm     | Heavy Armor  | 3            | Head           |            |
+> Examples: a robe, silk gloves, leather belt, a scarf, a knit hat, shoes
+
+**Light Armor**
+
+-   _Slots:_ Body, Hand, Feet, Head
+-   _Armor Points:_ 1
+-   _Properties:_ None
+
+> Examples: studded leather body armor, boiled leather gloves, boiled leather boots, padded leather helm
+
+**Medium Armor**
+
+-   _Slots:_ Body, Hand, Feet, Head
+-   _Armor Points:_ 2
+-   _Properties:_ `Body(4)`
+
+> Examples: brigandine armor, chain gloves, reinforced boots, zischagge
+
+**Heavy Armor**
+
+-   _Slots:_ Body, Hand, Feet, Head
+-   _Armor Points:_ 3
+-   _Properties:_ `Body(5)`
+
+> Examples: plate mail armor, plated gauntlets, plated greaves, great helm
+
+## Shields
+
+Shields similarly come in different categories: light, medium, and heavy. Shields have the same stats as their armor counterparts, except they use one `wield` `equipment slot`.
+
+**Light Shield**
+
+-   _Slots:_ Wield
+-   _Armor Points:_ 1
+-   _Properties:_ None
+
+> Examples: a buckler
+
+**Medium Shield**
+
+-   _Slots:_ Wield
+-   _Armor Points:_ 2
+-   _Properties:_ `Body(4)`
+
+> Examples: a kite shield
+
+**Heavy Shield**
+
+-   _Slots:_ Wield
+-   _Armor Points:_ 3
+-   _Properties:_ `Body(5)`
+
+> Examples: a tower shield
 
 ### Armor Points
 
-The purpose of armor is protection from `wounds`; the amount of protection is represented by `armor points`. Equipped armor grants `armor points` as indicated on the armor table. `Armor points` allow you to take more `wounds` than indicated by your `size`. Whenever you would sustain a `wound` while you have `armor points` remaining, you instead subtract the number of `wounds` you would sustain from your remaining `armor points`. If you would sustain more `wounds` than you have `armor points`, you sustain the leftover `wounds` as normal.
+The purpose of armor is protection from `wounds`; the amount of protection is represented by `armor points`. Equipped armor grants `armor points` as indicated on the armor table. `Armor points` allow you to take more `wounds` than normal. Whenever you would sustain a `wound` while you have `armor points` remaining, you instead subtract the number of `wounds` you would sustain from your remaining `armor points`. If you would sustain more `wounds` than you have `armor points`, you sustain the leftover `wounds` as normal.
 
 Once `armor points` are depleted, they must be repaired to come back.
 
@@ -125,14 +158,6 @@ Once `armor points` are depleted, they must be repaired to come back.
 ### Toss
 
 A weapon with the `toss` `property` additionally can be thrown, gaining a range equal to twice the `creatures` `body` score. When doing so, the weapon is no longer `equipped` when the `strike` is resolved. If the `striking` roll does not succeed, the weapon ends up within 2 tiles of the target location.
-
-### Two-handed
-
-A weapon with the `two-handed` `property` must use 2 `wield` slots instead of 1 in order to be properly `equipped`.
-
-### Ammunition
-
-A weapon with the `ammunition` `property` must be loaded with some sort of weapon ammunition specified in the parenthesis `()` of the `property`. For example, a weapon with the `ammunition (arrows)` `property` must be loaded with arrows. A `creature` can do this as part of a `strike` `action`.
 
 ### Body
 

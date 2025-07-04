@@ -53,7 +53,7 @@ Per day: 1
 -   Regain all `armor points`
 -   Clear all `stress`
 -   Gain 2 `power`
--   Advance a `long-term countdown`
+-   Advance a `long countdown`
 
 **GM Downtime Moves**
 

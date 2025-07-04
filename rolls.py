@@ -288,10 +288,10 @@ class DicePool:
         index = 0
         for i in range(0, bonus):
             tup = (i, 0)
-            ret.append(tup)
+            ret.append(0)
         for i in range(bonus, rolls + bonus + 1):
             tup = (i, chance_for_x_success[index])
-            ret.append(tup)
+            ret.append(chance_for_x_success[index])
             index = index + 1
         return ret
 
@@ -305,11 +305,60 @@ class DicePool:
         base_chance = float((max_chance ** 2.0) * (normal_chance ** (self.quantity - 2.0)))
         combinations = float(bin_coef(self.quantity, 2))
         return base_chance * combinations
+    
+    def chance_to_beat(self, other, must_beat):
+        my_probs = self.chances
+        their_probs = other.chances
+        meets = 1 if must_beat else 0
+
+        chances_i_win = 0
+        for i in range(0, len(my_probs)):
+            chance_i_rolled = my_probs[i]
+            chance_they_rolled = probability_at_most(their_probs, i - meets)
+            chances_i_win = chances_i_win + (chance_i_rolled * chance_they_rolled)
+        return chances_i_win
+    
+    def chances_of_success(self, other):
+        my_probs = self.chances
+        their_probs = other.chances
+        success_probs = {}
+        for i in range(0, len(my_probs)):
+            for j in range (0, len(their_probs)):
+                successes = i - j
+                chance = my_probs[i] * their_probs[j]
+                if successes in success_probs:
+                    success_probs[successes] = success_probs[successes] + chance
+                else:
+                    success_probs[successes] = chance
+        return success_probs
+    
+    def expected_successes(self):
+        chances = self.chances
+        expected_successes = 0
+        success_count = 0
+        for chance in chances:
+            expected_successes = expected_successes + chance * success_count
+            success_count = success_count + 1
+        return expected_successes
+    
+    def print_expected_successes(self):
+        expected = self.expected_successes()
+        print('Expected successes: %s' % (expected))
+    
+    def print_chances_of_success(self, other):
+        chances = self.chances_of_success(other)
+        for success in sorted(chances):
+            chance = chances[success]
+            print('Chance of %s successes: %s' % (success, perc_format(chance)))
+    
+    def print_chance_to_beat(self, other, must_beat):
+        chance = self.chance_to_beat(other, must_beat)
+        print('Chance to win: %s' % (perc_format(chance)))
 
     def print_chances(self):
         for i in range(0, len(self.chances)):
             chance = self.chances[i]
-            print('Chance of exactly %s successes: %s' % (chance[0], perc_format(chance[1])))
+            print('Chance of exactly %s successes: %s' % (i, perc_format(chance)))
     
     def print_crit_chance(self):
         chance = self.chance_to_crit()

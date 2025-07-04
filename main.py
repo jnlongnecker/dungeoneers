@@ -1,11 +1,20 @@
 import rolls
 import creatures
 
-pool = rolls.DicePool(die='1d6', quantity=3, bonus=0, target=5)
-pool.print_chances()
-pool.print_crit_chance()
+quantity = 6
+for i in range(1, 10):
+    pool = rolls.DicePool(die='1d10', quantity=quantity, bonus=0, target=i)
+    print('Quantity: %s, Target: %s' % (quantity, i))
+    pool.print_expected_successes()
 
-rolls.print_chance_of('2d10+7', '>=', 12)
+
+# pool = rolls.DicePool(die='1d10', quantity=3, bonus=0, target=1)
+# opposing_pool = rolls.DicePool(die='1d10', quantity=3, bonus=0, target=4)
+# pool.print_chances()
+# pool.print_crit_chance()
+# pool.print_expected_successes()
+
+# rolls.print_chance_of('2d10+7', '>=', 12)
 
 # die_roll = '4d6+1d4+2'
 # target = '4d6+2'

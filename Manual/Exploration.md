@@ -10,11 +10,11 @@ Each `environment` is difficult to travel in for various reasons. The baseline d
 
 | Danger Level | Environmental Difficulty | Exploration Round Time | Exploration Speed | Tier |
 | ------------ | ------------------------ | ---------------------- | ----------------- | ---- |
-| Peaceful     | 1                        | 8 hours                | 32                | All  |
-| Low          | 5                        | 1 hour                 | 3                 | 1    |
-| Medium       | 8                        | 1 hour                 | 3                 | 2    |
-| High         | 10                       | 1 hour                 | 3                 | 3    |
-| Extreme      | 13                       | 1 hour                 | 3                 | 4    |
+| Peaceful     | 0                        | 8 hours                | 32                | All  |
+| Low          | 1                        | 1 hour                 | 3                 | 1    |
+| Medium       | 2                        | 1 hour                 | 3                 | 2    |
+| High         | 3                        | 1 hour                 | 3                 | 3    |
+| Extreme      | 4                        | 1 hour                 | 3                 | 4    |
 
 In a typical `environment`, every hour of travel the players should potentially come across an `encounter`. In particularly barren or crowded `environments`, this frequency will change. The `encounter table` of these unique `environments` should be adjusted to ensure `encounters` are more or less likely.
 
@@ -22,11 +22,11 @@ The relative danger level and population level of the `environment` isn't the on
 
 | Complexity Level | Navigation Difficulty | Exploration Speed |
 | ---------------- | --------------------- | ----------------- |
-| Trivial          | -5                    | +1                |
-| Simple           | -2                    | +1                |
-| Average          | 0                     | +0                |
-| Complex          | +2                    | -1                |
-| Labyrinthian     | +5                    | -1                |
+| Trivial          | -1                    | +1                |
+| Simple           | +0                    | +1                |
+| Average          | +0                    | +0                |
+| Complex          | +0                    | -1                |
+| Labyrinthian     | +1                    | -1                |
 
 During exploration, GM moves are primarily just rolling on the `encounter table`. In a dungeon, the rules for exploration are the same, except the unit for `exploration speed` is 1 room and the `exploration round` time is 5 minutes.
 
@@ -56,11 +56,13 @@ Tags: Long-acting, Concentrate
 
 ---
 
-You may make a `group roll`:
+You navigate your group through the `environment`.
 
-`check`: [`knowledge`] + `mind` vs [environmental difficulty]
+`Group` (`mind`, `knowledge`) - Environmental Difficulty
 
-On a success, replace 2 lost `encounters` with 2 free `encounters`. On a partial success, replace 1 lost `encounter` with 1 free `encounter`.
+-   Lesser success (-1): Replace 1 lost `encounter` with 1 hazard `encounter`
+-   Success (0): Replace 1 lost `encounter` with 1 free `encounter`
+-   Greater success (1): Replace 2 lost `encounters` with 2 free `encounters`
 
 ### Head the March
 
@@ -68,11 +70,13 @@ Tags: Long-acting, Movement
 
 ---
 
-You may make a `group roll`:
+You lead the charge for your group to improve the efficiency that you move through the `environment`.
 
-`check`: [`influence`] + `spirit` vs [environmental difficulty]
+`Group` (`spirit`, `influence`) - Environmental Difficulty
 
-On a success, you may improve `exploration speed` to 3, or 2 on a partial success.
+-   Lesser success (-1): Your groups `exploration speed` improves to 2
+-   Success (0): Your groups `exploration speed` improves to 2
+-   Greater success (1): Your groups `exploration speed` improves to 2, and you relieve a `stress`
 
 ### Track
 
@@ -80,11 +84,13 @@ Tags: Long-acting, Concentrate, Procurement
 
 ---
 
-You may make a `group roll`:
+You follow the leftover context clues a `creature` has made by moving through the `environment`.
 
-`check`: [`hunting`] + `mind` vs [environmental difficulty]
+`Group` (`mind`, `hunting`) - Environmental Difficulty
 
-On a success, you follow the trail of a `creature` at a maximum `exploration speed` of 4. On a partial success, you follow the trail of a `creature` at a maximum of `exploration speed` of 3.
+-   Lesser success (-1): You follow the trail of a `creature` at a maximum `exploration speed` of 2
+-   Success (0): You follow the trail of a `creature` at a maximum `exploration speed` of 3
+-   Greater success (1): You follow the trail of a `creature` at a maximum `exploration speed` of 4
 
 ## Exploration Free Moves
 
@@ -96,11 +102,13 @@ Tags: Long-acting, Concentrate, Arcana
 
 ---
 
-You may make a roll:
+When taking this `free move`, your party can move at a maximum `exploration speed` of 2.
 
-`total`: [`arcana`] + `mind`
+`Core` (`mind`, `arcana`) - Average (2)
 
-You detect the presence of arcana within a tile radius determined by your roll. The party can move at a maximum of `exploration speed` of 2.
+-   Lesser success (-1): You detect the presence of arcana within a tile radius of 5
+-   Success (0): You detect the presence of arcana within a tile radius of 10
+-   Greater success (1): You detect the presence of arcana within a tile radius of 15
 
 ### Step Softly
 
@@ -108,11 +116,13 @@ Tags: Long-acting, Movement, Assist
 
 ---
 
-You may make a `group roll`:
+When taking this `free move`, your party can move at a maximum `exploration speed` of 2.
 
-`check`: [`stealth`] + `finesse` vs [environmental difficulty]
+`Group` (`finesse`, `stealth`) - Environmental Difficulty
 
-On a success, 1 hostile `creature` `encounter` and 1 neutral `creature` `encounter` are replaced with 2 free `encounters`. On a partial success, 1 neutral `creature` `encounter` is replaced with a free `encounter`. The party can move at a maximum of `exploration speed` of 2.
+-   Lesser success (-1): 1 hostile `creature` `encounter` is replaced with a neutral `creature` `encounter`
+-   Success (0): 1 hostile `creature` `encounter` is replaced with a free `encounter`
+-   Greater success (1): 1 hostile `creature` `encounter` and 1 neutral `creature` `encounter` are replaced with 2 free `encounters`
 
 ### Scout
 
@@ -120,11 +130,16 @@ Tags: Long-acting, Concentrate
 
 ---
 
-You may make a roll:
+You move ahead of the group in order to prepare them for what is to come.
 
-`check`: [`examination`] + `finesse` vs [environmental difficulty]
+`Core` (`finesse`, `examination`) - Environmental Difficulty
 
-On a success, you learn what the next `encounter` is going to be. On a partial success, nothing happens. On a failure, the next `encounter` happens to you 5 `combat rounds` early.
+-   Failure (-2 or more): The next `encounter` happens to you 5 `combat rounds` early
+-   Lesser success (-1): Nothing happens
+-   Success (0): You learn what the next `encounter` is going to be
+-   Greater success (1): You pick the next `encounter` from 2 random options
+
+On a `success` or greater, you can inform the rest of your group of the incoming `encounter`. They have 1 `combat round` to prepare.
 
 ### Boost Morale
 
@@ -132,11 +147,11 @@ Tags: Long-acting, Concentrate, Influence
 
 ---
 
-You may make a roll:
+`Core` (`spirit`, `influence`) - Environmental Difficulty
 
-`check`: [`influence`] + `spirit` vs [environmental difficulty]
-
-On a success, you and all of your party may clear 1 `stress`. On a partial success, all of your party except you may clear 1 `stress`.
+-   Lesser success (-1): You may relieve 1 `stress`
+-   Success (0): You and all of your party may relieve 1 `stress`
+-   Greater success (1): All your party may relieve 1 `stress` and you may relieve 2 `stress`
 
 ### Scrounge
 

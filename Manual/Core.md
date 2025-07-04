@@ -65,8 +65,28 @@ Once a player has determined their `move`, other players may have something they
 
 Some interactions with the world don't necessarily move the `scene` forward, but are important as they set up proper context for a future `move`. These are captured with `free moves`. A player can make a single `free move` before, after, or in tandem with the player with the `spotlight` and their `move`. `Creatures` under the GMs control may also make `free moves` after the GM completes their `move`.
 
-## Power & Dread
+## Countdowns
 
-`Power` and `dread` are two sides to the same coin and are the currency with which more powerful `moves` are purchased. `Power` is gained by players and each individual player has a pool of `power` to use when they want to. `Dread` is gained by the GM, who similarly has a pool of `dread` to use when they want to.
+A `countdown` is a ticking clock to represent a duration. There are different `countdowns` to describe different lengths of time:
 
-`Power` and `dread` can be gained in several different ways; the most common of which are `criticals` and `compromises`.
+-   `Rapid countdown` (`RC`): Ticks at the end of a `combat round` or `social round`
+-   `Short countdown` (`SC`): Ticks at the end of an `exploration round`
+-   `Day countdown` (`DC`): Ticks at the end of a day
+
+Each `countdown` lasts for a specific number of `rounds`, and depending on the `countdown` they will decrement their counter on different types of `round`. When a longer-lasting `countdown` ticks, all shorter-lasting `countdowns` end. A "tick" is simply the decrement of the counter. Each `countdown` will either have a set number of `rounds` _or_ they will have their duration marked by a die number, like 1d6. If the duration is marked by a die number, the duration is determined by rolling the die. Whatever the die lands on is the duration.
+
+> Tip: when representing a `countdown`, it's best to represent it with a physical die. When the `countdown` ticks, simply flip the die to the next number.
+
+A `countdown` will be described in the rules in the following way: _`Countdown`: `SC`(4)_. Let's take a look at an example of `countdown` mechanics in action.
+
+We'll start with `Countdown`: `SC`(1d8). Since it's a die number, we need to roll a d8, or an eight-sided die. Let's say we get a 6 on our roll. This means that our `countdown` is effectively the same as `Countdown`: `SC`(6). Whenever a `combat round` or `social round` completes, the `countdown` ticks. Let's tick our `countdown` first to 5 and then to 4 to represent 2 `rounds` completing. Now imagine our `countdown` is still in effect, but an `exploration round` occurs. This means that even though we had 4 `rounds` left on our `countdown`, the `countdown` immediately completes when the `exploration round` finishes since it's a longer-lasting time frame.
+
+## Dread
+
+`Dread` is a metacurrency that is gained by the GM to mechanize consequences for player actions. The GM spends `dread` to enhance the abilities of `creatures` that they control in opposition of the players. The GM will gain `dread` from making GM `moves` during `rests`, but they also gain `dread` during `compromises`.
+
+**Why Metacurrency?**
+
+> No other feature in Dungeoneers extends past the "meta" of the game world but `dread`. `Dread` is the solution to two different common issues that are found in these types of games: rolling just under what you needed and the "10 minute adventuring day". Rolling just under your target is handled with the `compromise` mechanic. This is a "meta" choice by the player for a "meta" result, but it's an interesting choice to be made by the player. At the end of the day, Dungeoneers is a game and these kinds of decisions make for an interesting game. It also empowers the GM to make consequences for an earlier decision while still allowing the player to make that roll that they _really_ wanted to.
+>
+> The second issue of the "10 minute adventuring day" is an issue that arises when the GM isn't running the system in a time-sensitive environment. If there is nothing stopping the party from setting up camp and fully resting between each encounter, it makes for a rather boring game. With `dread`, it ensures that no matter the circumstance around the adventure, there is always a cost to resting.

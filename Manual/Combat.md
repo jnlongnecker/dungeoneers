@@ -35,13 +35,13 @@ Range: Self
 
 ---
 
-You may use the `sprint` `move` to travel additional tiles. Roll a
+You may use the `sprint` `move` to travel additional times.
 
-`total`: [`finesse`]d4.
+**`Standard` (`finesse`) - Average (2)**
 
-The total is the number of additional tiles you may travel.
-
-> Example: Alberich takes the `sprint` `move` and gets a total of 3, Alberich may travel 3 tiles using his travel `speeds`, plus the distance he could normally cover while traveling. If Alberich only has a `speed` of `Ground(6)` for example, he could travel `Ground(9)` with this roll.
+-   Lesser success (-1): You may travel using 1x your `speeds`
+-   Success (0): You may travel using 2x your `speeds`
+-   Greater success (1): You may travel using 3x your `speeds`
 
 ### Grapple
 
@@ -50,11 +50,13 @@ Range: Reach
 
 ---
 
-You must have a hand free in order to take this `move`. In order to see if a `grapple` succeeds, roll a
+You must have a hand free in order to take this `move`.
 
-`test`: [`striking`] + `body` vs [`dodging`] + (`finesse`|`body`).
+**`Test`: (`body`, `striking`) vs (`finesse`|`body`, `dodging`)**
 
-If the `grapple` succeeds, you are `grappling` and the `defender` is `grappled`.
+-   Lesser success (-1): Your target is `grappled` and you are `grappling`, `Countdown`: `RC`(1)
+-   Success (0): Your target is `grappled` and you are `grappling`
+-   Greater success (1): Your target is `grappled` and you are `grappling`, your target also gains 1 `stress`
 
 ### Push
 
@@ -63,37 +65,36 @@ Range: Reach
 
 ---
 
-In order to see if a `push` succeeds, roll a
+You may use the `push` `move` to reposition another `creature` or an object.
 
-`test`: [`striking`] + `body` vs [`dodging`] + (`finesse`|`body`).
+**`Test`: (`body`, `striking`) vs (`finesse`|`body`, `dodging`)**
 
-If the `push` succeeds, the `defender` is `forced` in a direction of your choosing or knocked `prone`.
+-   Lesser success (-1): Your target is `forced` 1 tile
+-   Success (0): Your target is `forced` 2 tiles or knocked `prone`
+-   Greater success (1): Your target is `forced` 2 tiles and knocked `prone`
+
+If the target is an object, the `DN` is the `size number` of the object.
 
 ### Strike
 
-Tags: Attack, Critical
+Tags: Attack, Deadly
 Range: Weapon Range
 
 ---
 
 A `strike` is a `move` that constitutes attacking a `creature` with some sort of weapon. This weapon could be a club, a dagger, an enchanted staff, or even a bare fist! During a `strike`, the `attacker` is the `creature` making the `strike` and the `defender` is the `creature` subject to the `strike`.
 
-> In other systems, there is often a distinction between attacks with a weapon and attacks without a weapon, or with an object not typically used as a weapon. In Dungeoneers, all strikes with physical objects are `strikes`; there is no difference. Attacks with arcana are treated differently, and we'll talk about that when we get to `performing arcana`.
+**`Test`: (`finesse`, `striking`) vs (`body`, `dodging`)**
 
-There are 2 steps to the process of making a `strike`:
+-   Lesser success (-1): Your target gains a number of stress equal to the `wounds` from your weapon
+-   Success (0): Your target takes a number of `wounds` equal to the `wounds` from your weapon
+-   Greater success (1): Your target takes a number of `wounds` equal to _twice_ the `wounds` from your weapon
 
--   Determine if the `strike` `hits`
--   Determine the number of `wounds` inflicted
-
-To determine a `hit`, roll a
-
-`test`: [`striking`] + `finesse` vs [`dodging`] + `finesse`.
-
-On a failure, the `strike` `misses`. On a partial success, the `defender` accumulates an amount of `stress` equal to the number of `wounds` marked on the `attackers` weapon, plus the `attackers` `body` score. On a success, the `strike` `hits` and the `defender` then sustains the number of `wounds` marked on the `attackers` weapon, plus the `attackers` `body` score.
+A `hit` occurs on a result of a success or better.
 
 ### Perform Arcana
 
-Tags: Arcana, Critical
+Tags: Arcana, Deadly
 Range: Varies
 
 ---
@@ -109,19 +110,6 @@ Every `arcana` has a range on it. The range can be self meaning the `arcana` can
 > Note: you cannot target a `creature` outside the range of the particular `arcana`!
 
 The details of what happens when you cast `arcana` depends on the `arcana`, and is found in the `arcana` detail section.
-
-### Leap
-
-Tags: Movement
-Range: Self
-
----
-
-You may jump a number of tiles equal to your `body` score. Alternatively, you may gain 1 `stress` and elect to jump a greater distance by succeeding on a:
-
-`check`: 1d4 + `body` vs (number of tiles you want to jump)
-
-On a success, you make the jump. On a failure, you overstrain yourself and only jump half the distance.
 
 ## Combat Free Moves
 
@@ -154,15 +142,6 @@ Range: Self
 
 You immediately fall `prone`.
 
-### Hop
-
-Tags: Movement
-Range: Self
-
----
-
-You may jump a number of tiles equal to your `Ground` `speed`.
-
 ### Mount
 
 Tags: Movement
@@ -181,8 +160,8 @@ Range: Self
 
 You recover `arca` equal to your `spirit` score.
 
-## Critical Hits
+## Deadly Hits
 
-When a roll is made that would cause a `wound` from a success, the normal rules around `criticals` apply. Additionally, for each `critical`, the `wounds` from the roll are applied again. These additional `wounds` are calculated before any other `modifications`, like adding or subtracting a `creature's` `body` score.
+For `moves` with the `deadly` `tag`, for each `success` above a greater success, the `wounds` from the `move` are applied again.
 
-> Example: if a roll `criticals` twice and would deal 2 `wounds`, it instead deals 6 `wounds`. If the roll was done by a `creature` and their `body` score was 3, that same roll would instead deal 9 `wounds`.
+> Example: a `strike` that deals 4 `wounds` on a success and 8 `wounds` on a greater success would deal 12 `wounds` at +2 `successes`, 16 wounds at +3 `successes` and so on.

@@ -1,85 +1,96 @@
 # Dice
 
-In Dungeoneers, the number of dice rolled and the faces of said dice are subject to great change at any given time. If you're familiar with dice rolling systems, you'll find the nomenclature of Dungeoneers to be very similar and may not need most of this section (however, you'll probably still want to read up on `die sources`). If you're not, then no worries! This section will explain the terminology and what you'll need to know.
+In Dungeoneers, when there uncertainty in an outcome or an evaluation of ability of a `creature` that can have multiple outcomes, dice are used to determine what happens.
 
 ## Rolls
 
-In Dungeoneers, the anatomy of a roll is the following:
+For any roll, the base is always built out of a roll of 3d10, or 3 ten-sided dice. This pool of dice will be accompanied by numbers to determine bonus dice to roll as well as the `target number` (`TN`) of your rolls, typically a `skill` and an `attribute`. Let's dive into both of those mechanics.
 
-`n`d`x` + `m`
+When you make a roll, you are trying to rack up successful rolls, called `successes`. A `success` is when you roll a number _less than or equal to_ your `TN`. If you roll a number _above_ your `TN`, that is called a `loss`.
 
-This may seem scary, but it's a lot simpler than it looks! In our roll, `n` represents the number of dice to roll. The "d" just stands for "die". `x` stands for the number of sides the die has, and `m` are any add-ons to the roll (which can either be other rolls or straight numbers). For example, we may have the following roll:
+### Core Rolls
 
-2d6
+For a `core roll` (`CR`), your `target number` is determined by your `attribute score` associated with the roll. You get additional dice to roll based on your `skill proficiency` associated with the `skill` called for.
 
-This would be read in natural language as "2 die 6", which simply means that you roll 2 six-sided dice and add the result together. Let's say for this roll, you roll a 4 on your first die 6 and a 3 on your second die 6. You would add them together, which makes your result or "total" of the roll to be 7. A more complicated roll might be the following:
+In addition to these, each `CR` is evaluated against a `difficulty`. Each `difficulty` is associated with a number called the `DN`. This is the number that determines the degrees of success of the `CR` and is compared against the number of `successes` that were rolled. A `difficulty` has a natural language name and corresponds to the following `DN`:
 
-3d6 + 1d4 + 1
+| Difficulty   | Difficulty Number (`DN`) |
+| ------------ | ------------------------ |
+| Trivial      | 0                        |
+| Easy         | 1                        |
+| Average      | 2                        |
+| Hard         | 3                        |
+| Insane       | 4                        |
+| Absurd       | 5                        |
+| Unfathomable | 6                        |
 
-There are more parts, but by now we have enough of the nomenclature down to figure it out. We first get the total of 3d6, then we get the total of 1d4, and finally we add 1. Let's say we roll a 2, a 3, and a 6 on our 3d6 and a 3 on our 1d4. We do the following:
+Because it's hard to remember how the numbers line up with the natural language name of a `difficulty`, both are used in the rules. Your GM might decide to only say the number or only say the name of the `difficulty`; it's up to them. The aforementioned degrees of success are determined by how many `successes` that are rolled compared against the `DN`:
 
-2 + 3 + 6 + 3 + 1 = 15
+-   2 or more under the `DN`: Failure
+-   1 under the `DN`: Lesser success
+-   Meets `DN`: Success
+-   1 or more over the `DN`: Greater success
 
-And find our total of the roll to be 15.
+This was a lot of precise language, so let's go through an example. When you see a `CR` called for in the rules, you'll see it in the following format:
 
-When a roll is made, there is some obstruction to the desired task being completed. After all, that's why we need the roll! This obstruction is represented by the `target` of the roll. In order for the roll to succeed, the total must either meet or exceed the `target`. Any `creature` is allowed to intentionally fail a roll that they are called to be a part of for any reason.
+**`Core` (`finesse`, `striking`) - Average (2)**
 
-## Types of Rolls
+-   Lesser success (-1): _Description of what occurs_
+-   Success (0): _Description of what occurs_
+-   Greater success (1): _Description of what occurs_
 
-There are 2 specific types of rolls: `checks` and `tests`. There's little difference between the two, but the distinction is made to make things a bit easier to understand while you're reading through the rules. A `check` is a roll made against a static number, while a `test` is a competition between two rolls.
+Notice that what happens on a `failure` wasn't described, since whatever you were trying to do simply doesn't work on a `failure`. However, the other degrees of success are noted. Also notice that first listed in the parenthesis is the `attribute` and second listed is the `skill` being called for. If something specific _does_ happen on a `failure`, it will be noted.
 
-In a `check`, the `target` is set by the static number. In a `test`, the `target` is set by the opponent's roll total; because of this a `test` is slightly more complicated. Remember, a roll is called for when there is some obstruction to the desired task being completed. In a `test`, this means that something (typically a `creature`) is skillfully opposing the `creature` attempting to perform the task. The `creature` that triggers the roll is called the `attacker` while the entity opposing the roll is called the `defender`. The `defender` sets the `target` of the roll that the `attacker` must meet or exceed for the roll to succeed.
+Occasionally, the roller is able to pick between multiple options for their `attribute`. When this is the case, the two options are separated by a pipe (|), and looks like this:
 
-> For example, when making a `strike`, a `test` is called between the `creature` who is `striking` and the `creature` being `struck`. The `creature` being `struck` is the opposition in this case, and their roll total determines the `target` that the `striking` `creature` must reach.
+**`Core` (`finesse`|`body`, `striking`) - Average (2)**
 
-Additionally, there are circumstances where a roll is made against no `target`. These instances are referred to as `totals`.
+In this example, the roller can choose between using their `finesse` or their `body` score to determine their `TN`.
+
+Let's apply some numbers with the earlier example with a `creature` that has 5 `finesse` and is `trained` in `striking`, giving them an additional die to roll. Imagine our `creature` rolled a 5, a 4, a 7, and a 1 on their 4d10. Since the `target number` is 5 (coming from the 5 `finesse`), this means that 3 `successes` were rolled, meaning the result of this `CR` is a greater success.
+
+### Standard Roll
+
+For a `standard roll` (`SR`), typically only a `target number` is specified, again often with an `attribute`. In these types of rolls, no additional dice are used so they are always of average `difficulty`; 2 `successes` are required. Here's an example:
+
+**`Standard` (`finesse`) - Average (2)**
+
+-   Lesser success (-1): _Description of what occurs_
+-   Success (0): _Description of what occurs_
+-   Greater success (1): _Description of what occurs_
 
 ### Group Rolls
 
-Sometimes, circumstance calls for multiple `creatures` in a group to participate in a roll; these instances are group rolls and are referred to as `group checks` and `group tests` depending on the kind of roll involved. Regardless of the specific type of roll, the way the group total is handled is the following.
+Sometimes, circumstance calls for multiple `creatures` in a group to participate in a roll; these instances are `group rolls` (`GR`). The way the `GR` is handled is the following.
 
-First, a leader is designated to lead the roll. Every `creature` involved in the group roll makes their own individual roll against the `target`. The `creature` that rolled highest on their total is the total that is actually used to compare against the `target`. If all `creatures` succeed, they all gain 1 point of `power`. However, one `creature` fails the GM gains one point of `dread` and for each `creature` that did _not_ meet the `target`, the leader accumulates 1 `stress`.
+First, a leader is designated to lead the roll. Their `skill proficiency` sets the baseline dice to be rolled (minimum of 1d10), and their `attribute` sets the `target number` if one is not specified. For each additional `creature` that is part of the `GR`, an additional die is rolled. For each `loss`, the leader gains 1 `stress`.
 
-## Die Sources
+### Tests
 
-Since the number of dice and the sides of those dice change often from roll to roll, we need a way to determine how many dice of what sides we need to roll. This is where `die sources` come into play. Whenever a roll is called for, the `die source` will be specified. Most often, the `proficiency` `die source` will be used. Don't worry about `proficiency` for right now; the important part to understand is that when a roll is called, you'll always know what dice to roll and how many. If there's ever a moment where you feel a roll is necessary but for whatever reason is not supported in the rules, look to your DM to decide what should be done.
+A `test` is a competition of two actively opposing skilled forces. In a `test`, two `core rolls` are competing against one another. However, instead of the `success` count being evaluated at a `difficulty`, they're instead evaluated against the `success` count of the _other_ `core roll`. Here's an example:
 
-The anatomy of a roll is the following:
+**`Test`: (`finesse`, `striking`) vs (`finesse`, `dodging`)**
 
-roll type : [(`die source` | ... | `die source`)] + add-ons vs `target`
+-   Lesser success (-1): _Description of what occurs_
+-   Success (0): _Description of what occurs_
+-   Greater success (1): _Description of what occurs_
 
-The "roll type" specifies what type of roll it is; either a `total`, a `check` or a `test`. This lets you tell at a glance whether the roll is against a static number or another roll. Whenever you see square brackets `[]`, this indicates a roll of dice and inside we will have the options for the `die source`. If there are multiple options, they'll be contained within parenthesis `()` and separated with a pipe `|`. This means that the roller gets to choose which `die source` they want to use. The pattern here of containing options in parenthesis `()` separated by a pipe `|` is a general pattern used anywhere there are choices.
+Something to notice is that in the event of a tie between the two, the initiator of the `test` (the one on the left) is the winner.
 
-> Note the term "roller" was used, this does _not_ mean the `creature` that caused the roll! If the options are on the `defenders` side (after the vs), then the `defender` chooses for themselves. Similarly, if they're on the `attackers` side (before the vs), the `attacker` chooses for themselves.
+## Success Control
 
-Any add-ons to the roll (remember, these can include other rolls!) are noted after before a "vs" which denotes where the `target` begins. Depending on if the roll is a `check` or a `test`, this will either be another roll or a static number.
+Whenever you make any kind of roll, there may be circumstances where you wish the outcome to be _less_ successful than how you rolled. For example, if an ally is trying to `push` you out of the way, you may want to decide to have fewer `successes` in order for their `push` to be more effective. Similarly, if you are the `push`-er, you may want your `push` to not be _that_ effective if you roll well.
 
-If this was confusing still, the best way to explain this is through an example:
-
-_In order to see if a `grapple` succeeds, roll a_
-
-_`test`: [`striking`] + `body` vs [`dodging`] + (`finesse`|`body`)_
-
-The `attacker` rolls dice determined by their `striking` `proficiency` level (more on that in another section) and add their `body` score. This is compared against the `defenders` roll; they roll dice determined by their `dodging` `proficiency` and add their choice of their `finesse` or `body` score.
-
-## Degrees of Success, Criticals and Compromises
-
-If the die roll is meant to represent variability of the quality of the action, the outcome should have the quality of the total be represented as well. This is the purpose of degrees of success.
-
-When a roll is made, compare the total to the `target`. If the the total is 5 or more below the `target`, the roll truly fails; whatever outcome was being tried simply does not work. If the total is above 5 less than the `target` but does not meet the `target`, the roll partially succeeds; whatever outcome was being tried has some undesired complication to the outcome or is of dubious quality. If the total meets or is less than 5 above the `target`, the roll succeeds; whatever outcome was being tried completes without complication and as intended.
-
-For each multiple of 5 above the `target`, the roll `critically` succeeds. On a `critical`, the outcome is a success (or better) _and_ the player gains a point of `power` for each `critical`.
-
-> Example: on a roll with a `target` of 10, a total of 1-4 would be a failure, a total of 5-9 would be a partial success, and a total of 10-14 would be a success. A total of 15-19 would `critical` 1 time, a total of 20-24 would `critical` 2 times, and so on. The roll succeeds and for each `critical`, another point of `power` is gained.
-
-When a roll does not succeed, a player may ask for a `compromise`. When a `compromise` occurs, the degree of success of the roll becomes 1 greater (i.e., a total failure becomes a partial success and a partial success becomes a success). In return, the GM gains a point of `dread`. It is up to the GM whether to accept the `compromise` or not.
+In these circumstances, you can decide the number of `successes` you wish to use for the roll, as long as that number is equal to or less than the actual `successes` you rolled.
 
 ## Bane & Boon
 
 In certain circumstances, a `creature` may be unusually hindered or aided in completing the task at hand. In these situations, they are awarded points of `bane` and `boon` to help or hinder their roll.
 
-These points are two sides of the same coin and cancel each other out. For every point of `boon` a `creature` has, they roll 1d4 and add the result to their total. For every point of `bane` a `creature` has on a roll, they must roll 1d4 and _subtract_ the result from their total.
+These points are two sides of the same coin and cancel each other out. For every point of `boon` a `creature` has, they add 1 to their `TN`. For every point of `bane` a `creature` has on a roll, they must _subtract_ 1 from their `TN`.
 
-> Example: Alberich has (from various sources) 3 points of `boon` and 1 point of `bane` on his `striking` `test`. This means that Alberich makes his typical `striking` roll, then applies `bane` & `boon`: 1 point of `bane` cancels out with 1 point of `boon`, leaving Alberich to roll 2d4. The resulting roll looks like this:
->
-> _`test`: [`striking`] + `finesse` + 2 `boon` vs [`dodging`] + `finesse`_
+## Criticals & Compromises
+
+In the circumstance that 2 dice roll a 1, this is a `critical`. When a `critical` occurs, 1 additional `success` is gained.
+
+In the event that a player rolls a failure or lesser success, the player can opt for a `compromise` with the GM. In exchange for 1 additional `success`, the GM gains 1 `dread`. It is up to the GM whether to accept the `compromise` or not.
