@@ -1,11 +1,22 @@
 import rolls
 import creatures
+import graph
 
-quantity = 6
-for i in range(1, 10):
-    pool = rolls.DicePool(die='1d10', quantity=quantity, bonus=0, target=i)
-    print('Quantity: %s, Target: %s' % (quantity, i))
-    pool.print_expected_successes()
+pool = rolls.DicePool(die='1d10', quantity=3, bonus=0, target=5)
+pool2 = rolls.DicePool(die='1d10', quantity=3, bonus=0, target=4)
+opposing_pool = rolls.DicePool(die='1d10', quantity=3, bonus=0, target=4)
+
+print(pool.expected_damage(opposing_pool, 2))
+print(pool2.expected_damage(opposing_pool, 2))
+
+# graph.plot_damage(pool, pool2, opposing_pool)
+
+
+# quantity = 6
+# for i in range(1, 10):
+#     pool = rolls.DicePool(die='1d10', quantity=quantity, bonus=0, target=i)
+#     print('Quantity: %s, Target: %s' % (quantity, i))
+#     pool.print_expected_successes()
 
 
 # pool = rolls.DicePool(die='1d10', quantity=3, bonus=0, target=1)

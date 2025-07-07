@@ -332,6 +332,33 @@ class DicePool:
                     success_probs[successes] = chance
         return success_probs
     
+    def chances_of_result(self, other):
+        success_chances = self.chances_of_success(other)
+        zero_chance = 0
+        max_chance = 0
+        result = []
+        for success in sorted(success_chances):
+            chance = success_chances[success]
+            if success <= -2:
+                zero_chance = zero_chance + chance
+            if success >= 1:
+                max_chance = max_chance + chance
+            if success == -2:
+                result.append(zero_chance * 100)
+            elif success == -1 or success == 0:
+                result.append(chance * 100)
+        result.append(max_chance * 100)
+        return result
+    
+    def expected_damage(self, other, base_damage):
+        target = other
+        if type(other) == DicePool:
+            target = other.expected_successes()
+            
+        expected_successes = self.expected_successes()
+        successes_for_damage = (expected_successes - target) + 1
+        return successes_for_damage * base_damage
+    
     def expected_successes(self):
         chances = self.chances
         expected_successes = 0
