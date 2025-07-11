@@ -3,13 +3,21 @@ import creatures
 import graph
 
 pool = rolls.DicePool(die='1d10', quantity=3, bonus=0, target=5)
-pool2 = rolls.DicePool(die='1d10', quantity=3, bonus=0, target=4)
+pool2 = rolls.DicePool(die='1d10', quantity=3, bonus=0, target=3)
 opposing_pool = rolls.DicePool(die='1d10', quantity=3, bonus=0, target=4)
+opposing_pool2 = rolls.DicePool(die='1d10', quantity=3, bonus=0, target=5)
 
-print(pool.expected_damage(opposing_pool, 2))
-print(pool2.expected_damage(opposing_pool, 2))
+pool.print_expected_successes()
+pool2.print_expected_successes()
 
-# graph.plot_damage(pool, pool2, opposing_pool)
+damage = 2
+
+# print(pool.average_damage(opposing_pool, damage + 1))
+# print(pool.average_damage(opposing_pool2, damage))
+# print(pool2.average_damage(opposing_pool, damage * 2))
+# print(pool2.average_damage(opposing_pool2, damage - 1))
+
+# graph.plot_success(pool, pool2, opposing_pool)
 
 
 # quantity = 6

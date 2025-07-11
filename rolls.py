@@ -350,14 +350,16 @@ class DicePool:
         result.append(max_chance * 100)
         return result
     
-    def expected_damage(self, other, base_damage):
-        target = other
-        if type(other) == DicePool:
-            target = other.expected_successes()
-            
-        expected_successes = self.expected_successes()
-        successes_for_damage = (expected_successes - target) + 1
-        return successes_for_damage * base_damage
+    def average_damage(self, other, base_damage):
+        chances = self.chances_of_success(other)
+        avg_damage = 0
+        for success in sorted(chances):
+            if success < 0:
+                continue
+            damage = base_damage * (success + 1) * chances[success]
+            avg_damage = avg_damage + damage
+
+        return avg_damage
     
     def expected_successes(self):
         chances = self.chances

@@ -2,7 +2,7 @@ import rolls
 import plotly.express as px
 import pandas
 
-def plot_damage(pool1, pool2, opposition):
+def plot_success(pool1, pool2, opposition):
     
     pool1_chances = pool1.chances_of_result(opposition)
     pool2_chances = pool2.chances_of_result(opposition)

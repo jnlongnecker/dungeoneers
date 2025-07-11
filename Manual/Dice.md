@@ -49,6 +49,8 @@ In this example, the roller can choose between using their `finesse` or their `b
 
 Let's apply some numbers with the earlier example with a `creature` that has 5 `finesse` and is `trained` in `striking`, giving them an additional die to roll. Imagine our `creature` rolled a 5, a 4, a 7, and a 1 on their 4d10. Since the `target number` is 5 (coming from the 5 `finesse`), this means that 3 `successes` were rolled, meaning the result of this `CR` is a greater success.
 
+In Dungeoneers, only the players make `CRs`. Other `creatures` instead have `difficulties` that need to be met for a `CR` for the players. For example, instead of adversaries rolling to `strike` the players, they have a `strike difficulty` that the player must roll to `dodge`.
+
 ### Standard Roll
 
 For a `standard roll` (`SR`), typically only a `target number` is specified, again often with an `attribute`. In these types of rolls, no additional dice are used so they are always of average `difficulty`; 2 `successes` are required. Here's an example:
@@ -77,6 +79,8 @@ A `test` is a competition of two actively opposing skilled forces. In a `test`, 
 
 Something to notice is that in the event of a tie between the two, the initiator of the `test` (the one on the left) is the winner.
 
+`Tests` are rarely used in Dungeoneers and are only for competition between player characters.
+
 ## Success Control
 
 Whenever you make any kind of roll, there may be circumstances where you wish the outcome to be _less_ successful than how you rolled. For example, if an ally is trying to `push` you out of the way, you may want to decide to have fewer `successes` in order for their `push` to be more effective. Similarly, if you are the `push`-er, you may want your `push` to not be _that_ effective if you roll well.
@@ -88,6 +92,12 @@ In these circumstances, you can decide the number of `successes` you wish to use
 In certain circumstances, a `creature` may be unusually hindered or aided in completing the task at hand. In these situations, they are awarded points of `bane` and `boon` to help or hinder their roll.
 
 These points are two sides of the same coin and cancel each other out. For every point of `boon` a `creature` has, they add 1 to their `TN`. For every point of `bane` a `creature` has on a roll, they must _subtract_ 1 from their `TN`.
+
+### Bane & Boon on Adversaries
+
+Since only the players roll, how does `bane` and `boon` affect other `creatures`? `Bane` and `boon` will cancel one another out and the GM will roll 1d3, with the `TN` being the remaining points of `bane` or `boon`. Rolling a `success` raises (`boon`) or lowers (`bane`) the `DN`, while rolling a `loss` yields no result.
+
+> You likely don't have a 3-sided die, as those don't exist! If you're using a physical dice, you roll 1d3 by rolling 1d6 and treating 1-2 as a 1, 3-4 as a 2 and 5-6 as a 3. If remembering this is undesired, you can instead roll 1d4. Be warned that doing so will make `bane` and `boon` less statistically impactful to non-players!
 
 ## Criticals & Compromises
 

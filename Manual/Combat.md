@@ -52,7 +52,7 @@ Range: Reach
 
 You must have a hand free in order to take this `move`.
 
-**`Test`: (`body`, `striking`) vs (`finesse`|`body`, `dodging`)**
+**`Core`: (`body`, `striking`) vs `Dodging difficulty`**
 
 -   Lesser success (-1): Your target is `grappled` and you are `grappling`, `Countdown`: `RC`(1)
 -   Success (0): Your target is `grappled` and you are `grappling`
@@ -67,7 +67,7 @@ Range: Reach
 
 You may use the `push` `move` to reposition another `creature` or an object.
 
-**`Test`: (`body`, `striking`) vs (`finesse`|`body`, `dodging`)**
+**`Core`: (`body`, `striking`) vs `Dodging difficulty`**
 
 -   Lesser success (-1): Your target is `forced` 1 tile
 -   Success (0): Your target is `forced` 2 tiles or knocked `prone`
@@ -84,9 +84,9 @@ Range: Weapon Range
 
 A `strike` is a `move` that constitutes attacking a `creature` with some sort of weapon. This weapon could be a club, a dagger, an enchanted staff, or even a bare fist! During a `strike`, the `attacker` is the `creature` making the `strike` and the `defender` is the `creature` subject to the `strike`.
 
-**`Test`: (`finesse`, `striking`) vs (`body`, `dodging`)**
+**`Core`: (`finesse`, `striking`) vs `Dodging difficulty`**
 
--   Lesser success (-1): Your target gains a number of stress equal to the `wounds` from your weapon
+-   Lesser success (-1): Your target gains a number of `stress` equal to the `wounds` from your weapon
 -   Success (0): Your target takes a number of `wounds` equal to the `wounds` from your weapon
 -   Greater success (1): Your target takes a number of `wounds` equal to _twice_ the `wounds` from your weapon
 
@@ -158,7 +158,7 @@ Range: Self
 
 ---
 
-You recover `arca` equal to your `spirit` score.
+You recover 1 `arca`.
 
 ## Deadly Hits
 

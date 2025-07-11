@@ -17,7 +17,6 @@ A weapon is an `item` that is used to make `strikes`. Each weapon has a certain 
 -   _Wounds:_ 1 Physical
 -   _Properties:_ `Toss`
 -   _Wield Slots:_ 1
--   _Striking Bonus:_ 1d4
 
 > Examples: a fist, a kick, a broken wine bottle, an improperly equipped weapon, a rock, a headbutt, a shovel.
 
