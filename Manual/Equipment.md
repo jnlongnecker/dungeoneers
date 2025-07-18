@@ -158,8 +158,8 @@ Once `armor points` are depleted, they must be repaired to come back.
 
 A weapon with the `toss` `property` additionally can be thrown, gaining a range equal to twice the `creatures` `body` score. When doing so, the weapon is no longer `equipped` when the `strike` is resolved. If the `striking` roll does not succeed, the weapon ends up within 2 tiles of the target location.
 
-### Body
+### Body(x)
 
-An `item` with the `body(x)` `property` requires the `creature` that wishes to `equip` it to have a `body` score of x or above. If a `creature` does not meet this requirement and still `equips` the `item`, calculate the difference between x and the `creature's` `body` score. That `creature` gains that many points of `bane` to _all rolls_. If multiple `equipped` `items` have this `property`, the one with the highest x is used.
+An `item` with the `body(x)` `property` requires the `creature` that wishes to `equip` it to have a `body` score of x or above. If a `creature` does not meet this requirement and still `equips` the `item`, calculate the difference between x and the `creature's` `body` score. That `creature` gains that many points of `bane` to _all rolls_. If multiple `equipped` `items` have this `property`, each one adds more points of `bane`.
 
-> For example, Ulfarmi has a `body` score of 1. If he `equips` an `item` with the `body(3)` `property`, he suffers 2 points of `bane` on every single roll he does; rolls to `hit`, `skill` rolls... everything! Be careful what you wear!
+> For example, Ulfarmi has a `body` score of 3. If he `equips` an `item` with the `body(5)` `property`, he suffers 2 points of `bane` on every single roll he does; `striking` rolls, `fishing` rolls... everything! Be careful what you wear!

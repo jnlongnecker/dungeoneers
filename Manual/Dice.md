@@ -6,7 +6,7 @@ In Dungeoneers, when there uncertainty in an outcome or an evaluation of ability
 
 For any roll, the base is always built out of a roll of 3d10, or 3 ten-sided dice. This pool of dice will be accompanied by numbers to determine bonus dice to roll as well as the `target number` (`TN`) of your rolls, typically a `skill` and an `attribute`. Let's dive into both of those mechanics.
 
-When you make a roll, you are trying to rack up successful rolls, called `successes`. A `success` is when you roll a number _less than or equal to_ your `TN`. If you roll a number _above_ your `TN`, that is called a `loss`.
+When you make a roll, you are trying to rack up successful rolls, called `successes`. A `success` is when you roll a number _less than or equal to_ your `TN`. If you roll a number _above_ your `TN`, that is called a `failure`.
 
 ### Core Rolls
 
@@ -26,7 +26,7 @@ In addition to these, each `CR` is evaluated against a `difficulty`. Each `diffi
 
 Because it's hard to remember how the numbers line up with the natural language name of a `difficulty`, both are used in the rules. Your GM might decide to only say the number or only say the name of the `difficulty`; it's up to them. The aforementioned degrees of success are determined by how many `successes` that are rolled compared against the `DN`:
 
--   2 or more under the `DN`: Failure
+-   2 or more under the `DN`: Misstep
 -   1 under the `DN`: Lesser success
 -   Meets `DN`: Success
 -   1 or more over the `DN`: Greater success
@@ -65,7 +65,7 @@ For a `standard roll` (`SR`), typically only a `target number` is specified, aga
 
 Sometimes, circumstance calls for multiple `creatures` in a group to participate in a roll; these instances are `group rolls` (`GR`). The way the `GR` is handled is the following.
 
-First, a leader is designated to lead the roll. Their `skill proficiency` sets the baseline dice to be rolled (minimum of 1d10), and their `attribute` sets the `target number` if one is not specified. For each additional `creature` that is part of the `GR`, an additional die is rolled. For each `loss`, the leader gains 1 `stress`.
+First, a leader is designated to lead the roll. Their `skill proficiency` sets the baseline dice to be rolled (minimum of 1d10), and their `attribute` sets the `target number` if one is not specified. For each additional `creature` that is part of the `GR`, an additional die is rolled. For each `failure`, the leader gains 1 `stress`.
 
 ### Tests
 
@@ -95,7 +95,7 @@ These points are two sides of the same coin and cancel each other out. For every
 
 ### Bane & Boon on Adversaries
 
-Since only the players roll, how does `bane` and `boon` affect other `creatures`? `Bane` and `boon` will cancel one another out and the GM will roll 1d3, with the `TN` being the remaining points of `bane` or `boon`. Rolling a `success` raises (`boon`) or lowers (`bane`) the `DN`, while rolling a `loss` yields no result.
+Since only the players roll, how does `bane` and `boon` affect other `creatures`? `Bane` and `boon` will cancel one another out and the GM will roll 1d3, with the `TN` being the remaining points of `bane` or `boon`. Rolling a `success` raises (`boon`) or lowers (`bane`) the `DN`, while rolling a `failure` yields no result.
 
 > You likely don't have a 3-sided die, as those don't exist! If you're using a physical dice, you roll 1d3 by rolling 1d6 and treating 1-2 as a 1, 3-4 as a 2 and 5-6 as a 3. If remembering this is undesired, you can instead roll 1d4. Be warned that doing so will make `bane` and `boon` less statistically impactful to non-players!
 
@@ -103,4 +103,4 @@ Since only the players roll, how does `bane` and `boon` affect other `creatures`
 
 In the circumstance that 2 dice roll a 1, this is a `critical`. When a `critical` occurs, 1 additional `success` is gained.
 
-In the event that a player rolls a failure or lesser success, the player can opt for a `compromise` with the GM. In exchange for 1 additional `success`, the GM gains 1 `dread`. It is up to the GM whether to accept the `compromise` or not.
+In the event that a player rolls a `misstep` or `lesser success`, the player can opt for a `compromise` with the GM. In exchange for 1 additional `success`, the GM gains 1 `dread`. It is up to the GM whether to accept the `compromise` or not.

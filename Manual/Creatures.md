@@ -46,12 +46,12 @@ Every `creature` has a baseline range of interaction called their `reach`. This 
 
 A `creature` has a `size` that represents the amount of physical space that they occupy. Something to note is that not all `creatures` in the same `size` category are the exact same physical size, only that they are able to control the specified number of tiles with the physical space they take up.
 
-The `size` categories, tiles that `creatures` of that `size` occupy and `threat range` can be identified in the following table:
+The `size` categories, tiles that `creatures` of that `size` occupy and `reach` can be identified in the following table:
 
 |                    | Tiny | Small | Medium | Large | Huge | Massive | Gargantuan |
 | ------------------ | ---- | ----- | ------ | ----- | ---- | ------- | ---------- |
 | **Tiles Occupied** | 1/4  | 1/2   | 1      | 2     | 3    | 4       | 5+         |
-| **Threat Range**   | 1    | 1     | 1      | 1     | 2    | 2       | 3          |
+| **Reach**          | 1    | 1     | 1      | 2     | 3    | 4       | 5          |
 | **Size Value**     | 0    | 1     | 2      | 3     | 4    | 5       | 6          |
 
 Unless a `creature` occupies less than 1 tile, 2 `creatures` are not allowed to occupy the same tile. A tile that is fully occupied cannot be moved into or past, unless the occupying `creatures` allow it.
@@ -60,21 +60,21 @@ Unless a `creature` occupies less than 1 tile, 2 `creatures` are not allowed to 
 
 A `creature` is only able to take a certain amount of damage before succumbing to death. This is represented by `wounds`. A `creature` can take a number of `wounds` determined by their `size`, plus their `body` score:
 
--   `Tiny`: 2
--   `Small`: 3
--   `Medium`: 4
--   `Large`: 5
--   `Huge`: 6
--   `Massive`: 7
--   `Gargantuan`: 8+
+-   `Tiny`: 0
+-   `Small`: 1
+-   `Medium`: 2
+-   `Large`: 4
+-   `Huge`: 8
+-   `Massive`: 16
+-   `Gargantuan`: 32+
 
 If a `creature` takes a `wound` while they are at their maximum number of `wounds`, that `creature` is now `dead`.
 
-> Example: Alberich the dwarf is a `medium` `creature` with 4 `body`, so he can take a maximum of 8 `wounds`. If Alberich takes 8 `wounds`, he won't die just yet. If Alberich takes at least 1 `wound` before clearing any `wounds`, Alberich is `dead`.
+> Example: Alberich the dwarf is a `medium` `creature` with 4 `body`, so he can take a maximum of 6 `wounds`. If Alberich takes 6 `wounds`, he won't die just yet. If Alberich takes at least 1 `wound` before clearing any `wounds`, Alberich is `dead`.
 
 Taking a `wound` past a `creatures` maximum does not immediately kill that `creature`; a `creature` cannot take more `wounds` than their capacity. However, if a `creature` takes a number of `wounds` above their maximum in at once, that `creature` is `dead`.
 
-> Example: if Alberich in our above scenario had already taken 1 `wound`, taking 8 `wounds` would _not_ kill Alberich. However, if Alberich takes 9 `wounds` at any time at once, he will `die` instantly. Note that this only applies if the `creature` takes that many actual `wounds`; if some are absorbed by `armor points` they may not be outright killed.
+> Example: if Alberich in our above scenario had already taken 1 `wound`, taking 6 `wounds` would _not_ kill Alberich. However, if Alberich takes 7 `wounds` at any time at once, he will `die` instantly. Note that this only applies if the `creature` takes that many actual `wounds`; if some are absorbed by `armor points` they may not be outright killed.
 
 Once a `wound` has been taken, the only way to clear it is through arcana or time. Certain `spells` and potions are capable of clearing `wounds`, and you clear all `wounds` as a `downtime move` during a `vacation`.
 

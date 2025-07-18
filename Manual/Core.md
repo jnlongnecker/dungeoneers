@@ -13,10 +13,10 @@ In more details, the nuance of this loop can be described below:
 
 -   The GM describes the `scene`
 -   The players ask any questions they have about the details of the `scene`
+-   The players each make 1 `free action`
 -   If a `spotlight` is necessary, the players collaborate on who will take the `spotlight`
-    -   The `spotlit` player makes a `move`
--   The players make 1 `free move`
--   The GM makes a `move`, if applicable
+    -   The `spotlit` player takes an `action`
+-   The GM takes an `action`, if applicable
 -   Repeat as necessary
 -   The `scene` ends
 
@@ -28,7 +28,7 @@ Think of a `scene` as you would a `scene` in a play. In a `scene`, something is 
 
 > For example, a GM might narrate the passage of several days where certain world events take place, and then explain that the players find themselves in a tavern in a city. The GM may describe the ambiance of the tavern; the gentle firelight tickling their periphery and the scent of booze in the air and on the lips of their companions. This is the GM describing the `scene`.
 
-Not every `scene` is long, and the GM may set a `scene` where nothing ends up happening. When one `scene` ends, the GM sets up another `scene`. The point is for the players to interact and take `moves` (as this is where the game is had!), and in order for a player to make a `move` they must have the `spotlight`.
+Not every `scene` is long, and the GM may set a `scene` where nothing ends up happening. When one `scene` ends, the GM sets up another `scene`. The point is for the players to interact and take `actions` (as this is where the game is had!), and in order for a player to take an `action` they must have the `spotlight`.
 
 ### Spotlight
 
@@ -41,29 +41,38 @@ At the start of the game, each player has 3 `spotlight tokens` to represent the 
 
 > Some tables have no issues with hogging the `spotlight`. If this is your group, feel free to discard the concept of `spotlight tokens`.
 
-The party typically comes to a general consensus on who will take the `spotlight`. Often times, this comes in the form of general agreement on who should take the lead for the task demanded of the `scene`.
+The party typically comes to a general consensus on who will take the `spotlight`. Often times, this comes in the form of general agreement on who should take the lead for the task demanded of the `scene`. However, not all `scenes` need a `spotlight`. These are `scenes` such as player to player interaction and simple vendor trading where the roleplay can simply flow as there are no specific mechanics at play.
 
 > Example: a party with a charismatic talker may opt to give them the `spotlight` for an important political debate.
 
-Once one player has the `spotlight`, they may make their `move`.
+Once one player has the `spotlight`, they may make their `action`.
 
-### Moves
+### Actions
 
-A `move` is an interaction with the world that moves the `scene` forwards in some way. Some `moves` only make sense for certain situations, such as combat. It is up to the player with the `spotlight` to determine which `move` is most appropriate for where they are in the `scene`.
+An `action` is an interaction with the world that moves the `scene` forwards in some way. Some `actions` only make sense for certain situations, such as combat. It is up to the player with the `spotlight` to determine which `action` is most appropriate for where they are in the `scene`.
 
-The specifics of what `moves` a player can take are covered in the sections where the `move` most applies (e.g., `moves` that harm other `creatures` are covered in the Combat section). Each `move` has `tags` which help identify it in more general categories.
+The specifics of what `actions` a player can take are covered in the sections where the `action` most applies (e.g., `actions` that harm other `creatures` are covered in the Combat section). Each `action` has `tags` which help identify it in more general categories.
 
-When both the player and the GM have each taken 1 `move`, a `round` has occurred. The amount of time that occurs during a `round` depends on the type of `round` that it was:
+When both the player and the GM have each taken 1 `action`, a `round` has occurred. The amount of time that occurs during a `round` depends on the type of `round` that it was:
 
 -   `combat round`: 6 seconds
 -   `exploration round`: Varies; 8 hours - 2 minutes
 -   `social round`: Varies; 1 minute - 10 minutes
 
-Once a player has determined their `move`, other players may have something they can do to either aid the player with the `spotlight` or set up for their turn in the `spotlight`: a `free move`.
+Once a player has determined their `action`, other players may have something they can do to either aid the player with the `spotlight` or set up for their turn in the `spotlight`: a `free action`.
 
-### Free Moves
+### Free Actions
 
-Some interactions with the world don't necessarily move the `scene` forward, but are important as they set up proper context for a future `move`. These are captured with `free moves`. A player can make a single `free move` before, after, or in tandem with the player with the `spotlight` and their `move`. `Creatures` under the GMs control may also make `free moves` after the GM completes their `move`.
+Some interactions with the world don't necessarily move the `scene` forward, but are important as they set up proper context for a future `action`. These are captured with `free actions`. A player can make a single `free action` before, after, or in tandem with the player with the `spotlight` and their `action`. All players can make these `free actions`, even the one with the `spotlight`. `Creatures` under the GMs control may also make `free actions` after the GM completes their `action`.
+
+### Momentum
+
+Whenever an `action` is taken, the `spotlight` shifts away from the players and onto the GM. This changing of the `spotlight` does have two exceptions where a side will continue to hold the `spotlight` shifts within the side:
+
+-   Whenever a `critical` happens during an `action`
+-   Whenever an `action` with the `momentum` `tag` is used that rolls a `success` or greater
+
+In either of these scenarios, the `spotlight` is held by the side. For example, Freya, Ulfarmi and Alberich are on the side of the players. If Freya takes an `action` and rolls a `critical`, Ulfarmi or Alberich can take take the `spotlight` and make an `action`. As a reminder, the `round` has not yet completed so while Ulfarmi or Alberich make their `action`, the trio will be unable to make a second `free action`.
 
 ## Countdowns
 
@@ -83,7 +92,7 @@ We'll start with `Countdown`: `SC`(1d8). Since it's a die number, we need to rol
 
 ## Dread
 
-`Dread` is a metacurrency that is gained by the GM to mechanize consequences for player actions. The GM spends `dread` to enhance the abilities of `creatures` that they control in opposition of the players. The GM will gain `dread` from making GM `moves` during `rests`, but they also gain `dread` during `compromises`.
+`Dread` is a metacurrency that is gained by the GM to mechanize consequences for player actions. The GM spends `dread` to enhance the abilities of `creatures` that they control in opposition of the players. The GM will gain `dread` from making GM `actions` during `rests`, but they also gain `dread` during `compromises`.
 
 **Why Metacurrency?**
 

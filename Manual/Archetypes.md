@@ -17,3 +17,14 @@ An `archetype` is a grouping of special, related powers. During the training of 
 -   Oscillating Octaves: Make a check: _`check`: [`music`] + `finesse`_. You spend 3 `arca` to swap places with an entity a number of tiles away equal to your roll. If the entity is a `creature`, it must allow you to do so
 -   Diminishing Dissonance: A creature within a number of tiles equal to your `spirit` score gain a point of `bane` for any rolls on their next `turn` on a successful test
     _`test`: [`influence`] + `finesse` vs [`examination`] + `mind`_
+
+**Martial Artist**
+
+**Uncategorized**
+
+-   Pain is Pleasure: When you are `hit`, you clear 1 `stress`
+-   Pain is Solace: Roll
+    `Core`: (`spirit`, `striking`) - `Stress` you wish to clear
+    -   Lesser Success (-1): You gain 2 `precision wounds` and clear 1 fewer `stress` than you desired
+    -   Success: You gain 2 `precision wounds` and clear as much `stress` as you desired
+    -   Greater Success: You gain 1 `precision wound` and clear as much `stress` as you desired

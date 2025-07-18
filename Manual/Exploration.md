@@ -28,13 +28,13 @@ The relative danger level and population level of the `environment` isn't the on
 | Complex          | +0                    | -1                     |
 | Labyrinthian     | +1                    | -1                     |
 
-During exploration, GM moves are primarily just rolling on the `encounter table`. In a dungeon, the rules for exploration are the same, except the unit for `exploration speed` is 1 room and the `exploration round` time is 5 minutes.
+During exploration, GM `actions` are primarily just rolling on the `encounter table`. In a dungeon, the rules for exploration are the same, except the unit for `exploration speed` is 1 room and the `exploration round` time is 5 minutes.
 
 In any `environment`, the world is divided into tiles called `locations` that represent the distance traveled per unit of `exploration speed`. These tiles may or may not have points of interest to explore. GMs should have a rough map of `locations`, and when players travel they should be aware of where they are on the map and pick a tile within their `exploration speed` to travel to.
 
 ### Encounter Tables
 
-Exploration and player `moves` are balanced around certain `encounters` being more or less likely in a particular environment. There are 7 types of `encounters` that can appear on an `encounter table`:
+Exploration and player `actions` are balanced around certain `encounters` being more or less likely in a particular environment. There are 7 types of `encounters` that can appear on an `encounter table`:
 
 | Encounter Type        | Description                                                                                             |
 | --------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -48,9 +48,9 @@ Exploration and player `moves` are balanced around certain `encounters` being mo
 
 Each encounter table should be made up of the above `encounters`, but the actual contents of the table are determined by the GM.
 
-## Exploration Moves
+## Exploration Actions
 
-The `moves` found here are most applicable for exploration contexts.
+The `actions` found here are most applicable for exploration contexts.
 
 ### Push Forward
 
@@ -58,7 +58,7 @@ Tags: Long-acting
 
 ---
 
-You and your group travel to a new location in the `environment`, but you and your group cannot take `free moves` with the _stationary_ `tag`.
+You and your group travel to a new location in the `environment`, but you and your group cannot take `free actions` with the _stationary_ `tag`.
 
 ### Hold Position
 
@@ -66,7 +66,7 @@ Tags: Long-acting
 
 ---
 
-You and your group stay in your current location and are able to take `free moves` that have the _stationary_ `tag`. You have a point of `boon` to your roll if you make the `lookout` `free move`.
+You and your group stay in your current location and are able to take `free actions` that have the _stationary_ `tag`. You have a point of `boon` to your roll if you make the `lookout` `free action`.
 
 ### Backtrack
 
@@ -74,11 +74,11 @@ Tags: Long-acting
 
 ---
 
-You and your group move to a location in the `environment` you have already been before. You cannot get a `lost encounter`, but you and your group cannot take `free moves` with the _stationary_ `tag`.
+You and your group move to a location in the `environment` you have already been before. You cannot get a `lost encounter`, but you and your group cannot take `free actions` with the _stationary_ `tag`.
 
-## Exploration Free Moves
+## Exploration Free Actions
 
-The `free moves` found here are most applicable for exploration contexts.
+The `free actions` found here are most applicable for exploration contexts.
 
 ### Navigate
 
@@ -100,7 +100,7 @@ Tags: Long-acting, Movement
 
 ---
 
-You lead the charge for your group to improve the efficiency that you move through the `environment`.
+You lead the charge for your group to improve the efficiency that you travel through the `environment`.
 
 `Group` (`spirit`, `influence`) - Environmental Difficulty
 
@@ -128,7 +128,7 @@ Tags: Long-acting, Concentrate, Arcana
 
 ---
 
-When taking this `free move`, your party can move at a maximum `exploration speed` of 1.
+When taking this `free action`, your party can travel at a maximum `exploration speed` of 1.
 
 `Core` (`mind`, `arcana`) - Environmental Difficulty
 
@@ -142,7 +142,7 @@ Tags: Long-acting, Stealth
 
 ---
 
-When taking this `free move`, your party can move at a maximum `exploration speed` of 1.
+When taking this `free action`, your party can travel at a maximum `exploration speed` of 1.
 
 `Group` (`finesse`, `stealth`) - Environmental Difficulty
 
@@ -164,11 +164,25 @@ Tags: Long-acting, Concentrate, Influence
 
 ### Lookout
 
-Tags: Long-acting, Concentrate, Observe
+Tags: Long-acting, Concentrate, Notice
 
 ---
 
-You may attempt to `notice` as you travel. The party can move at a maximum of `exploration speed` of 1.
+You may attempt to `notice` as you travel. The party can travel at a maximum of `exploration speed` of 1.
+
+### Check for Traps
+
+Tags: Long-acting, Concentrate, Notice
+
+---
+
+You look specifically for hazards or constructed traps that lie in the path forward.
+
+`Core`: (`mind`, `notice`) - Environmental Difficulty
+
+-   Lesser success (-1): The trap springs, but all `creatures` affected by the trap have a point of `boon` on any rolls to resist the trap
+-   Success (0): You call out the traps location before it springs
+-   Greater success (1): You call out the traps location before it springs and give a point of `boon` on any roll to deactivate or avoid the trap
 
 ### Cloak
 
@@ -176,7 +190,7 @@ Tags: Long-acting, Movement
 
 ---
 
-When taking this `free move`, your party can move at a maximum `exploration speed` of 1.
+When taking this `free action`, your party can travel at a maximum `exploration speed` of 1.
 
 `Core` (`finesse`, `stealth`) - Environmental Difficulty
 
