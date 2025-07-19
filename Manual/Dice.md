@@ -33,7 +33,7 @@ Because it's hard to remember how the numbers line up with the natural language 
 
 This was a lot of precise language, so let's go through an example. When you see a `CR` called for in the rules, you'll see it in the following format:
 
-**`Core` (`finesse`, `striking`) - Average (2)**
+`Core`: (`finesse`, `striking`) - Average (2)
 
 -   Lesser success (-1): _Description of what occurs_
 -   Success (0): _Description of what occurs_
@@ -43,7 +43,7 @@ Notice that what happens on a `failure` wasn't described, since whatever you wer
 
 Occasionally, the roller is able to pick between multiple options for their `attribute`. When this is the case, the two options are separated by a pipe (|), and looks like this:
 
-**`Core` (`finesse`|`body`, `striking`) - Average (2)**
+`Core`: (`finesse`|`body`, `striking`) - Average (2)
 
 In this example, the roller can choose between using their `finesse` or their `body` score to determine their `TN`.
 
@@ -55,11 +55,19 @@ In Dungeoneers, only the players make `CRs`. Other `creatures` instead have `dif
 
 For a `standard roll` (`SR`), typically only a `target number` is specified, again often with an `attribute`. In these types of rolls, no additional dice are used so they are always of average `difficulty`; 2 `successes` are required. Here's an example:
 
-**`Standard` (`finesse`) - Average (2)**
+`Standard`: (`finesse`) - Average (2)
 
 -   Lesser success (-1): _Description of what occurs_
 -   Success (0): _Description of what occurs_
 -   Greater success (1): _Description of what occurs_
+
+### Total
+
+For a `total roll` (`TR`), the effect is determined based on the number of `successes` rolled. Simply make the roll and the duration or quality of the outcome is determined by the number of `successes` rolled. Here's an example:
+
+`Total`: (`mind`, `spellcraft`)
+
+-   _You do something that lasts `rounds` equal to your roll_
 
 ### Group Rolls
 
@@ -71,7 +79,7 @@ First, a leader is designated to lead the roll. Their `skill proficiency` sets t
 
 A `test` is a competition of two actively opposing skilled forces. In a `test`, two `core rolls` are competing against one another. However, instead of the `success` count being evaluated at a `difficulty`, they're instead evaluated against the `success` count of the _other_ `core roll`. Here's an example:
 
-**`Test`: (`finesse`, `striking`) vs (`finesse`, `dodging`)**
+`Test`: (`finesse`, `striking`) - (`finesse`, `dodging`)
 
 -   Lesser success (-1): _Description of what occurs_
 -   Success (0): _Description of what occurs_

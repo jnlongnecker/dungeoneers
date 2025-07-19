@@ -41,9 +41,9 @@
 -   Defensive Stance: You may use 1 `stress` to reroll 1 die during a `dodging` roll
 -   Combat Breather: The next `stress` you gain this `combat round` is reduced by 1
 -   Rally: You relieve 1 `stress` from nearby creatures of your choice after a roll
--   Hunker Down: You increase your cover level by 1; all `strikes` now have a point of `bane`
 -   Self-Sufficient: You gain 1 `stress` and end 1 `condition` on yourself
 -   Field Medic: Make a roll for a `creature` within your `reach`: `Core`: (`finesse`, `knowledge`) - `Wounds Taken`, remove 1 `wound`
+-   Focus Reflexes: Make a roll: `Standard`: (`mind`) - `Average (2)`, you are `defensive` for a few rounds
 
 ### Passives
 
@@ -86,7 +86,13 @@
 -   Lethal Body: You may treat `strikes` made with your body (elbows, headbutt, kick, etc) as `standard` weapons
 -   Explosive Force: You can gain 1 `stress` to deal 1 additional `wound` on a `strike`
 
+## Arcana
+
+-   Intense Focus: Roll `Total`: (`mind`, `spellcraft`). Taking `wounds` beneath this threshold does not break your `concentration`
+
 ## Incantation
+
+### Actives
 
 -
 -
@@ -94,6 +100,19 @@
 -
 -
 -
+-
+-
+-
+-
+
+### Passives
+
+-   Requip Mastery: You may cast Requipment without expending any `arca`
+-   Energy Twister: Choose one of the following effects when you deal `energy` damage: `Heat` - `burning`, `cold` - `freezing`, `disintegrate` - `shocked`, `toxic` - `plagued`. You can pick this multiple times
+-   Danger Close: While casting an `area` spell, you can gain 1 `stress` to remove a `creature` in the `area` from being a target
+-   Arcana Shield: You have additional `armor points` equal to your `arca` plus your `mind` score while wearing only `clothing` or `light` armor
+-   Energy Deflector: You may spend `arca` to reduce `energy` damage taken by 1 per `arca` spent
+-   Efficient Casting: You may utilize the ambient `arca` to cast an `incantation` spell by gaining 1 `stress`
 -
 -
 -

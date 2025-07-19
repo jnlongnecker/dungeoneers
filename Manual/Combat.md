@@ -113,7 +113,7 @@ The details of what happens when you cast `arcana` depends on the `arcana`, and 
 
 ### End Condition
 
-Tags: Restoration
+Tags: Restoration, Momentum
 Range: Reach
 
 ---
@@ -137,7 +137,7 @@ Range: Self
 
 ---
 
-A `creature` may use the `reposition` `free action` to `move`.
+A `creature` may use the `reposition` `free action` to `move` or stand up.
 
 ### Interact
 
