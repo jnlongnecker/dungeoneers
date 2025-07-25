@@ -60,7 +60,7 @@ You must have a hand free in order to take this `action`.
 
 ### Push
 
-Tags: Attack
+Tags: Attack, Forces
 Range: Reach
 
 ---
