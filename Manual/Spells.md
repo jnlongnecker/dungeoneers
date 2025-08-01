@@ -400,18 +400,210 @@ Channeling
 
 ## Steam (Fire + Water)
 
-**Boil**
+### Boil
 
-**Pressurize**
+Incantation
 
-**Incendiary Cloud**
+-   Instantly boil 5 ft cube of water
+-   Provide cover from an attack by boiling steam
+-   Boil blood in a creature with blood to deal heat damage
+-   Instead of dodging from a water attack, boil it instantly instead
 
-**Scald**
+Channeling
 
-## Dust (Wind + Earth) (Toxin/poison)
+-   Instantly boil 5 ft cube of water
+-   Give a bonus to a dodging roll for yourself by boiling steam
+-   Strikes deal extra heat damage
+-   Boil water around you and deal heat damage to nearby creatures
+
+### Pressurize
+
+Incantation
+
+-   Give a creature a stack of `pressurized`
+-   Allow `pressurized` creatures to move
+-   Emit steam from `pressurized` creatures
+-   Deal damage to `pressurized` creatures. If fatal, creature explodes
+
+Channeling
+
+-   Improve ground speed
+-   Improve jump speed
+-   Charge up attack
+-   Strikes deal extra damage
+
+### Incendiary Cloud
+
+Incantation
+
+-   Create a small, burning cloud of steam
+-   Create a small, steam illusion that attacks, dealing heat damage
+-   Fog cloud that deals heat damage
+-   Illusory steam dragon
+
+Channeling
+
+-   Retaliate with `disorient` when hit
+-   Illusory copy that deals `heat` damage when struck down
+-   Strikes deal your choice of heat damage or `disorient`
+-   Personal incendiary cloud that deals heat damage
+
+### Scald
+
+Incantation
+
+-   Turn the `wet` condition into `burning`
+-   Deal `heat` damage to creatures who are `wet`
+-   Steam cone
+-   Burning tidal wave
+
+Channeling
+
+-   Strikes apply `wet`
+-   Strikes deal extra `heat` damage to creatures who are `wet`
+-   Strike that blows steam in a line
+-   Steam breath
+
+## Dust (Wind + Earth)
+
+### Smog
+
+Incantation
+
+-   Creates black cloud of smog
+-   Cause a creature to `suffocate`
+-   Cloud of smog that causes `suffocate`
+-   Thick acid rain to cause `disintegrate` damage
+
+Channeling
+
+-   Give a point of `boon` to `dodging` rolls
+-   Cause a `creature` to `suffocate` in retaliation
+-   Strikes cause `suffocation`
+-   Smog breath causing `toxin` damage
+
+### Soman
+
+Incantation
+
+-   Cause a creature to be `plagued`
+-   Cause a `plagued` creature to be `dazed`
+-   Large cloud of `plagued`
+-   Cause `plagued` creatures to take massive `toxin` damage
+
+Channeling
+
+-   Strikes cause `plagued`
+-   Strikes on `plagued` creatures cause `dazed`
+-   Cause `plagued` in area of effect
+-   Strikes on `plagued` creatures deal extra `toxin` damage
+
+### Arsine
+
+Incantation
+
+-   Cause a creature to be `plagued`
+-   Cause a `plagued` creature to be `bleeding`
+-   Cause `bleeding` to tick to completion
+-   Explode all `plagued` creatures
+
+Channeling
+
+-   Strikes cause `plagued`
+-   Strikes on `plagued` creatures cause `bleeding`
+-   Cause `bleeding` in retaliation
+-   Strikes explode `plagued` creatures
+
+### Mutagen
+
+Incantation
+
+-   Cause a creature to be `plagued`
+-   Cause a `plagued` creature to be `blinded`
+-   Cloud of gas that deals `heat` damage and causes `plagued`
+-   Cause `plagued` creatures to be `blinded`, `burning` and take `heat` damage
+
+Channeling
+
+-   Strikes cause `plagued`
+-   Strikes on `plagued` creatures cause `blinded`
+-   Strikes deal `heat` damage and cause `plagued`
+-   Cause `blinded`, `plagued` and `burning` in retaliation
 
 ## Ice (Wind + Water)
 
+### Icicle
+
+Incantation
+
+-   Ranged icicle attack
+-   Ice wall
+-   Multistrike ranged icicle attack
+-   Icicle wave
+
+Channeling
+
+-   Ranged icicle
+-   Retaliate with piercing damage when hit
+-   Strike turns into piercing damage and has increased range
+-   Stomp to create a circular icicle flurry
+
+### Frostbite
+
+Incantation
+
+-   Ranged cold attack
+-   Deal extra damage to `freezing` creatures
+-   AOE cold attack
+-   AOE cold centered on `freezing` creatures and exploding out
+
+Channeling
+
+-   Retaliate with `cold` damage on hit
+-   Strikes deal `cold` damage
+-   Frost breath
+-   Strikes against `freezing` creatures deal massive damage and explode
+
+### Freeze
+
+Incantation
+
+-   Freeze/unfreeze water or apply `freezing` to creatures
+-   Swap `stacks` of `freezing` to `stacks` of `wet`, or vice versa
+-   Apply `grappled` to `freezing` creatures
+-   Freeze the ground, causing `prone` and `difficult terrain`
+
+Channeling
+
+-   Reduce speed on hit
+-   Apply `freezing` in retaliation
+-   Grapple `freezing` creatures
+-   Give `vulnerable(B2)` to `freezing` creatures on hit
+
+### Hail
+
+Incantation
+
+-   Localized hailstorm that can be moved around
+-   Wide hailstorm that gives a `bane` to `dodging` rolls
+-   Intense blizzard, pushing back and dealing `cold` damage
+-   Battlefield-wide hailstorm
+
+Channeling
+
+-   Retaliate with a burst of hail
+-   Hailstorm aura that gives a `bane` to `dodging` to nearby creatures
+-   Strikes flare the gale, pushing and dealing `cold` damage
+-   Low hailstorm that the caster can see through
+
 ## Life (Earth + Water)
+
+###
+
+###
+
+###
+
+###
 
 ## Aether

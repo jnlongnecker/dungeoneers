@@ -16,6 +16,7 @@ Per day: 3
 **Player Downtime Actions**
 
 -   Regain 1d4 `armor points`
+-   Regain 1d4 `arca`
 -   Clear 1d4 `stress`
 -   Gain 1 `power`
 
@@ -33,6 +34,7 @@ Per day: 2
 **Player Downtime Actions**
 
 -   Regain 2d4 `armor points`
+-   Regain 2d4 `arca`
 -   Clear 2d4 `stress`
 -   Gain 1 `power`
 
@@ -51,9 +53,10 @@ Per day: 1
 **Player Downtime Actions**
 
 -   Regain all `armor points`
+-   Regain all `arca`
 -   Clear all `stress`
 -   Gain 2 `power`
--   Advance a `long countdown`
+-   Advance a `generic countdown`
 
 **GM Downtime Actions**
 
@@ -62,7 +65,7 @@ Per day: 1
 
 ### Vacation
 
-Duration: 1 day
+Duration: 1 week
 
 ---
 
@@ -72,7 +75,8 @@ Duration: 1 day
 -   Clear all `wounds`
 -   Clear all `stress`
 -   Regain all `armor points`
--   Advance a `long-term countdown` twice
+-   Regain all `arca`
+-   Advance a `generic countdown` twice
 
 **GM Downtime Actions**
 

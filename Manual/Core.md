@@ -90,6 +90,16 @@ A `countdown` will be described in the rules in the following way: _`Countdown`:
 
 We'll start with `Countdown`: `SC`(1d8). Since it's a die number, we need to roll a d8, or an eight-sided die. Let's say we get a 6 on our roll. This means that our `countdown` is effectively the same as `Countdown`: `SC`(6). Whenever a `combat round` or `social round` completes, the `countdown` ticks. Let's tick our `countdown` first to 5 and then to 4 to represent 2 `rounds` completing. Now imagine our `countdown` is still in effect, but an `exploration round` occurs. This means that even though we had 4 `rounds` left on our `countdown`, the `countdown` immediately completes when the `exploration round` finishes since it's a longer-lasting time frame.
 
+In addition to the three temporal `countdowns`, there is also the `generic countdown:
+
+-   `Generic countdown` (`GC`): Ticks only when specified
+
+All `countdowns` can be additionally ticked when specified; for example the `countdown` associated with the `suffocating` `condition`:
+
+> A `creature` who is `suffocating` starts a `Countdown`: `RC`(`body`). Taking a `wound` or taking an `action` ticks the `countdown` by 1. When the `countdown` ends, the `creature` takes 1 `precision wound` whenever the `countdown` would tick.
+
+Here, a `rapid countdown` is set like most `conditions`, however the `condition` specifies additional criteria that tick the `countdown`. `Generic countdowns` can only be ticked by such "additional criteria".
+
 ## Dread
 
 `Dread` is a metacurrency that is gained by the GM to mechanize consequences for player actions. The GM spends `dread` to enhance the abilities of `creatures` that they control in opposition of the players. The GM will gain `dread` from making GM `actions` during `rests`, but they also gain `dread` during `compromises`.

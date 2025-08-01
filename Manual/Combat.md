@@ -173,7 +173,7 @@ Range: Self
 
 ---
 
-You recover 1 `arca`.
+You gain 2 stacks of `channeling`.
 
 ## Deadly Hits
 

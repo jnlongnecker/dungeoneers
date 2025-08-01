@@ -2,15 +2,18 @@ import rolls
 import creatures
 import graph
 
-pool = rolls.DicePool(die='1d10', quantity=3, bonus=0, target=5)
-pool2 = rolls.DicePool(die='1d10', quantity=3, bonus=0, target=3)
-opposing_pool = rolls.DicePool(die='1d10', quantity=3, bonus=0, target=4)
-opposing_pool2 = rolls.DicePool(die='1d10', quantity=3, bonus=0, target=5)
+pool = rolls.DicePool(die='1d6', quantity=9, bonus=0, target=3)
+pool.print_chances()
 
-pool.print_expected_successes()
-pool2.print_expected_successes()
+# pool = rolls.DicePool(die='1d10', quantity=3, bonus=0, target=5)
+# pool2 = rolls.DicePool(die='1d10', quantity=3, bonus=0, target=3)
+# opposing_pool = rolls.DicePool(die='1d10', quantity=3, bonus=0, target=4)
+# opposing_pool2 = rolls.DicePool(die='1d10', quantity=3, bonus=0, target=5)
 
-damage = 2
+# pool.print_expected_successes()
+# pool2.print_expected_successes()
+
+# damage = 2
 
 # print(pool.average_damage(opposing_pool, damage + 1))
 # print(pool.average_damage(opposing_pool2, damage))

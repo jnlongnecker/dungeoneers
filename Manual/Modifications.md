@@ -108,6 +108,16 @@ Tags: Removable
 
 `Creatures` who are `grappling` have their `speeds` halved and gain 1 point of `bane` to all `dodging` rolls. If this `creature` is `forced`, the `grappling` and `grappled` `condition` are removed from their respective `creatures`.
 
+### Channeling
+
+Tags: Removable
+
+---
+
+`Creatures` who are `channeling` can expend their `stacks` to reduce the cost of arcana.
+
+> Example: Freya has 3 `stacks` of `channeling`. If she casts arcana that costs 2 `arca`, she can use 2 `stacks` of `channeling` to reduce the cost to 0. She can also use the remaining `stack` to improve the arcana as if she spent 1 `arca` to do so. Of course, Freya can also use her actual `arca` as well as `channeling` `stacks`!
+
 ### Defensive
 
 Tags: Removable
@@ -132,6 +142,30 @@ Tags: Removable
 
 `Creatures` who are `berserk` gain a point of `boon` to their `striking` rolls, a point of `bane` on their `dodging` rolls, and deal 1 additional `wound` with `strikes`.
 
+### Pressurized
+
+Tags: Removable
+
+---
+
+`Creatures` who are `pressurized` increase their `speeds` by 1 per stack and take and deal 1 additional `wound` per stack.
+
+### Wet
+
+Tags: Removable
+
+---
+
+`Creatures` who are `wet` take 1 fewer `wound` from `heat` and 1 additional `wound` from `cold`, and are immune to `burning`. Receiving `stacks` of `dry` remove `stacks` of `wet`.
+
+### Dry
+
+Tags: Removable
+
+---
+
+`Creatures` who are `dry` take 1 fewer `wound` from `cold` and 1 additional `wound` from `heat`, and are immune to `freezing`. Receiving `stacks` of `wet` remove `stacks` of `dry`.
+
 ### Taunted
 
 Tags: Removable
@@ -146,7 +180,7 @@ Tags: Removable
 
 ---
 
-`Creatures` who are `off balance` gain 1 point of `bane` to their `striking` rolls, 1 point of `boon` to their `dodging` rolls, and their weapons deal 1 fewer `wound`.
+`Creatures` who are `off balance` gain 1 point of `bane` to their `striking` rolls, 1 point of `boon` to their `dodging` rolls, and their weapons deal 1 fewer `wound` per stack.
 
 ### Prone
 
@@ -170,7 +204,7 @@ Tags: Removable
 
 ---
 
-`Creatures` who are `weakened` deal 1 fewer `wounds` whenever they would deal a `wound`.
+`Creatures` who are `weakened` deal 1 fewer `wounds` whenever they would deal a `wound` per stack.
 
 ### Dazed
 
@@ -194,7 +228,7 @@ Tags: Removable
 
 ---
 
-`Creatures` who are `punctured` have all their `speeds` reduced by 2.
+`Creatures` who are `punctured` have all their `speeds` reduced by 1 per stack.
 
 ### Disoriented
 
@@ -202,7 +236,7 @@ Tags: Removable
 
 ---
 
-`Creatures` who are `disoriented` gain 1 point of `bane` to their `striking` rolls.
+`Creatures` who are `disoriented` gain 1 point of `bane` to their `striking` rolls per stack.
 
 ### Blinded
 
@@ -218,7 +252,7 @@ Tags: Removable
 
 ---
 
-`Creatures` who are `freezing` gain 1 point of `bane` to their `dodging` and `striking` rolls.
+`Creatures` who are `freezing` gain 1 point of `bane` to their `dodging` and `striking` rolls per stack.
 
 ### Burning
 
@@ -263,6 +297,10 @@ When the `creature` impacts a surface solid enough to stop them, the `falling` `
 -   Lesser Success (-1): You reduce the distance fallen to 1 tile
 -   Success (0): You reduce the distance fallen to 0 tiles
 -   Greater Success (1): You reduce the distance fallen to 0 tiles and may immediately `move` `ground(1)`
+
+### Suffocating
+
+A `creature` who is `suffocating` starts a `Countdown`: `RC`(`body`). Taking a `wound` or taking an `action` ticks the `countdown` by 1. When the `countdown` ends, the `creature` takes 1 `precision wound` whenever the `countdown` would tick.
 
 ## Detection Conditions
 
