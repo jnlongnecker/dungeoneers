@@ -2,11 +2,11 @@
 
 The baseline kit of all `creatures` is interesting enough, but doesn't quite capture the vast array of capabilities that make each `creature` unique. Instead, there are a number of `modifications` that apply to each `creature` that give them their uniqueness. Additionally, some `modifications` are temporary and potentially even negative. These `modifications` come in several categories:
 
-- `Abilities`
-- `Traits`
-- `Conditions`
-- `Properties`
-- `Effects`
+-   `Abilities`
+-   `Traits`
+-   `Conditions`
+-   `Properties`
+-   `Effects`
 
 ## Abilities
 
@@ -141,6 +141,14 @@ Tags: Removable
 ---
 
 `Creatures` who are `berserk` gain a point of `boon` to their `striking` rolls, a point of `bane` on their `dodging` rolls, and deal 1 additional `wound` with `strikes`.
+
+### Quickened
+
+Tags: Removable
+
+---
+
+`Creatures` who are `quickened` have their `speeds` increased by 2 (unless they are 0) and a point of `boon` on `dodging` and `striking` rolls.
 
 ### Pressurized
 
@@ -286,17 +294,17 @@ Tags: Forces
 
 A `creature` with the `falling` `condition` is `forced(15)` towards the ground. This is applied the moment the `falling` `condition` is applied and at the start of every `round` thereafter. The `falling` `condition` is gained by any `creature` in the following situations:
 
-- A `creature` ends `movement` while in the air without a `fly` `speed`
-- A `creature` in the air gains the `prone` `condition`
-- A `creature` in the air loses their `fly` `speed` or has their `fly` `speed` drop to 0
+-   A `creature` ends `movement` while in the air without a `fly` `speed`
+-   A `creature` in the air gains the `prone` `condition`
+-   A `creature` in the air loses their `fly` `speed` or has their `fly` `speed` drop to 0
 
 When the `creature` impacts a surface solid enough to stop them, the `falling` `condition` is removed and sustains 1 `bludgeoning` `wound` per tile they fall. A `creature` may reduce the effective number of tiles they fall by making a roll
 
 `Core`: (`body`, `dodging`) - Number of Tiles Fallen
 
-- Lesser Success (-1): You reduce the distance fallen to 1 tile
-- Success (0): You reduce the distance fallen to 0 tiles
-- Greater Success (1): You reduce the distance fallen to 0 tiles and may immediately `move` `ground(1)`
+-   Lesser Success (-1): You reduce the distance fallen to 1 tile
+-   Success (0): You reduce the distance fallen to 0 tiles
+-   Greater Success (1): You reduce the distance fallen to 0 tiles and may immediately `move` `ground(1)`
 
 ### Suffocating
 
@@ -314,9 +322,9 @@ A `creature` who is `shrouded` is only lightly obscured. This is sufficient to a
 
 Examples of situations that would bestow `shrouded`:
 
-- Standing in tall vegetation (Sight)
-- Masking scent (Blindsense)
-- Muffled footsteps (Tremorsense)
+-   Standing in tall vegetation (Sight)
+-   Masking scent (Blindsense)
+-   Muffled footsteps (Tremorsense)
 
 ### Covered
 
@@ -324,9 +332,9 @@ A `creature` who is `covered` is completely hidden from detection. `Hiding` auto
 
 Examples of situations that would bestow `covered`:
 
-- Standing behind a wall (Sight)
-- Eliminating scent entirely (Blindsense)
-- Flying via arcana (Tremorsense)
+-   Standing behind a wall (Sight)
+-   Eliminating scent entirely (Blindsense)
+-   Flying via arcana (Tremorsense)
 
 ### Hidden
 
@@ -334,9 +342,9 @@ A `creature` who is `hidden` is one whom other `creatures` cannot determine the 
 
 `Core`: (`finesse`, `stealth`) - `Notice Difficulty`
 
-- Lesser Success (-1): You are `hidden` until you `move`
-- Success (0): You are `hidden` until you take an `action`
-- Greater Success (1): You are `hidden` until the end of the `combat round` of your next `action`
+-   Lesser Success (-1): You are `hidden` until you `move`
+-   Success (0): You are `hidden` until you take an `action`
+-   Greater Success (1): You are `hidden` until the end of the `combat round` of your next `action`
 
 ## Properties
 
