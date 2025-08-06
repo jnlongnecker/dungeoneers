@@ -722,18 +722,20 @@ Channeling
 -   You are able to increase the space between an `attack` and yourself, reducing damage significantly
 -   You rapidly teleport to multiple creatures in an area, taking a `strike` at each
 
-### Creation
+### Void
+
+Void energy would heavily damage creatures and completely evaporate non-creatures
 
 Incantation
 
--
--
--
--
+-   You fire a ranged bolt of void energy, dealing `disintegrate` damage
+-   1 tile sized void cube
+-   Wall of void, anything attempting to pass through takes heavy `disintegrate` damage
+-   Large sphere of complete void, `disintegrate` damage aplenty
 
 Channeling
 
--
--
--
--
+-   Strikes are laced with void energy, dealing `disintegrate` damage
+-   Projectiles are swallowed by the void
+-   Aura of void, dealing `disintegrate` damage to nearby creatures
+-   Cone of void
