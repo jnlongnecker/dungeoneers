@@ -58,78 +58,18 @@
 -   Practiced Distribution: You ignore the `body(x)` `property` of medium armor
 -   Free Motion: If you are not wearing any pieces of medium or heavy armor, you may sacrifice 1 `armor point` to roll an additional die on a `dodging` roll
 
-## Channeling
-
-### Actives
-
--   Extended Strike: Spend 1 `arca` and make a `strike`. For this `strike`, your `range` increases by 8, plus an additional 8 for each additional `arca` you spend
--   Shatter Earth: Spend 1 `arca` and make a `strike`. All `creatures` within a 3 tile `cube` originating from you are targeted, dealing base damage of 1 + additional `arca` you spend and knocking targets `prone`
--   Blitz Step: Spend 1 `arca` and make a `strike`. You may `move` a number of tiles equal to 5 + additional `arca` you spend before making the `strike`
--   Weapon Dance: Spend 1 `arca` and make a `strike`, and choose 1 `creature` within 4 tiles of your initial target. Both `creatures` are targeted by the `strike`, plus additional `creatures` within 4 tiles of the initial target per additional `arca` you spend
--   Crushing Leap: Spend 1 `arca`, and you may `move` `jump(7)`. You may spend an additional `arca` and gain 1 `stress` in order to cause a shockwave where you land
--   Energy Lash: Spend 1 `arca` and make a `strike` with a range of `cone(3)`, targeting all `creatures` within range. For each additional `arca` you spend, you may increase the range by 1 tile
--   Destructive Wave: Spend 1 `arca` and make a `strike` with a range of `line(4)`, targeting all `creatures` within range. For each additional `arca` you spend, you may increase the range by 1 tile
--   Battering Blows: Spend 1 `arca` and make a `strike`. On a `success` or greater, you additionally `force` your target 3 tiles + 1 additional tile for each additional `arca` you spend
--   Conduit: You may spend an additional `arca` for free if you make an `action` this `round`
--   Focus: You may spend 1 `arca` per point of `boon` you wish to have on your next roll
-
-### Passives
-
--   Channel Body: You improve your `body` score by 1/2
--   Channel Mind: You improve your `mind` score by 1/2
--   Channel Spirit: You improve your `spirit` score by 1/2
--   Channel Finesse: You improve your `finesse` score by 1/2
--   Cloak Element: All `wounds` from your `strikes` deal your choice of `energy` damage
--   Elemental Retort: Gain 1 `stress` when you are `hit` to deal 1 `energy` `wound` to all `creatures` of your choice within 2 tiles
--   Iron Skin: Per 1 `arca` you devote to this `ability`, you gain 2 `armor points`
--   Keen Smell: You gain a highly improved sense of smell. You can accurately detect the location of `creatures` by their odor within 5 tiles, and can attempt to track and follow scent trails
--   Lethal Body: You may treat `strikes` made with your body (elbows, headbutt, kick, etc) as `standard` weapons
--   Explosive Force: You can gain 1 `stress` to deal 1 additional `wound` on a `strike`
-
 ## Arcana
 
+-   Conduit: You may spend an additional `arca` for free if you make an `action` this `round`
+-   Focus: You may spend 1 `arca` per point of `boon` you wish to have on your next roll
+-   Lethal Body: You may treat `strikes` made with your body (elbows, headbutt, kick, etc) as `standard` weapons
+-   Explosive Force: You can gain 1 `stress` to deal 1 additional `wound` on a `strike`
 -   Intense Focus: Roll `Total`: (`mind`, `spellcraft`). Taking `wounds` beneath this threshold does not break your `concentration`
-
-## Incantation
-
-### Actives
-
--
--
--
--
--
--
--
--
--
--
-
-### Passives
-
--   Requip Mastery: You may cast Requipment without expending any `arca`
--   Energy Twister: Choose one of the following effects when you deal `energy` damage: `Heat` - `burning`, `cold` - `freezing`, `disintegrate` - `shocked`, `toxic` - `plagued`. You can pick this multiple times
 -   Danger Close: While casting an `area` spell, you can gain 1 `stress` to remove a `creature` in the `area` from being a target
 -   Arcana Shield: You have additional `armor points` equal to your `arca` plus your `mind` score while wearing only `clothing` or `light` armor
 -   Energy Deflector: You may spend `arca` to reduce `energy` damage taken by 1 per `arca` spent
+-   Arca Tapul: You may spend `arca` to reduce `physical` damage taken by 1 per `arca` spent
 -   Efficient Casting: You may utilize the ambient `arca` to cast an `incantation` spell by gaining 1 `stress`
--
--
--
--
-
-## Miracles and Curses
-
--
--
--
--
--
--
--
--
--
--
 
 ## Tactics
 

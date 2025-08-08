@@ -234,15 +234,15 @@ Incantation
 
 -   Visual illusion
 -   Fog cloud
--   Blind creatures of your choice
+-   Invisibility to a creature
 -   Disorienting, debuffing cloud
 
 Channeling
 
 -   Illusory self to give `defensive`
--   `Disorient` on strike
+-   Eliminate self scent and sound
 -   Fog cloud that you can see through and moves with you
--   Reduce physical damage
+-   Great self invisibility
 
 ### Hydrokinesis
 
