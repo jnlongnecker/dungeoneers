@@ -100,6 +100,17 @@ All `countdowns` can be additionally ticked when specified; for example the `cou
 
 Here, a `rapid countdown` is set like most `conditions`, however the `condition` specifies additional criteria that tick the `countdown`. `Generic countdowns` can only be ticked by such "additional criteria".
 
+### Failure Countdowns
+
+In some scenarios (such as crafting items, chases, and skill challenges), a `failure countdown` is used to track failure of subtasks that eventually lead to the failure of the larger task being attempted. `Failure countdowns` are always accompanied by a regular `countdown`, and `failure countdowns` are of the same type of the regular `countdown` (such as `rapid`, `general`, `short`, or `day`). Success on a subtask decrements the regular `countdown`, while failure of a subtask decrements the `failure countdown`.
+
+Scenarios with a `failure countdown` follow the same general outcome rule for any rolls:
+
+-   Failure (-2): The `failure countdown` ticks once, and something bad happens (default is the `failure countdown` ticks again)
+-   Partial Success (-1): The `failure countdown` and `countdown` both tick once
+-   Success: (0): The `countdown` ticks once
+-   Greater Success: (1): The `countdown` ticks once, and something else good happens (default is the `countdown` ticks again)
+
 ## Dread
 
 `Dread` is a metacurrency that is gained by the GM to mechanize consequences for player actions. The GM spends `dread` to enhance the abilities of `creatures` that they control in opposition of the players. The GM will gain `dread` from making GM `actions` during `rests`, but they also gain `dread` during `compromises`.

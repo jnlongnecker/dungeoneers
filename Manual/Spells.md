@@ -2,6 +2,16 @@
 
 A "spell" is a predefined, arcane formula designed to produce an effect. Dungeoneers are taught to recognize and understand spells of import to them on their job which overwhelmingly fall into categorization by element. A spell has two ways of being cast: via channeling and via incantation, both of which vary the outcome of the spell slightly. A spell has a variety of applications that more skilled arcanists can achieve with practice with the spell.
 
+As a dungeoneer `levels up`, they gain access to more and more powerful spells. The currency with which a dungeoneer invests themselves into spells are spell points. Each element must first be unlocked in order to then unlock the spells within that element. The way spell costs work is that the first rank of a spell costs the same amount of points as the category, and every rank above that costs 1 additional point. For example, the wind element costs 1 spell point to unlock. The first rank of the `levitate` spell therefore also costs 1 spell point. However, the second rank of `levitate` costs 2 spell points in order to unlock.
+
+A spell can be ranked up for either incantation or channeling. Each cost their own spell point in order to acquire, but they are not mutually exclusive. For example, if you wished to obtain the first rank of the `inferno` spell, you could. You would simply have to spend the spell point for both the incantation rank and the channeling rank.
+
+## Cantrips
+
+A `cantrip` is a spell that an arcanist has tattooed on their body in order to save time in inscribing the inscription of the spell, allowing it to be used quickly. A spell that isn't a `cantrip` or stored in a tome cannot be cast in combat as it takes too long to do so. A dungeoneer will need to have uninterrupted time to carefully draw the inscription on some surface in order to cast the spell.
+
+Tattooing a spell as a `cantrip` can be done as a `downtime action` during a `vacation`. Dungeoneers can maintain any number of `cantrips` on their body, but they can only withstand a certain number being active at a time. You may choose any spell you know as a `cantrip` to be active whenever you have downtime; it doesn't cost a `downtime action` to do so. You may have a number of active `cantrips` equal to your `mind` score.
+
 ## Context of Spells
 
 Incantation is for traditional spellcaster types, while channeling is for warrior types.
@@ -12,7 +22,30 @@ Each spell will have 3 degrees of success if applicable (like other rolls) and w
 
 Aether is an unobtainable element except for extremely powerful beings
 
+## Non-elemental
+
+Requirements to Unlock: None
+
+### Requipment
+
+**Incantation**
+
+Rank 1
+
+-   Type: Free action
+-   Cost: 1 arca
+-   Range: Self
+-   Tags: Interaction
+
+---
+
+_Effect_ - You may mark up to 3 items in your `inventory` as requipment items, as long as they are a weapon, a focus, or a piece of armor. When you cast this spell, you may either mark a new set of 3 items, or you may swap any item you have equipped with an item marked as a requipment item. The equipped item you swap out becomes a requipment item automatically.
+
+_Description_ - You quickly swap a piece of equipment for one you are wearing with a flourish of arcana.
+
 ## Wind
+
+Requirements to Unlock: 1 spell point
 
 ### Levitate
 
@@ -80,6 +113,8 @@ Channeling
 
 ## Earth
 
+Requirements to Unlock: 1 spell point
+
 ### Tremors
 
 Incantation
@@ -145,6 +180,8 @@ Channeling
 -   Enhance body score
 
 ## Fire
+
+Requirements to Unlock: 1 spell point
 
 ### Combustion
 
@@ -212,6 +249,8 @@ Channeling
 
 ## Water
 
+Requirements to Unlock: 1 spell point
+
 ### Flood
 
 Incantation
@@ -277,6 +316,8 @@ Channeling
 -   Cause a torrential downpour to follow targets on a hit
 
 ## Lightning (Fire + Wind)
+
+Requirements to Unlock: 2 spell points, 2 spell points invested in both fire and wind
 
 ### Bolt
 
@@ -344,6 +385,8 @@ Channeling
 
 ## Metal (Fire + Earth)
 
+Requirements to Unlock: 2 spell points, 2 spell points invested in both fire and earth
+
 ### Forge
 
 Incantation
@@ -409,6 +452,8 @@ Channeling
 -   Missile/thrown strikes explode and strike multiple creatures
 
 ## Steam (Fire + Water)
+
+Requirements to Unlock: 2 spell points, 2 spell points invested in both fire and water
 
 ### Boil
 
@@ -476,6 +521,8 @@ Channeling
 
 ## Dust (Wind + Earth)
 
+Requirements to Unlock: 2 spell points, 2 spell points invested in both wind and earth
+
 ### Smog
 
 Incantation
@@ -541,6 +588,8 @@ Channeling
 -   Cause `blinded`, `plagued` and `burning` in retaliation
 
 ## Ice (Wind + Water)
+
+Requirements to Unlock: 2 spell points, 2 spell points invested in both wind and water
 
 ### Icicle
 
@@ -608,6 +657,8 @@ Channeling
 
 ## Life (Earth + Water)
 
+Requirements to Unlock: 2 spell points, 2 spell points invested in both earth and water
+
 ### Communications
 
 Incantation
@@ -673,6 +724,8 @@ Channeling
 -   You regenerate `stress`/`wounds` in yourself
 
 ## Aether
+
+Requirements to Unlock: 3 spell points, 1 rank of every spell unlocked
 
 ### Gravity
 

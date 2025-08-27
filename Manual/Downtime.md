@@ -37,6 +37,7 @@ Per day: 2
 -   Regain 2d4 `arca`
 -   Clear 2d4 `stress`
 -   Gain 1 `power`
+-   Work on a `crafting project`
 
 **GM Downtime Actions**
 
@@ -56,7 +57,7 @@ Per day: 1
 -   Regain all `arca`
 -   Clear all `stress`
 -   Gain 2 `power`
--   Advance a `generic countdown`
+-   Work on a `crafting project` twice
 
 **GM Downtime Actions**
 
@@ -76,7 +77,8 @@ Duration: 1 week
 -   Clear all `stress`
 -   Regain all `armor points`
 -   Regain all `arca`
--   Advance a `generic countdown` twice
+-   Work on a `crafting project` thrice
+-   Tattoo any number of spells as `cantrips`
 
 **GM Downtime Actions**
 

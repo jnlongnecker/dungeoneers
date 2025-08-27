@@ -119,12 +119,162 @@
 
 ## Skill
 
+Skill abilities come in 4 tiers. You must be at the corresponding skill proficiency level in order to be eligible for the ability.
+
+### Swimming
+
+-   Held Breath: When you are `suffocating`, your `countdown` starts twice as long
+-   Wet Training: You suffer no points of `bane` due to swimming or being underwater
+-   Dolphin Kick: You gain a `swim` `speed` equal to your `ground` `speed`
+-   Like a Fish: Your `swim` `speed` doubles. Additionally, you may automatically succeed on `swimming` rolls of `difficulty` 3 or below
+
+### Climbing
+
+-   Enduring Grip: The distance you have to climb doesn't impact the difficulty
+-   Gear Training: Using climbing gear automatically grants you 1 `success`
+-   Toe Hook: As long as you don't `move`, you may use both arms to take `actions` and `free actions`
+-   Explosive Grip: You gain a `climb` `speed` equal to your `ground` `speed` and you may treat ceilings as no more difficult to climb than walls
+
+### Balance
+
+-   Stable Mind: Having to maintain your balance does not cause you to break `concentration`
+-   Firm Footing: You gain a point of `boon` on all rolls you make to avoid being knocked `prone` or `pushed`
+-   Stable Landing: You reduce the distance you are `forced` by 2 tiles per `stress` you expend
+-   Innate Balance: You are immune to the negative effects of the `off balance` `condition`
+
+### Smithing
+
+-   Weapon Care: You can take a new `downtime action` during a `camp` or `long rest` to allow 1 metal weapon to deal an additional `wound` for the next `combat` encounter
+-   Smith's Touch: Whenever you repair or otherwise cause the restoration of `armor points`, you can gain 1 `stress` and make a roll
+
+    `Total`: (`finesse`|`mind`, `smithing`)
+
+    -   You restore additional `armor points` equal to your result
+
+-   Quick Worker: Whenever you take a `downtime action` to repair `armor points`, you can apply that result to an additional `creature`
+-   Reinforcer: Whenever you take a `downtime action` to repair `armor points`, any `armor points` restored past the maximum are kept. A `creature` can only gain these bonus `armor points` if they do not already have `armor points` past their maximum.
+
+### Woodwork
+
+-   Weapon Polish: You can take a new `downtime action` during a `camp` or `long rest` to allow 1 wooden weapon to deal an additional `wound` for the next `combat` encounter
+-   Woodspeaker: You gain 1 additional `success` for any roll to identify a characteristic of wood or a wooden object/structure
+-   Eyeball Measure: You can accurately tell the dimensions of an object that is less than 100 feet down to the inch and gain an additional tile of range on `strikes` with missile weapons
+-   Woodslayer: You can gain 1 `stress` in order to double the `wounds` dealt by your attack to a `creature` made of wood
+
+### Locksmithing
+
+-   Security Bypass: You gain 1 `stress` for each point of `boon` you wish on a roll to destroy a lock or locked door
+-   Brush By: You are able to pick a lock by simply appearing to brush past it. When you do so, you gain 1 `stress` and the difficulty of the roll is increased by 1
+-   Key Copy: You are able to make a copy of a key from memory, as long as you have looked at it, felt its grooves, or picked the corresponding lock before
+-   Reality Pick: You are capable of opening even that which has no mechanism to open. When you do so, gain 1 `stress` and expend 3 `arca` and make a roll: `Core`: (`finesse`, `locksmithing`) - 6
+
+### **Alchemy**
+
+-
+-
+-
+-
+
+### **Crafting**
+
+-
+-
+-
+-
+
+### **Bushcraft**
+
+-
+-
+-
+-
+
+### **Cooking**
+
+-
+-
+-
+-
+
+### **Music**
+
+-
+-
+-
+-
+
+### **Hunting**
+
+-
+-
+-
+-
+
+### **Fishing**
+
+-
+-
+-
+-
+
+### **Foraging**
+
+-
+-
+-
+-
+
+### **Harvesting**
+
+-
+-
+-
+-
+
+### **Arcana**
+
+-
+-
+-
+-
+
+### **Examination**
+
+-
+-
+-
+-
+
+### **Influence**
+
+-
+-
+-
+-
+
+### **Knowledge**
+
+-
+-
+-
+-
+
+### **Notice**
+
+-
+-
+-
+-
+
+### **Stealth**
+
 -   Covert Tactics: When you roll `stealth`, you may gain 1 `stress` for a point of `boon`
 -
 -
 -
--
--
+
+### **Nature**
+
 -
 -
 -
