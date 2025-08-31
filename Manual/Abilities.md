@@ -7,7 +7,7 @@
 -   Sweeping Strike: You gain a `stress` make a strike against creatures in 3 adjacent tiles within a `quadrant` in range. A creature can be targeted by more than 1 strike with this ability
 -   Disarm: You gain a `stress`. You force a creature to drop 1 item they are holding on a successful roll
     `Core`: (`finesse`, `striking`) - `Striking Difficulty`
--   Hobble: Make a strike with 1 point of bane. If it is successful, the defender's `speeds` are reduced to `quadrant`.
+-   Hobble: Make a strike with 1 point of bane. If it is successful, the defender's `movement` ranges are reduced to `quadrant`.
 -   Marked Shot: Mark enemies to give accuracy on next shot
 -   Called Shot: Take 2 points of bane to the striking roll to deal precision damage
 -   Entrench: While you remain in place after taking this `action`, you may target 2 different creatures within range when you `strike`. Until you move, you both gain this benefit and have 3 points of `bane` on your `dodging` rolls
@@ -83,7 +83,7 @@
 -   Charge: Gain 1 `stress`. You may `move` in a straight line. Any `strike` you make this `round` deals 1 additional `wound`
 -   Selfless: Target 1 ally within 2 tiles. On any roll they make before the end of the next `round`, you may roll 1d10 and your target may choose to replace one of their die rolls with yours. In exchange, you roll 1 less die on any rolls you make before the end of the next `round`
 -   Dirty Trick: Gain 1 `stress` and target 1 `creature` within `short` range. Both you and your target have 1 point of `bane` on all rolls before the end of the next `round`
--   Cover Me: Target 1 ally and make a roll. On a success, they can `move` using any of their `speeds`
+-   Cover Me: Target 1 ally and make a roll. On a success, they can `move` immediately
 -   Teleswap: Spend 1 `arca` to swap places with a willing `creature` within `short` range, plus 1 tile for each additional `arca` you spend
 -   Demoralize: Cause despair in the foe with a roll
     `Core`: (`body`|`spirit`, `influence`|`knowledge`) - `Morale Difficulty`
@@ -125,15 +125,15 @@ Skill abilities come in 4 tiers. You must be at the corresponding skill proficie
 
 -   Held Breath: When you are `suffocating`, your `countdown` starts twice as long
 -   Wet Training: You suffer no points of `bane` due to swimming or being underwater
--   Dolphin Kick: You gain a `swim` `speed` equal to your `ground` `speed`
--   Like a Fish: Your `swim` `speed` doubles. Additionally, you may automatically succeed on `swimming` rolls of `difficulty` 3 or below
+-   Dolphin Kick: You gain a `swim` range equal to your `ground` range
+-   Like a Fish: Your `swim` range doubles. Additionally, you may automatically succeed on `swimming` rolls of `difficulty` 3 or below
 
 ### Climbing
 
 -   Enduring Grip: The distance you have to climb doesn't impact the difficulty
 -   Gear Training: Using climbing gear automatically grants you 1 `success`
 -   Toe Hook: As long as you don't `move`, you may use both arms to take `actions` and `free actions`
--   Explosive Grip: You gain a `climb` `speed` equal to your `ground` `speed` and you may treat ceilings as no more difficult to climb than walls
+-   Explosive Grip: You gain a `climb` range equal to your `ground` range and you may treat ceilings as no more difficult to climb than walls
 
 ### Balance
 

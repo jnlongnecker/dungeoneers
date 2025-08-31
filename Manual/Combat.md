@@ -39,7 +39,7 @@ Dungeoneers uses an abstraction of a battlefield by utilizing `zones`. A `zone` 
 
 Each `zone` is made up of 2 `quadrants`, and each `quadrant` is made up of 9 `tiles`. A `tile` is the unit of space which a `medium` `creature` occupies. The purpose of `zones` is to allow for more flexible representations of a battle map while still providing tactical positioning value. For example, with `zones` it becomes a lot more clear to understand where your ally is, since you can say they are in the south `quadrant` of the enemy's right flank.
 
-Accompanying `zones` are `ranges`, which again are simplified into the following values:
+Accompanying `zones` are `ranges`, which again are simplified into the following tiers:
 
 | Name     | Description                                                                                                         |
 | -------- | ------------------------------------------------------------------------------------------------------------------- |

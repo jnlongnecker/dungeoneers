@@ -14,21 +14,25 @@ There are 3 levels of detail that maps in Dungeoneers observe:
 2. Room Map (Social, Exploration)
 3. Environment Map (Exploration)
 
-In each level of detail, the map will be divided into "tiles", which are the singular unit of space for that level of detail. Various `actions` and `free actions` will make reference to tiles; the size of the tile corresponding to the type of `action` that it is. For example, `combat actions` referencing tiles mean the ones used in the Battle Map level of detail, while `exploration actions` referencing tiles mean either a tile of the Room Map size or the Environment Map size (whichever is currently in use).
+In each level of detail, the map will be divided into "tiles", which are the singular unit of space for that level of detail. Various `actions` will make reference to tiles; the size of the tile corresponding to the type of `action` that it is. For example, `combat actions` referencing tiles mean the ones used in the Battle Map level of detail, while `exploration actions` referencing tiles mean either a tile of the Room Map size or the Environment Map size (whichever is currently in use).
 
 ### Tiles
 
 Tiles are not meant to represent strict distances, they're meant to break up a space into tactically meaningful divisions. It's therefore not advised to break out a tile into feet or meters or kilometers or miles or any other unit of measure you decide on. After all, the goal is not to do trigonometry in order to figure out if you're in range of something. As such, when calling out movement along a number of tiles an ordinal direction (diagonal) is equally valid as a cardinal direction for a single tile.
-
-This gets a little tricky when you involve the vertical axis. Such times should only be meaningful in combat situations or in exploration at the Room Map level, so the distances should not be that great. Here's the rule: if you are above your target, the range in tiles increases by the number of tiles you are above your target. If you are below your target, your range in tiles decreases by the number of tiles you are below your target. From there, you simply ignore the verticality.
-
-> Example: Freya is on an elevated cliff overlooking the battlefield that is 2 tiles in height. If she makes a `strike` using a missile weapon at something below her, her range increases by 2 tiles. A skeleton on the battlefield trying to shoot back at with a missile weapon of its own has its range _decreased_ by 2 tiles. If the skeleton and Freya both have a range of 10 tiles with their missile weapons and they're both 10 tiles away, Freya can hit the skeleton but it can't hit her back!
 
 ### Line of Sight
 
 There are times when the ability to see a `creature` comes into question due to angles of the terrain and obstacles. In order to determine what you do or don't have line of sight to, draw a line from the center of your tile to the center of the tile you're trying to see, as well as each tile adjacent. If every line intersects an obstacle, you do not have line of sight to the tile at all. If the line between yourself and the tile you're trying to see does not intersect an obstacle, you have complete line of sight to the target. If neither of the above are true, then you have partial line of sight to the target.
 
 When you have no line of sight to the target tile, any `creature` there is `hidden` from you. When you have partial line of sight to the target, any `creature` there is `shrouded` to you. When performing this line of sight check, you can alternatively use a tile adjacent to yourself as the tile "you" are in. This is useful in situations where you are, for example, taking cover behind a wall and "peeking out" to do something in order to keep yourself out of line of sight from your target while keeping them within line of sight of you.
+
+### Verticality
+
+If there is elevation in the map or a `creature` is `flying`, then verticality comes into play. The first layer of verticality is the `ground zone`; this is the layer that most combat occurs in. The second is called the `floating zone` and the third layer of verticality is the `flying zone`. You can think of each layer of verticality as being 1 `quadrant` tall.
+
+When considering `short`, `medium` and `long` ranges with verticality involved, simply reduce each range by 1 tier per layer of verticality _up_; i.e. `short` becomes `zone`, `medium` becomes `short` and `long` becomes `medium`. For layers of verticality _down_, no change in range occurs.
+
+Note that if you are held aloft in verticality by the terrain, you must also respect the terrain when considering your range. You still need to end up in the closest `quadrant` to your target and if this would cause you to be in the air you will `fall` after resolving the `action`.
 
 ## Inventory
 

@@ -12,7 +12,7 @@ When you make a roll, you are trying to rack up successful rolls, called `succes
 
 While extremely rare, it is possible for a `target number` to be above 9. When this happens, you have a baseline number of `successes` equal to the number of dice you roll. You may then subtract 10 from the `target number` for a new `target number` to roll against. The `successes` you roll here add on to the baseline `successes` you already have.
 
-For example, if Aberich has a `TN` of 12 and is to roll 4 dice, he will have baseline 4 `successes` no matter what. He may then roll those 4 dice to attempt to roll under his new `TN` of 2, and any `successes` he rolls adds on to the 4 he already has.
+For example, if Alberich has a `TN` of 12 and is to roll 4 dice, he will have baseline 4 `successes` no matter what. He may then roll those 4 dice to attempt to roll under his new `TN` of 2, and any `successes` he rolls adds on to the 4 he already has.
 
 ### Core Rolls
 
