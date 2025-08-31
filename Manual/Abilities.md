@@ -4,10 +4,10 @@
 
 ### Actives
 
--   Sweeping Strike: You gain a `stress` make a strike against creatures in 3 adjacent tiles within range of your weapon. A creature can be targeted by more than 1 strike with this ability
+-   Sweeping Strike: You gain a `stress` make a strike against creatures in 3 adjacent tiles within a `quadrant` in range. A creature can be targeted by more than 1 strike with this ability
 -   Disarm: You gain a `stress`. You force a creature to drop 1 item they are holding on a successful roll
     `Core`: (`finesse`, `striking`) - `Striking Difficulty`
--   Hobble: Make a strike with 1 point of bane. If it is successful, the defender's `speeds` are reduced by 3 until the start of your next turn
+-   Hobble: Make a strike with 1 point of bane. If it is successful, the defender's `speeds` are reduced to `quadrant`.
 -   Marked Shot: Mark enemies to give accuracy on next shot
 -   Called Shot: Take 2 points of bane to the striking roll to deal precision damage
 -   Entrench: While you remain in place after taking this `action`, you may target 2 different creatures within range when you `strike`. Until you move, you both gain this benefit and have 3 points of `bane` on your `dodging` rolls
@@ -36,7 +36,7 @@
 
 -   Block: While wielding a shield you can Block to gain the `blocking` `condition`
 -   Defensive Maneuver: You are `defensive`, but your weapon deals 1 fewer `wounds`. If this would cause your weapon to deal 0 `wounds`, you deal 1 `stress` instead
--   Redirect: You stand guard for `creatures` within 2 tiles. All `actions` with the `attack` `tag` targeting any `creature` within 2 tiles of you other than you can be redirected to yourself at the cost of gaining 1 `stress`
+-   Redirect: You stand guard for `creatures` within 2 tiles. All `actions` with the `attack` `tag` targeting any `creature` within your `quadrant` other than you can be redirected to yourself at the cost of gaining 1 `stress`
 -   Deflection: When you are `hit` by a `missile` weapon, you may gain 1 `stress` to reduce the `wounds` sustained by 1 (free action)
 -   Defensive Stance: You may use 1 `stress` to reroll 1 die during a `dodging` roll
 -   Combat Breather: The next `stress` you gain this `combat round` is reduced by 1
@@ -48,10 +48,10 @@
 ### Passives
 
 -   Parry: During a `dodging` roll, you may gain 1 `stress` to gain 1 point of `boon` on the roll
--   Pivot: You may gain 1 `stress` after a successful dodging roll to `move` Ground(1)
--   Quick Step: You may `move` Ground(1) before **or** after making a strike, but not both
+-   Pivot: You may gain 1 `stress` after a successful dodging roll to `move` within `zone` range
+-   Quick Step: You may `move` within `zone` range after a `strike`
 -   Run Interference: When a `creature` within 2 tiles of you is targeted by an `action` with the `attack` `tag`, you may gain 1 `stress` to give 1 point of `boon` to the `dodging` roll
--   Dueler: When you and another `creature` are the only `creatures` within both of your `reach`, you may opt to take 1 `wound` from that `creature` as `stress` instead
+-   Dueler: When you and another `creature` are the only `creatures` within a `quadrant`, you may opt to take 1 `wound` from that `creature` as `stress` instead
 -   Dual Wield Defense: While you are wielding two weapons, you gain 1 `armor point`
 -   Shield Wall: When you are `dodging` with a shield equipped, you may use the `armor points` of the shield instead of an `attribute` for determining the `target number`
 -   Bulwark: For each piece of heavy armor you have equipped, you gain 1 additional `armor point`
@@ -82,9 +82,9 @@
     `Core`: (`mind`, `knowledge`) - `General Difficulty`
 -   Charge: Gain 1 `stress`. You may `move` in a straight line. Any `strike` you make this `round` deals 1 additional `wound`
 -   Selfless: Target 1 ally within 2 tiles. On any roll they make before the end of the next `round`, you may roll 1d10 and your target may choose to replace one of their die rolls with yours. In exchange, you roll 1 less die on any rolls you make before the end of the next `round`
--   Dirty Trick: Gain 1 `stress` and target 1 `creature` within 3 tiles. Both you and your target have 1 point of `bane` on all rolls before the end of the next `round`
+-   Dirty Trick: Gain 1 `stress` and target 1 `creature` within `short` range. Both you and your target have 1 point of `bane` on all rolls before the end of the next `round`
 -   Cover Me: Target 1 ally and make a roll. On a success, they can `move` using any of their `speeds`
--   Teleswap: Spend 1 `arca` to swap places with a willing `creature` within 4 tiles, plus 1 tile for each additional `arca` you spend
+-   Teleswap: Spend 1 `arca` to swap places with a willing `creature` within `short` range, plus 1 tile for each additional `arca` you spend
 -   Demoralize: Cause despair in the foe with a roll
     `Core`: (`body`|`spirit`, `influence`|`knowledge`) - `Morale Difficulty`
 

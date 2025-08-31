@@ -8,6 +8,12 @@ For any roll, the base is always built out of a roll of 3d10, or 3 ten-sided dic
 
 When you make a roll, you are trying to rack up successful rolls, called `successes`. A `success` is when you roll a number _less than or equal to_ your `TN`. If you roll a number _above_ your `TN`, that is called a `failure`.
 
+### Target Numbers Above 9
+
+While extremely rare, it is possible for a `target number` to be above 9. When this happens, you have a baseline number of `successes` equal to the number of dice you roll. You may then subtract 10 from the `target number` for a new `target number` to roll against. The `successes` you roll here add on to the baseline `successes` you already have.
+
+For example, if Aberich has a `TN` of 12 and is to roll 4 dice, he will have baseline 4 `successes` no matter what. He may then roll those 4 dice to attempt to roll under his new `TN` of 2, and any `successes` he rolls adds on to the 4 he already has.
+
 ### Core Rolls
 
 For a `core roll` (`CR`), your `target number` is determined by your `attribute score` associated with the roll. You get additional dice to roll based on your `skill proficiency` associated with the `skill` called for.
@@ -39,7 +45,7 @@ This was a lot of precise language, so let's go through an example. When you see
 -   Success (0): _Description of what occurs_
 -   Greater success (1): _Description of what occurs_
 
-Notice that what happens on a `failure` wasn't described, since whatever you were trying to do simply doesn't work on a `failure`. However, the other degrees of success are noted. Also notice that first listed in the parenthesis is the `attribute` and second listed is the `skill` being called for. If something specific _does_ happen on a `failure`, it will be noted.
+Notice that what happens on a `misstep` wasn't described, since whatever you were trying to do simply doesn't work on a `misstep`. However, the other degrees of success are noted. Also notice that first listed in the parenthesis is the `attribute` and second listed is the `skill` being called for. If something specific _does_ happen on a `misstep`, it will be noted.
 
 Occasionally, the roller is able to pick between multiple options for their `attribute`. When this is the case, the two options are separated by a pipe (|), and looks like this:
 

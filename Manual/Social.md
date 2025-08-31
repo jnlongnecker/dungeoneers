@@ -140,18 +140,6 @@ You perform a respectful custom for the opposition.
 -   Success (0): `Morale` is reduced by 1, and you gain a point of `boon` on your next `influence` roll against the opposition
 -   Greater Success: (1): `Morale` is reduced by 1, and you gain a point of `boon` on your next roll against the opposition
 
-## Social Free Actions
-
-The `free actions` found here are ones that are most applicable during socialization.
-
-### Listen
-
-Tags: Notice
-
----
-
-You listen attentively to the conversation. You must take this `free action` if you make an `action` this `social round`.
-
 ### Add Context
 
 Tags: Knowledge, Unique

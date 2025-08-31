@@ -1,8 +1,7 @@
 import rolls
 import creatures
-import graph
 
-pool = rolls.DicePool(die='1d6', quantity=9, bonus=0, target=3)
+pool = rolls.DicePool(die='1d10', quantity=6, bonus=0, target=1)
 pool.print_chances()
 
 # pool = rolls.DicePool(die='1d10', quantity=3, bonus=0, target=5)

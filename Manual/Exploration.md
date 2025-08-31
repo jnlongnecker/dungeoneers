@@ -52,34 +52,6 @@ Each encounter table should be made up of the above `encounters`, but the actual
 
 The `actions` found here are most applicable for exploration contexts.
 
-### Push Forward
-
-Tags: Long-acting
-
----
-
-You and your group travel to a new location in the `environment`, but you and your group cannot take `free actions` with the _stationary_ `tag`.
-
-### Hold Position
-
-Tags: Long-acting
-
----
-
-You and your group stay in your current location and are able to take `free actions` that have the _stationary_ `tag`. You have a point of `boon` to your roll if you make the `lookout` `free action`.
-
-### Backtrack
-
-Tags: Long-acting
-
----
-
-You and your group move to a location in the `environment` you have already been before. You cannot get a `lost encounter`, but you and your group cannot take `free actions` with the _stationary_ `tag`.
-
-## Exploration Free Actions
-
-The `free actions` found here are most applicable for exploration contexts.
-
 ### Navigate
 
 Tags: Long-acting, Concentrate
@@ -128,7 +100,7 @@ Tags: Long-acting, Concentrate, Arcana
 
 ---
 
-When taking this `free action`, your party can travel at a maximum `exploration speed` of 1.
+When taking this `action`, your party can travel at a maximum `exploration speed` of 1.
 
 `Core` (`mind`, `arcana`) - Environmental Difficulty
 
@@ -142,7 +114,7 @@ Tags: Long-acting, Stealth
 
 ---
 
-When taking this `free action`, your party can travel at a maximum `exploration speed` of 1.
+When taking this `action`, your party can travel at a maximum `exploration speed` of 1.
 
 `Group` (`finesse`, `stealth`) - Environmental Difficulty
 
@@ -190,7 +162,7 @@ Tags: Long-acting, Movement
 
 ---
 
-When taking this `free action`, your party can travel at a maximum `exploration speed` of 1.
+When taking this `action`, your party can travel at a maximum `exploration speed` of 1.
 
 `Core` (`finesse`, `stealth`) - Environmental Difficulty
 

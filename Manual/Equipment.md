@@ -12,7 +12,7 @@ A weapon is an `item` that is used to make `strikes`. Each weapon has a certain 
 
 **Improvised**
 
--   _Range:_ Reach
+-   _Range:_ Short
 -   _Class:_ None
 -   _Wounds:_ 1 Physical
 -   _Properties:_ `Toss`
@@ -24,9 +24,9 @@ Any object capable of causing harm when wielded using a single hand is applicabl
 
 **Light**
 
--   _Range:_ Reach
+-   _Range:_ Zone
 -   _Class:_ Blade, Cudgel, Axe, Lance
--   _Wounds:_ 1 Physical
+-   _Wounds:_ 2 Physical
 -   _Properties:_ `Toss`
 -   _Wield Slots:_ 1
 
@@ -34,7 +34,7 @@ Any object capable of causing harm when wielded using a single hand is applicabl
 
 **Standard**
 
--   _Range:_ Reach
+-   _Range:_ Short
 -   _Class:_ Blade, Cudgel, Axe, Lance
 -   _Wounds:_ 2 Physical
 -   _Properties:_ None
@@ -44,7 +44,7 @@ Any object capable of causing harm when wielded using a single hand is applicabl
 
 **Control**
 
--   _Range:_ Reach + 1
+-   _Range:_ Medium
 -   _Class:_ Blade, Cudgel, Axe, Lance
 -   _Wounds:_ 2 Physical
 -   _Properties:_ None
@@ -54,7 +54,7 @@ Any object capable of causing harm when wielded using a single hand is applicabl
 
 **Heavy**
 
--   _Range:_ Reach
+-   _Range:_ Short
 -   _Class:_ Blade, Cudgel, Axe, Lance
 -   _Wounds:_ 3 Physical
 -   _Properties:_ None
@@ -64,7 +64,7 @@ Any object capable of causing harm when wielded using a single hand is applicabl
 
 **Missile**
 
--   _Range:_ 10
+-   _Range:_ Long
 -   _Class:_ Missile
 -   _Wounds:_ 1 Physical
 -   _Properties:_ None
@@ -156,7 +156,7 @@ Once `armor points` are depleted, they must be repaired to come back.
 
 ### Toss
 
-A weapon with the `toss` `property` additionally can be thrown, gaining a range equal to twice the `creatures` `body` score. When doing so, the weapon is no longer `equipped` when the `strike` is resolved. If the `striking` roll does not succeed, the weapon ends up within 2 tiles of the target location.
+A weapon with the `toss` `property` additionally can be thrown at medium range. When doing so, the weapon is no longer `equipped` when the `strike` is resolved. If the `striking` roll does not succeed, the weapon ends up within 1 tile of the target location.
 
 ### Body(x)
 
