@@ -58,7 +58,7 @@ The `actions` found here are ones that are most applicable during socialization.
 
 ### Appeal to Logic
 
-Tags: Influence
+-   Tags: Influence
 
 ---
 
@@ -72,7 +72,7 @@ You make a logical argument for your position.
 
 ### Appeal to Emotion
 
-Tags: Influence
+-   Tags: Influence
 
 ---
 
@@ -86,7 +86,7 @@ You make an emotional plea in support of your position.
 
 ### Intimidation
 
-Tags: Influence
+-   Tags: Influence
 
 ---
 
@@ -100,7 +100,7 @@ You attempt to strike fear in the opposition.
 
 ### Active Listening
 
-Tags: Notice
+-   Tags: Notice
 
 ---
 
@@ -114,7 +114,7 @@ You earnestly listen to the plight of the opposition.
 
 ### Offer Gift
 
-Tags: Knowledge
+-   Tags: Knowledge
 
 ---
 
@@ -128,7 +128,7 @@ You offer something of value (not necessarily monetary) to the opposition.
 
 ### Observe Custom
 
-Tags: Knowledge
+-   Tags: Knowledge
 
 ---
 
@@ -140,9 +140,21 @@ You perform a respectful custom for the opposition.
 -   Success (0): `Morale` is reduced by 1, and you gain a point of `boon` on your next `influence` roll against the opposition
 -   Greater Success: (1): `Morale` is reduced by 1, and you gain a point of `boon` on your next roll against the opposition
 
+## Social Free Actions
+
+The `free actions` found here are ones that are most applicable during socialization.
+
+### Listen
+
+-   Tags: Notice
+
+---
+
+You listen attentively to the conversation. You must take this `free action` if you make an `action` this `social round`.
+
 ### Add Context
 
-Tags: Knowledge, Unique
+-   Tags: Knowledge, Unique
 
 ---
 
@@ -150,7 +162,7 @@ You give additional context to an `appeal to logic` `action`, giving the roller 
 
 ### Look Tough
 
-Tags: Influence, Unique
+-   Tags: Influence, Unique
 
 ---
 
@@ -158,7 +170,7 @@ You make a show of force or power for an `intimidate` `action`, giving the rolle
 
 ### Grovel
 
-Tags: Influence, Unique
+-   Tags: Influence, Unique
 
 ---
 
@@ -166,7 +178,7 @@ You act pathetic and harmless, reducing the efficacy of 1 `compassion` reducing 
 
 ### Complement
 
-Tags: Influence, Unique
+-   Tags: Influence, Unique
 
 ---
 

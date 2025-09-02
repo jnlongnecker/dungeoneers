@@ -13,9 +13,10 @@ In more details, the nuance of this loop can be described below:
 
 -   The GM describes the `scene`
 -   The players ask any questions they have about the details of the `scene`
--   If other `creature` actors are a part of the scene, they declare their intent
--   The players each make 1 `action`
--   The declared intent resolves
+-   The players each make 1 `free action`
+-   If a `spotlight` is necessary, the players collaborate on who will take the `spotlight`
+    -   The `spotlit` player takes an `action`
+-   The GM takes an `action`, if applicable
 -   Repeat as necessary
 -   The `scene` ends
 
@@ -27,19 +28,28 @@ Think of a `scene` as you would a `scene` in a play. In a `scene`, something is 
 
 > For example, a GM might narrate the passage of several days where certain world events take place, and then explain that the players find themselves in a tavern in a city. The GM may describe the ambiance of the tavern; the gentle firelight tickling their periphery and the scent of booze in the air and on the lips of their companions. This is the GM describing the `scene`.
 
-Not every `scene` is long, and the GM may set a `scene` where nothing ends up happening. When one `scene` ends, the GM sets up another `scene`. The point is for the players to interact and take `actions` (as this is where the game is had!). Once everyone is clear on what the `scene` is like, the GM will then declare the intent of other `creatures` or actors in the `scene`.
+Not every `scene` is long, and the GM may set a `scene` where nothing ends up happening. When one `scene` ends, the GM sets up another `scene`. The point is for the players to interact and take `actions` (as this is where the game is had!), and in order for a player to take an `action` they must have the `spotlight`.
 
-### Intent
+### Spotlight
 
-The "other `creatures` in the `scene`" need a name; they are referred to as non-player characters or NPCs. These can be friends, enemies, neutral parties or otherwise and are simply beings who are not in control by the players.
+The `spotlight` is the focus of attention in a `scene`. This is not to say that other events are not taking place outside of the `spotlight`, but these events are considered inconsequential to the story (e.g. casual eating, restroom breaks, sneezes, coughing). In order for a player to gain the `spotlight`, the following must occur:
 
-Before the players make their decisions on which `actions` they would like to take, the intent of the NPCs is declared. This means that the players know what the NPCs are about to do or are planning on doing in advance of taking their turn. In order to determine intent, the GM will either decide on an `action` for the NPC or determine it by rolling.
+-   The players must agree on who gets the `spotlight` (majority consensus, ties/disputes broken by the GM)
+-   The player with the `spotlight` must have a `spotlight token`
 
-This looks different depending on what kind of scenario is being played out: `combat`, `social`, or `exploration`. For example, in a `combat` scenario the opposing forces will declare what `action` they are about to take, giving the opportunity for the players to counter. In a `social` scenario, the NPC will make their case or starting position known, and the players can offer a rebuttal or counter argument. In an `exploration` scenario, the "actor" will be the `environment` and any environmental hazards or effects will be sprung, allowing the players to act before resolving. As mentioned, the mechanism by which they do this are `actions`.
+At the start of the game, each player has 3 `spotlight tokens` to represent the number of times they can take the `spotlight` before needing to take a backseat to allow other players to have the `spotlight`. Every time a player has the `spotlight`, they must use one of their `spotlight tokens`. Players are able to freely exchange `spotlight tokens` amongst each other if they desire. Once all `spotlight tokens` are spent, each player regains their 3 `spotlight tokens`.
+
+> Some tables have no issues with hogging the `spotlight`. If this is your group, feel free to discard the concept of `spotlight tokens`.
+
+The party typically comes to a general consensus on who will take the `spotlight`. Often times, this comes in the form of general agreement on who should take the lead for the task demanded of the `scene`. However, not all `scenes` need a `spotlight`. These are `scenes` such as player to player interaction and simple vendor trading where the roleplay can simply flow as there are no specific mechanics at play.
+
+> Example: a party with a charismatic talker may opt to give them the `spotlight` for an important political debate.
+
+Once one player has the `spotlight`, they may make their `action`.
 
 ### Actions
 
-An `action` is an interaction with the world that moves the `scene` forwards in some way. Some `actions` only make sense for certain situations, such as combat. It is up to the player to determine which `action` is most appropriate for where they are in the `scene`.
+An `action` is an interaction with the world that moves the `scene` forwards in some way. Some `actions` only make sense for certain situations, such as combat. It is up to the player with the `spotlight` to determine which `action` is most appropriate for where they are in the `scene`.
 
 The specifics of what `actions` a player can take are covered in the sections where the `action` most applies (e.g., `actions` that harm other `creatures` are covered in the Combat section). Each `action` has `tags` which help identify it in more general categories.
 
@@ -49,7 +59,20 @@ When both the player and the GM have each taken 1 `action`, a `round` has occurr
 -   `exploration round`: Varies; 8 hours - 2 minutes
 -   `social round`: Varies; 1 minute - 10 minutes
 
-Once the intent is known, all players may simultaneously take their `action`. They may pass up their `action` (especially during a more casual `scene` where the flow is more freeform) and may choose amongst themselves in what order to go.
+Once a player has determined their `action`, other players may have something they can do to either aid the player with the `spotlight` or set up for their turn in the `spotlight`: a `free action`.
+
+### Free Actions
+
+Some interactions with the world don't necessarily move the `scene` forward, but are important as they set up proper context for a future `action`. These are captured with `free actions`. A player can make a single `free action` before, after, or in tandem with the player with the `spotlight` and their `action`. All players can make these `free actions`, even the one with the `spotlight`. `Creatures` under the GMs control may also make `free actions` after the GM completes their `action`.
+
+### Momentum
+
+Whenever an `action` is taken, the `spotlight` shifts away from the players and onto the GM. This changing of the `spotlight` does have two exceptions where a side will continue to hold the `spotlight` shifts within the side:
+
+-   Whenever a `critical` happens during an `action`
+-   Whenever an `action` with the `momentum` `tag` is used that rolls a `success` or greater
+
+In either of these scenarios, the `spotlight` is held by the side. For example, Freya, Ulfarmi and Alberich are on the side of the players. If Freya takes an `action` and rolls a `critical`, Ulfarmi or Alberich can take take the `spotlight` and make an `action`. As a reminder, the `round` has not yet completed so while Ulfarmi or Alberich make their `action`, the trio will be unable to make a second `free action`.
 
 ## Countdowns
 

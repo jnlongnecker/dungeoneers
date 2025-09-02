@@ -2,9 +2,7 @@
 
 As a Dungeoneer, you will encounter many foes that stand in your way to your inevitable goal. Some may be able to be avoided, but you will ultimately come to blows with many `creatures`. You should become familiar with combat mechanics in order to overcome these obstacles and complete your mission. When `creatures` come to blows, not all interactions between the combatants influence the results of the combat. These interactions still _happen_, but they are not the "spotlight". In Dungeoneers, combat only focuses on the spotlight.
 
-Combat is a `scene` like any other `scene` and is handled via the same flow of play. However, players are able to take an additional `action` that is somewhat randomized. In addition to an `action` of choice by the player, the player builds out their `entropy die` (a d6) that decides their second `action`.
-
-The `entropy die` is a hand-picked selection of up to 6 `actions` that the character could normally take. When populating the `entropy die`, the same `action` can be placed multiple times. More information about the `entropy die` can be found in its dedicated section.
+Combat is a `scene` like any other `scene` and is handled via the same flow of play. However, GM `actions` are much more common during combat.
 
 ## Damage Types
 
@@ -97,20 +95,29 @@ Any `creature` past the `back line` is considered to have fled combat. They cann
 
 Typically, this will happen one side has been pushed significantly back, or one line is intentionally moving back while maintaining formation. While players can request a redraw of `zones`, the GM has the final say on whether or not `zones` are redrawn.
 
-## Loadout and Entropy
-
-`Combat` is a chaotic place, and a trained dungeoneer thrives in it. When a dungeoneer chooses which `action` to take on their turn, they may pick from the common `combat actions` available and listed here, or they make pick a `combat action` they know from one of their `abilities`; within a limitation. A dungeoneer can have a number of `actions` from `abilities` available to them equal to their `mind` score, called their `loadout`. You may swap the `actions` in your `loadout` at any time for a price of `stress`, or you may swap them for free whenever you have `downtime`.
-
-In addition to a dungeoneer's `loadout`, they additionally have an `entropy die`. This is a d6 that is customized with _any_ `action` the dungeoneer knows. In order to build out the `entropy die`, a dungeoneer has a number of points equal to their level to spend towards filling out the die with `actions`. Common `combat actions` (those found in the section below) cost 1 point to put on the `entropy die`, while all other `combat actions` cost 2 points. If you want to put an `action` on the `entropy die` multiple times, the duplicate times cost twice the normal cost.
-
 ## Combat Actions
 
 The `actions` found here are ones that are most applicable during combat. As a reminder, any `action` can be taken at any time, as long as it applies.
 
+### Sprint
+
+-   Tags: Movement, Momentum
+-   Range: Self
+
+---
+
+You may use the `sprint` `action` to `move` additional times.
+
+`Standard` (`body`) - Average (2)
+
+-   Lesser success (-1): You may `move` using 1x your `speeds`
+-   Success (0): You may `move` using 2x your `speeds`
+-   Greater success (1): You may `move` using 3x your `speeds`
+
 ### Grapple
 
-Tags: Attack
-Range: Zone
+-   Tags: Attack
+-   Range: Zone
 
 ---
 
@@ -124,8 +131,8 @@ You must have a hand free in order to take this `action`.
 
 ### Push
 
-Tags: Attack, Forces
-Range: Short
+-   Tags: Attack, Forces
+-   Range: Short
 
 ---
 
@@ -141,8 +148,8 @@ If the target is an object, the `DN` is the `size number` of the object.
 
 ### Strike
 
-Tags: Attack, Deadly
-Range: Varies on Weapon
+-   Tags: Attack, Deadly
+-   Range: Varies on Weapon
 
 ---
 
@@ -156,28 +163,10 @@ A `strike` is an `action` that constitutes attacking a `creature` with some sort
 
 A `hit` occurs on a result of a success or better.
 
-### Dodge
-
-Tags: Dodging
-Range: Self
-
----
-
-You attempt to avoid an incoming `attack`.
-
-`Core`: (`body`, `dodging`) - `Striking difficulty`
-
--   Misstep (-2): You take the `wounds` from the `attack`
--   Lesser success (-1): You take 1 fewer `wounds` from the `attack` (to a minimum of 1 `wound`)
--   Success (0): You take the `wounds` from the `attack` as `stress`
--   Greater success (1): You take no `wounds` from the `attack`
-
-If you are being targeted by more than 1 `attack`, your roll applies to all of them.
-
 ### Hold the Line
 
-Tags: Movement
-Range: Quadrant
+-   Tags: Movement, Momentum
+-   Range: Quadrant
 
 ---
 
@@ -189,12 +178,12 @@ You prevent `creatures` of your choice from entering your `quadrant`.
 
 ### Hide
 
-Tags: Stealth
-Range: Self
+-   Tags: Stealth, Momentum
+-   Range: Self
 
 ---
 
-If you are `shrouded` or better, or are in the `left flank` or `right flank` you may attempt to `hide`.
+If you are `shrouded` or better, or are in the `left flank` or `right flank`, you may attempt to `hide`.
 
 `Core`: (`finesse`, `stealth`) - `Notice difficulty`
 
@@ -204,8 +193,8 @@ If you are `shrouded` or better, or are in the `left flank` or `right flank` you
 
 ### End Condition
 
-Tags: Restoration
-Range: Zone
+-   Tags: Restoration
+-   Range: Zone
 
 ---
 
@@ -217,10 +206,32 @@ You attempt to end a `condition` that is ailing another `creature` within your `
 -   Success (0): You end 1 `condition` of your choice
 -   Greater Success (1): You end 1 `condition` of your choice and the target loses 1 `stress`
 
+## Combat Free Actions
+
+The `free actions` found here are ones that are most applicable during combat.
+
+### Dodge
+
+-   Tags: Dodging
+-   Range: Self
+
+---
+
+You attempt to avoid an incoming `attack`. If you are targeted by an `attack`, you may make a `dodging` roll to avoid it.
+
+`Core`: (`body`, `dodging`) - `Striking difficulty`
+
+-   Misstep (-2): You take the `wounds` from the `attack`
+-   Lesser success (-1): You take 1 fewer `wounds` from the `attack` (to a minimum of 1 `wound`)
+-   Success (0): You take the `wounds` from the `attack` as `stress`
+-   Greater success (1): You take no `wounds` from the `attack`
+
+If you are being targeted by more than 1 `attack`, your roll applies to all of them.
+
 ### Reposition
 
-Tags: Movement
-Range: Self
+-   Tags: Movement
+-   Range: Self
 
 ---
 
@@ -228,8 +239,8 @@ A `creature` may use the `reposition` `action` to `move` or stand up.
 
 ### Interact
 
-Tags: Interaction
-Range: Zone
+-   Tags: Interaction
+-   Range: Zone
 
 ---
 
@@ -237,8 +248,8 @@ You may `interact` to manipulate your environment. Opening doors, pulling levers
 
 ### Drop Prone
 
-Tags: Movement
-Range: Self
+-   Tags: Movement
+-   Range: Self
 
 ---
 
@@ -246,8 +257,8 @@ You immediately fall `prone`.
 
 ### Mount
 
-Tags: Movement
-Range: Zone
+-   Tags: Movement
+-   Range: Zone
 
 ---
 
@@ -255,8 +266,8 @@ You may climb onto a willing `creature` at least one `size` larger than you.
 
 ### Channel
 
-Tags: Arcana
-Range: Self
+-   Tags: Arcana
+-   Range: Self
 
 ---
 
