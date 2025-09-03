@@ -17,3 +17,11 @@ _A `creature's` `arcana` refers to their ability with spells and arca and impact
 
 **Skill**<br>
 _A `creature's` `skill` refers to their talent with skilled tasks like picking locks and crafting items_
+
+## Health and Stress
+
+Every `creature` additionally has 2 resources; their `health` and their `stress`. Whenever a `creature` takes `damage`, the amount is subtracted from that `creature's` `health`. Once a `creature` is reduced to 0 `health`, it dies. A `creature's` `stress` is the mental damage that it can take. If a `creature's` `stress` gets maxed out, it dies.
+
+Various `abilities` are able to recover `health` and reduce `stress`, as well as items and various things you can interact with in the dungeon.
+
+The amount of `health` you have and `stress` you can handle is determined by your `level` and `class`.
