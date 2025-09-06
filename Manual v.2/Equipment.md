@@ -2,17 +2,17 @@
 
 There are a variety of `items` that can be worn on your person; these `items` are called `equipment`. For a piece of `equipment` to serve proper benefit, it must be properly equipped. As a dungeoneer, you have the following `equipment slots` to wear `equipment`:
 
-- Head
-- Neck
-- Body
-- Back
-- Hands
-- Ring
-- Ring
-- Wield
-- Wield
-- Belt
-- Feet
+-   Head
+-   Neck
+-   Body
+-   Back
+-   Hands
+-   Ring
+-   Ring
+-   Wield
+-   Wield
+-   Belt
+-   Feet
 
 Every piece of `equipment` specifies which `equipment slot` it occupies and how many. If you do not have an unoccupied `equipment slot` for a piece of `equipment`, you cannot properly equip it and gain its benefits.
 
@@ -20,13 +20,27 @@ Every piece of `equipment` specifies which `equipment slot` it occupies and how 
 
 `Weapons` are tools to deal physical trauma to something. These are swords, maces, axes, hammers, spears, bows, and the like. `Weapons` are divided into categories that determine their strength, `equipment slots` and more. Use your imagination to fill out the details of your `weapon` and customize its appearance as you see fit.
 
-| Weapon Type | Damage | Stat  | Equipment Slots | Range | Examples                                           |
-| ----------- | ------ | ----- | --------------- | ----- | -------------------------------------------------- |
-| Light       | 2      | Skill | 1x wield        | 1     | a dagger, a handaxe, a light hammer, a javelin     |
-| Standard    | 3      | Power | 1x wield        | 1     | a broadsword, a battleaxe, a maul, a spear         |
-| Control     | 3      | Power | 2x wield        | 2     | a zweihander, a bardiche, a polehammer, a partisan |
-| Heavy       | 4      | Power | 2x wield        | 1     | a longsword, a broadaxe, a lever mace, a glaive    |
-| Missile     | 2      | Skill | 2x wield        | 4     | a sling, a crossbow, a longbow                     |
+| Weapon Type | Damage  | Stat  | Equipment Slots | Range | Examples                                           |
+| ----------- | ------- | ----- | --------------- | ----- | -------------------------------------------------- |
+| Improvised  | 1 Phys. | Skill | 1x wield        | 2     | a rock, a fist, a foot, a chair leg                |
+| Light       | 2 Phys. | Skill | 1x wield        | 1     | a dagger, a handaxe, a light hammer, a javelin     |
+| Standard    | 3 Phys. | Power | 1x wield        | 1     | a broadsword, a battleaxe, a maul, a spear         |
+| Control     | 3 Phys. | Power | 2x wield        | 2     | a zweihander, a bardiche, a polehammer, a partisan |
+| Heavy       | 4 Phys. | Power | 2x wield        | 1     | a longsword, a broadaxe, a lever mace, a glaive    |
+| Missile     | 2 Phys. | Skill | 2x wield        | 3     | a sling, a crossbow, a longbow                     |
+
+## Foci
+
+`Foci` are tools to channel arca into a lethal effect. These are crystals integrated into staffs, wands, jewelry, or just the crystal alone. `Foci` are divided into categories in a similar way as `weapons` so use your imagination to fill out the details of your `focus` and customize its appearance as you see fit.
+
+| Focus Type        | Damage   | Stat   | Equipment Slots | Range | Examples                              |
+| ----------------- | -------- | ------ | --------------- | ----- | ------------------------------------- |
+| Single Terminated | 1 Arcane | Arcana | 1x wield        | 4     | A bracelet with the crystal embedded  |
+| Double Terminated | 2 Arcane | Arcana | 1x wield        | 3     | A wand with the crystal in the handle |
+| Aggregator        | 3 Arcane | Arcana | 2x wield        | 2     | A staff floating the crystal group    |
+| Geode             | 4 Arcane | Arcana | 2x wield        | 1     | An orb hosting the open geode         |
+
+> Note: Aggregator and geode `foci` are very large. Even though there exist small versions of these in the real world (and the world of _Dungeoneers_!), these are too small to be effectively used as a `focus` of that class. It is more about the size and quantity of the crystals than the formation!
 
 ## Armor
 
