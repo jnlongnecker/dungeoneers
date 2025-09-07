@@ -20,10 +20,12 @@ When you `level up` in each `class`, you have a choice of a variety of powers to
 
 ### Tier 1 (Level 1)
 
+Make **4** selections from the options present. An option with multiple boxes indicate that it may be selected multiple times (once per box). Additionally, you automatically gain the options that are presented under the "Free Selections" at no cost.
+
 #### Warrior
 
 - Selections:
-  - ⬜️⬜️ Gain 1 `ability`
+  - ⬜️⬜️ Gain 1 `power`
   - ⬜️ +1 `spell point`
   - ⬜️ +1 to your `stress` capacity
   - ⬜️⬜️ +1 to your `health`
@@ -37,7 +39,7 @@ When you `level up` in each `class`, you have a choice of a variety of powers to
 #### Arcanist
 
 - Selections:
-  - ⬜️ Gain 1 `ability`
+  - ⬜️ Gain 1 `power`
   - ⬜️⬜️ +1 `spell point`
   - ⬜️⬜️ +1 to your `stress` capacity
   - ⬜️ +1 to your `health`
@@ -51,7 +53,7 @@ When you `level up` in each `class`, you have a choice of a variety of powers to
 #### Technician
 
 - Selections:
-  - ⬜️⬜️ Gain 1 `ability`
+  - ⬜️⬜️ Gain 1 `power`
   - ⬜️⬜️ +1 `spell point`
   - ⬜️ +1 to your `stress` capacity
   - ⬜️ +1 to your `health`

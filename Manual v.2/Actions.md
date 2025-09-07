@@ -2,12 +2,12 @@
 
 Every `player phase`, each dungeoneer has 3 `action points` to spend on `actions`. There are 6 `actions`:
 
--   Fight
--   Movement
--   Interact
--   Rest
--   Explore
--   Ability
+- Fight
+- Movement
+- Interact
+- Rest
+- Explore
+- Ability
 
 Each `action` uses up a different number of `action points`, represented by a ⚛️.
 
@@ -60,9 +60,9 @@ The `interact` `action` allows you to manipulate an object in the environment. T
 
 The `rest` `action` allows you to take a breather. You may use this to do one of the following:
 
--   Change out 1 `ability`
--   Re-roll or regain 3 dice for your `dice pool`
--   Advance a `cooldown` by 1
+- Change out 1 `ability`
+- Re-roll or regain 3 dice for your `dice pool`
+- Advance a `cooldown` by 1
 
 ## Ability
 
@@ -90,45 +90,45 @@ On the `wilderness map`, you move up to 2 `tiles`.
 
 You may attempt to follow a trail left behind by a `creature`.
 
-`skill roll`
+`skill roll` (`locate` `difficulty`)
 
--   Failure: You fail to find the proper path
--   Partial success (-3): You learn the next `tile` to go to in order to follow the trail
--   Success (0): You learn the next `tile` to go to in order to follow the trail and may move 1 `tile`
--   Greater success (3): You learn the next 2 `tiles` to go to in order to follow the trail and may move 1 `tile`
+- Failure: You fail to find the proper path
+- Partial success (-3): You learn the next `tile` to go to in order to follow the trail
+- Success (0): You learn the next `tile` to go to in order to follow the trail and may move 1 `tile`
+- Greater success (3): You learn the next 2 `tiles` to go to in order to follow the trail and may move 1 `tile`
 
 ### Hide
 
 You attempt to hide your party.
 
-`skill roll` (`difficulty` + number of `creatures` impacted)
+`skill roll` (`local` `difficulty` + number of `creatures` impacted)
 
--   Failure: Your party is as noticeable as normal
--   Partial success (-3): All `creatures` you come across do not notice you this `round`
--   Success (0): All `creatures` your party comes across do not notice any of your party this `round`
--   Greater success (3): All `creatures` your party comes across do not notice any of your party this `round` or the next
+- Failure: Your party is as noticeable as normal
+- Partial success (-3): All `creatures` you come across do not notice you this `round`
+- Success (0): All `creatures` your party comes across do not notice any of your party this `round`
+- Greater success (3): All `creatures` your party comes across do not notice any of your party this `round` or the next
 
 ### Scout
 
 You attempt to gain a preview of your surroundings.
 
-`speed roll`
+`speed roll` (`local` `difficulty`)
 
--   Failure: You are unable to accurately and safely understand your surroundings
--   Partial success (-3): You uncover 1 adjacent `tile` of your choice
--   Success (0): You uncover 2 adjacent `tiles` of your choice
--   Greater success (3): You uncover 3 adjacent `tiles` of your choice
+- Failure: You are unable to accurately and safely understand your surroundings
+- Partial success (-3): You uncover 1 adjacent `tile` of your choice
+- Success (0): You uncover 2 adjacent `tiles` of your choice
+- Greater success (3): You uncover 3 adjacent `tiles` of your choice
 
 ### Investigate
 
 You attempt to uncover `notable features` in your `tile`.
 
-`skill roll`
+`skill roll` (`local` `difficulty`)
 
--   Failure: You are unable to discover any `notable features`
--   Partial success (-3): You discover one `notable feature` (if any), but `creatures` at it may notice you
--   Success (0): You discover all `notable features` (if any), but `creatures` at them may notice you
--   Greater success (3): You discover all `notable features` (if any), and any `creatures` at them do not notice you
+- Failure: You are unable to discover any `notable features`
+- Partial success (-3): You discover one `notable feature` (if any), but `creatures` at it may notice you
+- Success (0): You discover all `notable features` (if any), but `creatures` at them may notice you
+- Greater success (3): You discover all `notable features` (if any), and any `creatures` at them do not notice you
 
 > Intention note: The outcomes reference that `creatures` may or may not notice you at the `notable features` you uncover. The only reason they would _not_ notice you on a `partial success` or a `success` is if a feature keeps you hidden. On a `greater success`, regardless if you have such a feature or not you are not noticed.
 
