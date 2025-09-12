@@ -1,19 +1,18 @@
 # Actions
 
-Every `player phase`, each dungeoneer has 3 `action points` to spend on `actions`. There are 6 `actions`:
+Every `player phase`, each dungeoneer has 3 `action points` to spend on `actions`. There are 4 generally available `actions`:
 
-- Fight
-- Movement
-- Interact
-- Rest
-- Explore
-- Ability
+-   Fight
+-   Movement
+-   Interact
+-   Rest
 
 Each `action` uses up a different number of `action points`, represented by a ⚛️.
 
 ## Fight
 
-⚛️
+⚛️<br>
+Tags: `Fight`
 
 ---
 
@@ -21,13 +20,30 @@ The `fight` `action` allows you to enter combat with another `creature`. The way
 
 First, you can only take the `fight` `action` on a `creature` that's in range of your `weapon`. This is distance is listed in `tiles`; if your target is within this distance then you're able to `fight` it.
 
-Once you've started the `fight`, you'll spend your `dice pool` towards the `hit difficulty` of your opponent. For each multiple of your opponent's `difficulty`, you deal your `weapon's` damage. However, if your opponent lives once you've finished spending your `dice pool`, they will counterattack as long as you are in range of them.
+There are 2 parts to a `fight` `action`. The first part is the attack from a `roll`:
 
-You will need to spend your `dice pool` towards the `dodge difficulty` of your opponent, using your `speed` as the bonus. If you cannot meet or surpass your opponent's `dodge difficulty`, you will take the damage of their `weapon`.
+`<weapon stat> roll` (`hit` `difficulty`)
+
+-   Failure: You miss your target and they take no damage
+-   Partial success (-3): You barely miss your target, and they take the damage from your `weapon` as `stress`
+-   Success (0): You hit your target, and they take the damage from your `weapon`
+-   Greater success (3): You soundly hit your target, and they take double the damage from your `weapon`
+
+The `stat` you add to your `roll` depends on the `stat` used by your `weapon`. If your target survives your strike and you are in range of their `weapon`, the second part occurs and they will counterattack and a second `roll` is needed:
+
+`speed roll` (`dodge` `difficulty`)
+
+-   Failure: You are soundly hit, and you take double the damage from their `weapon`
+-   Partial success (-3): You are hit and take the damage from their `weapon`
+-   Success (0): You barely dodge out of the way and take the damage from their `weapon` as `stress`
+-   Greater success (3): You completely avoid all damage
+
+It is important to note that the second part of a `fight` `action` applies to _any_ `action` with the `fight` `tag`.
 
 ## Movement
 
-⚛️
+⚛️<br>
+Tags: `Movement`
 
 ---
 
@@ -37,16 +53,17 @@ The `movement` `action` allows you to move a number of `tiles` up to your `speed
 
 Certain types of terrain is more difficult to move in than normal land. For these scenarios, a `roll` is necessary (the die used to take the `action` _can_ be used in this `roll`). Consult the chart below to determine the `difficulty` of various types of terrain:
 
-| Terrain Type | Difficulty |
-| ------------ | ---------- |
-| Muck/Debris  | 5          |
-| Water        | 7          |
-| Gap          | 10         |
-| Wall         | 15         |
+| Terrain Type             | Difficulty |
+| ------------------------ | ---------- |
+| Muck/Debris/Foliage/Etc. | 5          |
+| Water                    | 7          |
+| Gap                      | 10         |
+| Wall                     | 15         |
 
 ## Interact
 
-⚛️
+⚛️<br>
+Tags: `Interact`
 
 ---
 
@@ -54,81 +71,98 @@ The `interact` `action` allows you to manipulate an object in the environment. T
 
 ## Rest
 
-⚛️
+⚛️<br>
+Tags: `Rest`
 
 ---
 
 The `rest` `action` allows you to take a breather. You may use this to do one of the following:
 
-- Change out 1 `ability`
-- Re-roll or regain 3 dice for your `dice pool`
-- Advance a `cooldown` by 1
-
-## Ability
-
-Varies
-
----
-
-This `action` allows you to utilize one of the `abilities` in your `loadout`. You'll have to refer to the `ability` description in order to know what it will do and how many `action points` it requires.
+-   Change out 1 `ability`
+-   Re-roll or regain 3 dice for your `dice pool`
+-   Advance a `cooldown` by 1
 
 ## Explore
 
-⚛️⚛️⚛️
+⚛️⚛️⚛️<br>
+Tags: `Explore`
 
 ---
 
-This `action` functions differently depending on the type of `map` in use. If taken while on a `dungeon map`, the `creature` flees the area in an attempt to move on. Players are free to take this `action` should they wish to preserve their dungeoneer should the dungeon prove too lethal, but Game Masters should be careful about communicating the consequences of such a choice.
+When taken while on a `dungeon map`, the `creature` flees the area in an attempt to move on. Players are free to take this `action` should they wish to preserve their dungeoneer should the dungeon prove too lethal, but Game Masters should be careful about communicating the consequences of such a choice.
 
-In a `wilderness map`, the `explore` `action` allows the player to use an `exploration technique` they know or do one of the following listed in this section.
+## Travel
 
-### Travel
+⚛️<br>
+Tags: `Exploration`
 
-On the `wilderness map`, you move up to 2 `tiles`.
+---
 
-### Track
+On the `wilderness map`, you move 1 `tile`.
+
+## Track
+
+⚛️⚛️️️️<br>
+Tags: `Exploration`
+
+---
 
 You may attempt to follow a trail left behind by a `creature`.
 
 `skill roll` (`locate` `difficulty`)
 
-- Failure: You fail to find the proper path
-- Partial success (-3): You learn the next `tile` to go to in order to follow the trail
-- Success (0): You learn the next `tile` to go to in order to follow the trail and may move 1 `tile`
-- Greater success (3): You learn the next 2 `tiles` to go to in order to follow the trail and may move 1 `tile`
+-   Failure: You fail to find the proper path
+-   Partial success (-3): You learn the next `tile` to go to in order to follow the trail
+-   Success (0): You learn the next `tile` to go to in order to follow the trail and may move 1 `tile`
+-   Greater success (3): You learn the next 2 `tiles` to go to in order to follow the trail and may move 1 `tile`
 
-### Hide
+## Hide
+
+⚛️⚛️️️️<br>
+Tags: `Exploration`
+
+---
 
 You attempt to hide your party.
 
 `skill roll` (`local` `difficulty` + number of `creatures` impacted)
 
-- Failure: Your party is as noticeable as normal
-- Partial success (-3): All `creatures` you come across do not notice you this `round`
-- Success (0): All `creatures` your party comes across do not notice any of your party this `round`
-- Greater success (3): All `creatures` your party comes across do not notice any of your party this `round` or the next
+-   Failure: Your party is as noticeable as normal
+-   Partial success (-3): All `creatures` you come across do not notice you this `round`
+-   Success (0): All `creatures` your party comes across do not notice any of your party this `round`
+-   Greater success (3): All `creatures` your party comes across do not notice any of your party this `round` or the next
 
-### Scout
+## Scout
+
+⚛️⚛️️️️<br>
+Tags: `Exploration`
+
+---
 
 You attempt to gain a preview of your surroundings.
 
 `speed roll` (`local` `difficulty`)
 
-- Failure: You are unable to accurately and safely understand your surroundings
-- Partial success (-3): You uncover 1 adjacent `tile` of your choice
-- Success (0): You uncover 2 adjacent `tiles` of your choice
-- Greater success (3): You uncover 3 adjacent `tiles` of your choice
+-   Failure: You are unable to accurately and safely understand your surroundings
+-   Partial success (-3): You uncover 1 adjacent `tile` of your choice
+-   Success (0): You uncover 2 adjacent `tiles` of your choice
+-   Greater success (3): You uncover 3 adjacent `tiles` of your choice
 
-### Investigate
+## Investigate
+
+⚛️️️️⚛️️️️<br>
+Tags: `Exploration`
+
+---
 
 You attempt to uncover `notable features` in your `tile`.
 
 `skill roll` (`local` `difficulty`)
 
-- Failure: You are unable to discover any `notable features`
-- Partial success (-3): You discover one `notable feature` (if any), but `creatures` at it may notice you
-- Success (0): You discover all `notable features` (if any), but `creatures` at them may notice you
-- Greater success (3): You discover all `notable features` (if any), and any `creatures` at them do not notice you
+-   Failure: You are unable to discover any `notable features`
+-   Partial success (-3): You discover one `notable feature` (if any), but `creatures` at it may notice you
+-   Success (0): You discover all `notable features` (if any), but `creatures` at them may notice you
+-   Greater success (3): You discover all `notable features` (if any), and any `creatures` at them do not notice you
 
 > Intention note: The outcomes reference that `creatures` may or may not notice you at the `notable features` you uncover. The only reason they would _not_ notice you on a `partial success` or a `success` is if a feature keeps you hidden. On a `greater success`, regardless if you have such a feature or not you are not noticed.
 

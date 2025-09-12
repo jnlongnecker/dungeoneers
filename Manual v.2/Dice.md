@@ -22,7 +22,7 @@ If at any point you use your final die in your `dice pool` and then are subjecte
 
 Whenever an `action roll` occurs (outside of the `fight` `action`, which is a special case) there are 4 possible outcomes, called `degrees of success`. These will be listed whenever the `roll` is called for. When a Game Master is calling for a `roll` outside of when it is explicitly lain out by the rules, they should also adhere to allowing different `degrees of success`. This will look something like the following:
 
-`<Attribute> roll`
+`<stat> roll`
 
 -   Failure: _Description of outcome_
 -   Partial success (-3): _Description of outcome_

@@ -24,42 +24,45 @@ Make **4** selections from the options present. An option with multiple boxes in
 
 #### Warrior
 
-- Selections:
-  - ⬜️⬜️ Gain 1 `power`
-  - ⬜️ +1 `spell point`
-  - ⬜️ +1 to your `stress` capacity
-  - ⬜️⬜️ +1 to your `health`
-  - ⬜️⬜️ +1 `class ability`
-  - ⬜️⬜️ +1 to `power` or `speed`
-- Free Selections:
-  - Your maximum `health` is 6
-  - Your `stress` capacity is 4
-  - +1 `power`
+-   Selections:
+    -   ⬜️⬜️ Gain 1 `technique`
+    -   ⬜️ +1 `spell point`
+    -   ⬜️ +1 to your `stress` capacity
+    -   ⬜️⬜️ +1 to your `health`
+    -   ⬜️⬜️ +1 `class technique`
+    -   ⬜️ +1 to `power`
+    -   ⬜️ +1 to `speed`
+-   Free Selections:
+    -   Your maximum `health` is 6
+    -   Your `stress` capacity is 4
+    -   +1 `power`
 
 #### Arcanist
 
-- Selections:
-  - ⬜️ Gain 1 `power`
-  - ⬜️⬜️ +1 `spell point`
-  - ⬜️⬜️ +1 to your `stress` capacity
-  - ⬜️ +1 to your `health`
-  - ⬜️⬜️ +1 `class ability`
-  - ⬜️⬜️ +1 to `arcana` or `skill`
-- Free Selections:
-  - Your maximum `health` is 3
-  - Your `stress` capacity is 7
-  - +1 `arcana`
+-   Selections:
+    -   ⬜️ Gain 1 `technique`
+    -   ⬜️⬜️ +1 `spell point`
+    -   ⬜️⬜️ +1 to your `stress` capacity
+    -   ⬜️ +1 to your `health`
+    -   ⬜️⬜️ +1 `class technique`
+    -   ⬜️ +1 to `arcana`
+    -   ⬜️ +1 to `skill`
+-   Free Selections:
+    -   Your maximum `health` is 3
+    -   Your `stress` capacity is 7
+    -   +1 `arcana`
 
 #### Technician
 
-- Selections:
-  - ⬜️⬜️ Gain 1 `power`
-  - ⬜️⬜️ +1 `spell point`
-  - ⬜️ +1 to your `stress` capacity
-  - ⬜️ +1 to your `health`
-  - ⬜️⬜️ +1 `class ability`
-  - ⬜️⬜️ +1 to `skill` or `speed`
-- Free Selections:
-  - Your maximum `health` is 4
-  - Your `stress` capacity is 6
-  - +1 `skill`
+-   Selections:
+    -   ⬜️⬜️ Gain 1 `technique`
+    -   ⬜️⬜️ +1 `spell point`
+    -   ⬜️ +1 to your `stress` capacity
+    -   ⬜️ +1 to your `health`
+    -   ⬜️⬜️ +1 `class technique`
+    -   ⬜️ +1 to `skill`
+    -   ⬜️ +1 to `speed`
+-   Free Selections:
+    -   Your maximum `health` is 4
+    -   Your `stress` capacity is 6
+    -   +1 `skill`
