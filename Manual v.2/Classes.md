@@ -29,7 +29,7 @@ Make **4** selections from the options present. An option with multiple boxes in
     -   ⬜️ +1 `spell point`
     -   ⬜️ +1 to your `stress` capacity
     -   ⬜️⬜️ +1 to your `health`
-    -   ⬜️⬜️ +1 `class technique`
+    -   ⬜️⬜️ +1 `archetype`
     -   ⬜️ +1 to `power`
     -   ⬜️ +1 to `speed`
 -   Free Selections:
@@ -44,7 +44,7 @@ Make **4** selections from the options present. An option with multiple boxes in
     -   ⬜️⬜️ +1 `spell point`
     -   ⬜️⬜️ +1 to your `stress` capacity
     -   ⬜️ +1 to your `health`
-    -   ⬜️⬜️ +1 `class technique`
+    -   ⬜️⬜️ +1 `archetype`
     -   ⬜️ +1 to `arcana`
     -   ⬜️ +1 to `skill`
 -   Free Selections:
@@ -59,7 +59,7 @@ Make **4** selections from the options present. An option with multiple boxes in
     -   ⬜️⬜️ +1 `spell point`
     -   ⬜️ +1 to your `stress` capacity
     -   ⬜️ +1 to your `health`
-    -   ⬜️⬜️ +1 `class technique`
+    -   ⬜️⬜️ +1 `archetype`
     -   ⬜️ +1 to `skill`
     -   ⬜️ +1 to `speed`
 -   Free Selections:

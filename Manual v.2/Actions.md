@@ -25,20 +25,20 @@ There are 2 parts to a `fight` `action`. The first part is the attack from a `ro
 `<weapon stat> roll` (`hit` `difficulty`)
 
 -   Failure: You miss your target and they take no damage
--   Partial success (-3): You barely miss your target, and they take the damage from your `weapon` as `stress`
+-   Partial success (-3): You barely miss your target, and they take half the damage from your `weapon` (rounded down)
 -   Success (0): You hit your target, and they take the damage from your `weapon`
 -   Greater success (3): You soundly hit your target, and they take double the damage from your `weapon`
 
-The `stat` you add to your `roll` depends on the `stat` used by your `weapon`. If your target survives your strike and you are in range of their `weapon`, the second part occurs and they will counterattack and a second `roll` is needed:
+The `stat` you add to your `roll` depends on the `stat` used by your `weapon`. If your target survives your strike and you are in range of their `weapon`, the second part occurs and they will `counterattack` and a second `roll` is needed:
 
 `speed roll` (`dodge` `difficulty`)
 
 -   Failure: You are soundly hit, and you take double the damage from their `weapon`
 -   Partial success (-3): You are hit and take the damage from their `weapon`
--   Success (0): You barely dodge out of the way and take the damage from their `weapon` as `stress`
+-   Success (0): You barely dodge out of the way and take half the damage from their `weapon` as `stress`
 -   Greater success (3): You completely avoid all damage
 
-It is important to note that the second part of a `fight` `action` applies to _any_ `action` with the `fight` `tag`.
+It is important to note that the second part of a `fight` `action` applies to _any_ `action` with the `fight` `tag`. Also note that when another `creature` `fights` you, this order is reversed; first you must make the `dodge` `roll`, and then you may `counterattack` them.
 
 ## Movement
 
@@ -78,9 +78,28 @@ Tags: `Rest`
 
 The `rest` `action` allows you to take a breather. You may use this to do one of the following:
 
--   Change out 1 `ability`
+-   Change out 1 `active technique`, paying its `stress` cost
 -   Re-roll or regain 3 dice for your `dice pool`
 -   Advance a `cooldown` by 1
+
+## Search
+
+⚛️<br>
+Tags: `Search`, `Area`
+Range: Sight
+
+---
+
+The `search` `action` allows you to investigate your surroundings. You can use this to try and find anything from secrets to hidden items to traps. Regardless of what you're looking for, make a `roll`:
+
+`skill roll` (`locate` `difficulty`)
+
+-   Failure: You are unable to find anything of note
+-   Partial success (-3): You are able to tell something is nearby, but not its nature or location
+-   Success (0): You are able to tell where something hidden is
+-   Greater success (3): You are able to tell where something hidden is and its nature
+
+> Intention note: It's likely that there will be occasions where there are multiple hidden things that can be `searched` for in one area. Each one will potentially have separate `locate` `difficulties`. When a `roll` is made, consider it to be made against everything in range. This is what the `area` `tag` means, but we wanted to specify that directly here!
 
 ## Explore
 

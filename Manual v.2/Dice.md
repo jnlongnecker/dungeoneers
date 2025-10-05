@@ -18,6 +18,14 @@ Once a die from the `dice pool` is used for an `action roll`, it is `exhausted` 
 
 If at any point you use your final die in your `dice pool` and then are subjected to another `roll`, you gain 1 `stress`. You may gain another `stress` to reroll and immediately use 1 die in your `dice pool`.
 
+## Group Roll
+
+A `group roll` is called for when multiple dungeoneers attempt to do the exact same thing with the exact same `action`, and that `action` calls for a `roll`. For example, if 2 dungeoneers both take the `fight` `action` to fight the same `creature`, or if 3 dungeoneers attempt to kick open a door.
+
+During a `group roll`, the `difficulty` is increased by the number of dungeoneers that participate. Each dungeoneer may contribute their `stat` to the total, but they may only contribute 1 die from their `dice pool`.
+
+If the `roll` has varying outcomes based on an equipped `weapon` or `stat`, the involved dungeoneers choose which outcome they wish. For example, if 2 dungeoneers `fight` a skeleton and one outcome would deal 2 damage and the other would deal 4 damage, the dungeoneers may opt for the 4 damage outcome.
+
 ## Degrees of Success
 
 Whenever an `action roll` occurs (outside of the `fight` `action`, which is a special case) there are 4 possible outcomes, called `degrees of success`. These will be listed whenever the `roll` is called for. When a Game Master is calling for a `roll` outside of when it is explicitly lain out by the rules, they should also adhere to allowing different `degrees of success`. This will look something like the following:

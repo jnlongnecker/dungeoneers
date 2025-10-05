@@ -32,4 +32,44 @@ For each level of detail, there are different ways in which more of the map is r
 
 ## Combat & Exploration
 
-Fighting creatures and exploring the world are two sides of the same coin and happen together.
+Fighting `creatures` and exploring the world are two sides of the same coin and happen together. Dungeoneers take `turns` moving themselves through the map in any manner they choose. Often times, they will encounter `creatures` and must decide what they wish to do with them. Some `creatures` will be hostile and immediately attack. Some may not notice the party right away and a strategy can be formulated. Some may be friendly and wish to trade or even team up with the party.
+
+At the same time, the environment can be interacted with. Perhaps there are curious statues to decipher, or ancient puzzles to solve for riches. These interactions could potentially be happening at the same time as combat is happening down the hall. It is up to the party to determine how to handle their time.
+
+### Conditions
+
+Most effects in the game take place in the form of `conditions`. Most `conditions` are specific to the `technique` that applies it, but there are a few generic `conditions` that can get applied from a multitude of sources. Those `conditions` and what they do are detailed here.
+
+> Intention note: `Conditions` have some sort of effect, whether positive or negative. Whenever the `condition` ends, the effect also ends immediately. If this effect `exhausts` dice, those dice are no longer `exhausted`.
+
+#### Weakened
+
+A `creature` who is `weakened` has all their `difficulties` reduced by 2. A dungeoneer who is `weakened` must exhaust 1 die of their choice at the start of every `round`.
+
+#### Empowered
+
+A `creature` who is `empowered` has all their `difficulties` increased by 2. A dungeoneer who is `empowered` gets to roll 1 additional die at the start of every `round`.
+
+#### Incapacitated
+
+A `creature` who is `incapacitated` has all their `difficulties` set to 0 and cannot take `actions`. A dungeoneer who is `incapacitated` has all their dice `exhausted` at the start of every `round` and cannot take `actions`.
+
+#### Suffocating
+
+A `creature` who is `suffocating` is `weakened` and a `countdown` begins. The `countdown` starts at the `power` of the `creature`, up to a maximum of 10 (use 1d10 to represent this `countdown`). Taking damage reduces the `countdown` by 1. When the `countdown` ends, the `creature` takes 1 `true` damage at the start of every `round`.
+
+#### Burned
+
+A `creature` who is `burned` takes 1 additional damage every time it takes damage.
+
+#### Poisoned
+
+A `creature` who is `poisoned` takes 1 `true` damage at the start of every `round`.
+
+#### Freezing
+
+A `creature` who is `freezing` has their `speed` `score` reduced by 2.
+
+#### Wet
+
+A `creature` who is `wet` cannot be `burned`. If a `creature` is `wet` and `freezing`, the `freezing` `duration` does not tick until the `wet` `duration` is complete.

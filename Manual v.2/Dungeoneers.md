@@ -22,6 +22,6 @@ A `class` is a categorization of powers. It includes bonuses on `level up` as we
 
 When creating your dungeoneer, follow the below steps to set `stats`:
 
-1. Start with all `stats` at 1
+1. Start with all `stats` at 0
 2. Increase 3 `stats` by 1
 3. Increase 2 `stats` by 1
